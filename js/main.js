@@ -477,6 +477,12 @@ function handleCardSelect(dilemma) {
   // Populate target selector
   UI.renderTargetSelector(currentRoomData.players, currentPlayerId);
 
+  // Hide guess section initially
+  const guessSection = document.getElementById('guess-section');
+  if (guessSection) {
+    guessSection.style.display = 'none';
+  }
+
   // Setup answer button listeners
   setupAnswerButtonListeners('active-player-view');
 
@@ -515,6 +521,20 @@ function setupAnswerButtonListeners(viewId) {
   if (targetSelect) {
     targetSelect.addEventListener('change', () => {
       selectedTarget = targetSelect.value;
+
+      // Show/hide guess section based on selection
+      const guessSection = document.getElementById('guess-section');
+      if (guessSection) {
+        if (selectedTarget) {
+          guessSection.style.display = 'block';
+        } else {
+          guessSection.style.display = 'none';
+          // Reset guess when target is deselected
+          selectedGuess = null;
+          UI.clearSelectedAnswer();
+        }
+      }
+
       updateSubmitButtonState();
     });
   }

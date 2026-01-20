@@ -569,6 +569,21 @@ select:focus {
     box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
 }
 
+#guess-section {
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .turn-form-actions {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,0 +1,341 @@
+# 🤖 Claude Context - Bais Game
+
+Questo file contiene tutto il contesto necessario per lavorare rapidamente sul progetto.
+
+---
+
+## 📋 Stato Attuale del Progetto
+
+### ✅ Completato
+- [x] Struttura base HTML/CSS/JS (vanilla, no build)
+- [x] Firebase Realtime Database integrato
+- [x] Sistema lobby con codice stanza (6 caratteri maiuscoli)
+- [x] Distribuzione 6 carte per giocatore
+- [x] Sistema turni ciclici
+- [x] Punteggio e vittoria (10 punti)
+- [x] UI mobile-first responsive
+- [x] Logo e favicon
+- [x] Riconnessione automatica (localStorage)
+- [x] Bottone uscita durante partita
+- [x] Codice stanza sempre visibile in-game
+- [x] Bottoni risposta con bordi colorati (verde/rosso/arancione)
+- [x] Carta selezionata con glow verde
+- [x] Pesca carta nuova dopo averla giocata (torna a 6 carte)
+- [x] Sezione risposta nascosta finché non si seleziona target
+
+### 🐛 Problemi Noti
+1. **Carte non ripescate su PC (localhost)**: Funziona su telefono ma non su localhost in incognito
+   - Possibile race condition o problema cache
+   - Log aggiunti per debug
+2. **Possibile issue Firebase listeners**: Da verificare
+
+### 🎯 TODO Prossimi
+- [ ] Fix carte non ripescate su PC
+- [ ] Testare con 3+ giocatori
+- [ ] Aggiungere suoni (opzionale)
+- [ ] Timer per turno (opzionale)
+- [ ] Migliorare regole Firebase per produzione
+
+---
+
+## 🏗️ Architettura
+
+```
+/scrupple/
+├── index.html              # Single page app
+├── css/
+│   ├── main.css           # Dark theme principale
+│   └── mobile.css         # Media queries responsive
+├── js/
+│   ├── config.js          # Firebase config (usa variabili da firebase-var.js)
+│   ├── main.js            # Entry point, routing, event handlers
+│   └── modules/
+│       ├── firebase-manager.js    # Wrapper Firebase operations
+│       ├── room-manager.js        # Stanze, giocatori, codici
+│       ├── card-manager.js        # Distribuzione carte, dilemmi
+│       ├── game-logic.js          # Core game, turni, punteggi
+│       └── ui-controller.js       # Rendering UI
+├── data/
+│   └── dilemmas.json      # 100 dilemmi morali
+├── image/                 # Logo + favicon (tutte le dimensioni)
+├── firebase-var.js        # Credenziali Firebase (gitignored)
+└── manifest.json          # PWA config
+```
+
+### Tecnologie
+- **Frontend**: Vanilla JS (ES6 modules), no framework, no build
+- **Database**: Firebase Realtime Database
+- **Hosting**: GitHub Pages ready
+- **Styling**: CSS3 custom (no Bootstrap)
+
+---
+
+## 🔥 Firebase
+
+### Struttura Database
+```javascript
+/rooms/
+  /{roomId}/              // 6 caratteri maiuscoli
+    /config/
+      maxPoints: 10
+      status: "lobby"|"playing"|"ended"
+    /players/
+      /{playerId}/
+        name: "string"
+        score: 0
+        cards: [1, 5, 12, ...]  // IDs dilemmi (sempre 6)
+        isReady: false
+        isHost: true/false
+    /usedDilemmas: [1, 5, ...]
+    /currentTurn/
+      activePlayerId: "string"
+      targetPlayerId: "string"
+      dilemmaId: 42
+      guess: "si"|"no"|"dipende"
+      answer: "si"|"no"|"dipende"
+      status: "guessing"|"waiting_answer"|"showing_result"
+    /turnHistory: [...]
+```
+
+### File Config
+- `firebase-var.js` contiene le credenziali (non committato)
+- `config.js` importa da firebase-var.js usando variabili globali
+
+---
+
+## 🎮 Meccanica di Gioco
+
+### Flusso Base
+1. **Home**: Scelta "Crea Stanza" o "Unisciti"
+2. **Lobby**: Giocatori si segnano "Pronto", host avvia
+3. **Gioco**: Turni ciclici
+   - Active player: sceglie carta, target, risposta prevista
+   - Target player: risponde al dilemma
+   - Confronto: se match → +1 punto
+   - **IMPORTANTE**: Active player pesca nuova carta (torna a 6)
+4. **Fine**: Primo a 10 punti vince
+
+### Distribuzione Carte
+- Inizio: 6 carte random uniche per giocatore
+- Dopo ogni turno:
+  - Rimuove carta giocata
+  - **Pesca nuova carta random** (non ancora usata)
+  - Torna sempre a 6 carte
+- Se finite carte disponibili: continua con quelle che ha
+
+---
+
+## 🐛 Debug Guide Rapida
+
+### Aprire Console
+```
+F12 → Tab "Console"
+```
+
+### Log Importanti
+```javascript
+// Inizializzazione
+Initializing Bais...
+Loaded 100 dilemmas
+
+// Inizio gioco
+Starting game... {roomId: "ABC123", playerCount: 2}
+Cards distributed: {...}
+First player chosen: player_xxx
+
+// Durante turno
+renderPlayerCards called with: [1, 5, 12, 34, 56, 78]
+Dilemmas to render: [...]
+
+// Pesca carta (IMPORTANTE per debug)
+Player player_xxx drew new card: 42
+Current cards for player_xxx: [1, 46, 74, 77, 62]  // 5 carte
+Added card 42 to player_xxx, now has 6 cards
+```
+
+### Problemi Comuni
+
+**"Rettangolo vuoto"** → Dilemmi non caricati
+```javascript
+// Controlla:
+Loaded 0 dilemmas  ❌
+Dilemmas data length: 0  ❌
+```
+
+**"Carte non aumentano"** → Pesca non funziona
+```javascript
+// Dovrebbe apparire:
+Player xxx drew new card: 42  ✅
+Added card 42 to player xxx  ✅
+
+// Se manca:
+No more cards available to draw  ⚠️
+```
+
+**"Errori rossi Firebase"** → Regole DB o credenziali
+```javascript
+// Verifica:
+Permission denied  ❌
+```
+
+---
+
+## 🎨 Design System
+
+### Colori
+```css
+--primary-color: #6366f1     (blu)
+--secondary-color: #8b5cf6   (viola)
+--success-color: #10b981     (verde)
+--danger-color: #ef4444      (rosso)
+--warning-color: #f59e0b     (arancione)
+--bg-color: #0f172a          (dark)
+```
+
+### Componenti Chiave
+
+**Carta Selezionata**:
+- Bordo verde 3px
+- Glow verde
+- Scala 1.02 + solleva -8px
+
+**Bottoni Risposta**:
+- Default: Bordo colorato (verde/rosso/arancione)
+- Selected: Pieno di colore + glow
+
+**Bottoni Azione**:
+- Conferma: Verde con ✓
+- Annulla: Rosso con ✕
+- 60px altezza, font-weight 700
+
+---
+
+## 🚀 Comandi Rapidi
+
+### Test Locale
+```bash
+cd /home/davide/Documents/personale/scrupple
+python3 -m http.server 8000
+# Apri http://localhost:8000
+```
+
+### Rigenerare Favicon
+```bash
+python3 generate-favicon.py
+```
+
+### Hard Refresh (pulisce cache)
+```
+Ctrl + Shift + R
+```
+
+### Deploy GitHub Pages
+```bash
+git add .
+git commit -m "Update"
+git push
+# Auto-deploy su username.github.io/bais
+```
+
+---
+
+## 📝 Pattern Modifiche Comuni
+
+### Aggiungere Funzione Firebase
+1. Aggiungi export in `firebase-manager.js`
+2. Importa in modulo che la usa
+3. Chiama dalla logica appropriata
+
+### Modificare UI
+1. HTML in `index.html`
+2. Style in `css/main.css`
+3. Mobile in `css/mobile.css`
+4. Logic in `ui-controller.js`
+
+### Aggiungere Dilemma
+1. Apri `data/dilemmas.json`
+2. Aggiungi oggetto: `{"id": 101, "text": "..."}`
+3. ID deve essere unico e sequenziale
+
+### Debug Firebase
+1. Apri Firebase Console
+2. Realtime Database → Dati
+3. Guarda struttura `/rooms/{roomId}`
+4. Verifica listeners in Console browser
+
+---
+
+## ⚡ Quick Fixes
+
+### Cache Problemi
+```javascript
+// 1. Hard refresh: Ctrl+Shift+R
+// 2. Incognito: Ctrl+Shift+N
+// 3. Clear site data: F12 → Application → Clear
+```
+
+### Firebase Permission Denied
+```json
+// Verifica regole:
+{
+  "rules": {
+    "rooms": {
+      "$roomId": {
+        ".read": true,
+        ".write": true
+      }
+    }
+  }
+}
+```
+
+### Cards Non Renderizzate
+```javascript
+// Verifica in Console:
+console.log('Dilemmas loaded:', CardManager.getAllDilemmas().length);
+// Dovrebbe essere 100
+```
+
+---
+
+## 🔗 Link Utili
+
+- Firebase Console: https://console.firebase.google.com/
+- Realtime DB Docs: https://firebase.google.com/docs/database
+- GitHub Repo: https://github.com/davide/bais
+
+---
+
+## 💡 Note Sviluppo
+
+### Race Conditions
+- **Problema**: Listeners Firebase potrebbero non sincronizzarsi subito
+- **Soluzione**: Usa `await` per operazioni sequenziali critiche
+- **Esempio**: Pesca carta dopo rimozione
+
+### localStorage
+- Salva: `playerId`, `playerName`, `roomId`
+- Prefisso: `bais_`
+- Riconnessione automatica all'init
+
+### Mobile Testing
+- DevTools: F12 → Device mode
+- Real device: usa IP locale (es. 192.168.1.x:8000)
+- Touch targets: min 44x44px
+
+---
+
+## 🎯 Checklist Pre-Commit
+
+- [ ] Console pulita (no errori rossi)
+- [ ] Test con 2 giocatori (PC + telefono)
+- [ ] Verifica pesca carte funziona
+- [ ] Riconnessione funziona (chiudi/riapri tab)
+- [ ] Mobile responsive OK
+- [ ] Firebase rules OK
+
+---
+
+**Ultimo aggiornamento**: 2026-01-20
+**Versione**: 1.0
+**Status**: ✅ MVP Completo, 🐛 Debug in corso (carte PC)
