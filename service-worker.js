@@ -3,32 +3,32 @@
  * Enables offline functionality and app installation
  */
 
-const CACHE_NAME = 'bias-v1.2.0';
-const STATIC_CACHE = 'bias-static-v1.2.0';
-const DYNAMIC_CACHE = 'bias-dynamic-v1.2.0';
+const CACHE_NAME = 'bias-v1.2.1';
+const STATIC_CACHE = 'bias-static-v1.2.1';
+const DYNAMIC_CACHE = 'bias-dynamic-v1.2.1';
 
 // Files to cache for offline use
 const STATIC_FILES = [
-  '/',
-  '/index.html',
-  '/css/main.css',
-  '/css/mobile.css',
-  '/js/main.js',
-  '/js/config.js',
-  '/js/modules/firebase-manager.js',
-  '/js/modules/room-manager.js',
-  '/js/modules/card-manager.js',
-  '/js/modules/game-logic.js',
-  '/js/modules/ui-controller.js',
-  '/js/modules/audio-manager.js',
-  '/data/dilemmas.json',
-  '/image/logo.png',
-  '/image/favicon.ico',
-  '/image/favicon-32x32.png',
-  '/image/favicon-16x16.png',
-  '/image/apple-touch-icon.png',
-  '/manifest.json',
-  '/firebase-var.js'
+  './',
+  './index.html',
+  './css/main.css',
+  './css/mobile.css',
+  './js/main.js',
+  './js/config.js',
+  './js/modules/firebase-manager.js',
+  './js/modules/room-manager.js',
+  './js/modules/card-manager.js',
+  './js/modules/game-logic.js',
+  './js/modules/ui-controller.js',
+  './js/modules/audio-manager.js',
+  './data/dilemmas.json',
+  './image/logo.png',
+  './image/favicon.ico',
+  './image/favicon-32x32.png',
+  './image/favicon-16x16.png',
+  './image/apple-touch-icon.png',
+  './manifest.json',
+  './firebase-var.js'
 ];
 
 // Install event - cache static files
@@ -109,7 +109,7 @@ self.addEventListener('fetch', (event) => {
         .catch(() => {
           // Return offline page if available
           if (request.mode === 'navigate') {
-            return caches.match('/index.html');
+            return caches.match('./index.html');
           }
         })
     );

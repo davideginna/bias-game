@@ -96,8 +96,8 @@ async function init() {
 async function registerServiceWorker() {
   if ('serviceWorker' in navigator) {
     try {
-      const registration = await navigator.serviceWorker.register('/service-worker.js', {
-        scope: '/'
+      const registration = await navigator.serviceWorker.register('./service-worker.js', {
+        scope: './'
       });
 
       console.log('✅ Service Worker registered:', registration.scope);
