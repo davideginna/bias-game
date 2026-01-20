@@ -32,4 +32,4 @@ logs/
 *.temp
 
 # Env file
-firebase-var.js
+#firebase-var.js
