@@ -1,6 +1,6 @@
 {
-  "name": "Bais - Il Gioco dei Dilemmi",
-  "short_name": "Bais",
+  "name": "Bias - Il Gioco dei Dilemmi",
+  "short_name": "Bias",
   "description": "Il gioco dei dilemmi morali. Indovina come risponderebbero i tuoi amici!",
   "start_url": "./index.html",
   "display": "standalone",

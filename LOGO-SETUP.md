@@ -12,7 +12,7 @@ Sono state create tutte le dimensioni necessarie per la favicon:
 - `android-chrome-512x512.png` - Android HD
 
 ### 2. ✅ Logo nella Home
-- Il logo appare nella schermata iniziale sopra il titolo "Bais"
+- Il logo appare nella schermata iniziale sopra il titolo "Bias"
 - Dimensioni: 120x120px (desktop), 100x100px (mobile)
 - Animazione fadeIn quando si carica la pagina
 
@@ -31,7 +31,7 @@ Sono state create tutte le dimensioni necessarie per la favicon:
 ### Desktop/Browser
 1. **Ricarica la pagina** (F5 o Ctrl+R)
 2. Guarda la **tab del browser** → Dovresti vedere il logo come favicon
-3. Nella **home page** → Il logo appare sopra "Bais"
+3. Nella **home page** → Il logo appare sopra "Bias"
 
 ### Mobile
 1. Apri il sito su smartphone

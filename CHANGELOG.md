@@ -1,6 +1,23 @@
-# Changelog Bais
+# Changelog Bias
 
-## Ultime Modifiche
+## v1.2 - 2026-01-20
+
+### ✨ Nuove Feature
+- **Modale Carte**: Bottone "🃏 Vedi le tue carte" durante l'attesa per visualizzare la tua mano
+- **Sistema Temi**: 7 temi disponibili con modale di selezione visuale
+  - Dark (default), Light, Darcula, Blu Oceano, Viola Cosmico, Verde Foresta, Tramonto
+  - Preferenza salvata in localStorage
+- **Regole del Gioco**: Bottone "📖 Regole" nella home con guida completa
+- **Rinominato**: App rinominata da "Bais" a "Bias"
+
+### 🎨 UI/UX
+- Menu home con 4 bottoni: Crea Stanza, Unisciti, Cambia Tema, Regole
+- Preview visivi per ogni tema nella modale di selezione
+- Tema attivo evidenziato con bordo verde
+
+---
+
+## v1.1 - Precedenti Modifiche
 
 ### ✅ Interfaccia Home Migliorata
 - **Prima**: Tutti i campi visibili insieme (confusionario)

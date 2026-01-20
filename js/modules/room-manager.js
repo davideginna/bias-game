@@ -198,9 +198,9 @@ export function getAvailableTargets(players, activePlayerId) {
  */
 function savePlayerInfo(playerId, playerName, roomId) {
   try {
-    localStorage.setItem('bais_playerId', playerId);
-    localStorage.setItem('bais_playerName', playerName);
-    localStorage.setItem('bais_roomId', roomId);
+    localStorage.setItem('bias_playerId', playerId);
+    localStorage.setItem('bias_playerName', playerName);
+    localStorage.setItem('bias_roomId', roomId);
   } catch (error) {
     console.error('Error saving to localStorage:', error);
   }
@@ -212,9 +212,9 @@ function savePlayerInfo(playerId, playerName, roomId) {
 export function getStoredPlayerInfo() {
   try {
     return {
-      playerId: localStorage.getItem('bais_playerId'),
-      playerName: localStorage.getItem('bais_playerName'),
-      roomId: localStorage.getItem('bais_roomId')
+      playerId: localStorage.getItem('bias_playerId'),
+      playerName: localStorage.getItem('bias_playerName'),
+      roomId: localStorage.getItem('bias_roomId')
     };
   } catch (error) {
     console.error('Error reading from localStorage:', error);
@@ -227,9 +227,9 @@ export function getStoredPlayerInfo() {
  */
 export function clearStoredPlayerInfo() {
   try {
-    localStorage.removeItem('bais_playerId');
-    localStorage.removeItem('bais_playerName');
-    localStorage.removeItem('bais_roomId');
+    localStorage.removeItem('bias_playerId');
+    localStorage.removeItem('bias_playerName');
+    localStorage.removeItem('bias_roomId');
   } catch (error) {
     console.error('Error clearing localStorage:', error);
   }

@@ -22,7 +22,7 @@ let selectedGuess = null;
  * Initialize application
  */
 async function init() {
-  console.log('Initializing Bais...');
+  console.log('Initializing Bias...');
 
   try {
     UI.showLoading('Inizializzazione...');
@@ -195,6 +195,108 @@ function setupEventListeners() {
   if (leaveGameBtn) {
     leaveGameBtn.addEventListener('click', handleLeaveGame);
   }
+
+  // Modal handlers
+  const showRulesBtn = document.getElementById('show-rules-btn');
+  const closeRulesModal = document.getElementById('close-rules-modal');
+  const rulesModal = document.getElementById('rules-modal');
+
+  if (showRulesBtn) {
+    showRulesBtn.addEventListener('click', () => {
+      rulesModal.style.display = 'flex';
+    });
+  }
+
+  if (closeRulesModal) {
+    closeRulesModal.addEventListener('click', () => {
+      rulesModal.style.display = 'none';
+    });
+  }
+
+  if (rulesModal) {
+    rulesModal.addEventListener('click', (e) => {
+      if (e.target === rulesModal) {
+        rulesModal.style.display = 'none';
+      }
+    });
+  }
+
+  const viewCardsBtn = document.getElementById('view-cards-btn');
+  const closeCardsModal = document.getElementById('close-cards-modal');
+  const cardsModal = document.getElementById('cards-modal');
+
+  if (viewCardsBtn) {
+    viewCardsBtn.addEventListener('click', handleViewCards);
+  }
+
+  if (closeCardsModal) {
+    closeCardsModal.addEventListener('click', () => {
+      cardsModal.style.display = 'none';
+    });
+  }
+
+  if (cardsModal) {
+    cardsModal.addEventListener('click', (e) => {
+      if (e.target === cardsModal) {
+        cardsModal.style.display = 'none';
+      }
+    });
+  }
+
+  // Theme modal handlers
+  const showThemeModalBtn = document.getElementById('show-theme-modal-btn');
+  const closeThemeModal = document.getElementById('close-theme-modal');
+  const themeModal = document.getElementById('theme-modal');
+  const themeOptions = document.querySelectorAll('.theme-option');
+
+  // Load saved theme
+  const savedTheme = localStorage.getItem('bias_theme') || 'dark';
+  document.body.setAttribute('data-theme', savedTheme);
+  updateActiveTheme(savedTheme);
+
+  if (showThemeModalBtn) {
+    showThemeModalBtn.addEventListener('click', () => {
+      themeModal.style.display = 'flex';
+      updateActiveTheme(document.body.getAttribute('data-theme'));
+    });
+  }
+
+  if (closeThemeModal) {
+    closeThemeModal.addEventListener('click', () => {
+      themeModal.style.display = 'none';
+    });
+  }
+
+  if (themeModal) {
+    themeModal.addEventListener('click', (e) => {
+      if (e.target === themeModal) {
+        themeModal.style.display = 'none';
+      }
+    });
+  }
+
+  themeOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      const theme = option.getAttribute('data-theme');
+      document.body.setAttribute('data-theme', theme);
+      localStorage.setItem('bias_theme', theme);
+      updateActiveTheme(theme);
+    });
+  });
+}
+
+/**
+ * Update active theme indicator
+ */
+function updateActiveTheme(currentTheme) {
+  const themeOptions = document.querySelectorAll('.theme-option');
+  themeOptions.forEach(option => {
+    if (option.getAttribute('data-theme') === currentTheme) {
+      option.classList.add('active');
+    } else {
+      option.classList.remove('active');
+    }
+  });
 }
 
 /**
@@ -833,6 +935,27 @@ function handleRoomDeleted() {
   UI.showScreen('home');
   UI.showToast('La stanza è stata chiusa', 'warning');
   UI.resetFormInputs();
+}
+
+/**
+ * Handle view cards
+ */
+function handleViewCards() {
+  if (!currentRoomData || !currentPlayerId) {
+    return;
+  }
+
+  const player = currentRoomData.players[currentPlayerId];
+  if (!player || !player.cards) {
+    UI.showToast('Nessuna carta disponibile', 'warning');
+    return;
+  }
+
+  // Get dilemma details for player's cards
+  const dilemmas = player.cards.map(cardId => CardManager.getDilemmaById(cardId)).filter(d => d);
+
+  // Show modal
+  UI.showCardsModal(dilemmas);
 }
 
 // Initialize app when DOM is ready

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Bais - Il Gioco dei Dilemmi</title>
+    <title>Bias - Il Gioco dei Dilemmi</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="image/favicon.ico">
@@ -13,7 +13,7 @@
     <link rel="manifest" href="manifest.json">
 
     <!-- Meta tags -->
-    <meta name="description" content="Bais - Il gioco dei dilemmi morali. Indovina come risponderebbero i tuoi amici!">
+    <meta name="description" content="Bias - Il gioco dei dilemmi morali. Indovina come risponderebbero i tuoi amici!">
     <meta name="theme-color" content="#0f172a">
 
     <link rel="stylesheet" href="css/main.css">
@@ -23,14 +23,17 @@
     <!-- Home Screen -->
     <div id="home-screen" class="screen active">
         <div class="container">
-            <img src="image/logo.png" alt="Bais Logo" class="logo">
-            <h1 class="title">Bais</h1>
+            <img src="image/logo.png" alt="Bias Logo" class="logo">
+            <h1 class="title">Bias</h1>
             <p class="subtitle">Il gioco dei dilemmi morali</p>
 
             <!-- Menu Scelta -->
             <div id="home-menu">
-                <button id="show-create-form-btn" class="btn btn-primary">Crea Stanza</button>
-                <button id="show-join-form-btn" class="btn btn-secondary">Unisciti a Stanza</button>
+
+                <button id="show-create-form-btn" class="btn btn-primary">🎮 Crea Stanza</button>
+                <button id="show-join-form-btn" class="btn btn-primary">🦘 Unisciti a Stanza</button>
+                <button id="show-theme-modal-btn" class="btn btn-primary">🎨 Cambia Tema</button>
+                <button id="show-rules-btn" class="btn btn-primary">📖 Regole</button>
             </div>
 
             <!-- Form Crea Stanza -->
@@ -165,6 +168,8 @@
                 </div>
 
                 <p id="waiting-info"></p>
+
+                <button id="view-cards-btn" class="btn btn-secondary">🃏 Vedi le tue carte</button>
             </div>
 
             <!-- Result View -->
@@ -187,6 +192,103 @@
             <div class="end-actions">
                 <button id="new-game-btn" class="btn btn-primary">Nuova Partita</button>
                 <button id="leave-game-btn" class="btn btn-secondary">Torna alla Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cards Modal -->
+    <div id="cards-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🃏 Le tue carte</h3>
+                <button class="modal-close" id="close-cards-modal">✕</button>
+            </div>
+            <div class="modal-body">
+                <div id="modal-cards-list" class="modal-cards-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rules Modal -->
+    <div id="rules-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>📖 Regole del Gioco</h3>
+                <button class="modal-close" id="close-rules-modal">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="rules-content">
+                    <h4>🎯 Obiettivo</h4>
+                    <p>Raggiungi per primo <strong>10 punti</strong> indovinando come risponderebbero i tuoi amici ai dilemmi morali!</p>
+
+                    <h4>🎮 Come si gioca</h4>
+                    <ol>
+                        <li><strong>Crea o unisciti</strong> a una stanza con i tuoi amici</li>
+                        <li>Ogni giocatore riceve <strong>6 carte</strong> con dilemmi morali</li>
+                        <li>A turno, scegli:
+                            <ul>
+                                <li>Una delle tue carte (un dilemma)</li>
+                                <li>Un giocatore che deve rispondere</li>
+                                <li>Come pensi che risponderà: <span class="answer-si">Sì</span>, <span class="answer-no">No</span>, o <span class="answer-dipende">Dipende</span></li>
+                            </ul>
+                        </li>
+                        <li>Il giocatore scelto legge il dilemma e risponde</li>
+                        <li>Se indovini la risposta: <strong>+1 punto</strong>!</li>
+                        <li>Dopo aver giocato una carta, ne peschi automaticamente una nuova</li>
+                    </ol>
+
+                    <h4>🏆 Vittoria</h4>
+                    <p>Il primo giocatore che raggiunge 10 punti vince la partita!</p>
+
+                    <h4>💡 Suggerimenti</h4>
+                    <ul>
+                        <li>Scegli con cura quale amico far rispondere a ciascun dilemma</li>
+                        <li>Più conosci i tuoi amici, più punti farai!</li>
+                        <li>Mentre aspetti il tuo turno, puoi visualizzare le tue carte</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Selection Modal -->
+    <div id="theme-modal" class="modal" style="display: none;">
+        <div class="modal-content theme-modal-content">
+            <div class="modal-header">
+                <h3>🎨 Scegli il Tema</h3>
+                <button class="modal-close" id="close-theme-modal">✕</button>
+            </div>
+            <div class="modal-body">
+                <div class="theme-grid">
+                    <button class="theme-option" data-theme="dark">
+                        <div class="theme-preview theme-preview-dark"></div>
+                        <span>Scuro</span>
+                    </button>
+                    <button class="theme-option" data-theme="light">
+                        <div class="theme-preview theme-preview-light"></div>
+                        <span>Chiaro</span>
+                    </button>
+                    <button class="theme-option" data-theme="darcula">
+                        <div class="theme-preview theme-preview-darcula"></div>
+                        <span>Darcula</span>
+                    </button>
+                    <button class="theme-option" data-theme="blue">
+                        <div class="theme-preview theme-preview-blue"></div>
+                        <span>Blu Oceano</span>
+                    </button>
+                    <button class="theme-option" data-theme="purple">
+                        <div class="theme-preview theme-preview-purple"></div>
+                        <span>Viola Cosmico</span>
+                    </button>
+                    <button class="theme-option" data-theme="green">
+                        <div class="theme-preview theme-preview-green"></div>
+                        <span>Verde Foresta</span>
+                    </button>
+                    <button class="theme-option" data-theme="sunset">
+                        <div class="theme-preview theme-preview-sunset"></div>
+                        <span>Tramonto</span>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

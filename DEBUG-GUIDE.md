@@ -26,7 +26,7 @@ Dovresti vedere questi messaggi in ordine:
 ```
 ✅ Caso NORMALE (funziona):
 ----------------------------
-Initializing Bais...
+Initializing Bias...
 Loaded 100 dilemmas
 Starting game... {roomId: "ABC123", playerCount: 2}
 Distributing cards to players: ["player_xxx", "player_yyy"]

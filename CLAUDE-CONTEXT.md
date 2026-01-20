@@ -1,4 +1,4 @@
-# 🤖 Claude Context - Bais Game
+# 🤖 Claude Context - Bias Game
 
 Questo file contiene tutto il contesto necessario per lavorare rapidamente sul progetto.
 
@@ -135,7 +135,7 @@ F12 → Tab "Console"
 ### Log Importanti
 ```javascript
 // Inizializzazione
-Initializing Bais...
+Initializing Bias...
 Loaded 100 dilemmas
 
 // Inizio gioco
@@ -315,7 +315,7 @@ console.log('Dilemmas loaded:', CardManager.getAllDilemmas().length);
 
 ### localStorage
 - Salva: `playerId`, `playerName`, `roomId`
-- Prefisso: `bais_`
+- Prefisso: `bias_`
 - Riconnessione automatica all'init
 
 ### Mobile Testing

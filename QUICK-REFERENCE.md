@@ -1,4 +1,4 @@
-# ⚡ Quick Reference - Bais
+# ⚡ Quick Reference - Bias
 
 Comandi e snippet più usati.
 

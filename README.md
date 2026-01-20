@@ -1,4 +1,4 @@
-# Bais 🎮
+# Bias 🎮
 
 I giocatori devono indovinare come i loro amici risponderebbero a dilemmi morali.
 
@@ -49,7 +49,7 @@ Prima di utilizzare l'applicazione, devi configurare Firebase:
    - Vai su "Impostazioni Progetto" (icona ingranaggio)
    - Scorri fino a "Le tue app"
    - Clicca su "Aggiungi app" → Web (icona `</>`)
-   - Registra l'app con un nome (es. "Bais")
+   - Registra l'app con un nome (es. "Bias")
    - Copia le credenziali fornite
 
 ### 2. Configurazione dell'Applicazione
@@ -89,7 +89,7 @@ git push -u origin main
    - Salva
 
 4. L'applicazione sarà disponibile su:
-   `https://TUO_USERNAME.github.io/bais/`
+   `https://TUO_USERNAME.github.io/bias/`
 
 ### 4. Test in Locale
 
@@ -114,7 +114,7 @@ npx http-server -p 8000
 ## 📁 Struttura del Progetto
 
 ```
-bais/
+bias/
 ├── index.html                      # Pagina principale
 ├── css/
 │   ├── main.css                   # Stili generali
@@ -234,4 +234,4 @@ Per problemi o domande, apri un issue su GitHub.
 
 ---
 
-**Buon divertimento con Bais! 🎉**
+**Buon divertimento con Bias! 🎉**
