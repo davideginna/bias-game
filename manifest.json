@@ -2,11 +2,12 @@
   "name": "Bias - Il Gioco dei Dilemmi",
   "short_name": "Bias",
   "description": "Il gioco dei dilemmi morali. Indovina come risponderebbero i tuoi amici!",
-  "start_url": "./index.html",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#0f172a",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "image/favicon-32x32.png",

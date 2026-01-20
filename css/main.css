@@ -1141,3 +1141,98 @@ body[data-theme="darcula"] {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+/* === Install Banner === */
+.install-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 16px;
+    padding: 16px;
+    margin: 20px 0;
+    box-shadow: var(--shadow-lg);
+    animation: slideDown 0.5s ease;
+}
+
+.install-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.install-icon {
+    font-size: 32px;
+    flex-shrink: 0;
+}
+
+.install-text {
+    flex: 1;
+    color: white;
+}
+
+.install-text strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.install-text p {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.btn-install {
+    background: white;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.btn-install:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-install:active {
+    transform: scale(0.95);
+}
+
+.btn-close-banner {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-close-banner:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: rotate(90deg);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

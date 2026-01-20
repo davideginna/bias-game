@@ -18,6 +18,7 @@ let currentRoomData = null;
 let selectedDilemma = null;
 let selectedTarget = null;
 let selectedGuess = null;
+let deferredInstallPrompt = null; // Store install prompt event
 
 /**
  * Initialize application
@@ -76,11 +77,146 @@ async function init() {
     // Show home screen
     UI.showScreen('home');
     UI.hideLoading();
+
+    // Register service worker for PWA
+    registerServiceWorker();
+
+    // Setup install prompt
+    setupInstallPrompt();
   } catch (error) {
     console.error('Error initializing app:', error);
     UI.hideLoading();
     UI.showToast('Errore durante l\'inizializzazione', 'error');
   }
+}
+
+/**
+ * Register Service Worker for PWA functionality
+ */
+async function registerServiceWorker() {
+  if ('serviceWorker' in navigator) {
+    try {
+      const registration = await navigator.serviceWorker.register('/service-worker.js', {
+        scope: '/'
+      });
+
+      console.log('✅ Service Worker registered:', registration.scope);
+
+      // Check for updates
+      registration.addEventListener('updatefound', () => {
+        const newWorker = registration.installing;
+        console.log('🔄 New Service Worker found, installing...');
+
+        newWorker.addEventListener('statechange', () => {
+          if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+            console.log('📦 New content available, reload to update');
+            // Optionally show a toast to user about update
+            UI.showToast('Nuova versione disponibile! Ricarica la pagina.', 'info');
+          }
+        });
+      });
+
+      // Handle controller change (new SW activated)
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        console.log('🔄 Service Worker updated, reloading...');
+        window.location.reload();
+      });
+
+    } catch (error) {
+      console.error('❌ Service Worker registration failed:', error);
+    }
+  } else {
+    console.log('⚠️ Service Workers not supported in this browser');
+  }
+}
+
+/**
+ * Setup PWA install prompt
+ */
+function setupInstallPrompt() {
+  const installBanner = document.getElementById('install-banner');
+  const installBtn = document.getElementById('install-app-btn');
+  const closeBannerBtn = document.getElementById('close-install-banner');
+
+  // Check if app is already installed
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    console.log('📱 App already installed');
+    return;
+  }
+
+  // Check if banner was previously dismissed
+  if (localStorage.getItem('bias_install_dismissed') === 'true') {
+    console.log('🚫 Install banner previously dismissed');
+    return;
+  }
+
+  // Listen for beforeinstallprompt event
+  window.addEventListener('beforeinstallprompt', (event) => {
+    console.log('📲 beforeinstallprompt event fired');
+
+    // Prevent the default install prompt
+    event.preventDefault();
+
+    // Store the event for later use
+    deferredInstallPrompt = event;
+
+    // Show our custom banner
+    if (installBanner) {
+      installBanner.style.display = 'block';
+    }
+  });
+
+  // Handle install button click
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (!deferredInstallPrompt) {
+        console.log('⚠️ No install prompt available');
+        return;
+      }
+
+      // Show the install prompt
+      deferredInstallPrompt.prompt();
+
+      // Wait for user response
+      const { outcome } = await deferredInstallPrompt.userChoice;
+      console.log(`📱 User choice: ${outcome}`);
+
+      if (outcome === 'accepted') {
+        console.log('✅ App installed');
+      } else {
+        console.log('❌ Installation declined');
+      }
+
+      // Clear the deferred prompt
+      deferredInstallPrompt = null;
+
+      // Hide banner
+      if (installBanner) {
+        installBanner.style.display = 'none';
+      }
+    });
+  }
+
+  // Handle close banner button
+  if (closeBannerBtn) {
+    closeBannerBtn.addEventListener('click', () => {
+      if (installBanner) {
+        installBanner.style.display = 'none';
+      }
+      // Remember that user dismissed the banner
+      localStorage.setItem('bias_install_dismissed', 'true');
+      console.log('🚫 Install banner dismissed');
+    });
+  }
+
+  // Listen for app installed event
+  window.addEventListener('appinstalled', () => {
+    console.log('✅ App successfully installed');
+    if (installBanner) {
+      installBanner.style.display = 'none';
+    }
+    UI.showToast('App installata con successo!', 'success');
+  });
 }
 
 /**

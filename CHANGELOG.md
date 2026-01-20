@@ -3,6 +3,18 @@
 ## v1.2 - 2026-01-20
 
 ### ✨ Nuove Feature
+- **PWA (Progressive Web App)**: App installabile su mobile e desktop
+  - **Banner di installazione automatico** su mobile (Chrome/Edge Android)
+  - Prompt nativo quando clicchi "Installa"
+  - Funziona offline (UI completa cachata)
+  - Icona sulla home screen
+  - Esperienza fullscreen app-like
+  - Auto-update quando disponibile
+  - Ricorda se l'utente ha chiuso il banner
+- **Audio & Suoni**: Sistema audio integrato
+  - Suono di successo quando indovini la risposta
+  - Suono di errore quando sbagli
+  - Bottone "🔊 Leggi ad alta voce" per ascoltare il dilemma (Text-to-Speech)
 - **Modale Carte**: Bottone "🃏 Vedi le tue carte" durante l'attesa per visualizzare la tua mano
 - **Sistema Temi**: 7 temi disponibili con modale di selezione visuale
   - Dark (default), Light, Darcula, Blu Oceano, Viola Cosmico, Verde Foresta, Tramonto
@@ -14,6 +26,13 @@
 - Menu home con 4 bottoni: Crea Stanza, Unisciti, Cambia Tema, Regole
 - Preview visivi per ogni tema nella modale di selezione
 - Tema attivo evidenziato con bordo verde
+- Bottone lettura vocale stile viola secondario
+
+### 🔧 Tecnico
+- Service Worker per caching e offline support
+- Web Audio API per generazione suoni procedurali
+- Web Speech API per text-to-speech in italiano
+- Cache strategy: Cache-first per statici, Network-first per dinamici
 
 ---
 
