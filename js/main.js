@@ -8,6 +8,7 @@ import * as RoomManager from './modules/room-manager.js';
 import * as CardManager from './modules/card-manager.js';
 import * as GameLogic from './modules/game-logic.js';
 import * as UI from './modules/ui-controller.js';
+import * as AudioManager from './modules/audio-manager.js';
 import { GAME_STATUS, TURN_STATUS, MIN_PLAYERS } from './config.js';
 
 // Global state
@@ -159,6 +160,12 @@ function setupEventListeners() {
   targetAnswerButtons.forEach(btn => {
     btn.addEventListener('click', handleTargetAnswer);
   });
+
+  // Game screen - Speak dilemma button
+  const speakDilemmaBtn = document.getElementById('speak-dilemma-btn');
+  if (speakDilemmaBtn) {
+    speakDilemmaBtn.addEventListener('click', handleSpeakDilemma);
+  }
 
   // Game screen - Submit guess and cancel buttons
   const submitGuessBtn = document.getElementById('submit-guess-btn');
@@ -503,6 +510,13 @@ function updateGameScreen(players, currentTurn) {
     const dilemma = CardManager.getDilemmaById(currentTurn.dilemmaId);
     const isCorrect = GameLogic.checkMatch(currentTurn.guess, currentTurn.answer);
 
+    // Play sound based on result
+    if (isCorrect) {
+      AudioManager.playSuccessSound();
+    } else {
+      AudioManager.playErrorSound();
+    }
+
     UI.showTurnResult(
       isCorrect,
       currentTurn.guess,
@@ -729,6 +743,23 @@ async function handleTargetAnswer(event) {
     console.error('Error submitting answer:', error);
     UI.hideLoading();
     UI.showToast('Errore durante l\'invio', 'error');
+  }
+}
+
+/**
+ * Handle speak dilemma
+ */
+function handleSpeakDilemma() {
+  const dilemmaText = document.getElementById('target-dilemma-text');
+  if (!dilemmaText || !dilemmaText.textContent) {
+    return;
+  }
+
+  const text = dilemmaText.textContent.trim();
+  const success = AudioManager.speakText(text, 'it-IT');
+
+  if (!success) {
+    UI.showToast('Sintesi vocale non disponibile', 'warning');
   }
 }
 

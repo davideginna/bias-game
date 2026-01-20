@@ -1107,3 +1107,37 @@ body[data-theme="darcula"] {
         opacity: 1;
     }
 }
+
+/* === Speak Button === */
+.btn-speak {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-speak:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-speak:active {
+    transform: translateY(0);
+}
+
+.btn-speak:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
