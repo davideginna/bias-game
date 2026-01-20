@@ -32,5 +32,4 @@ logs/
 *.temp
 
 # Env file
-.env
-/js/config.js
+firebase-var.js
