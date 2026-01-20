@@ -1,0 +1,256 @@
+/* Mobile-specific styles and media queries */
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    /* Larger touch targets for mobile */
+    .btn {
+        min-height: 56px;
+        font-size: 17px;
+    }
+
+    .btn-answer {
+        min-height: 56px;
+        font-size: 17px;
+    }
+
+    input[type="text"],
+    select {
+        min-height: 52px;
+        font-size: 17px;
+    }
+
+    /* Stack answer buttons vertically on very small screens */
+    .answer-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reduce scoreboard items */
+    .scoreboard {
+        gap: 8px;
+    }
+
+    .score-item {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    /* Code box */
+    .code-box span {
+        font-size: 2rem;
+        letter-spacing: 6px;
+    }
+
+    /* Toast positioning for mobile */
+    .toast-container {
+        top: 10px;
+        right: 10px;
+        left: 10px;
+    }
+
+    .toast {
+        min-width: auto;
+        width: 100%;
+    }
+
+    /* Game header on mobile */
+    .game-room-code {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .room-code-value {
+        font-size: 0.95rem;
+        letter-spacing: 1px;
+    }
+
+    /* Cards grid */
+    .cards-grid {
+        gap: 10px;
+    }
+
+    .dilemma-card {
+        padding: 16px;
+        font-size: 0.95rem;
+    }
+
+    .dilemma-card.large {
+        font-size: 1.1rem;
+        min-height: 130px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .screen {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .room-code-display {
+        padding: 15px;
+    }
+
+    .code-box span {
+        font-size: 1.75rem;
+        letter-spacing: 4px;
+    }
+
+    .winner-section {
+        padding: 30px 20px;
+    }
+
+    .winner-section h3 {
+        font-size: 2rem;
+    }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .screen.active {
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+        min-height: 48px;
+    }
+
+    .dilemma-card.large {
+        min-height: 100px;
+    }
+}
+
+/* Tablet devices (768px and up) */
+@media (min-width: 768px) {
+    .answer-buttons {
+        gap: 15px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .lobby-actions {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .lobby-actions .btn {
+        width: auto;
+        min-width: 150px;
+    }
+
+    .end-actions {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .end-actions .btn {
+        width: auto;
+        min-width: 200px;
+    }
+}
+
+/* Large tablets and small desktops */
+@media (min-width: 992px) {
+    .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Prevent zoom on input focus for iOS */
+@supports (-webkit-touch-callout: none) {
+    input[type="text"],
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+}
+
+/* Safe area for notched devices */
+@supports (padding: max(0px)) {
+    body {
+        padding-left: max(0px, env(safe-area-inset-left));
+        padding-right: max(0px, env(safe-area-inset-right));
+    }
+
+    .screen {
+        padding-bottom: max(20px, env(safe-area-inset-bottom));
+    }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark mode support (if user prefers) */
+@media (prefers-color-scheme: light) {
+    /* Keep dark theme even in light mode for consistency */
+    /* Users can override with browser settings if needed */
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .btn {
+        border: 3px solid currentColor;
+    }
+
+    .dilemma-card {
+        border-width: 3px;
+    }
+
+    input[type="text"],
+    select {
+        border-width: 3px;
+    }
+}

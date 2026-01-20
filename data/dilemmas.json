@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "text": "Trovi 100€ per strada senza nessuno intorno. Li tieni?"
+  },
+  {
+    "id": 2,
+    "text": "Un amico ti chiede di mentire per proteggerlo da una conseguenza seria. Lo faresti?"
+  },
+  {
+    "id": 3,
+    "text": "Scopri che il tuo capo evade le tasse. Lo denunceresti?"
+  },
+  {
+    "id": 4,
+    "text": "Ruberesti cibo se la tua famiglia morisse di fame?"
+  },
+  {
+    "id": 5,
+    "text": "Tradiresti il tuo partner per 1 milione di euro garantiti e senza che lui/lei lo sappia mai?"
+  },
+  {
+    "id": 6,
+    "text": "Mentiresti su un curriculum per ottenere il lavoro dei tuoi sogni?"
+  },
+  {
+    "id": 7,
+    "text": "Un collega fa un errore grave che potrebbe costargli il lavoro. Lo copri?"
+  },
+  {
+    "id": 8,
+    "text": "Accetteresti un regalo costoso da qualcuno che sta cercando di corromperti?"
+  },
+  {
+    "id": 9,
+    "text": "Denunceresti un familiare per un crimine che ha commesso?"
+  },
+  {
+    "id": 10,
+    "text": "Useresti informazioni confidenziali per fare soldi in borsa?"
+  },
+  {
+    "id": 11,
+    "text": "Sacrificheresti una persona innocente per salvarne mille?"
+  },
+  {
+    "id": 12,
+    "text": "Diresti a un amico che il suo partner lo tradisce se ne fossi certo?"
+  },
+  {
+    "id": 13,
+    "text": "Terresti per te una scoperta scientifica importante se ti rendesse ricco?"
+  },
+  {
+    "id": 14,
+    "text": "Faresti un favore illegale a un politico in cambio di un grosso beneficio personale?"
+  },
+  {
+    "id": 15,
+    "text": "Accetteresti di fare da testimone falso in tribunale per salvare un amico?"
+  },
+  {
+    "id": 16,
+    "text": "Fingeresti di essere credente per ottenere un vantaggio sociale?"
+  },
+  {
+    "id": 17,
+    "text": "Copieresti all'esame se fossi certo di non essere scoperto?"
+  },
+  {
+    "id": 18,
+    "text": "Cancelleresti i social media per un anno intero in cambio di 50.000€?"
+  },
+  {
+    "id": 19,
+    "text": "Adotteresti un figlio solo per ottenere benefici fiscali?"
+  },
+  {
+    "id": 20,
+    "text": "Accetteresti di non vedere la tua famiglia per 5 anni in cambio di 10 milioni?"
+  },
+  {
+    "id": 21,
+    "text": "Diresti la verità al tuo partner se avessi fatto qualcosa di imperdonabile?"
+  },
+  {
+    "id": 22,
+    "text": "Aiuteresti un amico a nascondere una relazione extraconiugale?"
+  },
+  {
+    "id": 23,
+    "text": "Perdoneresti un tradimento se il tuo partner fosse pentito?"
+  },
+  {
+    "id": 24,
+    "text": "Staresti con qualcuno che non ami per sicurezza economica?"
+  },
+  {
+    "id": 25,
+    "text": "Lasceresti il tuo partner se diventasse disabile?"
+  },
+  {
+    "id": 26,
+    "text": "Fingeresti di apprezzare i genitori del tuo partner anche se non li sopporti?"
+  },
+  {
+    "id": 27,
+    "text": "Sposeresti qualcuno solo per ottenere la cittadinanza?"
+  },
+  {
+    "id": 28,
+    "text": "Taglieresti i rapporti con un amico di vecchia data se diventasse dannoso per te?"
+  },
+  {
+    "id": 29,
+    "text": "Continueresti a frequentare qualcuno solo perché ha molte connessioni utili?"
+  },
+  {
+    "id": 30,
+    "text": "Inviteresti qualcuno al tuo matrimonio solo per ricevere un regalo?"
+  },
+  {
+    "id": 31,
+    "text": "Metteresti fine a un'amicizia se il tuo partner te lo chiedesse?"
+  },
+  {
+    "id": 32,
+    "text": "Diresti a un amico che suo figlio è maleducato?"
+  },
+  {
+    "id": 33,
+    "text": "Prestaresti una grossa somma di denaro a un amico sapendo che potrebbe non restituirtela?"
+  },
+  {
+    "id": 34,
+    "text": "Diresti a un'amica che il suo outfit è orribile prima di un evento importante?"
+  },
+  {
+    "id": 35,
+    "text": "Continueresti a vedere un amico che ti ha tradito la fiducia una volta?"
+  },
+  {
+    "id": 36,
+    "text": "Inviteresti il tuo ex al tuo matrimonio per non creare imbarazzo?"
+  },
+  {
+    "id": 37,
+    "text": "Chiuderesti un occhio se il tuo migliore amico rubasse dal supermercato?"
+  },
+  {
+    "id": 38,
+    "text": "Frequenteresti qualcuno solo perché è fisicamente attraente?"
+  },
+  {
+    "id": 39,
+    "text": "Diresti a un amico che sta per fare un errore enorme anche se si arrabbierebbe con te?"
+  },
+  {
+    "id": 40,
+    "text": "Sceglieresti la carriera rispetto a una relazione importante?"
+  },
+  {
+    "id": 41,
+    "text": "Accetteresti un lavoro con stipendio doppio ma che odi fare?"
+  },
+  {
+    "id": 42,
+    "text": "Ruberesti un'idea di un collega per fare carriera?"
+  },
+  {
+    "id": 43,
+    "text": "Lavoreresti per un'azienda che inquina gravemente?"
+  },
+  {
+    "id": 44,
+    "text": "Accetteresti una promozione immeritata a scapito di un collega più qualificato?"
+  },
+  {
+    "id": 45,
+    "text": "Faresti mobbing su un collega se il tuo capo te lo ordinasse?"
+  },
+  {
+    "id": 46,
+    "text": "Accetteresti una tangente per assegnare un contratto?"
+  },
+  {
+    "id": 47,
+    "text": "Fingeresti di essere malato per non andare a lavoro?"
+  },
+  {
+    "id": 48,
+    "text": "Lavoreresti in nero per guadagnare di più?"
+  },
+  {
+    "id": 49,
+    "text": "Investiresti in un'azienda che sfrutta il lavoro minorile se rendesse molto?"
+  },
+  {
+    "id": 50,
+    "text": "Nasconderesti una parte del tuo stipendio al fisco?"
+  },
+  {
+    "id": 51,
+    "text": "Accetteresti di licenziare 100 persone per salvare l'azienda?"
+  },
+  {
+    "id": 52,
+    "text": "Useresti la carta di credito aziendale per spese personali?"
+  },
+  {
+    "id": 53,
+    "text": "Lavoreresti per un'industria delle armi se pagasse il triplo?"
+  },
+  {
+    "id": 54,
+    "text": "Assumeresti un parente incapace invece di un candidato qualificato?"
+  },
+  {
+    "id": 55,
+    "text": "Venderesti dati personali dei clienti per profitto?"
+  },
+  {
+    "id": 56,
+    "text": "Accetteresti un lavoro che richiede di traslocare lontano dalla famiglia?"
+  },
+  {
+    "id": 57,
+    "text": "Apriresti un'attività in concorrenza diretta con il tuo ex-datore di lavoro?"
+  },
+  {
+    "id": 58,
+    "text": "Lavoreresti 80 ore a settimana per 10 anni per diventare milionario?"
+  },
+  {
+    "id": 59,
+    "text": "Investiresti tutti i tuoi risparmi in una startup rischiosa?"
+  },
+  {
+    "id": 60,
+    "text": "Dichiareresti bancarotta per liberarti dei debiti?"
+  },
+  {
+    "id": 61,
+    "text": "Terresti segreto un tradimento che hai commesso?"
+  },
+  {
+    "id": 62,
+    "text": "Leggeresti il diario segreto del tuo partner?"
+  },
+  {
+    "id": 63,
+    "text": "Nasconderesti una malattia grave alla tua famiglia per non preoccuparla?"
+  },
+  {
+    "id": 64,
+    "text": "Mentiresti sulla tua età per sembrare più giovane?"
+  },
+  {
+    "id": 65,
+    "text": "Diresti una bugia pietosa per evitare di ferire qualcuno?"
+  },
+  {
+    "id": 66,
+    "text": "Terresti nascosto un vizio costoso al tuo partner?"
+  },
+  {
+    "id": 67,
+    "text": "Controlleresti il telefono del tuo partner se sospettassi un tradimento?"
+  },
+  {
+    "id": 68,
+    "text": "Mentiresti sui tuoi titoli di studio in un contesto sociale?"
+  },
+  {
+    "id": 69,
+    "text": "Nasconderesti un acquisto costoso al tuo partner?"
+  },
+  {
+    "id": 70,
+    "text": "Fingeresti di non aver letto un messaggio imbarazzante?"
+  },
+  {
+    "id": 71,
+    "text": "Diresti di non essere a casa quando qualcuno bussa per evitarlo?"
+  },
+  {
+    "id": 72,
+    "text": "Mentiresti sul tuo passato romantico a un nuovo partner?"
+  },
+  {
+    "id": 73,
+    "text": "Guarderesti la cronologia del browser di qualcuno di nascosto?"
+  },
+  {
+    "id": 74,
+    "text": "Fingeresti di stare male per evitare un evento sociale noioso?"
+  },
+  {
+    "id": 75,
+    "text": "Terresti segreto un debito importante alla tua famiglia?"
+  },
+  {
+    "id": 76,
+    "text": "Spingeresti una persona davanti a un treno per salvare 5 vite?"
+  },
+  {
+    "id": 77,
+    "text": "Mangeresti carne umana per sopravvivere in una situazione estrema?"
+  },
+  {
+    "id": 78,
+    "text": "Uccideresti qualcuno in legittima difesa?"
+  },
+  {
+    "id": 79,
+    "text": "Abbandoneresti un compagno ferito per salvarti in una situazione di pericolo?"
+  },
+  {
+    "id": 80,
+    "text": "Tortureresti un terrorista per salvare vite innocenti?"
+  },
+  {
+    "id": 81,
+    "text": "Ruberesti medicine per salvare una persona cara?"
+  },
+  {
+    "id": 82,
+    "text": "Accetteresti l'eutanasia per un familiare che soffre terribilmente?"
+  },
+  {
+    "id": 83,
+    "text": "Useresti la violenza per difendere la tua famiglia?"
+  },
+  {
+    "id": 84,
+    "text": "Permetteresti esperimenti su animali per curare malattie umane?"
+  },
+  {
+    "id": 85,
+    "text": "Faresti esplodere una bomba atomica per terminare una guerra?"
+  },
+  {
+    "id": 86,
+    "text": "Sacrificheresti la tua vita per salvare quella di uno sconosciuto?"
+  },
+  {
+    "id": 87,
+    "text": "Abortiresti se scoprissi che il feto ha gravi malformazioni?"
+  },
+  {
+    "id": 88,
+    "text": "Staccheresti le macchine a un familiare in coma irreversibile?"
+  },
+  {
+    "id": 89,
+    "text": "Permetteresti la pena di morte per crimini efferati?"
+  },
+  {
+    "id": 90,
+    "text": "Useresti cellule staminali embrionali per la ricerca medica?"
+  },
+  {
+    "id": 91,
+    "text": "Pagheresti per servizi sessuali se fosse legale?"
+  },
+  {
+    "id": 92,
+    "text": "Useresti droghe ricreative se fossero legalizzate?"
+  },
+  {
+    "id": 93,
+    "text": "Parteciperesti a uno scambio di coppia se il tuo partner fosse d'accordo?"
+  },
+  {
+    "id": 94,
+    "text": "Assumeresti una persona basandoti principalmente sul suo aspetto fisico?"
+  },
+  {
+    "id": 95,
+    "text": "Discrimineresti qualcuno per le sue opinioni politiche estreme?"
+  },
+  {
+    "id": 96,
+    "text": "Faresti un figlio solo per avere un donatore compatibile per un altro figlio malato?"
+  },
+  {
+    "id": 97,
+    "text": "Utilizzeresti la maternità surrogata per avere un figlio?"
+  },
+  {
+    "id": 98,
+    "text": "Modificheresti geneticamente il tuo futuro figlio per migliorarne le caratteristiche?"
+  },
+  {
+    "id": 99,
+    "text": "Fingeresti di essere disabile per avere vantaggi nei parcheggi?"
+  },
+  {
+    "id": 100,
+    "text": "Useresti l'aspetto delle persone come criterio principale per le amicizie?"
+  }
+]

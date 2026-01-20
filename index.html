@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Bais - Il Gioco dei Dilemmi</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Meta tags -->
+    <meta name="description" content="Bais - Il gioco dei dilemmi morali. Indovina come risponderebbero i tuoi amici!">
+    <meta name="theme-color" content="#0f172a">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen active">
+        <div class="container">
+            <img src="image/logo.png" alt="Bais Logo" class="logo">
+            <h1 class="title">Bais</h1>
+            <p class="subtitle">Il gioco dei dilemmi morali</p>
+
+            <!-- Menu Scelta -->
+            <div id="home-menu">
+                <button id="show-create-form-btn" class="btn btn-primary">Crea Stanza</button>
+                <button id="show-join-form-btn" class="btn btn-secondary">Unisciti a Stanza</button>
+            </div>
+
+            <!-- Form Crea Stanza -->
+            <div id="create-form" style="display: none;">
+                <h3>Crea una nuova stanza</h3>
+                <div class="form-group">
+                    <label for="create-player-name">Il tuo nome</label>
+                    <input type="text" id="create-player-name" placeholder="Inserisci il tuo nome" maxlength="20">
+                </div>
+                <button id="create-room-btn" class="btn btn-primary">Crea Stanza</button>
+                <button id="back-from-create-btn" class="btn btn-secondary">Indietro</button>
+            </div>
+
+            <!-- Form Unisciti a Stanza -->
+            <div id="join-form" style="display: none;">
+                <h3>Unisciti a una stanza</h3>
+                <div class="form-group">
+                    <label for="join-player-name">Il tuo nome</label>
+                    <input type="text" id="join-player-name" placeholder="Inserisci il tuo nome" maxlength="20">
+                </div>
+                <div class="form-group">
+                    <label for="room-code">Codice Stanza</label>
+                    <input type="text" id="room-code" placeholder="Codice a 6 caratteri" maxlength="6" style="text-transform: uppercase;">
+                </div>
+                <button id="join-room-btn" class="btn btn-primary">Unisciti</button>
+                <button id="back-from-join-btn" class="btn btn-secondary">Indietro</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lobby Screen -->
+    <div id="lobby-screen" class="screen">
+        <div class="container">
+            <h2>Lobby</h2>
+
+            <div class="room-code-display">
+                <p>Codice Stanza:</p>
+                <div class="code-box">
+                    <span id="lobby-room-code"></span>
+                    <button id="copy-code-btn" class="btn-icon" title="Copia codice">📋</button>
+                </div>
+            </div>
+
+            <div class="players-section">
+                <h3>Giocatori (<span id="player-count">0</span>)</h3>
+                <div id="players-list"></div>
+            </div>
+
+            <div class="lobby-actions">
+                <button id="ready-btn" class="btn btn-primary">Pronto</button>
+                <button id="start-game-btn" class="btn btn-success" style="display: none;">Inizia Partita</button>
+                <button id="leave-lobby-btn" class="btn btn-danger">Esci</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="container">
+            <!-- Header with Room Code and Exit Button -->
+            <div class="game-header">
+                <div class="game-room-code">
+                    <span class="room-code-label">Stanza:</span>
+                    <span id="game-room-code" class="room-code-value"></span>
+                </div>
+                <button id="exit-game-btn" class="btn-exit" title="Esci dalla partita">✕</button>
+            </div>
+
+            <!-- Scoreboard -->
+            <div id="scoreboard" class="scoreboard"></div>
+
+            <!-- Turn Info -->
+            <div id="turn-info" class="turn-info"></div>
+
+            <!-- Active Player View -->
+            <div id="active-player-view" class="game-view" style="display: none;">
+                <h3>È il tuo turno!</h3>
+                <p>Scegli una carta, un giocatore e prevedi la sua risposta</p>
+
+                <div id="player-cards" class="cards-grid"></div>
+
+                <div id="turn-form" style="display: none;">
+                    <div class="selected-dilemma">
+                        <h4>Dilemma selezionato:</h4>
+                        <p id="selected-dilemma-text"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label>👤 Scegli il giocatore che deve rispondere:</label>
+                        <select id="target-player-select"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Come pensi che risponderà?</label>
+                        <div class="answer-buttons">
+                            <button class="btn-answer" data-answer="si">Sì</button>
+                            <button class="btn-answer" data-answer="no">No</button>
+                            <button class="btn-answer" data-answer="dipende">Dipende</button>
+                        </div>
+                    </div>
+
+                    <div class="turn-form-actions">
+                        <button id="submit-guess-btn" class="btn btn-success" disabled>✓ Conferma</button>
+                        <button id="cancel-selection-btn" class="btn btn-danger">✕ Annulla</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Target Player View -->
+            <div id="target-player-view" class="game-view" style="display: none;">
+                <h3>Rispondi al dilemma!</h3>
+
+                <div class="dilemma-card large">
+                    <p id="target-dilemma-text"></p>
+                </div>
+
+                <p class="question-from">Domanda di: <strong id="active-player-name"></strong></p>
+
+                <div class="answer-buttons">
+                    <button class="btn-answer" data-answer="si">Sì</button>
+                    <button class="btn-answer" data-answer="no">No</button>
+                    <button class="btn-answer" data-answer="dipende">Dipende</button>
+                </div>
+            </div>
+
+            <!-- Waiting View -->
+            <div id="waiting-view" class="game-view" style="display: none;">
+                <h3 id="waiting-message">Aspetta il tuo turno...</h3>
+
+                <div class="dilemma-card" id="current-dilemma-display" style="display: none;">
+                    <p id="current-dilemma-text"></p>
+                </div>
+
+                <p id="waiting-info"></p>
+            </div>
+
+            <!-- Result View -->
+            <div id="result-view" class="game-view" style="display: none;">
+                <div id="result-content"></div>
+                <button id="next-turn-btn" class="btn btn-primary">Prossimo Turno</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Screen -->
+    <div id="end-screen" class="screen">
+        <div class="container">
+            <h2>Partita Terminata!</h2>
+
+            <div id="winner-display" class="winner-section"></div>
+
+            <div id="final-scoreboard" class="final-scoreboard"></div>
+
+            <div class="end-actions">
+                <button id="new-game-btn" class="btn btn-primary">Nuova Partita</button>
+                <button id="leave-game-btn" class="btn btn-secondary">Torna alla Home</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="spinner"></div>
+        <p id="loading-text">Caricamento...</p>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-database-compat.js"></script>
+
+    <!-- App Scripts -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
