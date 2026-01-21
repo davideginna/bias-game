@@ -398,5 +398,4606 @@
   {
     "id": 100,
     "text": "Useresti l'aspetto delle persone come criterio principale per le amicizie?"
+  },
+  {
+    "id": 101,
+    "text": "Se potessi sapere la data esatta della tua morte, vorresti saperla?"
+  },
+  {
+    "id": 102,
+    "text": "Rinunceresti a 10 anni della vita per diventare famoso in tutto il mondo?"
+  },
+  {
+    "id": 103,
+    "text": "Vivresti in una simulazione perfetta sapendo che non è reale?"
+  },
+  {
+    "id": 104,
+    "text": "Cancelleresti il tuo ricordo più felice per 100.000€?"
+  },
+  {
+    "id": 105,
+    "text": "Se potessi leggere nel pensiero, useresti questo potere per guadagno personale?"
+  },
+  {
+    "id": 106,
+    "text": "Accetteresti di vivere per sempre se significasse vedere morire tutti i tuoi cari?"
+  },
+  {
+    "id": 107,
+    "text": "Permetteresti al governo di monitorare tutte le tue conversazioni per prevenire il terrorismo?"
+  },
+  {
+    "id": 108,
+    "text": "Useresti un farmaco che ti rende più intelligente ma accorcia la tua vita?"
+  },
+  {
+    "id": 109,
+    "text": "Salveresti il tuo animale domestico o uno sconosciuto da un incendio?"
+  },
+  {
+    "id": 110,
+    "text": "Rivelare un segreto di stato per esporre la corruzione, anche se ciò mettesse a rischio la sicurezza nazionale?"
+  },
+  {
+    "id": 111,
+    "text": "Mangeresti solo cibo sintetico per il resto della tua vita per eliminare la fame nel mondo?"
+  },
+  {
+    "id": 112,
+    "text": "Accetteresti un mondo senza arte e musica se garantisse la pace totale?"
+  },
+  {
+    "id": 113,
+    "text": "Rinunceresti al diritto di voto per un reddito di cittadinanza garantito a vita?"
+  },
+  {
+    "id": 114,
+    "text": "Sceglieresti di far nascere tuo figlio in un mondo sovrappopolato e inquinato?"
+  },
+  {
+    "id": 115,
+    "text": "Uccideresti un animale in via di estinzione per salvare 10 persone?"
+  },
+  {
+    "id": 116,
+    "text": "Accetteresti una società in cui i crimini vengono previsti e puniti prima che accadano?"
+  },
+  {
+    "id": 117,
+    "text": "Distruggeresti un'opera d'arte famosa per nutrire 1.000 persone per un anno?"
+  },
+  {
+    "id": 118,
+    "text": "Se potessi, elimineresti la religione dal mondo per porre fine ai conflitti religiosi?"
+  },
+  {
+    "id": 119,
+    "text": "Proveresti una droga che garantisce felicità eterna ma ti rende dipendente all'istante?"
+  },
+  {
+    "id": 120,
+    "text": "Permetteresti a un'IA di governare il mondo se fosse dimostrato che è più giusta ed efficiente degli umani?"
+  },
+    {
+    "id": 121,
+    "text": "Incontreresti un alieno sapendo che potrebbe portare una malattia mortale per l'umanità?"
+  },
+  {
+    "id": 122,
+    "text": "Rinunceresti a internet per sempre per risolvere il problema del cambiamento climatico?"
+  },
+  {
+    "id": 123,
+    "text": "Cloneresti una persona cara defunta se ne avessi la possibilità?"
+  },
+  {
+    "id": 124,
+    "text": "Accetteresti di non avere mai figli per ridurre l'impatto ambientale?"
+  },
+  {
+    "id": 125,
+    "text": "Cancelleresti un debito studentesco enorme barando a un singolo esame?"
+  },
+  {
+    "id": 126,
+    "text": "Usciresti con qualcuno che ha opinioni politiche diametralmente opposte alle tue?"
+  },
+  {
+    "id": 127,
+    "text": "Faresti una battuta 'politically incorrect' in un gruppo di amici stretti?"
+  },
+  {
+    "id": 128,
+    "text": "Pensi che sia giusto che gli atleti vengano pagati milioni mentre gli insegnanti no?"
+  },
+  {
+    "id": 129,
+    "text": "Daresti la colpa a un collega incompetente per un tuo errore per non essere licenziato?"
+  },
+  {
+    "id": 130,
+    "text": "Rideresti a una barzelletta razzista se la trovi divertente, anche se sei in pubblico?"
+  },
+  {
+    "id": 131,
+    "text": "Pensi che sia giusto vietare certi libri nelle scuole?"
+  },
+  {
+    "id": 132,
+    "text": "Saresti a favore di un test di intelligenza per avere il diritto di voto?"
+  },
+  {
+    "id": 133,
+    "text": "Giudicheresti una persona basandoti sui suoi gusti musicali?"
+  },
+  {
+    "id": 134,
+    "text": "Pensi che le quote di genere/etniche nelle aziende siano una forma di discriminazione al contrario?"
+  },
+  {
+    "id": 135,
+    "text": "Interromperesti un amico che sta facendo un commento offensivo, anche a costo di rovinare l'atmosfera?"
+  },
+  {
+    "id": 136,
+    "text": "Credi che la meritocrazia sia un mito?"
+  },
+  {
+    "id": 137,
+    "text": "Se il tuo partner ingrassasse molto, glielo faresti notare?"
+  },
+  {
+    "id": 138,
+    "text": "È giusto criticare la cultura di un altro paese se la si ritiene inferiore?"
+  },
+  {
+    "id": 139,
+    "text": "Menteresti sulla tua posizione finanziaria per impressionare un potenziale partner?"
+  },
+  {
+    "id": 140,
+    "text": "Compreresti un prodotto da un'azienda nota per le sue posizioni politiche controverse?"
+  },
+  {
+    "id": 141,
+    "text": "Pensi che sia accettabile 'cancellare' una persona famosa per un errore commesso in passato?"
+  },
+  {
+    "id": 142,
+    "text": "Andresti alla festa di un amico anche se sai che ci saranno persone che detesti?"
+  },
+  {
+    "id": 143,
+    "text": "È giusto che i genitori impongano le proprie credenze religiose ai figli?"
+  },
+  {
+    "id": 144,
+    "text": "Saresti amico di qualcuno che ha tradito il proprio partner?"
+  },
+  {
+    "id": 145,
+    "text": "Pensi che l'appropriazione culturale sia sempre sbagliata?"
+  },
+  {
+    "id": 146,
+    "text": "Faresti un complimento sull'aspetto fisico a un collega, rischiando di essere frainteso?"
+  },
+  {
+    "id": 147,
+    "text": "Credi che sia giusto ereditare grandi ricchezze senza averle guadagnate?"
+  },
+  {
+    "id": 148,
+    "text": "Correggeresti un errore di grammatica di uno sconosciuto su internet?"
+  },
+  {
+    "id": 149,
+    "text": "È più importante essere felici o avere successo?"
+  },
+  {
+    "id": 150,
+    "text": "Pensi che sia giusto mentire per proteggere i sentimenti di qualcuno?"
+  },
+  {
+    "id": 151,
+    "text": "Rinunceresti alla carne per salvare il pianeta, anche se la ami?"
+  },
+  {
+    "id": 152,
+    "text": "Se scoprissi che il tuo idolo è una persona orribile, smetteresti di apprezzare la sua arte?"
+  },
+  {
+    "id": 153,
+    "text": "È peggio fallire o non provarci affatto?"
+  },
+  {
+    "id": 154,
+    "text": "Saresti a favore di un governo mondiale unico?"
+  },
+  {
+    "id": 155,
+    "text": "Credi nel destino o nel libero arbitrio?"
+  },
+  {
+    "id": 156,
+    "text": "È giusto che un'azienda raccolga i tuoi dati per offrirti un servizio gratuito?"
+  },
+  {
+    "id": 157,
+    "text": "Preferiresti essere amato o rispettato?"
+  },
+  {
+    "id": 158,
+    "text": "Se potessi, viaggeresti nel futuro o nel passato?"
+  },
+  {
+    "id": 159,
+    "text": "Pensi che l'umanità sia intrinsecamente buona o cattiva?"
+  },
+  {
+    "id": 160,
+    "text": "È più importante la libertà individuale o la sicurezza collettiva?"
+  },
+  {
+    "id": 161,
+    "text": "Se potessi avere un superpotere, quale sceglieresti: invisibilità o volo?"
+  },
+  {
+    "id": 162,
+    "text": "La vendetta può essere mai giustificata?"
+  },
+  {
+    "id": 163,
+    "text": "Se potessi vivere in un libro o in un film, quale sceglieresti?"
+  },
+  {
+    "id": 164,
+    "text": "È meglio avere pochi amici veri o tanti conoscenti?"
+  },
+  {
+    "id": 165,
+    "text": "Pensi che sia possibile una vera amicizia tra uomo e donna?"
+  },
+  {
+    "id": 166,
+    "text": "Sacrificheresti il tuo lavoro per seguire la tua passione, anche con meno soldi?"
+  },
+  {
+    "id": 167,
+    "text": "Se trovassi un portafoglio con documenti e soldi, restituiresti tutto?"
+  },
+  {
+    "id": 168,
+    "text": "Credi nell'esistenza di vita extraterrestre?"
+  },
+  {
+    "id": 169,
+    "text": "Se avessi un solo giorno da vivere, cosa faresti?"
+  },
+  {
+    "id": 170,
+    "text": "È giusto giudicare le generazioni passate con i metri di giudizio di oggi?"
+  },
+  {
+    "id": 171,
+    "text": "Se potessi cambiare una cosa del tuo passato, la cambieresti?"
+  },
+  {
+    "id": 172,
+    "text": "Preferiresti essere povero e felice o ricco e infelice?"
+  },
+  {
+    "id": 173,
+    "text": "Pensi che l'amore possa durare per sempre?"
+  },
+  {
+    "id": 174,
+    "text": "È più importante seguire le regole o seguire la propria coscienza?"
+  },
+  {
+    "id": 175,
+    "text": "Se potessi eliminare una parola dal dizionario, quale sarebbe?"
+  },
+  {
+    "id": 176,
+    "text": "Se scoprissi un modo per viaggiare nel tempo, lo condivideresti con il mondo?"
+  },
+  {
+    "id": 177,
+    "text": "Denunceresti il tuo vicino se scoprissi che non paga le tasse?"
+  },
+  {
+    "id": 178,
+    "text": "Accetteresti 1.000€ per schiaffeggiare uno sconosciuto (con il suo consenso)?"
+  },
+  {
+    "id": 179,
+    "text": "Se potessi, scambieresti la tua intelligenza con una bellezza straordinaria?"
+  },
+  {
+    "id": 180,
+    "text": "Diresti al tuo migliore amico che il suo nuovo partner non ti piace affatto?"
+  },
+  {
+    "id": 181,
+    "text": "Useresti un'app per sapere cosa pensano veramente gli altri di te, anche le cose negative?"
+  },
+  {
+    "id": 182,
+    "text": "Accetteresti di mangiare in un ristorante dove sai che i dipendenti sono sottopagati?"
+  },
+  {
+    "id": 183,
+    "text": "Compreresti un prodotto contraffatto di lusso per apparire più ricco?"
+  },
+  {
+    "id": 184,
+    "text": "Se potessi, renderesti obbligatoria la donazione di organi post-mortem?"
+  },
+  {
+    "id": 185,
+    "text": "Manderesti tuo figlio in una scuola privata molto costosa, sapendo di togliere risorse alle scuole pubbliche?"
+  },
+  {
+    "id": 186,
+    "text": "Faresti un test del DNA per scoprire le tue origini, anche se potesse rivelare segreti di famiglia?"
+  },
+  {
+    "id": 187,
+    "text": "È giusto che le persone molto ricche paghino una percentuale di tasse più alta?"
+  },
+  {
+    "id": 188,
+    "text": "Se il tuo cane mordesse un bambino, saresti onesto sull'accaduto anche se ciò significasse abbatterlo?"
+  },
+  {
+    "id": 189,
+    "text": "Boicotteresti un'azienda per motivi etici, anche se vende un prodotto che ami?"
+  },
+  {
+    "id": 190,
+    "text": "Se potessi vivere in un'epoca passata, quale sceglieresti, sapendo di perdere la tecnologia moderna?"
+  },
+  {
+    "id": 191,
+    "text": "Usciresti con una persona che ha 20 anni più di te?"
+  },
+  {
+    "id": 192,
+    "text": "Pensi che sia giusto usare filtri e fotoritocco pesante sui social media?"
+  },
+  {
+    "id": 193,
+    "to": 193,
+    "text": "Se un genio ti offrisse tre desideri, cosa chiederesti?"
+  },
+  {
+    "id": 194,
+    "text": "È più spaventoso lo spazio profondo o l'oceano profondo?"
+  },
+  {
+    "id": 195,
+    "text": "Se potessi avere una conversazione di 30 minuti con chiunque (vivo o morto), chi sceglieresti?"
+  },
+  {
+    "id": 196,
+    "text": "Cosa faresti se vincessi 100 milioni di euro alla lotteria?"
+  },
+  {
+    "id": 197,
+    "text": "Se dovessi mangiare un solo cibo per il resto della tua vita, quale sarebbe?"
+  },
+  {
+    "id": 198,
+    "text": "Credi nei fantasmi o nel paranormale?"
+  },
+  {
+    "id": 199,
+    "text": "Qual è la tua più grande paura irrazionale?"
+  },
+  {
+    "id": 200,
+    "text": "Se potessi imparare istantaneamente una qualsiasi abilità, quale sarebbe?"
+  },
+  {
+    "id": 201,
+    "text": "Ti faresti impiantare un chip nel cervello per aumentare le tue capacità mentali?"
+  },
+  {
+    "id": 202,
+    "text": "Accetteresti di non viaggiare mai più fuori dal tuo paese in cambio della pace nel mondo?"
+  },
+  {
+    "id": 203,
+    "text": "Se potessi, resetteresti la tua vita e ricominceresti da capo, perdendo tutti i tuoi ricordi?"
+  },
+  {
+    "id": 204,
+    "text": "È giusto che l'intelligenza artificiale possa creare arte e vincere concorsi contro artisti umani?"
+  },
+  {
+    "id": 205,
+    "text": "Se scoprissi che un tuo antenato era un criminale famoso, lo riveleresti alla tua famiglia?"
+  },
+  {
+    "id": 206,
+    "text": "Pensi che sia etico 'resuscitare' specie estinte come i mammut?"
+  },
+  {
+    "id": 207,
+    "text": "Se un amico ti confessa di aver commesso un piccolo furto, lo denunceresti?"
+  },
+  {
+    "id": 208,
+    "text": "È giusto che i social media censurino contenuti considerati 'disinformazione'?"
+  },
+  {
+    "id": 209,
+    "text": "Se trovassi un bug in un bancomat che ti permette di prelevare soldi illimitati, lo sfrutteresti?"
+  },
+  {
+    "id": 210,
+    "text": "Sposteresti la data del tuo compleanno se potessi?"
+  },
+  {
+    "id": 211,
+    "text": "Se potessi scegliere il sesso di tuo figlio, lo faresti?"
+  },
+  {
+    "id": 212,
+    "text": "Rinunceresti al tuo smartphone per un anno in cambio di una vacanza da sogno?"
+  },
+  {
+    "id": 213,
+    "text": "Se potessi parlare con gli animali, cosa chiederesti al tuo animale domestico?"
+  },
+  {
+    "id": 214,
+    "text": "È giusto tenere gli animali negli zoo per scopi di conservazione ed educazione?"
+  },
+  {
+    "id": 215,
+    "text": "Se potessi, elimineresti la capacità umana di mentire?"
+  },
+  {
+    "id": 216,
+    "text": "Preferiresti avere più tempo o più soldi?"
+  },
+  {
+    "id": 217,
+    "text": "Se potessi, andresti a vivere su Marte, sapendo di non poter più tornare sulla Terra?"
+  },
+  {
+    "id": 218,
+    "text": "Pensi che sia giusto che gli influencer guadagnino cifre enormi promuovendo prodotti?"
+  },
+  {
+    "id": 219,
+    "text": "Se potessi, legalizzeresti tutte le droghe?"
+  },
+  {
+    "id": 220,
+    "text": "Accetteresti un lavoro che ti paga per non fare nulla, sapendo che i soldi vengono da attività illecite?"
+  },
+  {
+    "id": 221,
+    "text": "È più importante la privacy o la comodità?"
+  },
+  {
+    "id": 222,
+    "text": "Se scoprissi che la tua vita è un reality show, continueresti a recitare la tua parte?"
+  },
+  {
+    "id": 223,
+    "text": "Pensi che sia etico mangiare polpi, data la loro elevata intelligenza?"
+  },
+  {
+    "id": 224,
+    "text": "Se potessi avere la risposta a una qualsiasi domanda, quale domanda faresti?"
+  },
+  {
+    "id": 225,
+    "text": "Saresti disposto a sottoporti a un esperimento medico rischioso per una grossa somma di denaro?"
+  },
+  {
+    "id": 226,
+    "text": "È giusto che i robot sostituiscano i lavori umani, anche se ciò porta a disoccupazione di massa?"
+  },
+  {
+    "id": 227,
+    "text": "Se potessi, aboliresti i compiti a casa per gli studenti?"
+  },
+  {
+    "id": 228,
+    "text": "Diresti a un bambino piccolo che Babbo Natale non esiste se te lo chiedesse direttamente?"
+  },
+  {
+    "id": 229,
+    "text": "Se potessi, renderesti l'istruzione universitaria gratuita per tutti?"
+  },
+  {
+    "id": 230,
+    "text": "Preferiresti perdere l'olfatto o il gusto?"
+  },
+  {
+    "id": 231,
+    "text": "È giusto che un atleta transgenere competa nelle categorie femminili?"
+  },
+  {
+    "id": 232,
+    "text": "Saresti a favore dell'abolizione del contante per tracciare tutte le transazioni?"
+  },
+  {
+    "id": 233,
+    "text": "Se potessi, implementeresti un sistema di 'credito sociale' come in alcuni paesi?"
+  },
+  {
+    "id": 234,
+    "text": "Pensi che sia giusto che i genitori usino i propri figli per creare contenuti sui social media?"
+  },
+  {
+    "id": 235,
+    "text": "Se scoprissi che il tuo partner ha un account OnlyFans segreto, come reagiresti?"
+  },
+  {
+    "id": 236,
+    "text": "È giusto che un'azienda farmaceutica metta un prezzo altissimo su un farmaco salvavita?"
+  },
+  {
+    "id": 237,
+    "text": "Se potessi, renderesti obbligatorio il vaccino per tutti in caso di pandemia?"
+  },
+  {
+    "id": 238,
+    "text": "Pensi che sia giusto che gli algoritmi decidano quali notizie vediamo online?"
+  },
+  {
+    "id": 239,
+    "text": "Se avessi il potere di rendere tutti vegani, lo faresti per il bene del pianeta?"
+  },
+  {
+    "id": 240,
+    "text": "È giusto che un artista usi l'IA per creare musica o arte senza menzionarlo?"
+  },
+  {
+    "id": 241,
+    "text": "Se potessi, cancelleresti tutti i tuoi debiti ma anche tutti i tuoi risparmi?"
+  },
+  {
+    "id": 242,
+    "text": "Pensi che sia giusto che le celebrità abbiano più influenza dell'opinione pubblica rispetto agli scienziati?"
+  },
+  {
+    "id": 243,
+    "text": "Se potessi, faresti in modo che le persone non possano più provare invidia?"
+  },
+  {
+    "id": 244,
+    "text": "È giusto usare un linguaggio 'neutro' per non offendere nessuno, anche se suona innaturale?"
+  },
+  {
+    "id": 245,
+    "text": "Se potessi, elimineresti la monarchia in tutti i paesi in cui esiste ancora?"
+  },
+  {
+    "id": 246,
+    "text": "Pensi che la caccia sportiva possa mai essere giustificata?"
+  },
+  {
+    "id": 247,
+    "text": "Se potessi, renderesti tutte le spiagge del mondo nudiste?"
+  },
+  {
+    "id": 248,
+    "text": "È giusto che un videogioco includa loot box (casse premio) che incoraggiano il gioco d'azzardo?"
+  },
+  {
+    "id": 249,
+    "text": "Se potessi, faresti in modo che tutti parlino la stessa lingua?"
+  },
+  {
+    "id": 250,
+    "text": "Pensi che sia giusto che un genitore legga i messaggi privati del proprio figlio adolescente?"
+  },
+  {
+    "id": 251,
+    "text": "Andresti in vacanza in un paese con un regime dittatoriale e gravi violazioni dei diritti umani?"
+  },
+  {
+    "id": 252,
+    "text": "Saresti a favore di una settimana lavorativa di 4 giorni a parità di stipendio?"
+  },
+  {
+    "id": 253,
+    "text": "È giusto 'rovinare' il finale di un film o di una serie TV a qualcuno che non l'ha ancora visto?"
+  },
+  {
+    "id": 254,
+    "text": "Pagheresti un extra per un prodotto 'sostenibile', anche se non sei sicuro che lo sia davvero?"
+  },
+  {
+    "id": 255,
+    "text": "Se scoprissi che il tuo cibo preferito ha un impatto ambientale devastante, smetteresti di mangiarlo?"
+  },
+  {
+    "id": 256,
+    "text": "È giusto che un'azienda ti profili per mostrarti pubblicità mirata?"
+  },
+  {
+    "id": 257,
+    "text": "Pensi che sia giusto che esistano paradisi fiscali?"
+  },
+  {
+    "id": 258,
+    "text": "Se potessi, vieteresti il fumo in tutti i luoghi pubblici all'aperto?"
+  },
+  {
+    "id": 259,
+    "text": "È giusto che un comico faccia battute su argomenti sensibili come malattie o disabilità?"
+  },
+  {
+    "id": 260,
+    "text": "Saresti a favore del suffragio universale per gli animali, se potessero esprimere un voto?"
+  },
+  {
+    "id": 261,
+    "text": "Se potessi, renderesti l'alcol illegale?"
+  },
+  {
+    "id": 262,
+    "text": "È giusto che un'azienda ti obblighi a tornare in ufficio dopo anni di smart working?"
+  },
+  {
+    "id": 263,
+    "text": "Pensi che sia giusto che un personaggio storico venga interpretato da un attore di etnia diversa?"
+  },
+  {
+    "id": 264,
+    "text": "Se potessi, elimineresti la possibilità di avere animali domestici esotici?"
+  },
+  {
+    "id": 265,
+    "text": "È giusto che i servizi di streaming aumentino i prezzi e limitino la condivisione degli account?"
+  },
+  {
+    "id": 266,
+    "text": "Saresti a favore di un esame di 'idoneità genitoriale' prima di poter avere figli?"
+  },
+  {
+    "id": 267,
+    "text": "Pensi che sia giusto che le auto a guida autonoma possano decidere chi sacrificare in un incidente inevitabile?"
+  },
+  {
+    "id": 268,
+    "text": "Se potessi, renderesti la pornografia illegale?"
+  },
+  {
+    "id": 269,
+    "text": "È giusto che un paese ricco accolga rifugiati da paesi poveri o in guerra?"
+  },
+  {
+    "id": 270,
+    "text": "Pensi che l'oroscopo e l'astrologia abbiano una qualche validità?"
+  },
+  {
+    "id": 271,
+    "text": "Se potessi, vieteresti i jet privati per ridurre l'inquinamento?"
+  },
+  {
+    "id": 272,
+    "text": "È giusto che un'app di dating usi un algoritmo per mostrarti solo persone 'compatibili'?"
+  },
+  {
+    "id": 273,
+    "text": "Saresti a favore di un reddito di base universale finanziato con tasse più alte per tutti?"
+  },
+  {
+    "id": 274,
+    "text": "Pensi che sia giusto che i musei occidentali restituiscano le opere d'arte ai loro paesi d'origine?"
+  },
+  {
+    "id": 275,
+    "text": "Se potessi, faresti in modo che nessuno possa diventare miliardario?"
+  },
+  {
+    "id": 276,
+    "text": "È giusto che un'azienda usi tattiche di 'obsolescenza programmata' per farti comprare nuovi prodotti?"
+  },
+  {
+    "id": 277,
+    "text": "Saresti a favore della liberalizzazione delle armi per autodifesa?"
+  },
+  {
+    "id": 278,
+    "text": "Pensi che sia giusto che i tuoi dati sanitari vengano usati per la ricerca scientifica senza il tuo consenso esplicito?"
+  },
+  {
+    "id": 279,
+    "text": "Se potessi, vieteresti la produzione e il consumo di fast fashion?"
+  },
+  {
+    "id": 280,
+    "text": "È giusto che i servizi segreti possano spiare i cittadini per prevenire minacce?"
+  },
+  {
+    "id": 281,
+    "text": "Saresti a favore di tasse più alte sui cibi spazzatura e le bevande zuccherate?"
+  },
+  {
+    "id": 282,
+    "text": "Pensi che sia giusto che un'azienda possa licenziare un dipendente per un post controverso sui social media?"
+  },
+  {
+    "id": 283,
+    "text": "Se potessi, renderesti l'orario di lavoro flessibile per tutti?"
+  },
+  {
+    "id": 284,
+    "text": "È giusto che le piattaforme di social media decidano quali account sospendere o bannare?"
+  },
+  {
+    "id": 285,
+    "text": "Saresti a favore di limiti di velocità più bassi in autostrada per ridurre le emissioni?"
+  },
+  {
+    "id": 286,
+    "text": "Pensi che sia giusto che un criminale possa trarre profitto dalla sua storia scrivendo un libro?"
+  },
+  {
+    "id": 287,
+    "text": "Se potessi, introdurresti una 'tassa sulla solitudine' per incoraggiare le relazioni sociali?"
+  },
+  {
+    "id": 288,
+    "text": "È giusto che un politico possa mentire durante una campagna elettorale senza conseguenze legali?"
+  },
+  {
+    "id": 289,
+    "text": "Saresti a favore di rendere i trasporti pubblici completamente gratuiti?"
+  },
+  {
+    "id": 290,
+    "text": "Pensi che sia giusto che un'IA possa avere diritti legali, simili a quelli di una persona?"
+  },
+  {
+    "id": 291,
+    "text": "Se potessi, daresti il diritto di voto ai sedicenni?"
+  },
+  {
+    "id": 292,
+    "text": "È giusto che un'azienda possa rifiutarsi di assumere fumatori?"
+  },
+  {
+    "id": 293,
+    "text": "Saresti a favore di una tassa globale sulle grandi aziende tecnologiche?"
+  },
+  {
+    "id": 294,
+    "text": "Pensi che sia giusto che un'opera protetta da copyright diventi di dominio pubblico dopo un certo numero di anni?"
+  },
+  {
+    "id": 295,
+    "text": "Se potessi, vieteresti la pubblicità rivolta ai bambini?"
+  },
+  {
+    "id": 296,
+    "text": "È giusto che le scuole insegnino educazione sessuale anche contro il volere di alcuni genitori?"
+  },
+  {
+    "id": 297,
+    "text": "Saresti a favore dell'abolizione dei brevetti sui farmaci?"
+  },
+  {
+    "id": 298,
+    "text": "Pensi che sia giusto che un governo possa limitare il numero di figli che una coppia può avere?"
+  },
+  {
+    "id": 299,
+    "text": "Se potessi, renderesti obbligatoria la psicoterapia per tutti almeno una volta all'anno?"
+  },
+  {
+    "id": 300,
+    "text": "È giusto che un'azienda possa vendere un prodotto che crea dipendenza (es. social media, videogiochi)?"
+  },
+  {
+    "id": 301,
+    "text": "Finanzieresti con i tuoi soldi l'aborto di un'amica che non può permetterselo, anche se sei contrario all'aborto?"
+  },
+  {
+    "id": 302,
+    "text": "Obbligheresti il padre biologico a contribuire finanziariamente a un aborto che non vuole?"
+  },
+  {
+    "id": 303,
+    "text": "Sosterresti l'aborto selettivo basato sul sesso del feto?"
+  },
+  {
+    "id": 304,
+    "text": "Se scoprissi che il tuo partner ti ha mentito su un aborto avuto in passato, lo considereresti un tradimento della fiducia?"
+  },
+  {
+    "id": 305,
+    "text": "Saresti a favore di un limite temporale massimo per l'aborto, anche in caso di gravi malformazioni del feto scoperte tardivamente?"
+  },
+  {
+    "id": 306,
+    "text": "Pensi che un medico debba avere il diritto di rifiutarsi di praticare un aborto per obiezione di coscienza?"
+  },
+  {
+    "id": 307,
+    "text": "Informeresti i genitori di una minorenne che vuole abortire, anche contro la sua volontà?"
+  },
+  {
+    "id": 308,
+    "text": "Avresti una relazione puramente sessuale con il/la tuo/a migliore amico/a?"
+  },
+  {
+    "id": 309,
+    "text": "Pensi che sia giusto avere dei 'segreti sessuali' con il proprio partner (es. fantasie inconfessate)?"
+  },
+  {
+    "id": 310,
+    "text": "Se il tuo partner volesse introdurre un 'terzo' nella vostra vita sessuale, accetteresti per paura di perderlo/a?"
+  },
+  {
+    "id": 311,
+    "text": "Giudicheresti un amico/a per avere un numero molto alto di partner sessuali?"
+  },
+  {
+    "id": 312,
+    "text": "Pagheresti per un corso su come migliorare le tue performance sessuali?"
+  },
+  {
+    "id": 313,
+    "text": "È giusto che le app di incontri promuovano una cultura del sesso occasionale?"
+  },
+  {
+    "id": 314,
+    "text": "Confesseresti al tuo partner di averlo/a tradito/a in un sogno?"
+  },
+  {
+    "id": 315,
+    "text": "Diresti a un amico/a che dovrebbe perdere peso per la sua salute, rischiando di ferirlo/a?"
+  },
+  {
+    "id": 316,
+    "text": "Incoraggeresti il tuo partner a fare un intervento di chirurgia estetica se fosse un suo grande desiderio, anche se a te non sembra necessario?"
+  },
+  {
+    "id": 317,
+    "text": "Smetteresti di seguire un influencer che promuove standard di bellezza irrealistici, anche se ti piacciono i suoi contenuti?"
+  },
+  {
+    "id": 318,
+    "text": "Faresti notare a qualcuno che ha un pezzo di cibo tra i denti, rischiando di metterlo in imbarazzo?"
+  },
+  {
+    "id": 319,
+    "text": "Se il tuo partner ti chiedesse 'questo vestito mi ingrassa?', diresti la verità anche se la risposta è 'sì'?"
+  },
+  {
+    "id": 320,
+    "text": "Pensi che sia giusto commentare il corpo di una persona famosa sui social media?"
+  },
+  {
+    "id": 321,
+    "text": "Ti sentiresti a disagio a spogliarti in uno spogliatoio pubblico?"
+  },
+  {
+    "id": 322,
+    "text": "Se fossi testimone di un furto di poco valore commesso da una persona visibilmente povera, la denunceresti?"
+  },
+  {
+    "id": 323,
+    "text": "Aiuteresti un amico a nascondere le prove di un crimine non violento (es. frode fiscale)?"
+  },
+  {
+    "id": 324,
+    "text": "Se sapessi con certezza che un tuo vicino spaccia droga, chiameresti la polizia?"
+  },
+  {
+    "id": 325,
+    "text": "Saresti a favore della castrazione chimica per i rei confessi di reati sessuali?"
+  },
+  {
+    "id": 326,
+    "text": "Se un tuo familiare venisse condannato ingiustamente, lo aiuteresti a evadere di prigione?"
+  },
+  {
+    "id": 327,
+    "text": "Pensi che sia giusto che gli ex-detenuti abbiano difficoltà a trovare lavoro dopo aver scontato la loro pena?"
+  },
+  {
+    "id": 328,
+    "text": "Se potessi commettere un qualsiasi crimine senza essere scoperto, quale sarebbe?"
+  },
+  {
+    "id": 329,
+    "text": "Rideresti a una barzelletta su una tragedia recente se la trovassi genuinamente divertente?"
+  },
+  {
+    "id": 330,
+    "text": "Faresti una battuta macabra a un funerale per alleggerire la tensione?"
+  },
+  {
+    "id": 331,
+    "text": "Pensi che ci siano argomenti su cui non si dovrebbe mai scherzare?"
+  },
+  {
+    "id": 332,
+    "text": "Useresti l'umorismo nero per affrontare un momento difficile della tua vita?"
+  },
+  {
+    "id": 333,
+    "text": "Se un tuo amico facesse una battuta molto offensiva ma divertente, rideresti o lo rimprovereresti?"
+  },
+  {
+    "id": 334,
+    "text": "Pensi che il 'politically correct' stia uccidendo la comicità?"
+  },
+  {
+    "id": 335,
+    "text": "Racconteresti una barzelletta su un disastro aereo a un amico che ha paura di volare?"
+  },
+  {
+    "id": 336,
+    "text": "Trovi divertenti i meme su eventi storici tragici?"
+  },
+  {
+    "id": 337,
+    "text": "È giusto scherzare sulla morte?"
+  },
+  {
+    "id": 338,
+    "text": "Faresti uno scherzo di cattivo gusto a un amico per il suo compleanno?"
+  },
+  {
+    "id": 339,
+    "text": "Compreresti consapevolmente prodotti da un'azienda con un pessimo impatto ambientale se fossero significativamente più economici?"
+  },
+  {
+    "id": 340,
+    "text": "Saresti disposto a pagare una 'tassa sulla carne' per scoraggiarne il consumo e ridurre le emissioni?"
+  },
+  {
+    "id": 341,
+    "text": "Se avessi un giardino, lo trasformeresti in un orto per l'autosufficienza anche se richiede molto lavoro?"
+  },
+  {
+    "id": 342,
+    "text": "Getteresti un prodotto ancora buono ma scaduto secondo l'etichetta, o lo mangeresti?"
+  },
+  {
+    "id": 343,
+    "text": "Per ridurre i rifiuti, saresti disposto a usare solo pannolini lavabili per i tuoi figli?"
+  },
+  {
+    "id": 344,
+    "text": "Denunceresti un vicino che vedi gettare rifiuti in modo scorretto?"
+  },
+  {
+    "id": 345,
+    "text": "Acquisteresti un'auto elettrica anche se il costo iniziale è molto più alto di un'auto a benzina?"
+  },
+  {
+    "id": 346,
+    "text": "Saresti a favore del razionamento dell'acqua nei periodi di siccità, anche per uso personale?"
+  },
+  {
+    "id": 347,
+    "text": "Mangeresti carne coltivata in laboratorio se fosse identica a quella reale?"
+  },
+  {
+    "id": 348,
+    "text": "Smetteresti di mangiare pesce per combattere la pesca intensiva e l'inquinamento degli oceani?"
+  },
+  {
+    "id": 349,
+    "text": "Diventeresti vegano per un anno in cambio di 10.000€?"
+  },
+  {
+    "id": 350,
+    "text": "Useresti un jet privato per una vacanza da sogno, pur sapendo il suo enorme impatto ambientale?"
+  },
+  {
+    "id": 351,
+    "text": "Sosterresti la costruzione di una centrale nucleare vicino a casa tua se garantisse energia pulita e a basso costo?"
+  },
+  {
+    "id": 352,
+    "text": "Faresti la raccolta differenziata anche in vacanza, dove è scomodo o non obbligatorio?"
+  },
+  {
+    "id": 353,
+    "text": "Compreresti frutta e verdura 'brutte' ma buone per evitare sprechi alimentari?"
+  },
+  {
+    "id": 354,
+    "text": "Rinunceresti ai viaggi aerei per ridurre la tua impronta di carbonio?"
+  },
+  {
+    "id": 355,
+    "text": "Mangeresti insetti come fonte di proteine sostenibile?"
+  },
+  {
+    "id": 356,
+    "text": "Sosterresti una legge che vieta la plastica monouso, anche se renderebbe la vita quotidiana più complicata?"
+  },
+  {
+    "id": 357,
+    "text": "Pianteresti un albero per ogni errore significativo che commetti?"
+  },
+  {
+    "id": 358,
+    "text": "Parteciperesti a una protesta ambientalista che blocca il traffico, causando disagi ad altre persone?"
+  },
+  {
+    "id": 359,
+    "text": "Installeresti un'app di controllo parentale sul telefono di tuo figlio adolescente per monitorare le sue attività?"
+  },
+  {
+    "id": 360,
+    "text": "Se tuo figlio adolescente ti confessasse di fare uso di droghe leggere, lo denunceresti o cercheresti di aiutarlo in privato?"
+  },
+  {
+    "id": 361,
+    "text": "Permetteresti a tuo figlio di 16 anni di andare a una festa dove sai che ci sarà alcol non supervisionato?"
+  },
+  {
+    "id": 362,
+    "text": "Se scoprissi che tuo figlio è un bullo a scuola, come lo puniresti?"
+  },
+  {
+    "id": 363,
+    "text": "Sosterresti la decisione di tua figlia di 17 anni di aprire un account OnlyFans?"
+  },
+  {
+    "id": 364,
+    "text": "Se tuo figlio non credesse più in Babbo Natale, continueresti a farglielo credere per il bene del fratellino più piccolo?"
+  },
+  {
+    "id": 365,
+    "text": "Lasceresti che tuo figlio di 14 anni si faccia un tatuaggio se fosse legale con il tuo consenso?"
+  },
+  {
+    "id": 366,
+    "text": "Se tuo figlio avesse un brutto voto a scuola, lo metteresti in punizione togliendogli lo smartphone?"
+  },
+  {
+    "id": 367,
+    "text": "A una recita scolastica, se un altro bambino rovinasse l'esibizione di tuo figlio, ti lamenteresti con i genitori?"
+  },
+  {
+    "id": 368,
+    "text": "Se tuo figlio adolescente avesse una cotta per un suo insegnante, interverresti?"
+  },
+  {
+    "id": 369,
+    "text": "Saresti amico/a su Facebook o Instagram dei tuoi figli?"
+  },
+  {
+    "id": 370,
+    "text": "Se tuo figlio ti chiedesse di comprargli un videogioco violento (18+), glielo compreresti?"
+  },
+  {
+    "id": 371,
+    "text": "È giusto che un genitore scelga la futura carriera del proprio figlio?"
+  },
+  {
+    "id": 372,
+    "text": "Se scoprissi che tuo figlio copia agli esami, lo copriresti o lo faresti confessare?"
+  },
+  {
+    "id": 373,
+    "text": "Se tuo figlio adolescente volesse abbandonare la scuola per seguire un sogno (es. musicista), lo appoggeresti?"
+  },
+  {
+    "id": 374,
+    "text": "Permetteresti a tua figlia di 15 anni di uscire con un ragazzo di 19?"
+  },
+  {
+    "id": 375,
+    "text": "È giusto dare una 'paghetta' ai figli in cambio di buoni voti?"
+  },
+  {
+    "id": 376,
+    "text": "Se tuo figlio ti rivelasse di essere gay, la tua reazione cambierebbe se avessi sempre sognato di avere nipoti biologici?"
+  },
+  {
+    "id": 377,
+    "text": "Se scoprissi che tuo figlio adolescente ha rubato qualcosa da un negozio, lo obbligheresti a restituirlo e scusarsi?"
+  },
+  {
+    "id": 378,
+    "text": "Insegneresti a tuo figlio a difendersi fisicamente, anche se la scuola promuove una politica di 'non violenza'?"
+  },
+  {
+    "id": 379,
+    "text": "Se tuo figlio non fosse bravo negli sport, lo spingeresti comunque a praticarne uno per socializzare?"
+  },
+  {
+    "id": 380,
+    "text": "Pagheresti qualcuno per fare i compiti a tuo figlio se fosse sempre in difficoltà?"
+  },
+  {
+    "id": 381,
+    "text": "Se tuo figlio adolescente fosse innamorato del/la suo/a migliore amico/a, che è già impegnato/a, gli consiglieresti di dichiararsi?"
+  },
+  {
+    "id": 382,
+    "text": "A che età pensi sia giusto dare uno smartphone a un bambino?"
+  },
+  {
+    "id": 383,
+    "text": "Se tuo figlio rompesse accidentalmente un oggetto costoso in un negozio, ti offre-resti di pagarlo?"
+  },
+  {
+    "id": 384,
+    "text": "Se tuo figlio ti dicesse che vuole cambiare sesso, quale sarebbe la tua prima reazione?"
+  },
+  {
+    "id": 385,
+    "text": "È giusto mentire a un bambino per proteggerlo da una verità dolorosa (es. una malattia grave di un parente)?"
+  },
+  {
+    "id": 386,
+    "text": "Se tuo figlio ti confessasse di aver perso la verginità, faresti finta di nulla o ne parleresti apertamente?"
+  },
+  {
+    "id": 387,
+    "text": "Sceglieresti una scuola per tuo figlio basandoti sulla sua eccellenza accademica o sul suo ambiente sociale?"
+  },
+  {
+    "id": 388,
+    "text": "Se tuo figlio avesse un amico/a 'cattiva influenza', cercheresti di allontanarli?"
+  },
+  {
+    "id": 389,
+    "text": "Lasceresti tuo figlio adolescente a casa da solo per un intero weekend?"
+  },
+  {
+    "id": 390,
+    "text": "Se tuo figlio fosse vittima di cyberbullismo, contatteresti la scuola, la polizia o i genitori del bullo?"
+  },
+  {
+    "id": 391,
+    "text": "Faresti provare un sorso di birra a tuo figlio minorenne in un contesto familiare?"
+  },
+  {
+    "id": 392,
+    "text": "Se tuo figlio volesse seguire una dieta vegana, lo supporteresti o saresti preoccupato per la sua salute?"
+  },
+  {
+    "id": 393,
+    "text": "È giusto iscrivere un bambino a un concorso di bellezza?"
+  },
+  {
+    "id": 394,
+    "text": "Se tuo figlio avesse un talento eccezionale (es. scacchi, musica), sacrificheresti la sua infanzia per coltivarlo?"
+  },
+  {
+    "id": 395,
+    "text": "Insegneresti ai tuoi figli che a volte dire una bugia bianca è accettabile?"
+  },
+  {
+    "id": 396,
+    "text": "Se tuo figlio adolescente ti chiedesse la pillola del giorno dopo, gliela procureresti senza fare domande?"
+  },
+  {
+    "id": 397,
+    "text": "Se scoprissi il diario segreto di tuo figlio, lo leggeresti per assicurarti che stia bene?"
+  },
+  {
+    "id": 398,
+    "text": "Se tuo figlio ti chiedesse perché hai divorziato, gli racconteresti tutta la verità, anche i dettagli più dolorosi?"
+  },
+  {
+    "id": 399,
+    "text": "Se scoprissi che due tuoi cugini di primo grado consenzienti hanno una relazione segreta, li affronteresti o manterresti il segreto?"
+  },
+  {
+    "id": 400,
+    "text": "Se provassi un'attrazione sessuale per un parente acquisito (es. cognato/a), taglieresti ogni rapporto per evitare complicazioni?"
+  },
+  {
+    "id": 401,
+    "text": "Saresti a favore della legalizzazione del matrimonio tra cugini di primo grado?"
+  },
+  {
+    "id": 402,
+    "text": "Se un amico ti confessasse di avere fantasie incestuose, cambieresti il modo in cui lo vedi?"
+  },
+  {
+    "id": 403,
+    "text": "Guarderesti un film o una serie TV che esplora temi di incesto in modo non critico?"
+  },
+  {
+    "id": 404,
+    "text": "Se scoprissi che i tuoi genitori sono in realtà parenti stretti, vorresti saperlo?"
+  },
+  {
+    "id": 405,
+    "text": "Se avessi la possibilità di iniziare una relazione con un clone di te stesso/a del sesso opposto, lo faresti?"
+  },
+  {
+    "id": 406,
+    "text": "È moralmente accettabile scrivere o leggere storie di fantasia su argomenti tabù come l'incesto?"
+  },
+  {
+    "id": 407,
+    "text": "Se il tuo partner ti rivelasse di aver avuto una relazione incestuosa in passato, riusciresti a superarlo?"
+  },
+  {
+    "id": 408,
+    "text": "Se una coppia di fratelli adulti e consenzienti decidesse di vivere come partner romantici senza avere figli, la società dovrebbe intervenire?"
+  },
+  {
+    "id": 409,
+    "text": "Saresti a favore dell'aborto obbligatorio in un ipotetico scenario di sovrappopolazione estrema?"
+  },
+  {
+    "id": 410,
+    "text": "Se la tua partner volesse abortire ma tu volessi tenere il bambino, saresti disposto a crescerlo da solo?"
+  },
+  {
+    "id": 411,
+    "text": "Se potessi, sceglieresti di non sapere il sesso del feto per evitare qualsiasi bias inconscio?"
+  },
+  {
+    "id": 412,
+    "text": "Pensi che un uomo dovrebbe avere voce in capitolo nella decisione di una donna di abortire?"
+  },
+  {
+    "id": 413,
+    "text": "Sosterresti una politica che offre incentivi economici alle donne per non abortire?"
+  },
+  {
+    "id": 414,
+    "text": "Se una persona a te cara volesse fare un intervento estetico che ritieni eccessivo e pericoloso, cercheresti di fermarla?"
+  },
+  {
+    "id": 415,
+    "text": "Ti tatueresti il nome del tuo partner?"
+  },
+  {
+    "id": 416,
+    "text": "Se potessi modificare permanentemente una parte del tuo corpo senza chirurgia, cosa cambieresti?"
+  },
+  {
+    "id": 417,
+    "text": "Ti sentiresti a disagio a fare il bagno nudo in una spiaggia per nudisti?"
+  },
+  {
+    "id": 418,
+    "text": "È giusto che la pubblicità usi modelli/e con corpi 'perfetti' per vendere prodotti?"
+  },
+  {
+    "id": 419,
+    "text": "Adotteresti un cane anziano e con problemi di salute, sapendo che le spese veterinarie saranno alte e il tempo insieme breve?"
+  },
+  {
+    "id": 420,
+    "text": "Se vedessi qualcuno maltrattare il proprio cane per strada, interverresti rischiando una lite?"
+  },
+  {
+    "id": 421,
+    "text": "Saresti disposto a investire un animale selvatico (es. un cervo) per evitare un incidente potenzialmente mortale per te?"
+  },
+  {
+    "id": 422,
+    "text": "Compreresti un animale di razza da un allevatore o adotteresti solo da un rifugio?"
+  },
+  {
+    "id": 423,
+    "text": "Lasceresti che il tuo cane dorma nel letto con te?"
+  },
+  {
+    "id": 424,
+    "text": "Saresti a favore del divieto totale degli zoo e dei parchi acquatici?"
+  },
+  {
+    "id": 425,
+    "text": "Se il tuo animale domestico fosse gravemente malato e sofferente, saresti in grado di decidere per l'eutanasia?"
+  },
+  {
+    "id": 426,
+    "text": "Pensi che sia giusto vestire gli animali con cappottini e scarpette?"
+  },
+  {
+    "id": 427,
+    "text": "Se un animale protetto (es. un lupo) uccidesse il tuo animale domestico, chiederesti il suo abbattimento?"
+  },
+  {
+    "id": 428,
+    "text": "È giusto sterilizzare cani e gatti per controllarne la popolazione?"
+  },
+  {
+    "id": 429,
+    "text": "Se il tuo vicino si lamentasse continuamente dell'abbaiare del tuo cane, saresti disposto a darlo via?"
+  },
+  {
+    "id": 430,
+    "text": "Porteresti il tuo cane in un ristorante che accetta animali, anche se potrebbe disturbare altri clienti?"
+  },
+  {
+    "id": 431,
+    "text": "Se potessi salvare un solo tipo di animale dall'estinzione, quale salveresti?"
+  },
+  {
+    "id": 432,
+    "text": "Pensi che gli animali abbiano una forma di coscienza o anima?"
+  },
+  {
+    "id": 433,
+    "text": "Se il tuo partner fosse allergico al tuo amato animale domestico, chi sceglierei?"
+  },
+  {
+    "id": 434,
+    "text": "Voteresti per un politico estremamente competente ma apertamente corrotto?"
+  },
+  {
+    "id": 435,
+    "text": "Saresti a favore di un limite massimo di due mandati per tutti i politici?"
+  },
+  {
+    "id": 436,
+    "text": "Se il tuo partito politico approvasse una legge che va contro i tuoi principi etici, continueresti a sostenerlo?"
+  },
+  {
+    "id": 437,
+    "text": "Pensi che le donazioni private ai partiti politici dovrebbero essere illegali per evitare conflitti di interesse?"
+  },
+  {
+    "id": 438,
+    "text": "Voteresti per un candidato solo perché è fisicamente attraente o carismatico?"
+  },
+  {
+    "id": 439,
+    "text": "Se scoprissi che un politico che ammiri ha tradito la moglie, cambieresti la tua opinione su di lui?"
+  },
+  {
+    "id": 440,
+    "text": "Saresti a favore dell'introduzione del voto online per aumentare l'affluenza?"
+  },
+  {
+    "id": 441,
+    "text": "Pensi che i leader politici dovrebbero sottoporsi a test psicologici periodici?"
+  },
+  {
+    "id": 442,
+    "text": "Se potessi, renderesti il voto obbligatorio?"
+  },
+  {
+    "id": 443,
+    "text": "Scenderesti in piazza per protestare per una causa in cui credi fermamente, anche rischiando l'arresto?"
+  },
+  {
+    "id": 444,
+    "text": "Voteresti per un partito estremista se promettesse di risolvere i problemi economici del paese?"
+  },
+  {
+    "id": 445,
+    "text": "Pensi che sia giusto che i politici ricevano uno stipendio molto più alto della media nazionale?"
+  },
+  {
+    "id": 446,
+    "text": "Se un parente stretto si candidasse in un partito che detesti, lo voteresti per lealtà familiare?"
+  },
+  {
+    "id": 447,
+    "text": "Credi che la democrazia sia la migliore forma di governo possibile?"
+  },
+  {
+    "id": 448,
+    "text": "Saresti a favore di un'unica lingua ufficiale a livello mondiale per facilitare la comunicazione?"
+  },
+  {
+    "id": 449,
+    "text": "Se il tuo migliore amico/a ti confessasse di essere innamorato/a di te, ma tu non ricambi, troncheresti l'amicizia per non illuderlo/a?"
+  },
+  {
+    "id": 450,
+    "text": "Se scoprissi che il tuo partner è ancora in contatto con il suo ex, chiederesti di smettere?"
+  },
+  {
+    "id": 451,
+    "text": "Usciresti con il/la ex del tuo migliore amico/a, anche se sono passati anni?"
+  },
+  {
+    "id": 452,
+    "text": "Perdoneresti un tradimento fisico o uno emotivo? Quale ritieni più grave?"
+  },
+  {
+    "id": 453,
+    "text": "Se la tua cotta del liceo si rifacesse viva dopo 10 anni, daresti una possibilità anche se sei in una relazione stabile?"
+  },
+  {
+    "id": 454,
+    "text": "A una festa, se vedessi il partner di un tuo amico/a flirtare pesantemente con un altro/a, lo diresti subito o aspetteresti?"
+  },
+  {
+    "id": 455,
+    "text": "Se il tuo partner ti chiedesse la password dei tuoi social media come prova di fiducia, gliela daresti?"
+  },
+  {
+    "id": 456,
+    "text": "Staresti con una persona che la tua famiglia odia?"
+  },
+  {
+    "id": 457,
+    "text": "Se il tuo partner ti dicesse 'o me o i tuoi amici', cosa faresti?"
+  },
+  {
+    "id": 458,
+    "text": "Avresti una relazione a distanza sapendo di non potervi vedere per più di un anno?"
+  },
+  {
+    "id": 459,
+    "text": "Se fossi innamorato/a di due persone contemporaneamente, le lasceresti entrambe per non ferire nessuno?"
+  },
+  {
+    "id": 460,
+    "text": "Se il tuo partner volesse controllare dove vai e con chi, lo considereresti amore o controllo?"
+  },
+  {
+    "id": 461,
+    "text": "Dopo una rottura, restituiresti i regali costosi che ti ha fatto?"
+  },
+  {
+    "id": 462,
+    "text": "Cancelleresti tutte le foto con il tuo ex dai social media o le lasceresti come parte del tuo passato?"
+  },
+  {
+    "id": 463,
+    "text": "Se il tuo partner ti chiedesse di cambiare un aspetto del tuo look (es. taglio di capelli), lo faresti?"
+  },
+  {
+    "id": 464,
+    "text": "È giusto rimanere amici del proprio ex?"
+  },
+  {
+    "id": 465,
+    "text": "Se scoprissi che il tuo partner ha un feticismo che ti mette a disagio, cercheresti di capirlo o lo lasceresti?"
+  },
+  {
+    "id": 466,
+    "text": "Confesseresti un tradimento di una notte, anche se sai che distruggerebbe la tua relazione e non si scoprirebbe mai?"
+  },
+  {
+    "id": 467,
+    "text": "Se il tuo partner ti dicesse che non vuole figli ma tu sì, continueresti la relazione sperando che cambi idea?"
+  },
+  {
+    "id": 468,
+    "text": "Se a un primo appuntamento scoprissi che l'altra persona ha mentito su qualcosa di importante (es. età, lavoro), daresti una seconda possibilità?"
+  },
+  {
+    "id": 469,
+    "text": "A scuola, se il/la più popolare della classe ti chiedesse di uscire, ma a te non piace, accetteresti per popolarità?"
+  },
+  {
+    "id": 470,
+    "text": "Se vedessi il tuo migliore amico/a copiare durante un esame importante, faresti la spia?"
+  },
+  {
+    "id": 471,
+    "text": "Se organizzassi una festa e i tuoi genitori non ci fossero, cosa succederebbe se qualcuno portasse dell'alcol?"
+  },
+  {
+    "id": 472,
+    "text": "Se la tua cotta ti chiedesse di marinare la scuola, lo faresti?"
+  },
+  {
+    "id": 473,
+    "text": "Faresti i compiti a un tuo amico/a in cambio di un favore?"
+  },
+  {
+    "id": 474,
+    "text": "Se un tuo amico/a venisse escluso/a dal gruppo, prenderesti le sue difese rischiando di essere escluso/a anche tu?"
+  },
+  {
+    "id": 475,
+    "text": "Se scoprissi che il tuo insegnante preferito ha un profilo su un sito di incontri, lo diresti ai tuoi compagni?"
+  },
+  {
+    "id": 476,
+    "text": "Ti uniresti a un gruppo di amici che prende in giro un compagno di classe per non diventare tu stesso un bersaglio?"
+  },
+  {
+    "id": 477,
+    "text": "Se trovassi il cellulare di un compagno che ti sta antipatico, lo restituiresti o guarderesti dentro?"
+  },
+  {
+    "id": 478,
+    "text": "Se durante l'ora di ginnastica tutti prendessero in giro un compagno per il suo fisico, interverresti?"
+  },
+  {
+    "id": 479,
+    "text": "Se i tuoi amici volessero andare a un concerto ma tu hai un esame il giorno dopo, cosa sceglieresti?"
+  },
+  {
+    "id": 480,
+    "text": "Se un professore ti mettesse un voto ingiusto, protesteresti rischiando di inimicartelo?"
+  },
+  {
+    "id": 481,
+    "text": "Mentiresti ai tuoi genitori su dove vai il sabato sera?"
+  },
+  {
+    "id": 482,
+    "text": "Se il tuo gruppo di amici iniziasse a fumare, proveresti anche tu per sentirti parte del gruppo?"
+  },
+  {
+    "id": 483,
+    "text": "Diresti al tuo migliore amico/a che la persona di cui è innamorato/a non è adatta a lui/lei?"
+  },
+  {
+    "id": 484,
+    "text": "Se ti innamorassi della stessa persona del tuo migliore amico/a, ti tireresti indietro?"
+  },
+  {
+    "id": 485,
+    "text": "Se un tuo amico ti chiedesse di mentire ai suoi genitori per coprirlo, accetteresti?"
+  },
+  {
+    "id": 486,
+    "text": "Se scoprissi che un tuo amico ha diffuso una voce falsa su di te, lo affronteresti o lo taglieresti fuori dalla tua vita?"
+  },
+  {
+    "id": 487,
+    "text": "Andresti a una festa di un compagno che non sopporti solo perché ci vanno tutti?"
+  },
+  {
+    "id": 488,
+    "text": "Se ricevessi una foto imbarazzante di un compagno di classe, la cancelleresti o la inoltreresti?"
+  },
+  {
+    "id": 489,
+    "text": "Se il tuo partner adolescente ti chiedesse di mandargli foto intime, lo faresti?"
+  },
+  {
+    "id": 490,
+    "text": "È giusto lasciare il proprio partner tramite messaggio?"
+  },
+  {
+    "id": 491,
+    "text": "Se i tuoi genitori non approvassero la persona che frequenti, continueresti a vederla di nascosto?"
+  },
+  {
+    "id": 492,
+    "text": "Se scoprissi che la tua relazione è diventata 'tossica', avresti il coraggio di chiuderla subito?"
+  },
+  {
+    "id": 493,
+    "text": "Usciresti con qualcuno solo per fare un dispetto al tuo ex?"
+  },
+  {
+    "id": 494,
+    "text": "Se il tuo partner ti tradisse, proveresti a vendicarti tradendolo a tua volta?"
+  },
+  {
+    "id": 495,
+    "text": "Chiederesti mai al tuo partner di scegliere tra te e la sua passione più grande (es. sport, musica)?"
+  },
+  {
+    "id": 496,
+    "text": "Accetteresti di stare con qualcuno che non ti attrae fisicamente ma con cui hai una profonda connessione mentale?"
+  },
+  {
+    "id": 497,
+    "text": "Se il tuo partner ti proponesse una relazione aperta, saresti disposto/a a provare?"
+  },
+  {
+    "id": 498,
+    "text": "Se la tua famiglia attraversasse un momento di grave crisi economica, lasceresti l'università per andare a lavorare?"
+  },
+  {
+    "id": 499,
+    "text": "Se un amico ti rivelasse di essere depresso, manterresti il segreto o ne parleresti con un adulto di fiducia?"
+  },
+  {
+    "id": 500,
+    "text": "Se vedessi il/la ragazzo/a che ti piace baciare un'altra persona, ti faresti avanti lo stesso o lasceresti perdere?"
+  },
+  {
+    "id": 501,
+    "text": "Se scoprissi un glitch di TikTok che fa diventare virale qualsiasi video, lo useresti per diventare famoso o lo segnaleresti?"
+  },
+  {
+    "id": 502,
+    "text": "Pubblicheresti una foto di una vacanza di lusso su Instagram, anche se sai che potrebbe far sentire invidiosi i tuoi amici in difficoltà economiche?"
+  },
+  {
+    "id": 503,
+    "text": "Acquisteresti follower su Instagram per sembrare più popolare e attrarre collaborazioni?"
+  },
+  {
+    "id": 504,
+    "text": "Faresti una 'challenge' di TikTok pericolosa per ottenere like e visibilità?"
+  },
+  {
+    "id": 505,
+    "text": "Se il tuo partner pubblicasse costantemente foto/video con un/a 'amico/a' che non ti convince, glielo faresti notare?"
+  },
+  {
+    "id": 506,
+    "text": "Creeresti un finto profilo Instagram per spiare le storie di chi ti ha bloccato?"
+  },
+  {
+    "id": 507,
+    "text": "Smetteresti di usare TikTok se sapessi che i tuoi dati vengono usati da un governo straniero?"
+  },
+  {
+    "id": 508,
+    "text": "Parteciperesti a un trend di TikTok che prende in giro una categoria di persone, anche se lo trovi divertente?"
+  },
+  {
+    "id": 509,
+    "text": "Se un tuo video diventasse virale su TikTok, lasceresti il tuo lavoro per provare a fare l'influencer?"
+  },
+  {
+    "id": 510,
+    "text": "Pagheresti per un corso che promette di farti diventare un influencer di successo su Instagram?"
+  },
+  {
+    "id": 511,
+    "text": "Se il tuo partner ti chiedesse di non pubblicare foto in costume da bagno su Instagram, accetteresti?"
+  },
+  {
+    "id": 512,
+    "text": "Useresti la tua popolarità su TikTok per promuovere un prodotto in cui non credi in cambio di soldi?"
+  },
+  {
+    "id": 513,
+    "text": "Se scoprissi che un influencer che segui ritocca pesantemente tutte le sue foto, smetteresti di seguirlo?"
+  },
+  {
+    "id": 514,
+    "text": "Faresti un video 'drammatico' su TikTok esagerando un problema personale per ottenere empatia e visualizzazioni?"
+  },
+  {
+    "id": 515,
+    "text": "Se il tuo capo ti chiedesse di 'spiare' i profili social dei candidati prima di un colloquio, lo faresti?"
+  },
+  {
+    "id": 516,
+    "text": "Pensi che sia giusto che i 'creator' di Instagram guadagnino soldi mostrando semplicemente la loro vita quotidiana?"
+  },
+  {
+    "id": 517,
+    "text": "Lasceresti una recensione negativa a un ristorante solo perché il piatto non era 'instagrammabile'?"
+  },
+  {
+    "id": 518,
+    "text": "Se il tuo partner mettesse like costantemente a foto di persone seminude su Instagram, lo considereresti una forma di tradimento?"
+  },
+  {
+    "id": 519,
+    "text": "Creeresti contenuti su TikTok usando i tuoi figli piccoli per aumentare le visualizzazioni?"
+  },
+  {
+    "id": 520,
+    "text": "Se un brand ti offrisse prodotti gratis in cambio di storie su Instagram, accetteresti anche se il prodotto non ti piace?"
+  },
+  {
+    "id": 521,
+    "text": "Giudichi le persone in base al numero di follower che hanno su Instagram?"
+  },
+  {
+    "id": 522,
+    "text": "Se un amico ti chiedesse di promuovere il suo piccolo business su TikTok, ma i suoi prodotti non ti piacciono, lo faresti per amicizia?"
+  },
+  {
+    "id": 523,
+    "text": "Pensi che l'algoritmo di TikTok influenzi negativamente la salute mentale dei giovani?"
+  },
+  {
+    "id": 524,
+    "text": "Se vedessi un commento di body shaming sotto la foto di un amico su Instagram, interverresti?"
+  },
+  {
+    "id": 525,
+    "text": "Elimineresti tutti i tuoi social media per un mese se ti pagassero 1.000€?"
+  },
+  {
+    "id": 526,
+    "text": "Faresti un video su TikTok in cui 'smascheri' un comportamento scorretto di un tuo ex?"
+  },
+  {
+    "id": 527,
+    "text": "Se un tuo amico postasse una storia Instagram in cui guida e usa il telefono, glielo faresti notare?"
+  },
+  {
+    "id": 528,
+    "text": "Pensi che sia giusto che TikTok renda virali canzoni senza che gli artisti originali ricevano un giusto compenso?"
+  },
+  {
+    "id": 529,
+    "text": "Se scoprissi il profilo TikTok segreto di un tuo professore, lo condivideresti con la classe?"
+  },
+  {
+    "id": 530,
+    "text": "Daresti il tuo supporto a un influencer di Instagram coinvolto in uno scandalo, se credessi nella sua innocenza?"
+  },
+  {
+    "id": 531,
+    "text": "Pensi che i filtri di bellezza di Instagram e TikTok siano dannosi per l'autostima?"
+  },
+  {
+    "id": 532,
+    "text": "Se un tuo video imbarazzante del passato riemergesse e diventasse virale su TikTok, come reagiresti?"
+  },
+  {
+    "id": 533,
+    "text": "Useresti la geolocalizzazione di Instagram per controllare dove si trovano i tuoi amici o il tuo partner?"
+  },
+  {
+    "id": 534,
+    "text": "Se il tuo partner volesse che il vostro rapporto fosse 'Instagram official' ma tu preferisci la privacy, come ti comporteresti?"
+  },
+  {
+    "id": 535,
+    "text": "Acquisteresti un prodotto solo perché lo hai visto in un video virale su TikTok?"
+  },
+  {
+    "id": 536,
+    "text": "Faresti un video 'pov' (point of view) su TikTok che mette in cattiva luce una persona che conosci?"
+  },
+  {
+    "id": 537,
+    "text": "Se scoprissi che un tuo amico usa la tua foto profilo per un account fake, come reagiresti?"
+  },
+  {
+    "id": 538,
+    "text": "Saresti a favore di una verifica dell'età più stringente per l'accesso a social come TikTok e Instagram?"
+  },
+  {
+    "id": 539,
+    "text": "Pensi che sia giusto che le aziende usino gli influencer di TikTok per fare marketing ai bambini?"
+  },
+  {
+    "id": 540,
+    "text": "Se un amico ti taggasse in una foto su Instagram in cui non ti piaci, gli chiederesti di rimuoverla?"
+  },
+  {
+    "id": 541,
+    "text": "Parteciperesti a un flash mob organizzato tramite TikTok?"
+  },
+  {
+    "id": 542,
+    "text": "Se il tuo ristorante preferito ti offrisse uno sconto del 50% per una storia su Instagram, lo faresti?"
+  },
+  {
+    "id": 543,
+    "text": "Pensi che i 'balletti' di TikTok siano una forma d'arte o una perdita di tempo?"
+  },
+  {
+    "id": 544,
+    "text": "Stalkerare il profilo Instagram della nuova fiamma del tuo ex è accettabile?"
+  },
+  {
+    "id": 545,
+    "text": "Se il tuo partner non ti postasse mai su Instagram, penseresti che si vergogni di te o che tenga alla sua privacy?"
+  },
+  {
+    "id": 546,
+    "text": "Creeresti un 'finsta' (un account Instagram segreto per amici stretti) per postare contenuti che non pubblicheresti sul tuo profilo principale?"
+  },
+  {
+    "id": 547,
+    "text": "Se vedessi un politico fare un video 'giovanile' su TikTok, lo voteresti più volentieri?"
+  },
+  {
+    "id": 548,
+    "text": "È giusto usare la funzione 'duetto' di TikTok per criticare o prendere in giro il video di un'altra persona?"
+  },
+  {
+    "id": 549,
+    "text": "Se un tuo amico ti escludesse dalle sue 'Storie per amici stretti' su Instagram, ti sentiresti offeso?"
+  },
+  {
+    "id": 550,
+    "text": "Pensi che la fama su TikTok sia effimera e senza valore reale?"
+  },
+  {
+    "id": 551,
+    "text": "Ti abboneresti al profilo OnlyFans di un/a tuo/a conoscente?"
+  },
+  {
+    "id": 552,
+    "text": "Se il tuo partner ti dicesse di voler aprire un account OnlyFans per arrotondare, lo supporteresti?"
+  },
+  {
+    "id": 553,
+    "text": "Se scoprissi che il partner del tuo migliore amico/a ha un account OnlyFans segreto, glielo diresti?"
+  },
+  {
+    "id": 554,
+    "text": "Pagheresti per vedere contenuti espliciti di una persona che conosci su OnlyFans?"
+  },
+  {
+    "id": 555,
+    "text": "Pensi che OnlyFans sia una forma di empowerment o di sfruttamento?"
+  },
+  {
+    "id": 556,
+    "text": "Se un tuo amico/a guadagnasse molto bene con OnlyFans, lo/la incoraggeresti a continuare o a cercare un lavoro 'tradizionale'?"
+  },
+  {
+    "id": 557,
+    "text": "Guarderesti Pornhub con il tuo partner?"
+  },
+  {
+    "id": 558,
+    "text": "Se scoprissi che il tuo partner guarda categorie di porno che ti mettono a disagio, come affronteresti la situazione?"
+  },
+  {
+    "id": 559,
+    "text": "Pensi che il consumo di porno influenzi negativamente le relazioni reali?"
+  },
+  {
+    "id": 560,
+    "text": "Se trovassi la cronologia di Pornhub di tuo padre, la guarderesti?"
+  },
+  {
+    "id": 561,
+    "text": "Saresti a favore di una 'tassa etica' sui profitti di siti come Pornhub da devolvere a cause contro la violenza di genere?"
+  },
+  {
+    "id": 562,
+    "text": "Se un attore/attrice porno che segui su Pornhub aprisse un canale YouTube di cucina, lo/la seguiresti?"
+  },
+  {
+    "id": 563,
+    "text": "Usciresti con una persona che fa porno di professione?"
+  },
+  {
+    "id": 564,
+    "text": "Pensi che la pornografia dovrebbe essere illegale?"
+  },
+  {
+    "id": 565,
+    "text": "Se un video intimo che hai girato con un ex finisse su Pornhub senza il tuo consenso, cosa faresti?"
+  },
+  {
+    "id": 566,
+    "text": "Avresti una relazione con una persona molto più grande di te (cougar/MILF/sugar daddy) principalmente per i suoi soldi?"
+  },
+  {
+    "id": 567,
+    "text": "Se fossi single, usciresti con la madre (MILF) del tuo migliore amico, se lei ci provasse con te?"
+  },
+  {
+    "id": 568,
+    "text": "Pensi che ci sia uno stigma sociale diverso per le donne 'cougar' rispetto agli uomini più anziani che escono con donne giovani?"
+  },
+  {
+    "id": 569,
+    "text": "Se tua madre, dopo il divorzio, iniziasse a uscire con uomini molto più giovani, come reagiresti?"
+  },
+  {
+    "id": 570,
+    "text": "Se una donna più grande e attraente (cougar) ti offrisse un avanzamento di carriera in cambio di una relazione, accetteresti?"
+  },
+  {
+    "id": 571,
+    "text": "È moralmente diverso pagare per un abbonamento a OnlyFans o pagare per un film porno su una piattaforma tradizionale?"
+  },
+  {
+    "id": 572,
+    "text": "Se il tuo partner volesse ricreare una scena vista su Pornhub ma a te non piace, come ti comporteresti?"
+  },
+  {
+    "id": 573,
+    "text": "Se scoprissi che il tuo insegnante del liceo ha un account OnlyFans, la cosa cambierebbe il tuo modo di vederlo/a?"
+  },
+  {
+    "id": 574,
+    "text": "Denunceresti un creator di OnlyFans se sospettassi che produce contenuti con minorenni?"
+  },
+  {
+    "id": 575,
+    "text": "Pensi che siti come Pornhub dovrebbero avere sistemi di verifica dell'età più efficaci?"
+  },
+  {
+    "id": 576,
+    "text": "Se un tuo amico ti confessasse di essere dipendente dalla pornografia, come cercheresti di aiutarlo?"
+  },
+  {
+    "id": 577,
+    "text": "Usciresti con una persona che ha la stessa età di tua madre/tuo padre?"
+  },
+  {
+    "id": 578,
+    "text": "Se il tuo capo (cougar/sugar daddy) ti facesse delle avance esplicite, lo denunceresti rischiando il posto di lavoro?"
+  },
+  {
+    "id": 579,
+    "text": "Pensi che la rappresentazione delle MILF nei media sia realistica o dannosa?"
+  },
+  {
+    "id": 580,
+    "text": "Se il tuo partner spendesse una parte significativa del suo stipendio per abbonamenti a OnlyFans, lo considereresti un problema?"
+  },
+  {
+    "id": 581,
+    "text": "Se un creator di OnlyFans usasse l'AI per generare contenuti falsi ma realistici, dovrebbe dichiararlo?"
+  },
+  {
+    "id": 582,
+    "text": "Proveresti a fare un video porno amatoriale con il tuo partner per divertimento, senza l'intenzione di pubblicarlo?"
+  },
+  {
+    "id": 583,
+    "text": "Pensi che il termine 'MILF' sia sessista?"
+  },
+  {
+    "id": 584,
+    "text": "Se una donna più grande ti offrisse regali costosi in cambio della tua compagnia (senza sesso), accetteresti?"
+  },
+  {
+    "id": 585,
+    "text": "Come reagiresti se scoprissi che tuo figlio adolescente guarda Pornhub?"
+  },
+  {
+    "id": 586,
+    "text": "Se il tuo partner ti chiedesse di smettere di guardare porno, lo faresti?"
+  },
+  {
+    "id": 587,
+    "text": "Se un/a creator di OnlyFans ti contattasse per una collaborazione pagata, accetteresti?"
+  },
+  {
+    "id": 588,
+    "text": "Pensi che il lavoro di 'sex worker' su piattaforme come OnlyFans dovrebbe essere regolamentato e tassato come qualsiasi altro lavoro?"
+  },
+  {
+    "id": 589,
+    "text": "Se scoprissi che il prete della tua parrocchia ha un account su Pornhub, cosa faresti?"
+  },
+  {
+    "id": 590,
+    "text": "Se una persona famosa che ammiri aprisse un account OnlyFans, cambieresti opinione su di lei?"
+  },
+  {
+    "id": 591,
+    "text": "È giusto che gli atleti o altre figure pubbliche vengano licenziati se si scopre che hanno un passato nella pornografia?"
+  },
+  {
+    "id": 592,
+    "text": "Se il tuo partner volesse filmare i vostri rapporti sessuali, acconsentiresti?"
+  },
+  {
+    "id": 593,
+    "text": "Se una coppia di tuoi amici decidesse di aprire un account OnlyFans insieme, li supporteresti?"
+  },
+  {
+    "id": 594,
+    "text": "Pensi che esista una differenza etica tra guardare porno 'mainstream' e porno 'di nicchia' (es. feticismi estremi)?"
+  },
+  {
+    "id": 595,
+    "text": "Se scoprissi che tuo/a figlio/a spende i suoi soldi su OnlyFans, come reagiresti?"
+  },
+  {
+    "id": 596,
+    "text": "Saresti mai un 'sugar daddy' o una 'sugar mama'?"
+  },
+  {
+    "id": 597,
+    "text": "Se il tuo ex iniziasse a pubblicare contenuti su OnlyFans parlando della vostra relazione passata, cercheresti di fermarlo/a?"
+  },
+  {
+    "id": 598,
+    "text": "Pensi che la pornografia AI (deepfake) dovrebbe essere illegale?"
+  },
+  {
+    "id": 599,
+    "text": "Se il tuo partner lavorasse per Pornhub (es. come moderatore di contenuti), ti sentiresti a disagio?"
+  },
+  {
+    "id": 600,
+    "text": "È giusto che le scuole educhino gli studenti sui rischi e le realtà di piattaforme come OnlyFans e Pornhub?"
+  },
+  {
+    "id": 601,
+    "text": "Se vedessi il marito della tua migliore amica baciare un'altra donna, lo diresti subito alla tua amica, anche se è incinta?"
+  },
+  {
+    "id": 602,
+    "text": "Se il tuo capo, sposato e con figli, ti offrisse una promozione in cambio di una notte insieme, cosa faresti?"
+  },
+  {
+    "id": 603,
+    "text": "Aiuteresti un collega a nascondere una relazione extraconiugale con un altro/a collega per mantenere la pace in ufficio?"
+  },
+  {
+    "id": 604,
+    "text": "Se fossi attratto/a dal partner del tuo migliore amico/a, ti allontaneresti per evitare problemi?"
+  },
+  {
+    "id": 605,
+    "text": "Se scoprissi che due tuoi amici, entrambi impegnati e con figli, hanno una relazione segreta, ti intrometteresti?"
+  },
+  {
+    "id": 606,
+    "text": "Usciresti con un/a collega sapendo che è contro la policy aziendale?"
+  },
+  {
+    "id": 607,
+    "text": "Se il tuo partner ti tradisse con il tuo migliore amico/a, chi dei due perdoneresti più difficilmente?"
+  },
+    {
+    "id": 608,
+    "text": "Se un tuo amico/a ti confessasse di aver tradito il partner (che è anche tuo amico/a), manterresti il segreto?"
+  },
+  {
+    "id": 609,
+    "text": "Faresti da alibi a un amico/a che sta tradendo il proprio partner, mentendo al marito/moglie di quest'ultimo/a?"
+  },
+  {
+    "id": 610,
+    "text": "Se un tuo collega ti rivelasse di avere una 'seconda famiglia' segreta, lo segnaleresti alle risorse umane?"
+  },
+  {
+    "id": 611,
+    "text": "Se vedessi il partner di un tuo amico su un'app di incontri, faresti uno screenshot per inviarglielo?"
+  },
+  {
+    "id": 612,
+    "text": "Inizieresti una relazione con il tuo capo, anche se entrambi siete single, sapendo che potrebbe creare pettegolezzi e problemi sul lavoro?"
+  },
+  {
+    "id": 613,
+    "text": "Se scoprissi che il tradimento del tuo amico/a sta mettendo a rischio la serenità dei suoi figli, interverresti?"
+  },
+  {
+    "id": 614,
+    "text": "Perdoneresti il tuo partner se ti tradisse una sola volta durante un viaggio di lavoro?"
+  },
+  {
+    "id": 615,
+    "text": "Se un tuo amico/a sposato/a ti facesse delle avances, glielo diresti al suo partner?"
+  },
+  {
+    "id": 616,
+    "text": "Se il tuo partner lavorativo (con cui hai un ottimo feeling) si dichiarasse, ma entrambi siete impegnati, cambieresti progetto per evitarlo/a?"
+  },
+  {
+    "id": 617,
+    "text": "Se una tua amica ti dicesse che suo marito la tradisce, ma tu sai che non è vero, cosa faresti?"
+  },
+  {
+    "id": 618,
+    "text": "A una cena di coppia, se il partner dei tuoi amici ti facesse il filo sotto il tavolo, come reagiresti?"
+  },
+  {
+    "id": 619,
+    "text": "Se scoprissi che i tuoi genitori si tradiscono a vicenda, ti confronteresti con entrambi?"
+  },
+  {
+    "id": 620,
+    "text": "Manterresti un'amicizia con una persona che tradisce sistematicamente tutti i suoi partner?"
+  },
+  {
+    "id": 621,
+    "text": "Se durante una crisi matrimoniale, un/a tuo/a collega attraente ti mostrasse interesse, cederesti alla tentazione?"
+  },
+  {
+    "id": 622,
+    "text": "Se il tuo partner ti desse il 'permesso' di avere un'avventura, lo faresti?"
+  },
+  {
+    "id": 623,
+    "text": "Se vedessi il marito di tua sorella con un'altra donna in atteggiamenti intimi, cosa faresti? E se fosse tua sorella con un altro uomo?"
+  },
+  {
+    "id": 624,
+    "text": "È più grave un tradimento consumato con uno/a sconosciuto/a o un bacio con un/a caro/a amico/a?"
+  },
+  {
+    "id": 625,
+    "text": "Se il tuo amico/a ti chiedesse di 'testare' la fedeltà del suo partner provandoci tu, accetteresti?"
+  },
+  {
+    "id": 626,
+    "text": "Se scoprissi una chat compromettente sul telefono del partner di un tuo amico/a, lo fotograferesti di nascosto?"
+  },
+  {
+    "id": 627,
+    "text": "Se un tuo dipendente avesse una relazione con la moglie di un cliente importante, interverresti?"
+  },
+  {
+    "id": 628,
+    "text": "Accetteresti di uscire con il padre/la madre single di un compagno di classe di tuo figlio?"
+  },
+  {
+    "id": 629,
+    "text": "Se il tuo partner diventasse molto amico/a del tuo ex, ti darebbe fastidio?"
+  },
+  {
+    "id": 630,
+    "text": "Se scoprissi che il tuo capo usa l'auto aziendale per incontrare l'amante, lo useresti a tuo vantaggio?"
+  },
+  {
+    "id": 631,
+    "text": "Se un tuo amico/a ti confessasse di essere l'amante di una persona sposata con figli, continueresti a frequentarlo/a?"
+  },
+  {
+    "id": 632,
+    "text": "Se tuo/a figlio/a ti scoprisse a tradire il tuo partner, cosa gli/le diresti?"
+  },
+  {
+    "id": 633,
+    "text": "Se il tuo partner ti tradisse e poi desse la colpa a te ('mi hai trascurato'), considereresti le sue ragioni?"
+  },
+  {
+    "id": 634,
+    "text": "Se durante l'organizzazione del matrimonio, scoprissi che il tuo futuro sposo/a ha tradito il/la suo/a ex, annulleresti tutto?"
+  },
+  {
+    "id": 635,
+    "text": "Se il partner del tuo capo ci provasse con te, lo diresti al capo rischiando di non essere creduto/a?"
+  },
+  {
+    "id": 636,
+    "text": "Se la tua migliore amica andasse a letto con tuo fratello, ti arrabbieresti di più con lei o con lui?"
+  },
+  {
+    "id": 637,
+    "text": "Se un amico ti confidasse di aver messo incinta l'amante, lo aiuteresti a gestire la situazione di nascosto dalla moglie?"
+  },
+  {
+    "id": 638,
+    "text": "Se vedessi il prete del tuo paese (che ha preso i voti) avere una relazione con una parrocchiana, faresti finta di niente?"
+  },
+  {
+    "id": 639,
+    "text": "Se il tuo partner e il tuo migliore amico/a si odiassero, cercheresti di farli andare d'accordo o accetteresti la situazione?"
+  },
+  {
+    "id": 640,
+    "text": "Se un tuo collega ti chiedesse di coprirlo con sua moglie mentre esce con l'amante, chiederesti qualcosa in cambio?"
+  },
+  {
+    "id": 641,
+    "text": "Pensi che sia possibile essere veramente amici di una persona da cui si è attratti?"
+  },
+  {
+    "id": 642,
+    "text": "Se scoprissi che un tuo amico/a, genitore, ha una dipendenza dal gioco d'azzardo e sta rovinando la sua famiglia, parleresti con il suo partner?"
+  },
+  {
+    "id": 643,
+    "text": "Se il tuo partner ti regalasse qualcosa di molto costoso, ma scoprissi che è un regalo riciclato dal suo/sua ex, come reagiresti?"
+  },
+  {
+    "id": 644,
+    "text": "Se il tuo migliore amico/a iniziasse a frequentare una persona che tu hai sempre odiato, glielo faresti notare?"
+  },
+  {
+    "id": 645,
+    "text": "Andresti in vacanza con una coppia di amici che sai essere sull'orlo del divorzio?"
+  },
+  {
+    "id": 646,
+    "text": "Se scoprissi che il partner di un tuo amico/a ha un figlio segreto da una precedente relazione, lo riveleresti?"
+  },
+  {
+    "id": 647,
+    "text": "Se un tuo collega venisse licenziato ingiustamente per coprire un errore del figlio del capo, faresti la spia?"
+  },
+  {
+    "id": 648,
+    "text": "Se il tuo partner volesse invitare a cena un suo/sua ex con cui è rimasto in ottimi rapporti, saresti d'accordo?"
+  },
+  {
+    "id": 649,
+    "text": "Se ti innamorassi del terapista di coppia tuo e del tuo partner?"
+  },
+  {
+    "id": 650,
+    "text": "Se scoprissi che il tuo partner ha mentito sulla sua situazione finanziaria (es. ha enormi debiti), lo lasceresti?"
+  },
+  {
+    "id": 651,
+    "text": "Se il tuo partner ti chiedesse di partecipare a una fantasia sessuale che ti mette a disagio, proveresti per amor suo?"
+  },
+  {
+    "id": 652,
+    "text": "Diresti al tuo partner che il suo modo di baciare non ti piace?"
+  },
+  {
+    "id": 653,
+    "text": "Se durante una cena tra amici, il marito della tua amica facesse commenti sessisti, lo riprenderesti davanti a tutti?"
+  },
+  {
+    "id": 654,
+    "text": "Se tuo figlio ti facesse domande esplicite sul sesso, risponderesti onestamente e in dettaglio?"
+  },
+  {
+    "id": 655,
+    "text": "Se il tuo nuovo partner volesse aspettare il matrimonio per fare sesso, saresti disposto/a ad aspettare?"
+  },
+  {
+    "id": 656,
+    "text": "Se un amico ti mostrasse un video porno deepfake con il volto di una vostra conoscente, lo denunceresti alla polizia?"
+  },
+  {
+    "id": 657,
+    "text": "Se il tuo partner ti confessasse di essere bisessuale dopo anni di relazione, la cosa cambierebbe il vostro rapporto?"
+  },
+  {
+    "id": 658,
+    "text": "È giusto che OnlyFans e Pornhub esistano e siano così facilmente accessibili?"
+  },
+  {
+    "id": 659,
+    "text": "Se scoprissi che il tuo partner ha comprato contenuti personalizzati su OnlyFans da un/a creator, come la prenderesti?"
+  },
+  {
+    "id": 660,
+    "text": "Se un tuo collega facesse continuamente battute a sfondo sessuale, lo segnaleresti anche se non le rivolge direttamente a te?"
+  },
+  {
+    "id": 661,
+    "text": "Se la tua amica ti confessasse di avere una relazione con un uomo sposato, la giudicheresti o la supporteresti?"
+  },
+  {
+    "id": 662,
+    "text": "Se il tuo capo ti invitasse a una 'cena di lavoro' in un luogo chiaramente romantico, andresti?"
+  },
+  {
+    "id": 663,
+    "text": "Se scoprissi che un tuo amico ha tradito la moglie il giorno prima del loro matrimonio, glielo diresti?"
+  },
+  {
+    "id": 664,
+    "text": "Se il tuo partner ti dicesse che per perdonare un tuo tradimento dovresti accettare che lui/lei ne abbia uno, accetteresti?"
+  },
+  {
+    "id": 665,
+    "text": "Se un tuo parente stretto (es. cugino) iniziasse a uscire con il tuo ex, come reagiresti?"
+  },
+  {
+    "id": 666,
+    "text": "A una rimpatriata di classe, cederesti alla tentazione di una notte con la tua cotta del liceo, anche se sei impegnato/a?"
+  },
+  {
+    "id": 667,
+    "text": "Se il tuo partner ti chiedesse di fare un figlio per 'salvare la relazione', acconsentiresti?"
+  },
+  {
+    "id": 668,
+    "text": "Se scoprissi che la tua migliore amica ha una relazione con tuo padre, con chi ti arrabbieresti di più?"
+  },
+  {
+    "id": 669,
+    "text": "Se il partner di un tuo amico/a ti confidasse di essere infelice e di volerlo/a lasciare, lo diresti al tuo amico/a?"
+  },
+  {
+    "id": 670,
+    "text": "Se il tuo partner andasse in un locale di spogliarello per un addio al celibato/nubilato, ti darebbe fastidio?"
+  },
+  {
+    "id": 671,
+    "text": "È giusto usare app per 'valutare' le performance sessuali dei propri partner?"
+  },
+  {
+    "id": 672,
+    "text": "Se un'amica ti chiedesse di prestarle dei soldi per un aborto che il suo partner non sa, lo faresti?"
+  },
+  {
+    "id": 673,
+    "text": "Se scoprissi che il tuo partner ha un 'work husband' o 'work wife', saresti geloso/a?"
+  },
+  {
+    "id": 674,
+    "text": "Se il tuo migliore amico/a, ubriaco/a, ci provasse con te, glielo diresti il giorno dopo?"
+  },
+  {
+    "id": 675,
+    "text": "Se il figlio adolescente della tua migliore amica ci provasse con te, come ti comporteresti?"
+  },
+  {
+    "id": 676,
+    "text": "Se vedessi il tuo capo rubare materiale dall'ufficio, lo ignoreresti o lo affronteresti?"
+  },
+  {
+    "id": 677,
+    "text": "Se scoprissi che il tuo partner ideale è anche il peggior nemico del tuo migliore amico, cosa faresti?"
+  },
+  {
+    "id": 678,
+    "text": "Se un collega ti confidasse di aver mentito sul curriculum per ottenere il lavoro, lo copriresti?"
+  },
+  {
+    "id": 679,
+    "text": "Se il tuo partner ti tradisse, preferiresti scoprirlo da solo/a o che te lo dicesse un amico?"
+  },
+  {
+    "id": 680,
+    "text": "Se la tua azienda ti chiedesse di trasferirti in un'altra città, ma il tuo partner (con figli) non volesse, rinunceresti alla carriera?"
+  },
+  {
+    "id": 681,
+    "text": "Se tuo fratello/sorella ti confessasse di tradire il/la partner, cercheresti di farlo/a ragionare o ti faresti gli affari tuoi?"
+  },
+  {
+    "id": 682,
+    "text": "Se un amico/a ti chiedesse di ospitare lui/lei e la sua amante a casa tua, accetteresti?"
+  },
+  {
+    "id": 683,
+    "text": "Se scoprissi che il tuo partner ha un debito di gioco, lo aiuteresti a pagarlo o lo lasceresti?"
+  },
+  {
+    "id": 684,
+    "text": "Se il tuo partner ti chiedesse di firmare un accordo prematrimoniale molto svantaggioso per te, lo sposeresti lo stesso?"
+  },
+  {
+    "id": 685,
+    "text": "Se vedessi la moglie del tuo capo flirtare con un altro uomo a una festa aziendale, lo diresti al tuo capo?"
+  },
+  {
+    "id": 686,
+    "text": "Se la tua amica ti dicesse che non sopporta i tuoi figli, limiteresti le uscite con lei?"
+  },
+  {
+    "id": 687,
+    "text": "Se il tuo partner volesse dare al vostro bambino un nome che odi, come trovereste un compromesso?"
+  },
+  {
+    "id": 688,
+    "text": "Se il tuo amico/a ti rivelasse di aver avuto un figlio da una donazione di sperma/ovuli e di non averlo mai detto al partner, manterresti il segreto?"
+  },
+  {
+    "id": 689,
+    "text": "Se scoprissi che un tuo collega guadagna più di te per lo stesso lavoro, chiederesti un aumento?"
+  },
+  {
+    "id": 690,
+    "text": "Se il tuo partner avesse un'ossessione per una celebrità (poster, continui discorsi), ti sentiresti a disagio?"
+  },
+  {
+    "id": 691,
+    "text": "Se un amico ti regalasse qualcosa di palesemente rubato, lo accetteresti?"
+  },
+  {
+    "id": 692,
+    "text": "Se il tuo partner ti chiedesse di eliminare dai social tutti i tuoi ex, lo faresti?"
+  },
+  {
+    "id": 693,
+    "text": "Se tuo figlio ti dicesse che il suo insegnante preferito ha un odore sgradevole, ne parleresti con l'insegnante?"
+  },
+  {
+    "id": 694,
+    "text": "Se il tuo partner volesse trasferirsi in un altro paese per lavoro, lo seguiresti lasciando tutto?"
+  },
+  {
+    "id": 695,
+    "text": "Se scoprissi che il tuo partner ti ha sposato solo per la cittadinanza, chiederesti il divorzio?"
+  },
+  {
+    "id": 696,
+    "text": "Se il tuo migliore amico/a ti 'rubasse' un'idea geniale sul lavoro presentandola come sua, come reagiresti?"
+  },
+  {
+    "id": 697,
+    "text": "Perdoneresti un amico che, per sbaglio, ha causato la rottura della tua relazione?"
+  },
+  {
+    "id": 698,
+    "text": "Se il tuo partner fosse estremamente disordinato e la cosa ti creasse stress, lo lasceresti per questo?"
+  },
+  {
+    "id": 699,
+    "text": "Se scoprissi che il tuo partner ideale è ateo ma tu sei molto credente, cercheresti di convertirlo?"
+  },
+  {
+    "id": 700,
+    "text": "Se un tuo amico ti chiedesse di votare per lui a un concorso online creando profili falsi, lo aiuteresti?"
+  },
+  {
+    "id": 701,
+    "text": "Se vedessi un tuo amico, notoriamente single, baciare la fidanzata di un altro vostro amico, a chi dei due parleresti per primo?"
+  },
+  {
+    "id": 702,
+    "text": "Saresti disposto a fare da 'padre/madre surrogato' per una coppia di amici gay?"
+  },
+  {
+    "id": 703,
+    "text": "Se il tuo partner ti rivelasse di essere attratto/a da persone dello stesso sesso, ma di amare solo te, come reagiresti?"
+  },
+  {
+    "id": 704,
+    "text": "Se un tuo collega ti confidasse di essere innamorato del capo (sposato), gli consiglieresti di farsi avanti?"
+  },
+  {
+    "id": 705,
+    "text": "Se il marito della tua migliore amica ti facesse delle avances, lo diresti a lei rischiando di rovinare il loro matrimonio e la vostra amicizia?"
+  },
+  {
+    "id": 706,
+    "text": "Se un'amica ti confessasse di aver tradito il marito (tuo amico) perché lui è sterile e lei voleva un figlio, cosa penseresti?"
+  },
+  {
+    "id": 707,
+    "text": "Se vedessi il tuo capo (sposato) entrare in un hotel con una giovane stagista, faresti finta di niente?"
+  },
+  {
+    "id": 708,
+    "text": "Se il tuo partner ti chiedesse di mentire alla sua famiglia su un aspetto importante del tuo passato, accetteresti?"
+  },
+  {
+    "id": 709,
+    "text": "Se scoprissi che un tuo amico/a ha una relazione con il/la terapista del/la proprio/a figlio/a, interverresti?"
+  },
+  {
+    "id": 710,
+    "text": "Se il tuo partner ti tradisse e poi scoprissi che aspetta un figlio dall'amante, cosa faresti?"
+  },
+  {
+    "id": 711,
+    "text": "Se un amico ti chiedesse di assumere suo figlio, palesemente non qualificato, nella tua azienda, cosa risponderesti?"
+  },
+  {
+    "id": 712,
+    "text": "Se scoprissi che la moglie del tuo migliore amico spende tutti i loro risparmi di nascosto, avviseresti il tuo amico?"
+  },
+  {
+    "id": 713,
+    "text": "Se il tuo partner ti confessasse un tradimento avvenuto 10 anni prima, quando eravate appena insieme, lo perdoneresti?"
+  },
+  {
+    "id": 714,
+    "text": "Se un tuo amico ti rivelasse che il figlio che sta crescendo non è suo, ma non volesse fare il test del DNA per paura, rispetteresti la sua scelta?"
+  },
+  {
+    "id": 715,
+    "text": "Se vedessi il partner di un tuo amico/a litigare furiosamente con i propri figli in pubblico, interverresti?"
+  },
+  {
+    "id": 716,
+    "text": "Se il tuo capo ti chiedesse di licenziare un tuo amico per tagliare i costi, anche se è un ottimo lavoratore, eseguieresti l'ordine?"
+  },
+  {
+    "id": 717,
+    "text": "Se scoprissi che il tuo partner guarda le storie Instagram della sua ex tutti i giorni, glielo faresti notare?"
+  },
+  {
+    "id": 718,
+    "text": "Se una tua amica ti dicesse che vuole lasciare il marito e i figli per scappare con il suo amante, cercheresti di farla ragionare?"
+  },
+  {
+    "id": 719,
+    "text": "Se il tuo partner ti accusasse ingiustamente di tradimento basandosi sulla gelosia, come proveresti la tua innocenza?"
+  },
+  {
+    "id": 720,
+    "text": "Se un collega ti offrisse una tangente per approvare un suo progetto, accetteresti i soldi?"
+  },
+  {
+    "id": 721,
+    "text": "Se il tuo partner volesse chiamare vostro figlio come il suo ex, come reagiresti?"
+  },
+  {
+    "id": 722,
+    "text": "Se un amico ti chiedesse di testimoniare il falso in una causa di divorzio per aiutarlo ad ottenere l'affidamento dei figli, accetteresti?"
+  },
+  {
+    "id": 723,
+    "text": "Se scoprissi che il tuo partner ha una dipendenza da shopping online e sta accumulando debiti, come lo aiuteresti?"
+  },
+  {
+    "id": 724,
+    "text": "Se il tuo migliore amico/a ti dicesse che odia il tuo partner, prenderesti in considerazione le sue parole?"
+  },
+  {
+    "id": 725,
+    "text": "Se il tuo partner ti chiedesse di smettere di frequentare un amico/a del sesso opposto, accetteresti per quieto vivere?"
+  },
+  {
+    "id": 726,
+    "text": "Se vedessi il figlio adolescente dei tuoi vicini comprare alcolici con un documento falso, avviseresti i genitori?"
+  },
+  {
+    "id": 727,
+    "text": "Se un tuo amico/a ti confessasse di aver rubato soldi dall'azienda in cui lavorate entrambi, lo denunceresti?"
+  },
+  {
+    "id": 728,
+    "text": "Se il tuo partner andasse a letto con tua sorella/tuo fratello, riusciresti a perdonare uno dei due?"
+  },
+  {
+    "id": 729,
+    "text": "Se scoprissi che il tuo nuovo vicino è un criminale sessuale registrato, cambieresti casa?"
+  },
+  {
+    "id": 730,
+    "text": "Se il tuo partner volesse filmare e pubblicare i vostri video intimi su OnlyFans, saresti d'accordo?"
+  },
+  {
+    "id": 731,
+    "text": "Se un tuo amico ti chiedesse di creare un profilo falso per 'testare' la fedeltà della sua ragazza, lo faresti?"
+  },
+  {
+    "id": 732,
+    "text": "Se scoprissi che il tuo capo ha una relazione con un/a tuo/a subordinato/a, lo segnaleresti alle Risorse Umane?"
+  },
+  {
+    "id": 733,
+    "text": "Se il tuo partner ti tradisse, preferiresti che lo facesse con qualcuno che conosci o con uno sconosciuto?"
+  },
+  {
+    "id": 734,
+    "text": "Se un tuo amico/a ti chiedesse di mentire in tribunale sotto giuramento per salvarlo/a dalla prigione, rischieresti?"
+  },
+  {
+    "id": 735,
+    "text": "Se il tuo partner ti dicesse di aver sognato di tradirti, ti arrabbieresti?"
+  },
+  {
+    "id": 736,
+    "text": "Se scoprissi che il tuo partner ha un feticismo per le persone molto più anziane (GILF/silver fox), come reagiresti?"
+  },
+  {
+    "id": 737,
+    "text": "Se un'amica ti rivelasse che suo figlio non è del marito ma del prete del paese, cosa faresti?"
+  },
+  {
+    "id": 738,
+    "text": "Se il tuo partner ti chiedesse di partecipare a un'orgia, prenderesti in considerazione l'idea?"
+  },
+  {
+    "id": 739,
+    "text": "Se vedessi il tuo professore universitario, sposato e con figli, baciare una studentessa, lo segnaleresti all'università?"
+  },
+  {
+    "id": 740,
+    "text": "Se un tuo amico ti dicesse che suo figlio adolescente si droga, ma ti prega di non dire nulla alla moglie, manterresti il segreto?"
+  },
+  {
+    "id": 741,
+    "text": "Se il tuo partner ti confessasse di essere asessuale dopo anni di matrimonio, cosa faresti?"
+  },
+  {
+    "id": 742,
+    "text": "Se scoprissi che il tuo collega sta boicottando il tuo lavoro per ottenere una promozione al posto tuo, come ti vendicheresti?"
+  },
+  {
+    "id": 743,
+    "text": "Se il tuo partner ti chiedesse di fare un figlio tramite donatore/donatrice perché lui/lei è sterile, accetteresti?"
+  },
+  {
+    "id": 744,
+    "text": "Se scoprissi che il marito della tua vicina la tradisce e lei ti chiede se sai qualcosa, mentiresti per non creare problemi?"
+  },
+  {
+    "id": 745,
+    "text": "Se il tuo partner ti dicesse che vuole smettere di lavorare e dipendere economicamente da te, saresti d'accordo?"
+  },
+  {
+    "id": 746,
+    "text": "Se un tuo amico/a ti chiedesse di fare da 'testimone di nozze' a un matrimonio che consideri una farsa, accetteresti?"
+  },
+  {
+    "id": 747,
+    "text": "Se il tuo capo ti chiedesse di falsificare un report per salvare l'azienda, acconsentiresti?"
+  },
+  {
+    "id": 748,
+    "text": "Se scoprissi che il tuo partner ha votato per un partito politico che detesti, questo potrebbe incrinare la vostra relazione?"
+  },
+  {
+    "id": 749,
+    "text": "Se un amico/a ti confessasse un crimine commesso anni fa e mai scoperto, lo/la consiglieresti di costituirsi?"
+  },
+  {
+    "id": 750,
+    "text": "Se il tuo partner ti desse un ultimatum ('o sposi me o ci lasciamo'), come reagiresti?"
+  },
+  {
+    "id": 751,
+    "text": "Per 1 milione di euro, rinunceresti per sempre al tuo cibo preferito?"
+  },
+  {
+    "id": 752,
+    "text": "Per 1 milione di euro, cambieresti legalmente il tuo nome in 'Panino al Prosciutto'?"
+  },
+  {
+    "id": 753,
+    "text": "Per 1 milione di euro, vivresti per un anno senza internet e senza smartphone?"
+  },
+  {
+    "id": 754,
+    "text": "Per 1 milione di euro, ti faresti un tatuaggio imbarazzante sulla fronte?"
+  },
+  {
+    "id": 755,
+    "text": "Per 1 milione di euro, mangeresti un insetto vivo e disgustoso?"
+  },
+  {
+    "id": 756,
+    "text": "Per 1 milione di euro, passeresti una notte in una casa infestata e notoriamente spaventosa?"
+  },
+  {
+    "id": 757,
+    "text": "Per 1 milione di euro, raderesti a zero capelli e sopracciglia?"
+  },
+  {
+    "id": 758,
+    "text": "Per 1 milione di euro, indosseresti solo abiti del sesso opposto per un anno intero?"
+  },
+  {
+    "id": 759,
+    "text": "Per 1 milione di euro, faresti la proposta di matrimonio alla prima persona che incontri per strada?"
+  },
+  {
+    "id": 760,
+    "text": "Per 1 milione di euro, non parleresti per un mese intero?"
+  },
+  {
+    "id": 761,
+    "text": "Per 1 milione di euro, lasceresti il tuo partner attuale senza dargli/le alcuna spiegazione?"
+  },
+  {
+    "id": 762,
+    "text": "Per 1 milione di euro, andresti a letto con il tuo capo?"
+  },
+  {
+    "id": 763,
+    "text": "Per 1 milione di euro, parteciperesti a un film porno amatoriale (solo una scena, volto non riconoscibile)?"
+  },
+  {
+    "id": 764,
+    "text": "Per 1 milione di euro, venderesti una tua foto nuda a una rivista per adulti?"
+  },
+  {
+    "id": 765,
+    "text": "Per 1 milione di euro, faresti un'operazione di chirurgia estetica scelta da un'altra persona?"
+  },
+  {
+    "id": 766,
+    "text": "Per 1 milione di euro, leccheresti il pavimento di un bagno pubblico?"
+  },
+  {
+    "id": 767,
+    "text": "Per 1 milione di euro, tradiresti il tuo migliore amico rivelando il suo segreto più grande?"
+  },
+  {
+    "id": 768,
+    "text": "Per 1 milione di euro, fingeresti un infortunio per ottenere un risarcimento assicurativo?"
+  },
+  {
+    "id": 769,
+    "text": "Per 1 milione di euro, voteresti per un politico che disprezzi profondamente?"
+  },
+  {
+    "id": 770,
+    "text": "Per 1 milione di euro, rinunceresti alla tua cittadinanza per diventare cittadino di un paese che non ti piace?"
+  },
+  {
+    "id": 771,
+    "text": "Per 1 milione di euro, faresti da alibi a uno sconosciuto accusato di un piccolo crimine?"
+  },
+  {
+    "id": 772,
+    "text": "Per 1 milione di euro, andresti a letto con una persona che trovi fisicamente ripugnante?"
+  },
+  {
+    "id": 773,
+    "text": "Per 1 milione di euro, parteciperesti a un 'gangbang' (con tutte le precauzioni)?"
+  },
+  {
+    "id": 774,
+    "text": "Per 1 milione di euro, ti lasceresti filmare mentre pratichi 'BDSM' estremo?"
+  },
+  {
+    "id": 775,
+    "text": "Per 1 milione di euro, faresti un 'rimjob' a uno sconosciuto/a?"
+  },
+  {
+    "id": 776,
+    "text": "Per 1 milione di euro, parteciperesti a una scena di 'fisting' (come parte attiva o passiva)?"
+  },
+  {
+    "id": 777,
+    "text": "Per 1 milione di euro, ti faresti fare un 'golden shower' in pubblico?"
+  },
+  {
+    "id": 778,
+    "text": "Per 1 milione di euro, venderesti la tua biancheria intima usata online?"
+  },
+  {
+    "id": 779,
+    "text": "Per 1 milione di euro, faresti sesso con un robot dall'aspetto umano?"
+  },
+  {
+    "id": 780,
+    "text": "Per 1 milione di euro, avresti un rapporto sessuale con una persona dello stesso sesso (se sei etero)?"
+  },
+  {
+    "id": 781,
+    "text": "Per 1 milione di euro, non ti laveresti per un mese?"
+  },
+  {
+    "id": 782,
+    "text": "Per 1 milione di euro, rinunceresti alla possibilità di avere figli?"
+  },
+  {
+    "id": 783,
+    "text": "Per 1 milione di euro, premeresti un pulsante che dà una scossa elettrica dolorosa ma non letale a uno sconosciuto?"
+  },
+  {
+    "id": 784,
+    "text": "Per 1 milione di euro, ruberesti 100 euro dalla cassa di un piccolo negozio a conduzione familiare?"
+  },
+  {
+    "id": 785,
+    "text": "Per 1 milione di euro, vivresti per 6 mesi nella natura selvaggia senza alcun aiuto esterno?"
+  },
+  {
+    "id": 786,
+    "text": "Per 1 milione di euro, rinunceresti per sempre all'alcol?"
+  },
+  {
+    "id": 787,
+    "text": "Per 1 milione di euro, canteresti a squarciagola in un luogo pubblico affollato per 10 minuti?"
+  },
+  {
+    "id": 788,
+    "text": "Per 1 milione di euro, daresti uno schiaffo a tua madre (con il suo permesso)?"
+  },
+  {
+    "id": 789,
+    "text": "Per 1 milione di euro, sposeresti uno sconosciuto scelto a caso e ci resteresti sposato per un anno?"
+  },
+  {
+    "id": 790,
+    "text": "Per 1 milione di euro, permetteresti a qualcuno di hackerare tutti i tuoi account e rendere pubblici i tuoi dati?"
+  },
+  {
+    "id": 791,
+    "text": "Per 1 milione di euro, andresti a letto con il/la ex del tuo migliore amico/a?"
+  },
+  {
+    "id": 792,
+    "text": "Per 1 milione di euro, parteciperesti a un 'threesome' (MFF o MMF) con due sconosciuti?"
+  },
+  {
+    "id": 793,
+    "text": "Per 1 milione di euro, praticheresti sesso orale sul partner della tua migliore amica (con il consenso di entrambi)?"
+  },
+  {
+    "id": 794,
+    "text": "Per 1 milione di euro, ti prostituiresti per una notte?"
+  },
+  {
+    "id": 795,
+    "text": "Per 1 milione di euro, faresti un 'creampie' a una pornostar o lo riceveresti?"
+  },
+  {
+    "id": 796,
+    "text": "Per 1 milione di euro, parteciperesti a una scena di 'double penetration'?"
+  },
+  {
+    "id": 797,
+    "text": "Per 1 milione di euro, ti esibiresti in uno spettacolo di 'peep show' per una sera?"
+  },
+  {
+    "id": 798,
+    "text": "Per 1 milione di euro, faresti sesso con una bambola gonfiabile realistica davanti a un pubblico?"
+  },
+  {
+    "id": 799,
+    "text": "Per 1 milione di euro, baceresti con la lingua un tuo parente di primo grado (es. cugino/a)?"
+  },
+  {
+    "id": 800,
+    "text": "Per 1 milione di euro, avresti un rapporto completo con un animale (zoofilia), senza che l'animale soffra?"
+  },
+  {
+    "id": 801,
+    "text": "Per 1 milione di euro, rinunceresti al sesso per 10 anni?"
+  },
+  {
+    "id": 802,
+    "text": "Per 1 milione di euro, interromperesti un funerale urlando una barzelletta?"
+  },
+  {
+    "id": 803,
+    "text": "Per 1 milione di euro, mangeresti un piatto a base di escrementi (cotti e sterilizzati)?"
+  },
+  {
+    "id": 804,
+    "text": "Per 1 milione di euro, ti faresti marchiare a fuoco con il logo di un brand?"
+  },
+  {
+    "id": 805,
+    "text": "Per 1 milione di euro, passeresti una settimana in prigione in una cella con veri criminali?"
+  },
+  {
+    "id": 806,
+    "text": "Per 1 milione di euro, useresti solo il piede sinistro per un anno intero (se sei destrorso)?"
+  },
+  {
+    "id": 807,
+    "text": "Per 1 milione di euro, rinunceresti a vedere i tuoi amici per 5 anni?"
+  },
+  {
+    "id": 808,
+    "text": "Per 1 milione di euro, adotteresti un accento straniero ridicolo per il resto della tua vita?"
+  },
+  {
+    "id": 809,
+    "text": "Per 1 milione di euro, saboteresti la carriera del tuo più grande rivale?"
+  },
+  {
+    "id": 810,
+    "text": "Per 1 milione di euro, ammetteresti un crimine che non hai commesso (senza conseguenze legali)?"
+  },
+  {
+    "id": 811,
+    "text": "Per 1 milione di euro, ti uniresti a una setta religiosa per un anno?"
+  },
+  {
+    "id": 812,
+    "text": "Per 1 milione di euro, faresti sesso anale con un vegetale (es. zucchina) davanti al tuo partner?"
+  },
+  {
+    "id": 813,
+    "text": "Per 1 milione di euro, parteciperesti a un video 'bukkake'?"
+  },
+  {
+    "id": 814,
+    "text": "Per 1 milione di euro, ti lasceresti legare e solleticare per un'ora intera da uno sconosciuto?"
+  },
+  {
+    "id": 815,
+    "text": "Per 1 milione di euro, venderesti un rene sul mercato nero?"
+  },
+  {
+    "id": 816,
+    "text": "Per 1 milione di euro, faresti da 'cuckold', guardando il tuo partner fare sesso con un'altra persona?"
+  },
+  {
+    "id": 817,
+    "text": "Per 1 milione di euro, praticheresti 'foot fetishism' sui piedi di uno sconosciuto per un'ora?"
+  },
+  {
+    "id": 818,
+    "text": "Per 1 milione di euro, faresti 'watersports' (urofilia) con il tuo partner?"
+  },
+  {
+    "id": 819,
+    "text": "Per 1 milione di euro, parteciperesti a un'orgia?"
+  },
+  {
+    "id": 820,
+    "text": "Per 1 milione di euro, fingeresti di essere innamorato/a di qualcuno per un anno intero?"
+  },
+  {
+    "id": 821,
+    "text": "Per 1 milione di euro, distruggeresti l'opera d'arte preferita di un tuo amico?"
+  },
+  {
+    "id": 822,
+    "text": "Per 1 milione di euro, vivresti per un anno come nel 1800, senza tecnologia moderna?"
+  },
+  {
+    "id": 823,
+    "text": "Per 1 milione di euro, mangeresti una pizza con l'ananas ogni giorno per un anno?"
+  },
+  {
+    "id": 824,
+    "text": "Per 1 milione di euro, parleresti in rima per un mese?"
+  },
+  {
+    "id": 825,
+    "text": "Per 1 milione di euro, faresti credere a un bambino che Babbo Natale non esiste il giorno della vigilia?"
+  },
+  {
+    "id": 826,
+    "text": "Per 1 milione di euro, non useresti mai più un mezzo di trasporto a motore?"
+  },
+  {
+    "id": 827,
+    "text": "Per 1 milione di euro, correresti nudo/a per Times Square?"
+  },
+  {
+    "id": 828,
+    "text": "Per 1 milione di euro, cancelleresti permanentemente il tuo account social preferito?"
+  },
+  {
+    "id": 829,
+    "text": "Per 1 milione di euro, diventeresti l'assistente personale di una celebrità che odi per un anno?"
+  },
+  {
+    "id": 830,
+    "text": "Per 1 milione di euro, ti faresti impiantare delle corna finte (ma permanenti)?"
+  },
+  {
+    "id": 831,
+    "text": "Per 1 milione di euro, andresti a letto con entrambi i genitori del tuo partner (contemporaneamente)?"
+  },
+  {
+    "id": 832,
+    "text": "Per 1 milione di euro, parteciperesti a un video ASMR a sfondo erotico?"
+  },
+  {
+    "id": 833,
+    "text": "Per 1 milione di euro, faresti 'pegging' al tuo partner (o lo riceveresti)?"
+  },
+  {
+    "id": 834,
+    "text": "Per 1 milione di euro, ti iscriveresti a un sito di 'sugar daddy/baby' e incontreresti almeno 5 persone?"
+  },
+  {
+    "id": 835,
+    "text": "Per 1 milione di euro, diresti al tuo partner che vuoi una relazione poliamorosa (anche se non è vero)?"
+  },
+  {
+    "id": 836,
+    "text": "Per 1 milione di euro, faresti un 'facial' da 10 uomini diversi?"
+  },
+  {
+    "id": 837,
+    "text": "Per 1 milione di euro, ti travestiresti da feticcio (es. furry, pony play) a una festa di famiglia?"
+  },
+  {
+    "id": 838,
+    "text": "Per 1 milione di euro, gireresti una scena porno softcore con un tuo parente acquisito (es. cognato/a)?"
+  },
+  {
+    "id": 839,
+    "text": "Per 1 milione di euro, rinunceresti per sempre alla musica?"
+  },
+  {
+    "id": 840,
+    "text": "Per 1 milione di euro, sveleresti il finale di ogni film/serie tv ai tuoi amici per un anno?"
+  },
+  {
+    "id": 841,
+    "text": "Per 1 milione di euro, lavoreresti come spazzino per 10 anni?"
+  },
+  {
+    "id": 842,
+    "text": "Per 1 milione di euro, non viaggeresti mai più fuori dalla tua regione?"
+  },
+  {
+    "id": 843,
+    "text": "Per 1 milione di euro, mangeresti solo cibo per cani per un mese?"
+  },
+  {
+    "id": 844,
+    "text": "Per 1 milione di euro, difenderesti pubblicamente un'idea che ritieni moralmente sbagliata?"
+  },
+  {
+    "id": 845,
+    "text": "Per 1 milione di euro, faresti causa ai tuoi genitori per un motivo futile?"
+  },
+  {
+    "id": 846,
+    "text": "Per 1 milione di euro, ti infiltreresti in un gruppo terroristico per l'FBI?"
+  },
+  {
+    "id": 847,
+    "text": "Per 1 milione di euro, sposeresti qualcuno che i tuoi genitori hanno scelto per te?"
+  },
+  {
+    "id": 848,
+    "text": "Per 1 milione di euro, sacrificheresti la vita del tuo animale domestico?"
+  },
+  {
+    "id": 849,
+    "text": "Saresti disposto/a a provare una relazione non convenzionale come il BDSM o il poliamore?"
+  },
+  {
+    "id": 850,
+    "text": "Se il tuo partner ti chiedesse di provare 'pegging', saresti aperto/a all'idea?"
+  },
+  {
+    "id": 851,
+    "text": "Pensi che la pornografia con personaggi 'teen' (o 'barely legal') sia eticamente accettabile?"
+  },
+  {
+    "id": 852,
+    "text": "Parteciperesti mai a un 'glory hole'?"
+  },
+  {
+    "id": 853,
+    "text": "Se il tuo partner avesse un feticismo per i piedi, saresti a disagio o cercheresti di assecondarlo?"
+  },
+  {
+    "id": 854,
+    "text": "La pratica del 'cuckolding' è una fantasia che ti affascina o ti ripugna?"
+  },
+  {
+    "id": 855,
+    "text": "Parteciperesti a una relazione 'age play' (in cui si interpreta un'età diversa)?"
+  },
+  {
+    "id": 856,
+    "text": "Consideri accettabile la categoria 'step-fantasy' (fantasie incestuose con parenti acquisiti) nella pornografia?"
+  },
+  {
+    "id": 857,
+    "text": "Se dovessi girare una scena porno, accetteresti di interpretare una scena 'kinky' piuttosto che 'vanilla'?"
+  },
+  {
+    "id": 858,
+    "text": "Consideri il 'bondage' una pratica sicura e consensuale in una relazione?"
+  },
+  {
+    "id": 859,
+    "text": "Se il tuo partner ti proponesse di fare 'sounding' (inserimento di oggetti nell'uretra), come reagiresti?"
+  },
+  {
+    "id": 860,
+    "text": "Saresti disposto/a a praticare 'deepthroat' con il tuo partner?"
+  },
+  {
+    "id": 861,
+    "text": "Saresti disposto/a a praticare 'rimjob' con il tuo partner?"
+  },
+  {
+    "id": 862,
+    "text": "Saresti disposto/a a provare 'fisting' con un partner di cui ti fidi ciecamente?"
+  },
+  {
+    "id": 863,
+    "text": "Consideri la pratica del 'findom' (dominazione finanziaria) una forma di sfruttamento?"
+  },
+  {
+    "id": 864,
+    "text": "Se scoprissi che il tuo partner è un 'furry' e partecipa a raduni in costume, come reagiresti?"
+  },
+  {
+    "id": 865,
+    "text": "Parteciperesti a un 'gangbang' se tutte le persone coinvolte fossero attraenti e testate?"
+  },
+  {
+    "id": 866,
+    "text": "Pensi che la categoria 'public humiliation' nella pornografia sia dannosa per la psiche?"
+  },
+  {
+    "id": 867,
+    "text": "Saresti mai un 'dom' o un 'sub' in una relazione BDSM?"
+  },
+  {
+    "id": 868,
+    "text": "Se il tuo partner volesse provare 'watersports' (urofilia), saresti disposto/a a sperimentare?"
+  },
+  {
+    "id": 869,
+    "text": "Consideri eccitante la pratica del 'facial cumshot'?"
+  },
+  {
+    "id": 870,
+    "text": "Saresti a favore del divieto di produzione di porno deepfake non consensuale?"
+  },
+  {
+    "id": 871,
+    "text": "Consideri la pornografia con 'tentacoli' (tentacle porn) semplicemente una fantasia bizzarra?"
+  },
+  {
+    "id": 872,
+    "text": "Saresti disposto/a a fare 'ass-to-mouth' in un contesto consensuale e igienico?"
+  },
+  {
+    "id": 873,
+    "text": "Se il tuo partner ti chiedesse di indossare un pannolino per una fantasia 'diaper lover', accetti?"
+  },
+  {
+    "id": 874,
+    "text": "Consideri la 'spremofilia' (feticismo dello sperma) una pratica accettabile?"
+  },
+  {
+    "id": 875,
+    "text": "Se un amico ti confessasse di essere un 'vorarefilo' (feticismo della vore), la tua amicizia cambierebbe?"
+  },
+  {
+    "id": 876,
+    "text": "Parteciperesti a un video 'facesitting'?"
+  },
+  {
+    "id": 877,
+    "text": "Consideri il 'ballbusting' un gioco erotico accettabile?"
+  },
+  {
+    "id": 878,
+    "text": "Saresti mai attratto/a da una relazione con una persona 'trans' (se non lo hai mai considerato prima)?"
+  },
+  {
+    "id": 879,
+    "text": "La categoria 'mind control' nella pornografia ti spaventa?"
+  },
+  {
+    "id": 880,
+    "text": "Se il tuo partner volesse provare 'breath play' (giochi di soffocamento), saresti terrorizzato/a o curioso/a?"
+  },
+  {
+    "id": 881,
+    "text": "Pagheresti per delle 'sneakers usate' per soddisfare un feticismo?"
+  },
+  {
+    "id": 882,
+    "text": "Saresti disposto/a a un 'double anal' se fosse una fantasia del tuo partner?"
+  },
+  {
+    "id": 883,
+    "text": "Pensi che la categoria 'cheating wife/husband' nella pornografia normalizzi l'infedeltà?"
+  },
+  {
+    "id": 884,
+    "text": "Se il tuo partner ti chiedesse di fare sesso in un cimitero, lo faresti?"
+  },
+  {
+    "id": 885,
+    "text": "Pensi che la 'coprofilia' (feticismo degli escrementi) possa mai essere accettata?"
+  },
+  {
+    "id": 886,
+    "text": "Saresti a favore di corsi di 'educazione al porno' nelle scuole per insegnare a distinguere la finzione dalla realtà?"
+  },
+  {
+    "id": 887,
+    "text": "Consideri etica la categoria 'forced-bi' nella pornografia?"
+  },
+  {
+    "id": 888,
+    "text": "Se potessi, realizzeresti una fantasia legata al 'bondage'?"
+  },
+  {
+    "id": 889,
+    "text": "Pensi che il porno 'gonzo' (amatoriale, senza trama) sia più autentico del porno tradizionale?"
+  },
+  {
+    "id": 890,
+    "text": "Saresti disposto/a a fare un 'anal creampie'?"
+  },
+  {
+    "id": 891,
+    "text": "Consideri l' 'infantilismo' (comportarsi come un neonato) una parafilia innocua?"
+  },
+  {
+    "id": 892,
+    "text": "Se il tuo partner ti chiedesse di partecipare a uno 'spit roast', accetteresti?"
+  },
+  {
+    "id": 893,
+    "text": "Consideri etico produrre o consumare porno che simula violenza non consensuale (rape fantasy)?"
+  },
+  {
+    "id": 894,
+    "text": "Proveresti mai la 'snowballing' (passaggio di sperma da una bocca all'altra)?"
+  },
+  {
+    "id": 895,
+    "text": "Se il tuo partner volesse che tu ingoiassi, lo faresti sempre o solo qualche volta?"
+  },
+  {
+    "id": 896,
+    "text": "Consideri la 'dendrofilia' (attrazione per alberi e piante) una parafilia innocua?"
+  },
+  {
+    "id": 897,
+    "text": "Saresti disposto/a a provare 'e-stim' (elettrostimolazione erotica)?"
+  },
+  {
+    "id": 898,
+    "text": "Consideri la pornografia 'hentai' una forma d'arte?"
+  },
+  {
+    "id": 899,
+    "text": "Se il tuo partner ti chiedesse di avere un rapporto sessuale mentre sei bendato/a e legato/a, ti fideresti?"
+  },
+  {
+    "id": 900,
+    "text": "Saresti disposto/a a provare un 'threesome'?"
+  },
+  {
+    "id": 901,
+    "text": "Pensi che la pornografia 'POV' (Point of View) aumenti l'immersione dell'utente?"
+  },
+  {
+    "id": 902,
+    "text": "Saresti disposto/a a praticare 'sesso tantrico' per ore?"
+  },
+  {
+    "id": 903,
+    "text": "Ti travestiresti mai completamente in latex per soddisfare un feticismo?"
+  },
+  {
+    "id": 904,
+    "text": "Se il tuo partner ti rivelasse di essere un 'sex-addict', cercheresti aiuto professionale con lui/lei?"
+  },
+  {
+    "id": 905,
+    "text": "Pensi che la pratica del 'pegging' metta in discussione la mascolinità eteronormativa?"
+  },
+  {
+    "id": 906,
+    "text": "Parteciperesti a un 'casting couch' sapendo che è una simulazione per un video porno?"
+  },
+  {
+    "id": 907,
+    "text": "Saresti disposto/a a provare 'food play' (usare il cibo durante il sesso) con il tuo partner?"
+  },
+  {
+    "id": 908,
+    "text": "Consideri il 'chemsex' (sesso sotto l'effetto di droghe) una pratica da condannare?"
+  },
+  {
+    "id": 909,
+    "text": "Saresti aperto/a a una relazione con una persona 'asessuale'?"
+  },
+  {
+    "id": 910,
+    "text": "Se il tuo partner ti chiedesse di fare 'sesso virtuale' con degli sconosciuti, saresti d'accordo?"
+  },
+  {
+    "id": 911,
+    "text": "Pensi che la categoria 'interracial' nella pornografia veicoli stereotipi dannosi?"
+  },
+  {
+    "id": 912,
+    "text": "Se il tuo partner ti chiedesse di rasarti completamente i peli pubici, lo faresti?"
+  },
+  {
+    "id": 913,
+    "text": "Saresti disposto/a a provare la 'masturbazione reciproca' in un luogo pubblico appartato?"
+  },
+  {
+    "id": 914,
+    "text": "Consideri il 'dirty talk' essenziale per un buon sesso?"
+  },
+  {
+    "id": 915,
+    "text": "Se il tuo partner volesse provare il 'figging' (uso dello zenzero per stimolazione anale), oseresti?"
+  },
+  {
+    "id": 916,
+    "text": "Consideri eticamente accettabile la zoofilia simulata (con costumi, non animali veri) nella pornografia?"
+  },
+  {
+    "id": 917,
+    "text": "Saresti disposto/a a fare un 'felching' (pratica sessuale estrema)?"
+  },
+  {
+    "id": 918,
+    "text": "Consideri il feticismo del 'vomito' (emetofilia) una pratica accettabile?"
+  },
+  {
+    "id": 919,
+    "text": "Se il tuo partner volesse provare a essere dominato/a finanziariamente da te, accetteresti?"
+  },
+  {
+    "id": 920,
+    "text": "Pensi che la pornografia VR (realtà virtuale) cambierà l'industria del porno?"
+  },
+  {
+    "id": 921,
+    "text": "Saresti disposto/a a provare il 'trampling' (farsi calpestare)?"
+  },
+  {
+    "id": 922,
+    "text": "Se il tuo partner ti chiedesse di fare un 'dick rating' onesto, daresti un voto basso se fosse il caso?"
+  },
+  {
+    "id": 923,
+    "text": "Saresti disposto/a a praticare 'Gokkun' (pratica sessuale di gruppo) con il tuo partner?"
+  },
+  {
+    "id": 924,
+    "text": "Consideri la masturbazione un tradimento se la fai pensando a qualcun altro/a?"
+  },
+  {
+    "id": 925,
+    "text": "Saresti disposto/a a provare la pratica del 'docking'?"
+  },
+  {
+    "id": 926,
+    "text": "Se il tuo partner ti chiedesse di partecipare a un 'daisy chain', accetteresti?"
+  },
+  {
+    "id": 927,
+    "text": "Pensi che il porno 'femdom' (dominazione femminile) sia un passo avanti per l'emancipazione femminile?"
+  },
+  {
+    "id": 928,
+    "text": "Saresti disposto/a a leccare le ascelle del tuo partner?"
+  },
+  {
+    "id": 929,
+    "text": "Consideri il 'sploshing' (feticismo del cibo spalmato sul corpo) una pratica accettabile?"
+  },
+  {
+    "id": 930,
+    "text": "Se il tuo partner ti chiedesse di fare 'sesso telefonico' con uno/a sconosciuto/a, lo faresti?"
+  },
+  {
+    "id": 931,
+    "text": "Pensi che la categoria 'shemale' nella pornografia sia transfobica?"
+  },
+  {
+    "id": 932,
+    "text": "Saresti disposto/a a provare il 'tribadismo' (fregamento genitale tra donne)?"
+  },
+  {
+    "id": 933,
+    "text": "Consideri la 'formicofilia' (feticismo degli insetti) una parafilia accettabile?"
+  },
+  {
+    "id": 934,
+    "text": "Se il tuo partner volesse provare 'frotteurismo' (strusciarsi su sconosciuti) come fantasia di coppia, saresti complice?"
+  },
+  {
+    "id": 935,
+    "text": "Trovi strano guardare video ASMR di 'ear licking' (leccare l'orecchio)?"
+  },
+  {
+    "id": 936,
+    "text": "Saresti disposto/a a un ' Eiffel tower' (atto sessuale a tre)?"
+  },
+  {
+    "id": 937,
+    "text": "Consideri la 'macofilia' (attrazione per persone giganti) una parafilia accettabile?"
+  },
+  {
+    "id": 938,
+    "text": "Se il tuo partner ti chiedesse di fare una 'rusty trombone', cosa risponderesti?"
+  },
+  {
+    "id": 939,
+    "text": "Pensi che la pratica del 'sounding' sia pericolosa?"
+  },
+  {
+    "id": 940,
+    "text": "Saresti disposto/a a provare il 'dacryphilia' (piangere durante il sesso)?"
+  },
+  {
+    "id": 941,
+    "text": "Consideri la categoria 'aliens' nella pornografia una fantasia innocua?"
+  },
+  {
+    "id": 942,
+    "text": "Se il tuo partner volesse provare a fare sesso in 'slow motion', avresti la pazienza?"
+  },
+  {
+    "id": 943,
+    "text": "Consideri il feticismo dei 'cartoni animati' (toonophilia) innocuo?"
+  },
+  {
+    "id": 944,
+    "text": "Saresti disposto/a a provare il 'salirofilia' (sporcare o rovinare l'aspetto di una persona attraente)?"
+  },
+  {
+    "id": 945,
+    "text": "Consideri il 'voice fetish' una forma di feticismo comune?"
+  },
+  {
+    "id": 946,
+    "text": "Se il tuo partner ti chiedesse di fare un 'vampire' (mordicchiare e succhiare il collo fino a lasciare un segno evidente), lo faresti?"
+  },
+  {
+    "id": 947,
+    "text": "Consideri il 'table top dancing' una forma d'arte?"
+  },
+  {
+    "id": 948,
+    "text": "Saresti disposto/a a provare a fare sesso in un luogo dove potreste essere scoperti?"
+  },
+  {
+    "id": 949,
+    "text": "Se potessi garantire la pace nel mondo, ma in cambio nessuno potrebbe più innamorarsi, accetteresti?"
+  },
+  {
+    "id": 950,
+    "text": "Sacrificheresti la vita di 100 persone per curare il cancro per sempre?"
+  },
+  {
+    "id": 951,
+    "text": "Se potessi eliminare la povertà nel mondo, ma tutti dovrebbero vivere con lo stretto indispensabile (senza lusso), lo faresti?"
+  },
+  {
+    "id": 952,
+    "text": "Per garantire la pace nel mondo, saresti disposto a rinunciare a tutta la tua privacy e a essere monitorato 24/7?"
+  },
+  {
+    "id": 953,
+    "text": "Se un'intelligenza artificiale superiore garantisse un governo giusto e la pace, le cederesti il controllo totale?"
+  },
+  {
+    "id": 954,
+    "text": "Elimineresti tutte le religioni per porre fine ai conflitti religiosi, anche se ciò toglierebbe conforto a miliardi di persone?"
+  },
+  {
+    "id": 955,
+    "text": "Se potessi premere un pulsante che fa sparire istantaneamente tutte le armi da fuoco, lo premeresti?"
+  },
+  {
+    "id": 956,
+    "text": "Per risolvere il cambiamento climatico, saresti a favore di una dittatura ecologica globale?"
+  },
+  {
+    "id": 957,
+    "text": "Se potessi, renderesti tutta l'umanità sterile per risolvere il problema della sovrappopolazione, condannandola all'estinzione?"
+  },
+  {
+    "id": 958,
+    "text": "Doneresti un tuo organo (es. un rene) a uno sconosciuto per salvargli la vita, senza ricevere nulla in cambio?"
+  },
+  {
+    "id": 959,
+    "text": "Se potessi, distribuiresti equamente tutta la ricchezza del mondo, anche se ciò significherebbe togliere soldi a chi li ha guadagnati onestamente?"
+  },
+  {
+    "id": 960,
+    "text": "Per la pace nel mondo, accetteresti che tutti gli esseri umani vengano 'drogati' con un siero che sopprime l'aggressività?"
+  },
+  {
+    "id": 961,
+    "text": "Saresti a favore di un'unica lingua e cultura mondiale per eliminare le divisioni, anche se ciò cancellerebbe la diversità?"
+  },
+  {
+    "id": 962,
+    "text": "Se potessi, cancelleresti la memoria di tutti i conflitti e le guerre passate, rischiando che vengano ripetuti?"
+  },
+  {
+    "id": 963,
+    "text": "Per avere la pace nel mondo, saresti disposto a vivere in una simulazione controllata, senza sapere che non è reale?"
+  },
+  {
+    "id": 964,
+    "text": "Se scoprissi la cura per l'invecchiamento, la condivideresti con tutti?"
+  },
+  {
+    "id": 965,
+    "text": "È più importante salvare la foresta amazzonica che garantire lavoro a migliaia di famiglie povere?"
+  },
+  {
+    "id": 966,
+    "text": "Se potessi, elimineresti la capacità umana di provare odio?"
+  },
+  {
+    "id": 967,
+    "text": "Per garantire la pace, saresti d'accordo a eliminare l'individualità e a far parte di una coscienza collettiva?"
+  },
+  {
+    "id": 968,
+    "text": "Se potessi porre fine alla fame nel mondo, ma in cambio dovresti uccidere una persona innocente, lo faresti?"
+  },
+  {
+    "id": 969,
+    "text": "È giusto che i paesi ricchi impongano sanzioni economiche a paesi poveri per motivi politici, anche se a soffrirne è la popolazione civile?"
+  },
+  {
+    "id": 970,
+    "text": "Saresti a favore di un test di 'coscienza morale' per poter accedere a posizioni di potere?"
+  },
+  {
+    "id": 971,
+    "text": "Se potessi, daresti a tutti gli esseri umani la capacità di leggere nel pensiero per promuovere l'onestà totale?"
+  },
+  {
+    "id": 972,
+    "text": "Per la pace nel mondo, accetteresti che l'arte, la musica e la letteratura vengano censurate per eliminare ogni messaggio potenzialmente divisivo?"
+  },
+  {
+    "id": 973,
+    "text": "Se potessi, faresti in modo che tutti gli esseri umani abbiano lo stesso quoziente intellettivo?"
+  },
+  {
+    "id": 974,
+    "text": "È giusto colonizzare altri pianeti, anche se ciò potrebbe mettere a rischio potenziali forme di vita aliene non intelligenti?"
+  },
+  {
+    "id": 975,
+    "text": "Se potessi, elimineresti il concetto di 'nazione' e di confine?"
+  },
+  {
+    "id": 976,
+    "text": "Per la pace mondiale, saresti a favore di un governo gestito da filosofi e scienziati invece che da politici eletti?"
+  },
+  {
+    "id": 977,
+    "text": "Se potessi, renderesti tutti gli esseri umani empatici al 100%?"
+  },
+  {
+    "id": 978,
+    "text": "Per porre fine alla criminalità, saresti a favore di un sistema che punisce i crimini prima che vengano commessi (stile Minority Report)?"
+  },
+  {
+    "id": 979,
+    "text": "È giusto investire miliardi nella ricerca spaziale quando ci sono ancora persone che muoiono di fame sulla Terra?"
+  },
+  {
+    "id": 980,
+    "text": "Se potessi, faresti in modo che tutti abbiano la stessa identica apparenza fisica per eliminare il razzismo e il body shaming?"
+  },
+  {
+    "id": 981,
+    "text": "Per la pace nel mondo, accetteresti che l'umanità perda la capacità di ricordare il passato (amnesia collettiva)?"
+  },
+  {
+    "id": 982,
+    "text": "Saresti a favore di un figlio a coppia come politica di controllo delle nascite globale?"
+  },
+  {
+    "id": 983,
+    "text": "Se potessi, elimineresti la capacità di provare dolore fisico, anche se è un meccanismo di difesa fondamentale?"
+  },
+  {
+    "id": 984,
+    "text": "Per garantire un futuro sostenibile, è giusto limitare le libertà individuali di oggi (es. viaggi, consumi)?"
+  },
+  {
+    "id": 985,
+    "text": "Se potessi, elimineresti il sonno, permettendo alle persone di essere produttive 24/7?"
+  },
+  {
+    "id": 986,
+    "text": "È più importante proteggere la libertà di espressione che prevenire la diffusione di fake news e discorsi d'odio?"
+  },
+  {
+    "id": 987,
+    "text": "Se potessi, faresti in modo che tutti credano nella stessa, unica e pacifica religione?"
+  },
+  {
+    "id": 988,
+    "text": "Per la pace nel mondo, saresti disposto a rinunciare al tuo libero arbitrio?"
+  },
+  {
+    "id": 989,
+    "text": "Saresti a favore di un sistema di 'credito sociale' globale per incoraggiare comportamenti virtuosi?"
+  },
+  {
+    "id": 990,
+    "text": "Se potessi, cancelleresti il concetto di 'denaro'?"
+  },
+  {
+    "id": 991,
+    "text": "È giusto che un'IA decida chi riceve un organo per un trapianto in base a un calcolo di 'utilità sociale'?"
+  },
+  {
+    "id": 992,
+    "text": "Se potessi, garantiresti a tutti una vita felice ma corta (es. 40 anni), anziché lunga con sofferenze?"
+  },
+  {
+    "id": 993,
+    "text": "Per la pace nel mondo, saresti disposto a sacrificare tutti gli animali non umani?"
+  },
+  {
+    "id": 994,
+    "text": "Se potessi, elimineresti la competizione in ogni ambito (sport, lavoro, amore)?"
+  },
+  {
+    "id": 995,
+    "text": "È giusto usare la geoingegneria per combattere il cambiamento climatico, anche se i rischi a lungo termine sono sconosciuti?"
+  },
+  {
+    "id": 996,
+    "text": "Se potessi, faresti in modo che tutti i leader mondiali siano donne?"
+  },
+  {
+    "id": 997,
+    "text": "Per la pace nel mondo, saresti disposto a vivere sotto una dittatura benevola?"
+  },
+  {
+    "id": 998,
+    "text": "Se potessi premere un pulsante per resettare la civiltà e ricominciare da zero, lo premeresti?"
+  },
+  {
+    "id": 999,
+    "text": "Per 1 milione di euro, ti innamoreresti di una persona che non ti attrae fisicamente, ma che ti ama profondamente?"
+  },
+  {
+    "id": 1000,
+    "text": "Per 1 milione di euro, fingeresti di essere il genitore di un bambino che non conosci, per un anno?"
+  },
+  {
+    "id": 1001,
+    "text": "Per 1 milione di euro, faresti un atto di disobbedienza civile non violenta che ti porterebbe all'arresto per una causa in cui credi?"
+  },
+  {
+    "id": 1002,
+    "text": "Sei Rachel Green (Friends), lasceresti il tuo lavoro a Parigi per Ross?"
+  },
+  {
+    "id": 1003,
+    "text": "Sei Joey Tribbiani (Friends), condivideresti il tuo cibo, anche se sei affamato?"
+  },
+  {
+    "id": 1004,
+    "text": "Sei Monica Geller (Friends), lasceresti il tuo appartamento super organizzato per un posto meno perfetto?"
+  },
+  {
+    "id": 1005,
+    "text": "Sei Chandler Bing (Friends), rinunceresti a fare battute sarcastiche per un giorno intero?"
+  },
+  {
+    "id": 1006,
+    "text": "Sei Phoebe Buffay (Friends), rinunceresti a credere nelle tue teorie strambe per conformarti?"
+  },
+  {
+    "id": 1007,
+    "text": "Sei Ross Geller (Friends), ti sposeresti una terza volta con la stessa persona?"
+  },
+  {
+    "id": 1008,
+    "text": "Sei Gunther (Friends), ti dichiareresti a Rachel sapendo di non essere ricambiato?"
+  },
+  {
+    "id": 1009,
+    "text": "Sei Janice (Friends), cambieresti la tua risata iconica per piacere di più agli amici di Chandler?"
+  },
+  {
+    "id": 1010,
+    "text": "Sei Richard Burke (Friends), rinunceresti alla possibilità di avere figli per stare con Monica?"
+  },
+  {
+    "id": 1011,
+    "text": "Sei Mike Hannigan (Friends), fingeresti di essere un'altra persona per fare colpo su Phoebe?"
+  },
+  {
+    "id": 1012,
+    "text": "Sei Tag Jones (Friends), usciresti con Rachel sapendo che è ancora innamorata di Ross?"
+  },
+  {
+    "id": 1013,
+    "text": "Sei Carol Willick (Friends), torneresti con Ross per il bene di Ben?"
+  },
+  {
+    "id": 1014,
+    "text": "Sei Susan Bunch (Friends), cercheresti di essere amica di Ross, nonostante la tensione con Carol?"
+  },
+  {
+    "id": 1015,
+    "text": "Sei Frank Buffay Jr. (Friends), saresti padre surrogato per tua sorella Phoebe?"
+  },
+  {
+    "id": 1016,
+    "text": "Sei Estelle Leonard (Friends), daresti un consiglio onesto a Joey, anche se significa fargli perdere un lavoro?"
+  },
+  {
+    "id": 1017,
+    "text": "Sei Emma Geller-Green (Friends, adulta), guarderesti il video messaggio di compleanno dei tuoi genitori?"
+  },
+  {
+    "id": 1018,
+    "text": "Sei Jack Geller (Friends), saresti meno competitivo con Monica per non metterla in imbarazzo?"
+  },
+  {
+    "id": 1019,
+    "text": "Sei Judy Geller (Friends), tratteresti Ross e Monica in modo più equo?"
+  },
+  {
+    "id": 1020,
+    "text": "Sei Barry Farber (Friends), ti risposeresti con Mindy dopo averla tradita con Rachel?"
+  },
+  {
+    "id": 1021,
+    "text": "Sei Michael Scott (The Office), mentiresti ai tuoi dipendenti per essere il loro amico?"
+  },
+  {
+    "id": 1022,
+    "text": "Sei Dwight Schrute (The Office), rinunceresti a essere il braccio destro di Michael per una promozione?"
+  },
+  {
+    "id": 1023,
+    "text": "Sei Jim Halpert (The Office), rinunceresti a fare scherzi a Dwight per la tranquillità dell'ufficio?"
+  },
+  {
+    "id": 1024,
+    "text": "Sei Pam Beesly (The Office), lasceresti la tua passione per l'arte per un lavoro stabile?"
+  },
+  {
+    "id": 1025,
+    "text": "Sei Andy Bernard (The Office), ti arrabbieresti se qualcuno ti chiamasse 'Nard Dog'?"
+  },
+  {
+    "id": 1026,
+    "text": "Sei Angela Martin (The Office), ti fideresti di Oscar Martinez per prenderti cura dei tuoi gatti?"
+  },
+  {
+    "id": 1027,
+    "text": "Sei Kevin Malone (The Office), preferiresti un chili perfetto o un buon conto bancario?"
+  },
+  {
+    "id": 1028,
+    "text": "Sei Oscar Martinez (The Office), riveleresti pubblicamente la relazione di Angela con Dwight?"
+  },
+  {
+    "id": 1029,
+    "text": "Sei Stanley Hudson (The Office), andresti a lavoro un giorno extra per il bonus?"
+  },
+  {
+    "id": 1030,
+    "text": "Sei Phyllis Lapin-Vance (The Office), useresti il tuo matrimonio per ottenere vantaggi sul lavoro?"
+  },
+  {
+    "id": 1031,
+    "text": "Sei Meredith Palmer (The Office), saresti più discreta riguardo alla tua vita privata in ufficio?"
+  },
+  {
+    "id": 1032,
+    "text": "Sei Creed Bratton (The Office), ammetteresti un crimine commesso in passato per liberarti la coscienza?"
+  },
+  {
+    "id": 1033,
+    "text": "Sei Kelly Kapoor (The Office), lasceresti Ryan Howard per qualcuno che ti tratta meglio?"
+  },
+  {
+    "id": 1034,
+    "text": "Sei Ryan Howard (The Office), daresti la precedenza all'amicizia piuttosto che al successo?"
+  },
+  {
+    "id": 1035,
+    "text": "Sei Toby Flenderson (The Office), saresti più assertivo nel tuo ruolo di HR manager?"
+  },
+  {
+    "id": 1036,
+    "text": "Sei Erin Hannon (The Office), saresti più curiosa di conoscere i tuoi genitori biologici?"
+  },
+  {
+    "id": 1037,
+    "text": "Sei Gabe Lewis (The Office), rinunceresti a essere il favorito di Jo Bennett per l'amore di Erin?"
+  },
+  {
+    "id": 1038,
+    "text": "Sei Holly Flax (The Office), lasceresti Michael per un lavoro più stabile e meno folle?"
+  },
+  {
+    "id": 1039,
+    "text": "Sei Robert California (The Office), ti farebbe piacere lavorare in un ufficio 'normale'?"
+  },
+  {
+    "id": 1040,
+    "text": "Sei David Wallace (The Office), venderesti la tua azienda a Sabre per salvarla dalla bancarotta?"
+  },
+  {
+    "id": 1041,
+    "text": "Sei Daenerys Targaryen (Game of Thrones), bruceresti una città intera per ottenere il trono?"
+  },
+  {
+    "id": 1042,
+    "text": "Sei Jon Snow (Game of Thrones), infrangeresti il tuo giuramento per amore?"
+  },
+  {
+    "id": 1043,
+    "text": "Sei Tyrion Lannister (Game of Thrones), ti fideresti ancora di tua sorella Cersei?"
+  },
+  {
+    "id": 1044,
+    "text": "Sei Arya Stark (Game of Thrones), rinunceresti alla tua vendetta per una vita normale?"
+  },
+  {
+    "id": 1045,
+    "text": "Sei Sansa Stark (Game of Thrones), ti fideresti di un uomo dopo tutte le esperienze traumatiche?"
+  },
+  {
+    "id": 1046,
+    "text": "Sei Cersei Lannister (Game of Thrones), sacrificheresti i tuoi figli per il potere?"
+  },
+  {
+    "id": 1047,
+    "text": "Sei Jaime Lannister (Game of Thrones), lasceresti Cersei per un amore più sano?"
+  },
+  {
+    "id": 1048,
+    "text": "Sei Bran Stark (Game of Thrones), useresti il tuo potere di Corvo a Tre Occhi per cambiare il passato?"
+  },
+  {
+    "id": 1049,
+    "text": "Sei Jorah Mormont (Game of Thrones), smetteresti di servire Daenerys se ti rifiutasse di nuovo?"
+  },
+  {
+    "id": 1050,
+    "text": "Sei Varys (Game of Thrones), tradiresti un re per il bene del regno?"
+  },
+  {
+    "id": 1051,
+    "text": "Sei Littlefinger (Game of Thrones), ti fideresti di qualcuno più di quanto ti fidi di te stesso?"
+  },
+  {
+    "id": 1052,
+    "text": "Sei Theon Greyjoy (Game of Thrones), saresti più leale alla tua famiglia biologica che a quella che ti ha cresciuto?"
+  },
+  {
+    "id": 1053,
+    "text": "Sei Brienne of Tarth (Game of Thrones), rinunceresti al tuo onore per salvare la vita di Jaime?"
+  },
+  {
+    "id": 1054,
+    "text": "Sei Samwell Tarly (Game of Thrones), smetteresti di leggere per essere un guerriero migliore?"
+  },
+  {
+    "id": 1055,
+    "text": "Sei Melisandre (Game of Thrones), sacrificheresti un innocente per il tuo dio?"
+  },
+  {
+    "id": 1056,
+    "text": "Sei Hound (Game of Thrones), smetteresti di combattere per una vita pacifica?"
+  },
+  {
+    "id": 1057,
+    "text": "Sei Gilly (Game of Thrones), lasceresti Samwell per una vita più sicura?"
+  },
+  {
+    "id": 1058,
+    "text": "Sei Davos Seaworth (Game of Thrones), saresti più fedele a Stannis che a Jon Snow?"
+  },
+  {
+    "id": 1059,
+    "text": "Sei Margaery Tyrell (Game of Thrones), useresti il tuo fascino per ottenere il potere, anche a costo della vita?"
+  },
+  {
+    "id": 1060,
+    "text": "Sei Joffrey Baratheon (Game of Thrones), ti preoccuperesti del benessere dei tuoi sudditi?"
+  },
+  {
+    "id": 1061,
+    "text": "Sei Harry Potter (Harry Potter), avresti scelto di andare a Serpeverde per scoprire i segreti di Voldemort?"
+  },
+  {
+    "id": 1062,
+    "text": "Sei Hermione Granger (Harry Potter), lasceresti i tuoi amici in pericolo per studiare e metterti in salvo?"
+  },
+  {
+    "id": 1063,
+    "text": "Sei Ron Weasley (Harry Potter), affronteresti i tuoi ragni giganti per salvare i tuoi amici?"
+  },
+  {
+    "id": 1064,
+    "text": "Sei Albus Silente (Harry Potter), nasconderesti la verità a Harry per proteggerlo?"
+  },
+  {
+    "id": 1065,
+    "text": "Sei Severus Piton (Harry Potter), ti sacrificheresti per il figlio della donna che amavi?"
+  },
+  {
+    "id": 1066,
+    "text": "Sei Lord Voldemort (Harry Potter), rinunceresti all'immortalità per l'amore?"
+  },
+  {
+    "id": 1067,
+    "text": "Sei Draco Malfoy (Harry Potter), ti ribelleresti alla tua famiglia per fare la cosa giusta?"
+  },
+  {
+    "id": 1068,
+    "text": "Sei Hagrid (Harry Potter), riveleresti un segreto su una creatura magica per proteggerla?"
+  },
+  {
+    "id": 1069,
+    "text": "Sei Minerva McGranitt (Harry Potter), faresti un incantesimo non etico per difendere Hogwarts?"
+  },
+  {
+    "id": 1070,
+    "text": "Sei Dobby (Harry Potter), disobbediresti a un ordine del tuo padrone per salvare Harry?"
+  },
+  {
+    "id": 1071,
+    "text": "Sei Bellatrix Lestrange (Harry Potter), rinunceresti alla fedeltà a Voldemort per la tua famiglia?"
+  },
+  {
+    "id": 1072,
+    "text": "Sei Sirius Black (Harry Potter), ti fideresti di Piton per salvare Harry?"
+  },
+  {
+    "id": 1073,
+    "text": "Sei Remus Lupin (Harry Potter), saresti un buon padre sapendo di essere un lupo mannaro?"
+  },
+  {
+    "id": 1074,
+    "text": "Sei Neville Paciock (Harry Potter), rinunceresti a combattere per la tua paura?"
+  },
+  {
+    "id": 1075,
+    "text": "Sei Ginny Weasley (Harry Potter), aspetteresti Harry per anni, senza frequentare altri?"
+  },
+  {
+    "id": 1076,
+    "text": "Sei Luna Lovegood (Harry Potter), smetteresti di credere nelle creature magiche per essere accettata?"
+  },
+  {
+    "id": 1077,
+    "text": "Sei Dolores Umbridge (Harry Potter), useresti la magia per scopi pacifici?"
+  },
+  {
+    "id": 1078,
+    "text": "Sei Dursley (Harry Potter), tratteresti Harry come un figlio tuo?"
+  },
+  {
+    "id": 1079,
+    "text": "Sei Lucius Malfoy (Harry Potter), rinunceresti al tuo status per il bene di Draco?"
+  },
+  {
+    "id": 1080,
+    "text": "Sei Nymphadora Tonks (Harry Potter), faresti la scelta di combattere sapendo di lasciare tuo figlio orfano?"
+  },
+  {
+    "id": 1081,
+    "text": "Sei Luke Skywalker (Star Wars), ti uniresti al Lato Oscuro per salvare i tuoi amici?"
+  },
+  {
+    "id": 1082,
+    "text": "Sei Han Solo (Star Wars), rinunceresti ai tuoi soldi per aiutare la Ribellione?"
+  },
+  {
+    "id": 1083,
+    "text": "Sei Leia Organa (Star Wars), ti sacrificheresti per la Ribellione, anche a costo della vita?"
+  },
+  {
+    "id": 1084,
+    "text": "Sei Darth Vader (Star Wars), rinunceresti al potere per l'amore di tuo figlio?"
+  },
+  {
+    "id": 1085,
+    "text": "Sei Obi-Wan Kenobi (Star Wars), diresti a Luke la verità su suo padre fin dall'inizio?"
+  },
+  {
+    "id": 1086,
+    "text": "Sei Yoda (Star Wars), addestreresti Luke sapendo che potrebbe fallire?"
+  },
+  {
+    "id": 1087,
+    "text": "Sei Chewbacca (Star Wars), lasceresti Han Solo per la tua famiglia Wookiee?"
+  },
+  {
+    "id": 1088,
+    "text": "Sei Lando Calrissian (Star Wars), tradiresti i tuoi amici per salvare la tua città?"
+  },
+  {
+    "id": 1089,
+    "text": "Sei Palpatine (Star Wars), rinunceresti al potere supremo per la pace nella Galassia?"
+  },
+  {
+    "id": 1090,
+    "text": "Sei Boba Fett (Star Wars), ti alleeresti con i Jedi per un giusto compenso?"
+  },
+  {
+    "id": 1091,
+    "text": "Sei Jabba the Hutt (Star Wars), libereresti Han Solo senza riscatto per un atto di bontà?"
+  },
+  {
+    "id": 1092,
+    "text": "Sei R2-D2 (Star Wars), riveleresti tutti i tuoi segreti a chiunque te li chieda?"
+  },
+  {
+    "id": 1093,
+    "text": "Sei C-3PO (Star Wars), saresti più coraggioso per aiutare i tuoi amici?"
+  },
+  {
+    "id": 1094,
+    "text": "Sei il Gran Moff Tarkin (Star Wars), distruggeresti un pianeta intero per dimostrare il potere dell'Impero?"
+  },
+  {
+    "id": 1095,
+    "text": "Sei Greedo (Star Wars), spareresti per primo?"
+  },
+  {
+    "id": 1096,
+    "text": "Sei Wedge Antilles (Star Wars), ti arrenderesti in una battaglia persa?"
+  },
+  {
+    "id": 1097,
+    "text": "Sei Mon Mothma (Star Wars), sacrificheresti una parte della Ribellione per una vittoria più grande?"
+  },
+  {
+    "id": 1098,
+    "text": "Sei il Capitano Piett (Star Wars), disobbediresti a Darth Vader per salvare la tua vita?"
+  },
+  {
+    "id": 1099,
+    "text": "Sei Wicket (Star Wars), ti fideresti degli umani sconosciuti?"
+  },
+  {
+    "id": 1100,
+    "text": "Sei l'Imperatore (Star Wars), condivideresti il tuo potere con Darth Vader?"
+  },
+  {
+    "id": 1101,
+    "text": "Sei Tony Stark (MCU), ti sacrificheresti per salvare l'universo?"
+  },
+  {
+    "id": 1102,
+    "text": "Sei Steve Rogers (MCU), faresti un'azione illegale per salvare un amico?"
+  },
+  {
+    "id": 1103,
+    "text": "Sei Thor (MCU), rinunceresti al tuo martello per essere un re migliore?"
+  },
+  {
+    "id": 1104,
+    "text": "Sei Bruce Banner (MCU), useresti Hulk per vendetta personale?"
+  },
+  {
+    "id": 1105,
+    "text": "Sei Natasha Romanoff (MCU), ti fideresti di qualcuno dopo un passato così difficile?"
+  },
+  {
+    "id": 1106,
+    "text": "Sei Clint Barton (MCU), rinunceresti alla tua famiglia per la tua missione?"
+  },
+  {
+    "id": 1107,
+    "text": "Sei Wanda Maximoff (MCU), useresti i tuoi poteri per alterare la realtà e riavere i tuoi cari?"
+  },
+  {
+    "id": 1108,
+    "text": "Sei Visione (MCU), sacrificheresti te stesso per il bene dell'umanità?"
+  },
+  {
+    "id": 1109,
+    "text": "Sei Peter Parker (MCU), riveleresti la tua identità segreta per la fama?"
+  },
+  {
+    "id": 1110,
+    "text": "Sei Doctor Strange (MCU), useresti la magia per guadagno personale?"
+  },
+  {
+    "id": 1111,
+    "text": "Sei Captain Marvel (MCU), ignoreresti una minaccia galattica per la tua pace?"
+  },
+  {
+    "id": 1112,
+    "text": "Sei Black Panther (MCU), riveleresti la tecnologia avanzata di Wakanda al mondo?"
+  },
+  {
+    "id": 1113,
+    "text": "Sei Loki (MCU), ti alleeresti con i tuoi nemici per un obiettivo comune?"
+  },
+  {
+    "id": 1114,
+    "text": "Sei Nick Fury (MCU), mentiresti ai tuoi alleati per la sicurezza del mondo?"
+  },
+  {
+    "id": 1115,
+    "text": "Sei Thanos (MCU), uccideresti metà dell'universo per la sostenibilità delle risorse?"
+  },
+  {
+    "id": 1116,
+    "text": "Sei Gamora (MCU), tradiresti tuo padre per salvare tua sorella?"
+  },
+  {
+    "id": 1117,
+    "text": "Sei Nebula (MCU), ti ribelleresti a Thanos sapendo di poter morire?"
+  },
+  {
+    "id": 1118,
+    "text": "Sei Drax (MCU), cercheresti vendetta per la tua famiglia, anche se significa morire?"
+  },
+  {
+    "id": 1119,
+    "text": "Sei Groot (MCU), ti sacrificheresti per i tuoi amici?"
+  },
+  {
+    "id": 1120,
+    "text": "Sei Rocket (MCU), ruberesti un braccio bionico a un amico?"
+  },
+  {
+    "id": 1121,
+    "text": "Sei Walter White (Breaking Bad), cucineresti metanfetamina per pagare le tue cure mediche?"
+  },
+  {
+    "id": 1122,
+    "text": "Sei Jesse Pinkman (Breaking Bad), continueresti a lavorare con Walter White dopo tutte le atrocità?"
+  },
+  {
+    "id": 1123,
+    "text": "Sei Saul Goodman (Breaking Bad), useresti la legge per scopi personali e dubbi?"
+  },
+  {
+    "id": 1124,
+    "text": "Sei Eleven (Stranger Things), rinunceresti ai tuoi poteri per una vita normale con i tuoi amici?"
+  },
+  {
+    "id": 1125,
+    "text": "Sei Dustin Henderson (Stranger Things), mentiresti ai tuoi amici per proteggere un segreto?"
+  },
+  {
+    "id": 1126,
+    "text": "Sei Cersei Lannister (Game of Thrones), sacrificheresti i tuoi figli per il potere?"
+  },
+  {
+    "id": 1127,
+    "text": "Sei Tony Soprano (The Sopranos), lasceresti la vita criminale per una vita normale?"
+  },
+  {
+    "id": 1128,
+    "text": "Sei Dexter Morgan (Dexter), continueresti a uccidere i criminali che sfuggono alla legge?"
+  },
+  {
+    "id": 1129,
+    "text": "Sei Ragnar Lothbrok (Vikings), sacrificheresti la tua famiglia per l'esplorazione e la conquista?"
+  },
+  {
+    "id": 1130,
+    "text": "Sei Elizabeth Harmon (La Regina degli Scacchi), useresti droghe per migliorare le tue performance?"
+  },
+  {
+    "id": 1131,
+    "text": "Sei Beth Dutton (Yellowstone), metteresti a rischio la tua famiglia per il business?"
+  },
+  {
+    "id": 1132,
+    "text": "Sei James Bond (007), ti innamoreresti di qualcuno sapendo che la tua missione è più importante?"
+  },
+  {
+    "id": 1133,
+    "text": "Sei Katniss Everdeen (Hunger Games), ti sacrificheresti per tua sorella?"
+  },
+  {
+    "id": 1134,
+    "text": "Sei Harry Callahan (Dirty Harry), infrangeresti la legge per ottenere giustizia?"
+  },
+  {
+    "id": 1135,
+    "text": "Sei Lara Croft (Tomb Raider), ruberesti un artefatto per proteggerlo, anche se è un furto?"
+  },
+  {
+    "id": 1136,
+    "text": "Sei Sherlock Holmes (Sherlock), faresti del male a qualcuno per risolvere un caso?"
+  },
+  {
+    "id": 1137,
+    "text": "Sei Doctor Who (Doctor Who), cambieresti la storia per salvare una persona cara?"
+  },
+  {
+    "id": 1138,
+    "text": "Sei Carrie Bradshaw (Sex and the City), daresti la precedenza all'amore rispetto alla carriera?"
+  },
+  {
+    "id": 1139,
+    "text": "Sei Homer Simpson (The Simpsons), rinunceresti alla birra per la tua famiglia?"
+  },
+  {
+    "id": 1140,
+    "text": "Sei Marge Simpson (The Simpsons), lasceresti Homer per una vita più tranquilla?"
+  },
+  {
+    "id": 1141,
+    "text": "Sei Rick Grimes (The Walking Dead), uccideresti un innocente per salvare il tuo gruppo?"
+  },
+  {
+    "id": 1142,
+    "text": "Sei Michonne (The Walking Dead), ti fideresti di uno sconosciuto in un mondo post-apocalittico?"
+  },
+  {
+    "id": 1143,
+    "text": "Sei Negan (The Walking Dead), useresti la violenza estrema per mantenere il controllo?"
+  },
+  {
+    "id": 1144,
+    "text": "Sei Professor (La Casa di Carta), sacrificheresti uno dei tuoi per il successo del piano?"
+  },
+  {
+    "id": 1145,
+    "text": "Sei Tokyo (La Casa di Carta), disobbediresti agli ordini per impulso?"
+  },
+  {
+    "id": 1146,
+    "text": "Sei Berlin (La Casa di Carta), ti sacrificheresti per il gruppo?"
+  },
+  {
+    "id": 1147,
+    "text": "Sei Fleabag (Fleabag), confesseresti tutti i tuoi errori per liberarti la coscienza?"
+  },
+  {
+    "id": 1148,
+    "text": "Sei Villanelle (Killing Eve), smetteresti di uccidere per amore?"
+  },
+  {
+    "id": 1149,
+    "text": "Sei Eve Polastri (Killing Eve), diventeresti come Villanelle per catturarla?"
+  },
+  {
+    "id": 1150,
+    "text": "Sei Don Draper (Mad Men), fingeresti di essere un'altra persona per avere successo?"
+  },
+  {
+    "id": 1151,
+    "text": "Sei Peggy Olson (Mad Men), rinunceresti alla tua carriera per la maternità?"
+  },
+  {
+    "id": 1152,
+    "text": "Sei BoJack Horseman (BoJack Horseman), cercheresti redenzione per i tuoi errori passati?"
+  },
+  {
+    "id": 1153,
+    "text": "Sei Princess Carolyn (BoJack Horseman), sacrificheresti la tua vita personale per la tua carriera?"
+  },
+  {
+    "id": 1154,
+    "text": "Sei Walter White (Breaking Bad), continueresti a cucinare metanfetamina dopo aver pagato le cure?"
+  },
+  {
+    "id": 1155,
+    "text": "Sei Jesse Pinkman (Breaking Bad), denunceresti Walter White alla polizia?"
+  },
+  {
+    "id": 1156,
+    "text": "Sei Gus Fring (Breaking Bad), sacrificheresti un membro della tua organizzazione per la sicurezza?"
+  },
+  {
+    "id": 1157,
+    "text": "Sei Hannah Baker (Tredici), ti affideresti a qualcuno dopo essere stata tradita?"
+  },
+  {
+    "id": 1158,
+    "text": "Sei Clay Jensen (Tredici), riveleresti i segreti di Hannah per ottenere giustizia?"
+  },
+  {
+    "id": 1159,
+    "text": "Sei Barry Berkman (Barry), smetteresti di essere un sicario per fare l'attore?"
+  },
+  {
+    "id": 1160,
+    "text": "Sei Gene Cousineau (Barry), useresti la fama di Barry per la tua carriera?"
+  },
+  {
+    "id": 1161,
+    "text": "Sei Joe Goldberg (You), smetteresti di ossessionare le donne per amore?"
+  },
+  {
+    "id": 1162,
+    "text": "Sei Love Quinn (You), saresti fedele a Joe, anche con la sua natura violenta?"
+  },
+  {
+    "id": 1163,
+    "text": "Sei Lucifer Morningstar (Lucifer), rinunceresti al tuo regno infernale per amore?"
+  },
+  {
+    "id": 1164,
+    "text": "Sei Chloe Decker (Lucifer), accetteresti la vera natura di Lucifer?"
+  },
+  {
+    "id": 1165,
+    "text": "Sei Ragnar Lothbrok (Vikings), cercheresti sempre la gloria anche a costo della tua vita?"
+  },
+  {
+    "id": 1166,
+    "text": "Sei Lagertha (Vikings), ti sacrificheresti per il tuo popolo?"
+  },
+  {
+    "id": 1167,
+    "text": "Sei Bjorn Ironside (Vikings), supereresti l'ombra di tuo padre?"
+  },
+  {
+    "id": 1168,
+    "text": "Sei Travis Fimmel (Vikings), ti rifiuteresti di fare scene di nudo?"
+  },
+  {
+    "id": 1169,
+    "text": "Sei Queen Elizabeth II (The Crown), sacrificheresti il tuo matrimonio per la monarchia?"
+  },
+  {
+    "id": 1170,
+    "text": "Sei Prince Philip (The Crown), accetteresti di vivere sempre all'ombra della regina?"
+  },
+  {
+    "id": 1171,
+    "text": "Sei Princess Diana (The Crown), ti conformeresti alle regole reali per la tua famiglia?"
+  },
+  {
+    "id": 1172,
+    "text": "Sei Tony Soprano (The Sopranos), ti confideresti con il tuo terapista su tutti i tuoi crimini?"
+  },
+  {
+    "id": 1173,
+    "text": "Sei Carmela Soprano (The Sopranos), lasceresti Tony sapendo dei suoi affari criminali?"
+  },
+  {
+    "id": 1174,
+    "text": "Sei Emily Cooper (Emily in Paris), ti adatteresti alla cultura francese o cercheresti di cambiarla?"
+  },
+  {
+    "id": 1175,
+    "text": "Sei Gabriel (Emily in Paris), lasceresti Camille per Emily?"
+  },
+  {
+    "id": 1176,
+    "text": "Sei Ted Lasso (Ted Lasso), rinunceresti alla tua positività per vincere a tutti i costi?"
+  },
+  {
+    "id": 1177,
+    "text": "Sei Roy Kent (Ted Lasso), smetteresti di imprecare per essere un allenatore migliore?"
+  },
+  {
+    "id": 1178,
+    "text": "Sei Rebecca Welton (Ted Lasso), ti vendicheresti del tuo ex marito anche a costo della tua squadra?"
+  },
+  {
+    "id": 1179,
+    "text": "Sei Villanelle (Killing Eve), ti preoccuperebbe la tua morale?"
+  },
+  {
+    "id": 1180,
+    "text": "Sei Eve Polastri (Killing Eve), rinunceresti a tutto per catturare Villanelle?"
+  },
+  {
+    "id": 1181,
+    "text": "Sei Mr. Bean (Mr. Bean), eviteresti situazioni imbarazzanti?"
+  },
+  {
+    "id": 1182,
+    "text": "Sei Sherlock Holmes (Sherlock), ti fideresti delle tue emozioni più che della logica?"
+  },
+  {
+    "id": 1183,
+    "text": "Sei Doctor Watson (Sherlock), metteresti a rischio la tua vita per Sherlock?"
+  },
+  {
+    "id": 1184,
+    "text": "Sei John Wick (John Wick), lasceresti la tua vendetta per una vita tranquilla?"
+  },
+  {
+    "id": 1185,
+    "text": "Sei Neo (Matrix), saresti disposto a prendere la pillola rossa e scoprire la verità?"
+  },
+  {
+    "id": 1186,
+    "text": "Sei Trinity (Matrix), rinunceresti a Neo per la salvezza di Zion?"
+  },
+  {
+    "id": 1187,
+    "text": "Sei Morpheus (Matrix), dubiteresti mai della tua fede in Neo?"
+  },
+  {
+    "id": 1188,
+    "text": "Sei Jack Sparrow (Pirati dei Caraibi), rinunceresti alla tua libertà per un tesoro?"
+  },
+  {
+    "id": 1189,
+    "text": "Sei Elizabeth Swann (Pirati dei Caraibi), ti sacrificheresti per Will Turner?"
+  },
+  {
+    "id": 1190,
+    "text": "Sei Will Turner (Pirati dei Caraibi), rinunceresti alla tua immortalità per Elizabeth?"
+  },
+  {
+    "id": 1191,
+    "text": "Sei Indiana Jones (Indiana Jones), rinunceresti all'avventura per una vita accademica tranquilla?"
+  },
+  {
+    "id": 1192,
+    "text": "Sei Dr. Elsa Schneider (Indiana Jones), tradiresti Indiana Jones per i nazisti?"
+  },
+  {
+    "id": 1193,
+    "text": "Sei Marty McFly (Ritorno al Futuro), cambieresti il tuo passato per renderlo migliore?"
+  },
+  {
+    "id": 1194,
+    "text": "Sei Doc Brown (Ritorno al Futuro), useresti la macchina del tempo per scopi personali?"
+  },
+  {
+    "id": 1195,
+    "text": "Sei Sarah Connor (Terminator), rinunceresti a tuo figlio per salvare l'umanità?"
+  },
+  {
+    "id": 1196,
+    "text": "Sei T-800 (Terminator), disobbediresti al tuo programma per proteggere John Connor?"
+  },
+  {
+    "id": 1197,
+    "text": "Sei Clarice Starling (Il Silenzio degli Innocenti), ti fideresti di Hannibal Lecter?"
+  },
+  {
+    "id": 1198,
+    "text": "Sei Hannibal Lecter (Il Silenzio degli Innocenti), ti sacrificheresti per Clarice?"
+  },
+  {
+    "id": 1199,
+    "text": "Sei Forrest Gump (Forrest Gump), rifiuteresti le opportunità che ti si presentano?"
+  },
+  {
+    "id": 1200,
+    "text": "Sei Jenny Curran (Forrest Gump), rimarresti con Forrest per una vita tranquilla?"
+  },
+  {
+    "id": 1201,
+    "text": "Sei Tyler Durden (Fight Club), distruggeresti la civiltà per un nuovo inizio?"
+  },
+  {
+    "id": 1202,
+    "text": "Sei The Narrator (Fight Club), cercheresti di riprendere il controllo della tua tua vita?"
+  },
+  {
+    "id": 1203,
+    "text": "Sei Jules Winnfield (Pulp Fiction), smetteresti di essere un sicario per una vita religiosa?"
+  },
+  {
+    "id": 1204,
+    "text": "Sei Vincent Vega (Pulp Fiction), tradiresti Marsellus Wallace?"
+  },
+  {
+    "id": 1205,
+    "text": "Sei Tony Montana (Scarface), rinunceresti al potere per vivere una vita lunga e felice?"
+  },
+  {
+    "id": 1206,
+    "text": "Sei Carrie White (Carrie), ti vendicheresti di chi ti ha bullizzato?"
+  },
+  {
+    "id": 1207,
+    "text": "Sei Andy Dufresne (Le ali della libertà), aspetteresti decenni per la tua libertà?"
+  },
+  {
+    "id": 1208,
+    "text": "Sei Ellis 'Red' Redding (Le ali della libertà), rinunceresti alla libertà per la sicurezza della prigione?"
+  },
+  {
+    "id": 1209,
+    "text": "Sei Jack Dawson (Titanic), lasceresti che Rose muoia per salvarti?"
+  },
+  {
+    "id": 1210,
+    "text": "Sei Rose DeWitt Bukater (Titanic), rinunceresti alla tua vita agiata per Jack?"
+  },
+  {
+    "id": 1211,
+    "text": "Sei Norman Bates (Psycho), resisteresti alle tentazioni di tua madre?"
+  },
+  {
+    "id": 1212,
+    "text": "Sei Marion Crane (Psycho), ruberesti i soldi del tuo capo per amore?"
+  },
+  {
+    "id": 1213,
+    "text": "Sei Michael Corleone (Il Padrino), lasceresti la tua famiglia per una vita onesta?"
+  },
+  {
+    "id": 1214,
+    "text": "Sei Vito Corleone (Il Padrino), ti fideresti dei tuoi nemici?"
+  },
+  {
+    "id": 1215,
+    "text": "Sei Clarice Starling (Il Silenzio degli Innocenti), cattureresti Hannibal Lecter?"
+  },
+  {
+    "id": 1216,
+    "text": "Sei Hannibal Lecter (Il Silenzio degli Innocenti), aiuteresti la polizia a catturare un altro serial killer?"
+  },
+  {
+    "id": 1217,
+    "text": "Sei Frodo Baggins (Il Signore degli Anelli), distruggeresti l'Anello del Potere, anche a costo della tua vita?"
+  },
+  {
+    "id": 1218,
+    "text": "Sei Gandalf (Il Signore degli Anelli), useresti la tua magia per governare il mondo?"
+  },
+  {
+    "id": 1219,
+    "text": "Sei Aragorn (Il Signore degli Anelli), rinunceresti al trono per amore?"
+  },
+  {
+    "id": 1220,
+    "text": "Sei Arwen (Il Signore degli Anelli), rinunceresti alla tua immortalità per amore?"
+  },
+  {
+    "id": 1221,
+    "text": "Sei Homer Simpson (I Simpson), preferiresti un ciambellone o una famiglia felice?"
+  },
+  {
+    "id": 1222,
+    "text": "Sei Marge Simpson (I Simpson), ignoreresti le follie di Homer per mantenere la pace familiare?"
+  },
+  {
+    "id": 1223,
+    "text": "Sei Bart Simpson (I Simpson), faresti sempre scherzi, anche se sai di ferire qualcuno?"
+  },
+  {
+    "id": 1224,
+    "text": "Sei Lisa Simpson (I Simpson), rinunceresti ai tuoi principi per essere più popolare?"
+  },
+  {
+    "id": 1225,
+    "text": "Sei Moira Rose (Schitt's Creek), rinunceresti al tuo guardaroba per la tua famiglia?"
+  },
+  {
+    "id": 1226,
+    "text": "Sei David Rose (Schitt's Creek), ti adatteresti alla vita in una piccola città per amore?"
+  },
+  {
+    "id": 1227,
+    "text": "Sei Johnny Rose (Schitt's Creek), ricominceresti da zero dopo aver perso tutto?"
+  },
+  {
+    "id": 1228,
+    "text": "Sei Alexis Rose (Schitt's Creek), rinunceresti ai tuoi viaggi avventurosi per una vita più stabile?"
+  },
+  {
+    "id": 1229,
+    "text": "Sei Beth Harmon (La Regina degli Scacchi), accetteresti la sconfitta con dignità?"
+  },
+  {
+    "id": 1230,
+    "text": "Sei Ben Harmon (American Horror Story), nasconderesti la verità a tua moglie per la sua salute mentale?"
+  },
+  {
+    "id": 1231,
+    "text": "Sei Lana Winters (American Horror Story), rinunceresti alla tua carriera per la verità?"
+  },
+  {
+    "id": 1232,
+    "text": "Sei Jessica Lange (American Horror Story), ti preoccuperebbe la tua immagine più della tua famiglia?"
+  },
+  {
+    "id": 1233,
+    "text": "Sei Thomas Shelby (Peaky Blinders), sacrificheresti la tua moralità per il potere della tua famiglia?"
+  },
+  {
+    "id": 1234,
+    "text": "Sei Arthur Shelby (Peaky Blinders), smetteresti di combattere per la tua famiglia?"
+  },
+  {
+    "id": 1235,
+    "text": "Sei Ada Thorne (Peaky Blinders), ti ribelleresti alla tua famiglia per le tue convinzioni politiche?"
+  },
+  {
+    "id": 1236,
+    "text": "Sei Alfie Solomons (Peaky Blinders), ti fideresti di Thomas Shelby?"
+  },
+  {
+    "id": 1237,
+    "text": "Sei Villanelle (Killing Eve), scapperesti con Eve e lasceresti la tua vita da assassina?"
+  },
+  {
+    "id": 1238,
+    "text": "Sei Eve Polastri (Killing Eve), ti alleeresti con Villanelle per catturare The Twelve?"
+  },
+  {
+    "id": 1239,
+    "text": "Sei Emily Thorne (Revenge), rinunceresti alla tua vendetta per amore?"
+  },
+  {
+    "id": 1240,
+    "text": "Sei Nolan Ross (Revenge), tradiresti Emily per proteggere te stesso?"
+  },
+  {
+    "id": 1241,
+    "text": "Sei Chuck Bass (Gossip Girl), rinunceresti al tuo impero per l'amore di Blair?"
+  },
+  {
+    "id": 1242,
+    "text": "Sei Blair Waldorf (Gossip Girl), rinunceresti al tuo status sociale per l'amore di Chuck?"
+  },
+  {
+    "id": 1243,
+    "text": "Sei Serena van der Woodsen (Gossip Girl), ti fideresti sempre dei tuoi amici?"
+  },
+  {
+    "id": 1244,
+    "text": "Sei Dan Humphrey (Gossip Girl), riveleresti i segreti di tutti per la tua fama?"
+  },
+  {
+    "id": 1245,
+    "text": "Sei Betty Cooper (Riverdale), rinunceresti a scoprire la verità per la sicurezza della tua famiglia?"
+  },
+  {
+    "id": 1246,
+    "text": "Sei Jughead Jones (Riverdale), rinunceresti a scrivere per una vita normale?"
+  },
+  {
+    "id": 1247,
+    "text": "Sei Archie Andrews (Riverdale), ti sacrificheresti per i tuoi amici?"
+  },
+  {
+    "id": 1248,
+    "text": "Sei Veronica Lodge (Riverdale), ti ribelleresti a tuo padre per la tua morale?"
+  },
+  {
+    "id": 1249,
+    "text": "Sei Eleven (Stranger Things), useresti i tuoi poteri per guadagno personale?"
+  },
+  {
+    "id": 1250,
+    "text": "Sei Steve Harrington (Stranger Things), lasceresti i tuoi amici in pericolo per la tua sicurezza?"
   }
 ]
