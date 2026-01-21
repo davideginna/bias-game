@@ -641,7 +641,7 @@
   },
   {
     "id": 161,
-    "text": "Se potessi avere un superpotere, quale sceglieresti: invisibilità o volo?"
+    "text": "Se potessi avere un superpotere, sceglieresti l'invisibilità invece del volo?"
   },
   {
     "id": 162,
@@ -649,7 +649,7 @@
   },
   {
     "id": 163,
-    "text": "Se potessi vivere in un libro o in un film, quale sceglieresti?"
+    "text": "Se potessi vivere in un libro o in un film, lo faresti?"
   },
   {
     "id": 164,
@@ -673,7 +673,7 @@
   },
   {
     "id": 169,
-    "text": "Se avessi un solo giorno da vivere, cosa faresti?"
+    "text": "Se avessi un solo giorno da vivere, lo passeresti con i tuoi cari?"
   },
   {
     "id": 170,
@@ -697,7 +697,7 @@
   },
   {
     "id": 175,
-    "text": "Se potessi eliminare una parola dal dizionario, quale sarebbe?"
+    "text": "Se potessi eliminare una parolaccia dal dizionario per sempre, lo faresti?"
   },
   {
     "id": 176,
@@ -757,7 +757,7 @@
   },
   {
     "id": 190,
-    "text": "Se potessi vivere in un'epoca passata, quale sceglieresti, sapendo di perdere la tecnologia moderna?"
+    "text": "Vivresti in un'epoca passata sapendo di perdere la tecnologia moderna?"
   },
   {
     "id": 191,
@@ -769,8 +769,7 @@
   },
   {
     "id": 193,
-    "to": 193,
-    "text": "Se un genio ti offrisse tre desideri, cosa chiederesti?"
+    "text": "Se un genio ti offrisse tre desideri, useresti uno per diventare immortale?"
   },
   {
     "id": 194,
@@ -778,15 +777,15 @@
   },
   {
     "id": 195,
-    "text": "Se potessi avere una conversazione di 30 minuti con chiunque (vivo o morto), chi sceglieresti?"
+    "text": "Se potessi avere una conversazione di 30 minuti con una persona defunta, lo faresti?"
   },
   {
     "id": 196,
-    "text": "Cosa faresti se vincessi 100 milioni di euro alla lotteria?"
+    "text": "Se vincessi 100 milioni di euro alla lotteria, continueresti a lavorare?"
   },
   {
     "id": 197,
-    "text": "Se dovessi mangiare un solo cibo per il resto della tua vita, quale sarebbe?"
+    "text": "Accetteresti di mangiare solo pizza per il resto della tua vita in cambio di 1 milione di euro?"
   },
   {
     "id": 198,
@@ -794,11 +793,11 @@
   },
   {
     "id": 199,
-    "text": "Qual è la tua più grande paura irrazionale?"
+    "text": "Affronteresti la tua più grande paura per 100.000 euro?"
   },
   {
     "id": 200,
-    "text": "Se potessi imparare istantaneamente una qualsiasi abilità, quale sarebbe?"
+    "text": "Se potessi imparare istantaneamente una abilità ma dimenticare un ricordo importante, lo faresti?"
   },
   {
     "id": 201,
@@ -850,7 +849,7 @@
   },
   {
     "id": 213,
-    "text": "Se potessi parlare con gli animali, cosa chiederesti al tuo animale domestico?"
+    "text": "Se potessi parlare con gli animali per un giorno, lo faresti?"
   },
   {
     "id": 214,
@@ -894,7 +893,7 @@
   },
   {
     "id": 224,
-    "text": "Se potessi avere la risposta a una qualsiasi domanda, quale domanda faresti?"
+    "text": "Se potessi avere la risposta a una qualsiasi domanda sull'universo, vorresti conoscere la verità sulla morte?"
   },
   {
     "id": 225,
@@ -938,7 +937,7 @@
   },
   {
     "id": 235,
-    "text": "Se scoprissi che il tuo partner ha un account OnlyFans segreto, come reagiresti?"
+    "text": "Se scoprissi che il tuo partner ha un account OnlyFans segreto, lo lasceresti?"
   },
   {
     "id": 236,
@@ -1310,7 +1309,7 @@
   },
   {
     "id": 328,
-    "text": "Se potessi commettere un qualsiasi crimine senza essere scoperto, quale sarebbe?"
+    "text": "Se potessi commettere un crimine senza essere scoperto, lo faresti?"
   },
   {
     "id": 329,
@@ -1534,7 +1533,7 @@
   },
   {
     "id": 384,
-    "text": "Se tuo figlio ti dicesse che vuole cambiare sesso, quale sarebbe la tua prima reazione?"
+    "text": "Se tuo figlio ti dicesse che vuole cambiare sesso, lo sosterresti?"
   },
   {
     "id": 385,
@@ -1826,7 +1825,7 @@
   },
   {
     "id": 457,
-    "text": "Se il tuo partner ti dicesse 'o me o i tuoi amici', cosa faresti?"
+    "text": "Se il tuo partner ti dicesse 'o me o i tuoi amici', sceglieresti il partner?"
   },
   {
     "id": 458,
@@ -1914,7 +1913,7 @@
   },
   {
     "id": 479,
-    "text": "Se i tuoi amici volessero andare a un concerto ma tu hai un esame il giorno dopo, cosa sceglieresti?"
+    "text": "Se i tuoi amici volessero andare a un concerto ma tu hai un esame il giorno dopo, andresti comunque?"
   },
   {
     "id": 480,
@@ -2126,7 +2125,7 @@
   },
   {
     "id": 532,
-    "text": "Se un tuo video imbarazzante del passato riemergesse e diventasse virale su TikTok, come reagiresti?"
+    "text": "Se un tuo video imbarazzante del passato riemergesse e diventasse virale su TikTok, cercheresti di farlo rimuovere?"
   },
   {
     "id": 533,
@@ -2146,7 +2145,7 @@
   },
   {
     "id": 537,
-    "text": "Se scoprissi che un tuo amico usa la tua foto profilo per un account fake, come reagiresti?"
+    "text": "Se scoprissi che un tuo amico usa la tua foto profilo per un account fake, gli chiederesti di rimuoverla?"
   },
   {
     "id": 538,
@@ -2258,7 +2257,7 @@
   },
   {
     "id": 565,
-    "text": "Se un video intimo che hai girato con un ex finisse su Pornhub senza il tuo consenso, cosa faresti?"
+    "text": "Se un video intimo che hai girato con un ex finisse su Pornhub senza il tuo consenso, lo denunceresti?"
   },
   {
     "id": 566,
@@ -2274,7 +2273,7 @@
   },
   {
     "id": 569,
-    "text": "Se tua madre, dopo il divorzio, iniziasse a uscire con uomini molto più giovani, come reagiresti?"
+    "text": "Se tua madre, dopo il divorzio, iniziasse a uscire con uomini molto più giovani, ti darebbe fastidio?"
   },
   {
     "id": 570,
@@ -2338,7 +2337,7 @@
   },
   {
     "id": 585,
-    "text": "Come reagiresti se scoprissi che tuo figlio adolescente guarda Pornhub?"
+    "text": "Se scoprissi che tuo figlio adolescente guarda contenuti per adulti, glielo vieteresti?"
   },
   {
     "id": 586,
@@ -2354,7 +2353,7 @@
   },
   {
     "id": 589,
-    "text": "Se scoprissi che il prete della tua parrocchia ha un account su Pornhub, cosa faresti?"
+    "text": "Se scoprissi che il prete della tua parrocchia ha un account su Pornhub, lo giudicheresti?"
   },
   {
     "id": 590,
@@ -2378,7 +2377,7 @@
   },
   {
     "id": 595,
-    "text": "Se scoprissi che tuo/a figlio/a spende i suoi soldi su OnlyFans, come reagiresti?"
+    "text": "Se scoprissi che tuo/a figlio/a spende i suoi soldi su OnlyFans, glielo vieteresti?"
   },
   {
     "id": 596,
@@ -2406,7 +2405,7 @@
   },
   {
     "id": 602,
-    "text": "Se il tuo capo, sposato e con figli, ti offrisse una promozione in cambio di una notte insieme, cosa faresti?"
+    "text": "Se il tuo capo, sposato e con figli, ti offrisse una promozione in cambio di una notte insieme, accetteresti?"
   },
   {
     "id": 603,
@@ -2466,11 +2465,11 @@
   },
   {
     "id": 617,
-    "text": "Se una tua amica ti dicesse che suo marito la tradisce, ma tu sai che non è vero, cosa faresti?"
+    "text": "Se una tua amica ti dicesse che suo marito la tradisce, ma tu sai che non è vero, le diresti la verità?"
   },
   {
     "id": 618,
-    "text": "A una cena di coppia, se il partner dei tuoi amici ti facesse il filo sotto il tavolo, come reagiresti?"
+    "text": "A una cena di coppia, se il partner dei tuoi amici ti facesse il filo sotto il tavolo, lo diresti ai tuoi amici?"
   },
   {
     "id": 619,
@@ -2490,7 +2489,7 @@
   },
   {
     "id": 623,
-    "text": "Se vedessi il marito di tua sorella con un'altra donna in atteggiamenti intimi, cosa faresti? E se fosse tua sorella con un altro uomo?"
+    "text": "Se vedessi il marito di tua sorella con un'altra donna in atteggiamenti intimi, glielo diresti?"
   },
   {
     "id": 624,
@@ -2570,7 +2569,7 @@
   },
   {
     "id": 643,
-    "text": "Se il tuo partner ti regalasse qualcosa di molto costoso, ma scoprissi che è un regalo riciclato dal suo/sua ex, come reagiresti?"
+    "text": "Se il tuo partner ti regalasse qualcosa di molto costoso, ma scoprissi che è un regalo riciclato dal suo/sua ex, ti arrabbieresti?"
   },
   {
     "id": 644,
@@ -2658,7 +2657,7 @@
   },
   {
     "id": 665,
-    "text": "Se un tuo parente stretto (es. cugino) iniziasse a uscire con il tuo ex, come reagiresti?"
+    "text": "Se un tuo parente stretto (es. cugino) iniziasse a uscire con il tuo ex, ti darebbe fastidio?"
   },
   {
     "id": 666,
@@ -2706,7 +2705,7 @@
   },
   {
     "id": 677,
-    "text": "Se scoprissi che il tuo partner ideale è anche il peggior nemico del tuo migliore amico, cosa faresti?"
+    "text": "Se scoprissi che il tuo partner ideale è anche il peggior nemico del tuo migliore amico, rinunceresti alla relazione?"
   },
   {
     "id": 678,
@@ -2782,7 +2781,7 @@
   },
   {
     "id": 696,
-    "text": "Se il tuo migliore amico/a ti 'rubasse' un'idea geniale sul lavoro presentandola come sua, come reagiresti?"
+    "text": "Se il tuo migliore amico/a ti 'rubasse' un'idea geniale sul lavoro presentandola come sua, lo denunceresti pubblicamente?"
   },
   {
     "id": 697,
@@ -2810,7 +2809,7 @@
   },
   {
     "id": 703,
-    "text": "Se il tuo partner ti rivelasse di essere attratto/a da persone dello stesso sesso, ma di amare solo te, come reagiresti?"
+    "text": "Se il tuo partner ti rivelasse di essere attratto/a da persone dello stesso sesso, ma di amare solo te, continueresti la relazione?"
   },
   {
     "id": 704,
@@ -2822,7 +2821,7 @@
   },
   {
     "id": 706,
-    "text": "Se un'amica ti confessasse di aver tradito il marito (tuo amico) perché lui è sterile e lei voleva un figlio, cosa penseresti?"
+    "text": "Se un'amica ti confessasse di aver tradito il marito (tuo amico) perché lui è sterile e lei voleva un figlio, la giudicheresti?"
   },
   {
     "id": 707,
@@ -2838,11 +2837,11 @@
   },
   {
     "id": 710,
-    "text": "Se il tuo partner ti tradisse e poi scoprissi che aspetta un figlio dall'amante, cosa faresti?"
+    "text": "Se il tuo partner ti tradisse e poi scoprissi che aspetta un figlio dall'amante, lo perdoneresti?"
   },
   {
     "id": 711,
-    "text": "Se un amico ti chiedesse di assumere suo figlio, palesemente non qualificato, nella tua azienda, cosa risponderesti?"
+    "text": "Se un amico ti chiedesse di assumere suo figlio, palesemente non qualificato, nella tua azienda, lo assumeresti?"
   },
   {
     "id": 712,
@@ -2882,7 +2881,7 @@
   },
   {
     "id": 721,
-    "text": "Se il tuo partner volesse chiamare vostro figlio come il suo ex, come reagiresti?"
+    "text": "Se il tuo partner volesse chiamare vostro figlio come il suo ex, lo accetteresti?"
   },
   {
     "id": 722,
@@ -2942,11 +2941,11 @@
   },
   {
     "id": 736,
-    "text": "Se scoprissi che il tuo partner ha un feticismo per le persone molto più anziane (GILF/silver fox), come reagiresti?"
+    "text": "Se scoprissi che il tuo partner ha un feticismo per le persone molto più anziane (GILF/silver fox), lo accetteresti?"
   },
   {
     "id": 737,
-    "text": "Se un'amica ti rivelasse che suo figlio non è del marito ma del prete del paese, cosa faresti?"
+    "text": "Se un'amica ti rivelasse che suo figlio non è del marito ma del prete del paese, manterresti il segreto?"
   },
   {
     "id": 738,
@@ -2962,11 +2961,11 @@
   },
   {
     "id": 741,
-    "text": "Se il tuo partner ti confessasse di essere asessuale dopo anni di matrimonio, cosa faresti?"
+    "text": "Se il tuo partner ti confessasse di essere asessuale dopo anni di matrimonio, continueresti la relazione?"
   },
   {
     "id": 742,
-    "text": "Se scoprissi che il tuo collega sta boicottando il tuo lavoro per ottenere una promozione al posto tuo, come ti vendicheresti?"
+    "text": "Se scoprissi che il tuo collega sta boicottando il tuo lavoro per ottenere una promozione al posto tuo, ti vendicheresti?"
   },
   {
     "id": 743,
@@ -2998,7 +2997,7 @@
   },
   {
     "id": 750,
-    "text": "Se il tuo partner ti desse un ultimatum ('o sposi me o ci lasciamo'), come reagiresti?"
+    "text": "Se il tuo partner ti desse un ultimatum ('o sposi me o ci lasciamo'), lo sposeresti?"
   },
   {
     "id": 751,
@@ -3434,7 +3433,7 @@
   },
   {
     "id": 859,
-    "text": "Se il tuo partner ti proponesse di fare 'sounding' (inserimento di oggetti nell'uretra), come reagiresti?"
+    "text": "Se il tuo partner ti proponesse di fare 'sounding' (inserimento di oggetti nell'uretra), accetteresti?"
   },
   {
     "id": 860,
@@ -3454,7 +3453,7 @@
   },
   {
     "id": 864,
-    "text": "Se scoprissi che il tuo partner è un 'furry' e partecipa a raduni in costume, come reagiresti?"
+    "text": "Se scoprissi che il tuo partner è un 'furry' e partecipa a raduni in costume, lo accetteresti?"
   },
   {
     "id": 865,
@@ -3750,7 +3749,7 @@
   },
   {
     "id": 938,
-    "text": "Se il tuo partner ti chiedesse di fare una 'rusty trombone', cosa risponderesti?"
+    "text": "Se il tuo partner ti chiedesse di fare una 'rusty trombone', accetteresti?"
   },
   {
     "id": 939,
