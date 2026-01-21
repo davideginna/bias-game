@@ -1,5 +1,69 @@
 # Changelog Bias
 
+## v1.3 - 2026-01-21
+
+### ✨ Nuove Feature
+- **Sistema di Scarto Carte**: Durante il proprio turno è possibile scartare una carta
+  - Bottone "X" rosso in alto a destra su ogni carta
+  - Conferma richiesta prima dello scarto
+  - Una nuova carta viene pescata automaticamente (se disponibile)
+  - Le carte scartate possono essere ripescate da altri giocatori
+  - Le nuove carte non sono mai quelle già in mano ad altri o già giocate
+
+- **Partite Aperte/Chiuse**: L'host può decidere se permettere l'ingresso durante la partita
+  - Toggle "Stanza Aperta" nella lobby (visibile solo all'host)
+  - Se la stanza è aperta, nuovi giocatori possono entrare anche durante la partita
+  - I nuovi giocatori ricevono 6 carte automaticamente
+  - Entrano in gioco dal turno successivo
+  - Impostazione mantenuta anche dopo un reset della partita
+
+- **Menu Floating Espandibile**: Nuovo menu interattivo sempre accessibile
+  - Bottone floating in basso a destra con icona hamburger (☰)
+  - Si espande mostrando 2 cerchi:
+    - 🎨 Cambia Tema
+    - 📖 Regole del Gioco
+  - Visibile in tutte le schermate (home, lobby, gioco)
+  - Animazione fluida con transizioni sfalsate
+  - Si chiude automaticamente dopo la selezione o cliccando fuori
+
+### 🎨 UI/UX
+- **Modale di Conferma Personalizzata**: Sostituisce le notifiche native del browser
+  - Design coerente con il tema dell'app
+  - Usata per: scarto carte, uscita dalla lobby, uscita dalla partita
+  - Bottoni "Annulla" e "Conferma" chiaramente visibili
+
+- **Selezione Temi Ridisegnata**: Cerchi colorati al posto dei quadrati
+  - 7 cerchi con i colori del tema
+  - Animazione al hover (scala 1.15)
+  - Bordo bianco per il tema attivo
+  - Tooltip con nome del tema
+  - Layout centrato e compatto
+
+- **Miglioramento Colori Temi**: Tutti i temi sono stati rivisti
+  - **Blu Oceano**: tonalità più luminose, miglior contrasto
+  - **Viola Cosmico**: viola più brillanti, background più scuro
+  - **Verde Foresta**: verde smeraldo più visibile
+  - **Tramonto**: giallo/arancio più caldi e leggibili
+  - Tutti i temi ora hanno un contrasto ottimale
+
+- **Home Semplificata**: Rimossi i bottoni "Cambia Tema" e "Regole"
+  - Ora la home ha solo i 2 bottoni principali
+  - Accesso a tema e regole tramite menu floating
+
+### 🔧 Tecnico
+- Firebase: aggiunto campo `isOpen` nella configurazione delle stanze
+- Firebase: aggiunto campo `discardedCards` per tracciare le carte scartate
+- Card Manager: nuova funzione `getCardsForNewPlayer()` per giocatori mid-game
+- Card Manager: funzione `getAvailableDilemmaForDraw()` per scarto/pesca
+- Room Manager: logica di join modificata per supportare partite aperte
+- Responsive: menu floating ottimizzato per mobile e tablet
+
+### 🐛 Bug Fix
+- Risolto: impossibile entrare in partite già iniziate (ora dipende da isOpen)
+- Migliorato: contrasto testo su tutti i temi per accessibilità
+
+---
+
 ## v1.2 - 2026-01-20
 
 ### ✨ Nuove Feature

@@ -149,7 +149,7 @@ export function renderScoreboard(players, currentTurn) {
 /**
  * Render player cards
  */
-export function renderPlayerCards(cardIds, onCardClick) {
+export function renderPlayerCards(cardIds, onCardClick, onCardDiscard) {
   console.log('renderPlayerCards called with:', cardIds);
   const cardsContainer = document.getElementById('player-cards');
   if (!cardsContainer) {
@@ -177,6 +177,21 @@ export function renderPlayerCards(cardIds, onCardClick) {
     text.textContent = dilemma.text;
 
     card.appendChild(text);
+
+    // Add discard button if onCardDiscard is provided
+    if (onCardDiscard) {
+      const discardBtn = document.createElement('button');
+      discardBtn.className = 'btn-discard-card';
+      discardBtn.innerHTML = '✕';
+      discardBtn.title = 'Scarta questa carta';
+
+      discardBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        onCardDiscard(dilemma);
+      });
+
+      card.appendChild(discardBtn);
+    }
 
     // Add click handler
     if (onCardClick) {

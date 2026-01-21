@@ -45,8 +45,6 @@
 
                 <button id="show-create-form-btn" class="btn btn-primary">🎮 Crea Stanza</button>
                 <button id="show-join-form-btn" class="btn btn-primary">🦘 Unisciti a Stanza</button>
-                <button id="show-theme-modal-btn" class="btn btn-primary">🎨 Cambia Tema</button>
-                <button id="show-rules-btn" class="btn btn-primary">📖 Regole</button>
             </div>
 
             <!-- Form Crea Stanza -->
@@ -95,6 +93,20 @@
                 <div id="players-list"></div>
             </div>
 
+            <div class="room-settings" id="room-settings" style="display: none;">
+                <h3>Impostazioni Stanza</h3>
+                <div class="setting-item">
+                    <label class="toggle-label">
+                        <span>Stanza Aperta</span>
+                        <p class="setting-description">I giocatori possono unirsi anche durante la partita</p>
+                    </label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="room-open-toggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+            </div>
+
             <div class="lobby-actions">
                 <button id="ready-btn" class="btn btn-primary">Pronto</button>
                 <button id="start-game-btn" class="btn btn-success" style="display: none;">Inizia Partita</button>
@@ -126,7 +138,7 @@
                 <h3>È il tuo turno!</h3>
                 <p>Scegli una carta, un giocatore e prevedi la sua risposta</p>
 
-                <div id="player-cards" class="cards-grid"></div>
+                <div id="player-cards" class="cards-grid" style="margin-top:2rem"></div>
 
                 <div id="turn-form" style="display: none;">
                     <div class="selected-dilemma">
@@ -275,34 +287,13 @@
             </div>
             <div class="modal-body">
                 <div class="theme-grid">
-                    <button class="theme-option" data-theme="dark">
-                        <div class="theme-preview theme-preview-dark"></div>
-                        <span>Scuro</span>
-                    </button>
-                    <button class="theme-option" data-theme="light">
-                        <div class="theme-preview theme-preview-light"></div>
-                        <span>Chiaro</span>
-                    </button>
-                    <button class="theme-option" data-theme="darcula">
-                        <div class="theme-preview theme-preview-darcula"></div>
-                        <span>Darcula</span>
-                    </button>
-                    <button class="theme-option" data-theme="blue">
-                        <div class="theme-preview theme-preview-blue"></div>
-                        <span>Blu Oceano</span>
-                    </button>
-                    <button class="theme-option" data-theme="purple">
-                        <div class="theme-preview theme-preview-purple"></div>
-                        <span>Viola Cosmico</span>
-                    </button>
-                    <button class="theme-option" data-theme="green">
-                        <div class="theme-preview theme-preview-green"></div>
-                        <span>Verde Foresta</span>
-                    </button>
-                    <button class="theme-option" data-theme="sunset">
-                        <div class="theme-preview theme-preview-sunset"></div>
-                        <span>Tramonto</span>
-                    </button>
+                    <button class="theme-option theme-circle" data-theme="dark" title="Scuro"></button>
+                    <button class="theme-option theme-circle" data-theme="light" title="Chiaro"></button>
+                    <button class="theme-option theme-circle" data-theme="darcula" title="Darcula"></button>
+                    <button class="theme-option theme-circle" data-theme="blue" title="Blu Oceano"></button>
+                    <button class="theme-option theme-circle" data-theme="purple" title="Viola Cosmico"></button>
+                    <button class="theme-option theme-circle" data-theme="green" title="Verde Foresta"></button>
+                    <button class="theme-option theme-circle" data-theme="sunset" title="Tramonto"></button>
                 </div>
             </div>
         </div>
@@ -316,6 +307,38 @@
 
     <!-- Toast Notifications -->
     <div id="toast-container" class="toast-container"></div>
+
+    <!-- Floating Action Menu -->
+    <div id="floating-menu" class="floating-menu">
+        <button id="floating-menu-btn" class="floating-menu-btn" title="Menu">
+            <span class="menu-icon">☰</span>
+            <span class="close-icon">✕</span>
+        </button>
+        <div class="floating-menu-items">
+            <button id="floating-theme-btn" class="floating-menu-item" title="Cambia Tema">
+                <span>🎨</span>
+            </button>
+            <button id="floating-rules-btn" class="floating-menu-item" title="Regole">
+                <span>📖</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Confirm Modal -->
+    <div id="confirm-modal" class="modal" style="display: none;">
+        <div class="modal-content confirm-modal-content">
+            <div class="modal-header">
+                <h3 id="confirm-title">Conferma</h3>
+            </div>
+            <div class="modal-body">
+                <p id="confirm-message"></p>
+            </div>
+            <div class="modal-footer">
+                <button id="confirm-cancel-btn" class="btn btn-secondary">Annulla</button>
+                <button id="confirm-ok-btn" class="btn btn-danger">Conferma</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>

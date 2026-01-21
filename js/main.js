@@ -274,6 +274,7 @@ function setupEventListeners() {
   const startGameBtn = document.getElementById('start-game-btn');
   const leaveLobbyBtn = document.getElementById('leave-lobby-btn');
   const copyCodeBtn = document.getElementById('copy-code-btn');
+  const roomOpenToggle = document.getElementById('room-open-toggle');
 
   if (readyBtn) {
     readyBtn.addEventListener('click', handleReady);
@@ -289,6 +290,10 @@ function setupEventListeners() {
 
   if (copyCodeBtn) {
     copyCodeBtn.addEventListener('click', handleCopyCode);
+  }
+
+  if (roomOpenToggle) {
+    roomOpenToggle.addEventListener('change', handleRoomOpenToggle);
   }
 
   // Game screen - Answer buttons for target player
@@ -339,16 +344,9 @@ function setupEventListeners() {
     leaveGameBtn.addEventListener('click', handleLeaveGame);
   }
 
-  // Modal handlers
-  const showRulesBtn = document.getElementById('show-rules-btn');
+  // Rules modal handlers
   const closeRulesModal = document.getElementById('close-rules-modal');
   const rulesModal = document.getElementById('rules-modal');
-
-  if (showRulesBtn) {
-    showRulesBtn.addEventListener('click', () => {
-      rulesModal.style.display = 'flex';
-    });
-  }
 
   if (closeRulesModal) {
     closeRulesModal.addEventListener('click', () => {
@@ -386,8 +384,41 @@ function setupEventListeners() {
     });
   }
 
+  // Floating menu handlers
+  const floatingMenu = document.getElementById('floating-menu');
+  const floatingMenuBtn = document.getElementById('floating-menu-btn');
+  const floatingThemeBtn = document.getElementById('floating-theme-btn');
+  const floatingRulesBtn = document.getElementById('floating-rules-btn');
+
+  if (floatingMenuBtn) {
+    floatingMenuBtn.addEventListener('click', () => {
+      floatingMenu.classList.toggle('active');
+    });
+  }
+
+  if (floatingThemeBtn) {
+    floatingThemeBtn.addEventListener('click', () => {
+      floatingMenu.classList.remove('active');
+      themeModal.style.display = 'flex';
+      updateActiveTheme(document.body.getAttribute('data-theme'));
+    });
+  }
+
+  if (floatingRulesBtn) {
+    floatingRulesBtn.addEventListener('click', () => {
+      floatingMenu.classList.remove('active');
+      rulesModal.style.display = 'flex';
+    });
+  }
+
+  // Close floating menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!floatingMenu.contains(e.target) && floatingMenu.classList.contains('active')) {
+      floatingMenu.classList.remove('active');
+    }
+  });
+
   // Theme modal handlers
-  const showThemeModalBtn = document.getElementById('show-theme-modal-btn');
   const closeThemeModal = document.getElementById('close-theme-modal');
   const themeModal = document.getElementById('theme-modal');
   const themeOptions = document.querySelectorAll('.theme-option');
@@ -396,13 +427,6 @@ function setupEventListeners() {
   const savedTheme = localStorage.getItem('bias_theme') || 'dark';
   document.body.setAttribute('data-theme', savedTheme);
   updateActiveTheme(savedTheme);
-
-  if (showThemeModalBtn) {
-    showThemeModalBtn.addEventListener('click', () => {
-      themeModal.style.display = 'flex';
-      updateActiveTheme(document.body.getAttribute('data-theme'));
-    });
-  }
 
   if (closeThemeModal) {
     closeThemeModal.addEventListener('click', () => {
@@ -439,6 +463,49 @@ function updateActiveTheme(currentTheme) {
     } else {
       option.classList.remove('active');
     }
+  });
+}
+
+/**
+ * Show custom confirm modal
+ */
+function showConfirm(title, message) {
+  return new Promise((resolve) => {
+    const modal = document.getElementById('confirm-modal');
+    const titleEl = document.getElementById('confirm-title');
+    const messageEl = document.getElementById('confirm-message');
+    const okBtn = document.getElementById('confirm-ok-btn');
+    const cancelBtn = document.getElementById('confirm-cancel-btn');
+
+    titleEl.textContent = title;
+    messageEl.textContent = message;
+    modal.style.display = 'flex';
+
+    const handleOk = () => {
+      modal.style.display = 'none';
+      okBtn.removeEventListener('click', handleOk);
+      cancelBtn.removeEventListener('click', handleCancel);
+      modal.removeEventListener('click', handleBackdrop);
+      resolve(true);
+    };
+
+    const handleCancel = () => {
+      modal.style.display = 'none';
+      okBtn.removeEventListener('click', handleOk);
+      cancelBtn.removeEventListener('click', handleCancel);
+      modal.removeEventListener('click', handleBackdrop);
+      resolve(false);
+    };
+
+    const handleBackdrop = (e) => {
+      if (e.target === modal) {
+        handleCancel();
+      }
+    };
+
+    okBtn.addEventListener('click', handleOk);
+    cancelBtn.addEventListener('click', handleCancel);
+    modal.addEventListener('click', handleBackdrop);
   });
 }
 
@@ -496,15 +563,32 @@ async function handleJoinRoom() {
 
     UI.showLoading('Accesso alla stanza...');
 
-    const { roomId, playerId } = await RoomManager.joinExistingRoom(roomCode, playerName);
+    const { roomId, playerId, isJoiningMidGame } = await RoomManager.joinExistingRoom(roomCode, playerName);
 
     currentRoomId = roomId;
     currentPlayerId = playerId;
 
+    // If joining mid-game, give cards to the new player
+    if (isJoiningMidGame) {
+      const roomData = await FirebaseManager.getRoomData(roomId);
+      const usedDilemmas = roomData.usedDilemmas || [];
+      const discardedCards = roomData.discardedCards || [];
+      const cardsInHands = await FirebaseManager.getCardsInHands(roomId);
+
+      const newPlayerCards = CardManager.getCardsForNewPlayer(cardsInHands, usedDilemmas, discardedCards);
+      await FirebaseManager.setPlayerCards(roomId, playerId, newPlayerCards);
+
+      console.log(`New player ${playerId} joined mid-game with cards:`, newPlayerCards);
+    }
+
     await joinLobby();
 
     UI.hideLoading();
-    UI.showToast('Sei entrato nella stanza!', 'success');
+    if (isJoiningMidGame) {
+      UI.showToast('Sei entrato nella partita! Giocherai dal prossimo turno.', 'success');
+    } else {
+      UI.showToast('Sei entrato nella stanza!', 'success');
+    }
   } catch (error) {
     console.error('Error joining room:', error);
     UI.hideLoading();
@@ -594,10 +678,26 @@ function updateLobbyScreen(players) {
     }
   }
 
+  const isHost = RoomManager.isPlayerHost(players, currentPlayerId);
+
+  // Show/hide room settings (only for host)
+  const roomSettings = document.getElementById('room-settings');
+  if (roomSettings) {
+    if (isHost) {
+      roomSettings.style.display = 'block';
+      // Update toggle state
+      const roomOpenToggle = document.getElementById('room-open-toggle');
+      if (roomOpenToggle && currentRoomData) {
+        roomOpenToggle.checked = currentRoomData.config.isOpen === true;
+      }
+    } else {
+      roomSettings.style.display = 'none';
+    }
+  }
+
   // Show/hide start button (only for host when all ready)
   const startGameBtn = document.getElementById('start-game-btn');
   if (startGameBtn) {
-    const isHost = RoomManager.isPlayerHost(players, currentPlayerId);
     const allReady = RoomManager.areAllPlayersReady(players);
     const playerCount = RoomManager.getPlayerCount(players);
 
@@ -664,7 +764,7 @@ function updateGameScreen(players, currentTurn) {
   } else if (gameState.canGuess) {
     // Show active player view
     UI.showActivePlayerView();
-    UI.renderPlayerCards(gameState.myCards, handleCardSelect);
+    UI.renderPlayerCards(gameState.myCards, handleCardSelect, handleCardDiscard);
   } else if (gameState.canAnswer) {
     // Show target player view
     const activePlayer = players[currentTurn.activePlayerId];
@@ -742,6 +842,44 @@ function handleCardSelect(dilemma) {
   selectedTarget = null;
   selectedGuess = null;
   updateSubmitButtonState();
+}
+
+/**
+ * Handle card discard
+ */
+async function handleCardDiscard(dilemma) {
+  const confirmed = await showConfirm(
+    'Scarta carta',
+    `Sei sicuro di voler scartare questa carta?\n\n"${dilemma.text}"`
+  );
+
+  if (!confirmed) {
+    return;
+  }
+
+  try {
+    UI.showLoading('Scarto carta...');
+
+    const result = await GameLogic.discardCard(
+      currentRoomId,
+      currentPlayerId,
+      dilemma.id
+    );
+
+    UI.hideLoading();
+
+    if (result.success) {
+      if (result.newCard) {
+        UI.showToast('Carta scartata e nuova carta pescata!', 'success');
+      } else {
+        UI.showToast('Carta scartata! Non ci sono più carte disponibili.', 'warning');
+      }
+    }
+  } catch (error) {
+    console.error('Error discarding card:', error);
+    UI.hideLoading();
+    UI.showToast('Errore durante lo scarto della carta', 'error');
+  }
 }
 
 /**
@@ -939,6 +1077,22 @@ async function handleReady() {
 }
 
 /**
+ * Handle room open/closed toggle
+ */
+async function handleRoomOpenToggle(event) {
+  try {
+    const isOpen = event.target.checked;
+    await FirebaseManager.updateRoomOpenStatus(currentRoomId, isOpen);
+
+    const statusText = isOpen ? 'aperta' : 'chiusa';
+    UI.showToast(`Stanza ${statusText}`, 'success');
+  } catch (error) {
+    console.error('Error updating room open status:', error);
+    UI.showToast('Errore durante l\'aggiornamento', 'error');
+  }
+}
+
+/**
  * Handle start game
  */
 async function handleStartGame() {
@@ -960,7 +1114,12 @@ async function handleStartGame() {
  * Handle leave lobby
  */
 async function handleLeaveLobby() {
-  if (!confirm('Sei sicuro di voler uscire?')) {
+  const confirmed = await showConfirm(
+    'Esci dalla lobby',
+    'Sei sicuro di voler uscire dalla lobby?'
+  );
+
+  if (!confirmed) {
     return;
   }
 
@@ -1034,7 +1193,12 @@ async function handleNewGame() {
  * Handle leave game
  */
 async function handleLeaveGame() {
-  if (!confirm('Sei sicuro di voler uscire?')) {
+  const confirmed = await showConfirm(
+    'Esci dalla partita',
+    'Sei sicuro di voler uscire? La partita terminerà.'
+  );
+
+  if (!confirmed) {
     return;
   }
 
@@ -1063,7 +1227,12 @@ async function handleLeaveGame() {
  * Handle exit game (during play)
  */
 async function handleExitGame() {
-  if (!confirm('Sei sicuro di voler uscire dalla partita?')) {
+  const confirmed = await showConfirm(
+    'Esci dalla partita',
+    'Sei sicuro di voler uscire? La partita terminerà per te.'
+  );
+
+  if (!confirmed) {
     return;
   }
 

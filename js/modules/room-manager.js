@@ -108,8 +108,12 @@ export async function joinExistingRoom(roomId, playerName) {
 
     // Check room status
     const roomData = await FirebaseManager.getRoomData(normalizedRoomId);
-    if (roomData.config.status !== 'lobby') {
-      throw new Error('La partita è già iniziata');
+    const isLobby = roomData.config.status === 'lobby';
+    const isOpen = roomData.config.isOpen === true;
+
+    // Can join if in lobby, or if game is playing but room is open
+    if (!isLobby && !isOpen) {
+      throw new Error('La partita è già iniziata e la stanza è chiusa');
     }
 
     // Generate player ID
@@ -121,7 +125,11 @@ export async function joinExistingRoom(roomId, playerName) {
     // Save player info in localStorage
     savePlayerInfo(playerId, playerName.trim(), normalizedRoomId);
 
-    return { roomId: normalizedRoomId, playerId };
+    return {
+      roomId: normalizedRoomId,
+      playerId,
+      isJoiningMidGame: !isLobby
+    };
   } catch (error) {
     console.error('Error joining room:', error);
     throw error;

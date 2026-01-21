@@ -99,6 +99,24 @@
         font-size: 1.1rem;
         min-height: 130px;
     }
+
+    /* Floating menu positioning for mobile */
+    .floating-menu {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .floating-menu-btn {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
+    }
+
+    .floating-menu-item {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

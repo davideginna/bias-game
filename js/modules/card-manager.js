@@ -159,3 +159,38 @@ export function getRandomDilemma(usedDilemmas = []) {
 export function isValidDilemmaId(id) {
   return dilemmasData.some(d => d.id === id);
 }
+
+/**
+ * Get random available dilemma for discard/draw
+ * Excludes cards that are: in players' hands, used, or discarded
+ */
+export function getAvailableDilemmaForDraw(cardsInHands = [], usedDilemmas = [], discardedCards = []) {
+  const excludedCards = [...cardsInHands, ...usedDilemmas, ...discardedCards];
+  const available = dilemmasData.filter(d => !excludedCards.includes(d.id));
+
+  if (available.length === 0) {
+    return null;
+  }
+
+  const randomIndex = Math.floor(Math.random() * available.length);
+  return available[randomIndex];
+}
+
+/**
+ * Get cards for a new player joining mid-game
+ * Returns CARDS_PER_PLAYER cards that aren't in use
+ */
+export function getCardsForNewPlayer(cardsInHands = [], usedDilemmas = [], discardedCards = []) {
+  const excludedCards = [...cardsInHands, ...usedDilemmas, ...discardedCards];
+  const available = dilemmasData.filter(d => !excludedCards.includes(d.id));
+
+  if (available.length < CARDS_PER_PLAYER) {
+    console.warn(`Not enough cards available. Need ${CARDS_PER_PLAYER}, have ${available.length}`);
+    // Return as many as possible
+    return shuffleArray(available).slice(0, available.length).map(d => d.id);
+  }
+
+  // Shuffle and take CARDS_PER_PLAYER cards
+  const shuffled = shuffleArray(available);
+  return shuffled.slice(0, CARDS_PER_PLAYER).map(d => d.id);
+}

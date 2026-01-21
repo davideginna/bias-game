@@ -42,6 +42,7 @@ export async function createRoom(roomId, playerName, playerId) {
       config: {
         maxPoints: 10,
         status: 'lobby',
+        isOpen: false,
         createdAt: firebase.database.ServerValue.TIMESTAMP
       },
       players: {
@@ -54,6 +55,7 @@ export async function createRoom(roomId, playerName, playerId) {
         }
       },
       usedDilemmas: [],
+      discardedCards: [],
       currentTurn: null,
       turnHistory: []
     });
@@ -154,6 +156,19 @@ export async function updateGameStatus(roomId, status) {
 }
 
 /**
+ * Update room open/closed status
+ */
+export async function updateRoomOpenStatus(roomId, isOpen) {
+  try {
+    await database.ref(`rooms/${roomId}/config/isOpen`).set(isOpen);
+    return true;
+  } catch (error) {
+    console.error('Error updating room open status:', error);
+    throw error;
+  }
+}
+
+/**
  * Distribute cards to all players
  */
 export async function distributeCards(roomId, playersCards) {
@@ -168,6 +183,19 @@ export async function distributeCards(roomId, playersCards) {
     return true;
   } catch (error) {
     console.error('Error distributing cards:', error);
+    throw error;
+  }
+}
+
+/**
+ * Set cards for a specific player
+ */
+export async function setPlayerCards(roomId, playerId, cards) {
+  try {
+    await database.ref(`rooms/${roomId}/players/${playerId}/cards`).set(cards);
+    return true;
+  } catch (error) {
+    console.error('Error setting player cards:', error);
     throw error;
   }
 }
@@ -287,12 +315,16 @@ export async function addTurnToHistory(roomId, turnData) {
  */
 export async function resetRoom(roomId) {
   try {
-    const snapshot = await database.ref(`rooms/${roomId}/players`).once('value');
-    const players = snapshot.val();
+    const roomSnapshot = await database.ref(`rooms/${roomId}`).once('value');
+    const roomData = roomSnapshot.val();
+    const players = roomData.players;
 
     const updates = {};
     updates[`rooms/${roomId}/config/status`] = 'lobby';
+    // Keep isOpen setting from before
+    updates[`rooms/${roomId}/config/isOpen`] = roomData.config.isOpen || false;
     updates[`rooms/${roomId}/usedDilemmas`] = [];
+    updates[`rooms/${roomId}/discardedCards`] = [];
     updates[`rooms/${roomId}/currentTurn`] = null;
     updates[`rooms/${roomId}/turnHistory`] = [];
 
@@ -341,6 +373,44 @@ export async function getRoomData(roomId) {
     return snapshot.val();
   } catch (error) {
     console.error('Error getting room data:', error);
+    throw error;
+  }
+}
+
+/**
+ * Add card to discarded pile
+ */
+export async function addDiscardedCard(roomId, dilemmaId) {
+  try {
+    const discardedRef = database.ref(`rooms/${roomId}/discardedCards`);
+    const snapshot = await discardedRef.once('value');
+    const discarded = snapshot.val() || [];
+    discarded.push(dilemmaId);
+    await discardedRef.set(discarded);
+    return true;
+  } catch (error) {
+    console.error('Error adding discarded card:', error);
+    throw error;
+  }
+}
+
+/**
+ * Get all cards currently in players' hands
+ */
+export async function getCardsInHands(roomId) {
+  try {
+    const playersSnapshot = await database.ref(`rooms/${roomId}/players`).once('value');
+    const players = playersSnapshot.val() || {};
+    const cardsInHands = [];
+
+    for (const playerId in players) {
+      const playerCards = players[playerId].cards || [];
+      cardsInHands.push(...playerCards);
+    }
+
+    return cardsInHands;
+  } catch (error) {
+    console.error('Error getting cards in hands:', error);
     throw error;
   }
 }

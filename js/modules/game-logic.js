@@ -277,3 +277,45 @@ export function getAnswerText(answer) {
   };
   return answerMap[answer] || answer;
 }
+
+/**
+ * Discard a card and draw a new one
+ */
+export async function discardCard(roomId, playerId, dilemmaId) {
+  try {
+    // Get current room data
+    const roomData = await FirebaseManager.getRoomData(roomId);
+    const usedDilemmas = roomData.usedDilemmas || [];
+    const discardedCards = roomData.discardedCards || [];
+
+    // Get all cards currently in players' hands
+    const cardsInHands = await FirebaseManager.getCardsInHands(roomId);
+
+    // Remove the discarded card from player's hand
+    await FirebaseManager.removeCardFromHand(roomId, playerId, dilemmaId);
+
+    // Add card to discarded pile
+    await FirebaseManager.addDiscardedCard(roomId, dilemmaId);
+
+    // Draw a new card (exclude cards in hands, used, and discarded)
+    // Remove the discarded card from cardsInHands for the next draw
+    const updatedCardsInHands = cardsInHands.filter(id => id !== dilemmaId);
+    const newCard = CardManager.getAvailableDilemmaForDraw(
+      updatedCardsInHands,
+      usedDilemmas,
+      [...discardedCards, dilemmaId]
+    );
+
+    if (newCard) {
+      await FirebaseManager.addCardToHand(roomId, playerId, newCard.id);
+      console.log(`Player ${playerId} discarded card ${dilemmaId} and drew new card: ${newCard.id}`);
+      return { success: true, newCard };
+    } else {
+      console.log('No more cards available to draw after discard');
+      return { success: true, newCard: null };
+    }
+  } catch (error) {
+    console.error('Error discarding card:', error);
+    throw error;
+  }
+}
