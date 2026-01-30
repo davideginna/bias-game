@@ -141,7 +141,7 @@
   },
   {
     "id": 36,
-    "text": "Inviteresti il tuo ex al tuo matrimonio per non creare imbarazzo?"
+    "text": "Sei rimasto in buoni rapporti con il/la tuo/a ex. Lo/La inviteresti al tuo matrimonio per non creare imbarazzo?"
   },
   {
     "id": 37,
@@ -433,11 +433,11 @@
   },
   {
     "id": 109,
-    "text": "Salveresti il tuo animale domestico o uno sconosciuto da un incendio?"
+    "text": "In un incendio dove puoi salvare solo una vita, salveresti il tuo animale domestico anche se ci fosse uno sconosciuto in pericolo?"
   },
   {
     "id": 110,
-    "text": "Rivelare un segreto di stato per esporre la corruzione, anche se ciò mettesse a rischio la sicurezza nazionale?"
+    "text": "Riveleresti un segreto di stato per esporre la corruzione, anche se ciò mettesse a rischio la sicurezza nazionale?"
   },
   {
     "id": 111,
@@ -509,7 +509,7 @@
   },
   {
     "id": 128,
-    "text": "Pensi che sia giusto che gli atleti vengano pagati milioni mentre gli insegnanti no?"
+    "text": "Sei d'accordo sul fatto che gli atleti vengano pagati milioni mentre gli insegnanti no?"
   },
   {
     "id": 129,
@@ -593,7 +593,7 @@
   },
   {
     "id": 149,
-    "text": "È più importante essere felici o avere successo?"
+    "text": "Ritieni che essere felici sia più importante che avere successo?"
   },
   {
     "id": 150,
@@ -609,7 +609,7 @@
   },
   {
     "id": 153,
-    "text": "È peggio fallire o non provarci affatto?"
+    "text": "Pensi che sia peggio fallire che non provarci affatto?"
   },
   {
     "id": 154,
@@ -617,7 +617,7 @@
   },
   {
     "id": 155,
-    "text": "Credi nel destino o nel libero arbitrio?"
+    "text": "Credi nel destino più che nel libero arbitrio?"
   },
   {
     "id": 156,
@@ -625,23 +625,23 @@
   },
   {
     "id": 157,
-    "text": "Preferiresti essere amato o rispettato?"
+    "text": "Preferiresti essere amato piuttosto che rispettato?"
   },
   {
     "id": 158,
-    "text": "Se potessi, viaggeresti nel futuro o nel passato?"
+    "text": "Se potessi viaggiare nel tempo, sceglieresti il futuro piuttosto che il passato?"
   },
   {
     "id": 159,
-    "text": "Pensi che l'umanità sia intrinsecamente buona o cattiva?"
+    "text": "Pensi che l'umanità sia intrinsecamente buona?"
   },
   {
     "id": 160,
-    "text": "È più importante la libertà individuale o la sicurezza collettiva?"
+    "text": "Ritieni che la libertà individuale sia più importante della sicurezza collettiva?"
   },
   {
     "id": 161,
-    "text": "Se potessi avere un superpotere, sceglieresti l'invisibilità invece del volo?"
+    "text": "Se potessi avere un superpotere, sceglieresti l'invisibilità piuttosto che il volo?"
   },
   {
     "id": 162,
@@ -653,7 +653,7 @@
   },
   {
     "id": 164,
-    "text": "È meglio avere pochi amici veri o tanti conoscenti?"
+    "text": "Pensi sia meglio avere pochi amici veri piuttosto che tanti conoscenti?"
   },
   {
     "id": 165,
@@ -685,7 +685,7 @@
   },
   {
     "id": 172,
-    "text": "Preferiresti essere povero e felice o ricco e infelice?"
+    "text": "Preferiresti essere povero e felice piuttosto che ricco e infelice?"
   },
   {
     "id": 173,
@@ -773,7 +773,7 @@
   },
   {
     "id": 194,
-    "text": "È più spaventoso lo spazio profondo o l'oceano profondo?"
+    "text": "Pensi che lo spazio profondo sia più spaventoso dell'oceano profondo?"
   },
   {
     "id": 195,
@@ -861,7 +861,7 @@
   },
   {
     "id": 216,
-    "text": "Preferiresti avere più tempo o più soldi?"
+    "text": "Preferiresti avere più tempo piuttosto che più soldi?"
   },
   {
     "id": 217,
@@ -881,7 +881,7 @@
   },
   {
     "id": 221,
-    "text": "È più importante la privacy o la comodità?"
+    "text": "Ritieni che la privacy sia più importante della comodità?"
   },
   {
     "id": 222,
@@ -917,7 +917,7 @@
   },
   {
     "id": 230,
-    "text": "Preferiresti perdere l'olfatto o il gusto?"
+    "text": "Se dovessi perdere un senso, ti dispiacerebbe di più perdere il gusto che l'olfatto?"
   },
   {
     "id": 231,
@@ -1445,7 +1445,7 @@
   },
   {
     "id": 362,
-    "text": "Se scoprissi che tuo figlio è un bullo a scuola, come lo puniresti?"
+    "text": "Se scoprissi che tuo figlio è un bullo a scuola, lo puniresti severamente?"
   },
   {
     "id": 363,
@@ -1525,7 +1525,7 @@
   },
   {
     "id": 382,
-    "text": "A che età pensi sia giusto dare uno smartphone a un bambino?"
+    "text": "Pensi sia giusto dare uno smartphone a un bambino prima dei 12 anni?"
   },
   {
     "id": 383,
@@ -1557,7 +1557,7 @@
   },
   {
     "id": 390,
-    "text": "Se tuo figlio fosse vittima di cyberbullismo, contatteresti la scuola, la polizia o i genitori del bullo?"
+    "text": "Se tuo figlio fosse vittima di cyberbullismo, contatteresti prima la polizia piuttosto che la scuola?"
   },
   {
     "id": 391,
@@ -1661,7 +1661,7 @@
   },
   {
     "id": 416,
-    "text": "Se potessi modificare permanentemente una parte del tuo corpo senza chirurgia, cosa cambieresti?"
+    "text": "Se potessi modificare permanentemente una parte del tuo corpo senza chirurgia, lo faresti?"
   },
   {
     "id": 417,
@@ -1721,7 +1721,7 @@
   },
   {
     "id": 431,
-    "text": "Se potessi salvare un solo tipo di animale dall'estinzione, quale salveresti?"
+    "text": "Se potessi salvare un solo tipo di animale dall'estinzione, sceglieresti di salvare un mammifero piuttosto che un insetto?"
   },
   {
     "id": 432,
@@ -1729,7 +1729,7 @@
   },
   {
     "id": 433,
-    "text": "Se il tuo partner fosse allergico al tuo amato animale domestico, chi sceglierei?"
+    "text": "Se il tuo partner fosse allergico al tuo amato animale domestico, terresti l'animale?"
   },
   {
     "id": 434,
@@ -1805,7 +1805,7 @@
   },
   {
     "id": 452,
-    "text": "Perdoneresti un tradimento fisico o uno emotivo? Quale ritieni più grave?"
+    "text": "Ritieni che un tradimento emotivo sia più grave di uno fisico?"
   },
   {
     "id": 453,
@@ -1881,7 +1881,7 @@
   },
   {
     "id": 471,
-    "text": "Se organizzassi una festa e i tuoi genitori non ci fossero, cosa succederebbe se qualcuno portasse dell'alcol?"
+    "text": "Se organizzassi una festa e i tuoi genitori non ci fossero, permetteresti che qualcuno portasse dell'alcol?"
   },
   {
     "id": 472,
@@ -2425,7 +2425,7 @@
   },
   {
     "id": 607,
-    "text": "Se il tuo partner ti tradisse con il tuo migliore amico/a, chi dei due perdoneresti più difficilmente?"
+    "text": "Se il tuo partner ti tradisse con il tuo migliore amico/a, ti sentiresti più tradito dal partner che dall'amico?"
   },
     {
     "id": 608,
@@ -2493,7 +2493,7 @@
   },
   {
     "id": 624,
-    "text": "È più grave un tradimento consumato con uno/a sconosciuto/a o un bacio con un/a caro/a amico/a?"
+    "text": "Pensi sia più grave un bacio con un/a caro/a amico/a che un tradimento consumato con uno/a sconosciuto/a?"
   },
   {
     "id": 625,
@@ -2541,7 +2541,7 @@
   },
   {
     "id": 636,
-    "text": "Se la tua migliore amica andasse a letto con tuo fratello, ti arrabbieresti di più con lei o con lui?"
+    "text": "Se la tua migliore amica andasse a letto con tuo fratello, la considereresti più colpevole di lui?"
   },
   {
     "id": 637,
@@ -2593,7 +2593,7 @@
   },
   {
     "id": 649,
-    "text": "Se ti innamorassi del terapista di coppia tuo e del tuo partner?"
+    "text": "Se ti innamorassi del terapista di coppia tuo e del tuo partner, glielo confesseresti?"
   },
   {
     "id": 650,
@@ -2669,7 +2669,7 @@
   },
   {
     "id": 668,
-    "text": "Se scoprissi che la tua migliore amica ha una relazione con tuo padre, con chi ti arrabbieresti di più?"
+    "text": "Se scoprissi che la tua migliore amica ha una relazione con tuo padre, ti arrabbieresti più con lei che con tuo padre?"
   },
   {
     "id": 669,
@@ -2713,7 +2713,7 @@
   },
   {
     "id": 679,
-    "text": "Se il tuo partner ti tradisse, preferiresti scoprirlo da solo/a o che te lo dicesse un amico?"
+    "text": "Se il tuo partner ti tradisse, preferiresti scoprirlo da solo/a invece che sentirtelo dire da un amico?"
   },
   {
     "id": 680,
@@ -2745,7 +2745,7 @@
   },
   {
     "id": 687,
-    "text": "Se il tuo partner volesse dare al vostro bambino un nome che odi, come trovereste un compromesso?"
+    "text": "Se il tuo partner volesse dare al vostro bambino un nome che odi, cederesti per farlo felice?"
   },
   {
     "id": 688,
@@ -2873,7 +2873,7 @@
   },
   {
     "id": 719,
-    "text": "Se il tuo partner ti accusasse ingiustamente di tradimento basandosi sulla gelosia, come proveresti la tua innocenza?"
+    "text": "Se il tuo partner ti accusasse ingiustamente di tradimento basandosi sulla gelosia, faresti di tutto per provare la tua innocenza?"
   },
   {
     "id": 720,
@@ -2929,7 +2929,7 @@
   },
   {
     "id": 733,
-    "text": "Se il tuo partner ti tradisse, preferiresti che lo facesse con qualcuno che conosci o con uno sconosciuto?"
+    "text": "Se il tuo partner ti tradisse, sarebbe peggio per te se lo facesse con qualcuno che conosci piuttosto che con uno sconosciuto?"
   },
   {
     "id": 734,
@@ -3685,7 +3685,7 @@
   },
   {
     "id": 922,
-    "text": "Se il tuo partner ti chiedesse di fare un 'dick rating' onesto, daresti un voto basso se fosse il caso?"
+    "text": "Se il tuo partner ti chiedesse una valutazione onesta sul suo aspetto intimo, saresti sincero anche se negativo?"
   },
   {
     "id": 923,
@@ -3857,7 +3857,7 @@
   },
   {
     "id": 965,
-    "text": "È più importante salvare la foresta amazzonica che garantire lavoro a migliaia di famiglie povere?"
+    "text": "Pensi sia più importante salvare la foresta amazzonica che garantire lavoro a migliaia di famiglie povere?"
   },
   {
     "id": 966,
@@ -3941,7 +3941,7 @@
   },
   {
     "id": 986,
-    "text": "È più importante proteggere la libertà di espressione che prevenire la diffusione di fake news e discorsi d'odio?"
+    "text": "Pensi sia più importante proteggere la libertà di espressione che prevenire la diffusione di fake news e discorsi d'odio?"
   },
   {
     "id": 987,
@@ -4105,7 +4105,7 @@
   },
   {
     "id": 1027,
-    "text": "Sei Kevin Malone (The Office), preferiresti un chili perfetto o un buon conto bancario?"
+    "text": "Sei Kevin Malone (The Office), preferiresti un chili perfetto invece di un buon conto bancario?"
   },
   {
     "id": 1028,
