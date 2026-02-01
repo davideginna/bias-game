@@ -30,7 +30,9 @@
 - [ ] Host vede schermata "Accetto/Dubito"
 - [ ] Host clicca "Accetto"
 - [ ] Risultato normale (punto se indovinato)
-- [ ] Prossimo turno
+- [ ] **Solo Host vede bottone "Prossimo Turno"**
+- [ ] Altri giocatori vedono: "In attesa che [Host] passi al turno successivo..."
+- [ ] Host clicca "Prossimo Turno" → cambio turno
 
 ### 3. Flusso Dubito - Maggioranza Mente
 - [ ] Host fa domanda → Target risponde
@@ -39,7 +41,9 @@
 - [ ] Emoticon 😇😈 grandi e visibili
 - [ ] 2 votano "Mente", 1 vota "Sincero"
 - [ ] Risultato: "Mente vince → Host +1 punto"
-- [ ] Prossimo turno
+- [ ] **Solo Host vede bottone "Prossimo Turno"**
+- [ ] Altri vedono messaggio attesa
+- [ ] Host clicca "Prossimo Turno" → cambio turno
 
 ### 4. Flusso Dubito - Pareggio
 - [ ] 4 giocatori totali (2 votanti)
@@ -56,6 +60,16 @@
 - [ ] Durante votazione: **NO messaggi "Errore conteggio voti"** ripetuti
 - [ ] Console: vedi solo "All votes received" **una volta**
 - [ ] Console: vedi "Voting results processed successfully"
+
+### 7. Test Bottone "Prossimo Turno"
+- [ ] **Schermata Risultato Normale**:
+  - [ ] Chi ha fatto domanda: vede bottone "Prossimo Turno"
+  - [ ] Altri giocatori: vedono "In attesa che [Nome] passi al turno successivo..."
+  - [ ] Bottone NON cliccabile da altri
+- [ ] **Schermata Risultato Votazione**:
+  - [ ] Chi ha fatto domanda: vede bottone "Prossimo Turno"
+  - [ ] Altri: vedono messaggio attesa
+  - [ ] Solo il questioner può far procedere il gioco
 
 ---
 

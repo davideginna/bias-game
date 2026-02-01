@@ -1,5 +1,50 @@
 # Changelog Bias
 
+## v1.5 - 2026-02-01
+
+### ✨ Nuove Feature - Modalità Dubito
+- **Modalità "Dubito" (4+ giocatori)**: Nuova modalità opzionale attivabile dalla lobby
+  - Toggle nelle impostazioni stanza (accanto a "Stanza Aperta")
+  - Richiede almeno 4 giocatori per essere attivata
+  - Si disabilita automaticamente se i giocatori scendono sotto 4
+  - Dopo ogni risposta, chi ha posto la domanda può "Accettare" o "Dubitare"
+
+- **Sistema Votazione**:
+  - Se dubita: tutti gli altri giocatori (esclusi questioner e responder) votano
+  - Bottoni con emoticon grandi: 😇 Sincero / 😈 Mente
+  - **In caso di pareggio, vince "Mente"**
+  - Se vince "Mente": questioner guadagna +1 punto
+  - Se vince "Sincero": nessun punto assegnato
+
+### 🎮 UX Migliorata
+- **Bottone "Prossimo Turno" controllato**:
+  - Ora visibile SOLO al giocatore che ha fatto la domanda
+  - Altri giocatori vedono: "In attesa che [Nome] passi al turno successivo..."
+  - Previene confusione su chi deve far procedere il gioco
+  - Valido sia per risultati normali che per risultati votazione
+
+### 🐛 Bug Fix
+- **Risolto loop infinito**: Fix critico per votazione Dubito
+  - Aggiunto flag `isProcessingVotes` per prevenire processing duplicato
+  - Reset automatico del flag quando lo stato cambia
+  - NO più errori ripetuti "Errore durante il conteggio voti"
+  - Logging migliorato per debug
+
+### 📝 Contenuti
+- **Regolamento aggiornato**: Aggiunte regole complete per modalità Dubito
+  - Spiegazione votazione e pareggio
+  - Requisiti 4+ giocatori
+  - Scarto carte sempre disponibile
+
+### 🔧 Tecnico
+- Firebase: `isDubitoMode` aggiunto alla config delle stanze
+- Firebase: `dubitoChoice`, `votes`, `votingResult` nel currentTurn
+- Nuovi stati turno: `WAITING_ACCEPT_OR_DOUBT`, `VOTING_TRUTH`, `SHOWING_VOTE_RESULT`
+- Test automatici: 12 test (logica votazione + controllo bottoni)
+- Script helper per test multi-tab
+
+---
+
 ## v1.4 - 2026-02-01
 
 ### ✨ Nuove Feature

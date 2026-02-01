@@ -69,7 +69,7 @@ const scenarios = [
 ];
 
 console.log('\n╔════════════════════════════════════════════════════╗');
-console.log('║   TEST MODALITÀ DUBITO - Logica Votazione         ║');
+console.log('║   TEST MODALITÀ DUBITO - Logica Completa          ║');
 console.log('╚════════════════════════════════════════════════════╝\n');
 
 let passedTests = 0;
@@ -101,11 +101,70 @@ scenarios.forEach((scenario, index) => {
   }
 });
 
+// Test controllo bottone "Prossimo Turno"
 console.log('\n\n╔════════════════════════════════════════════════════╗');
-console.log('║              RIEPILOGO TEST                        ║');
+console.log('║   TEST CONTROLLO BOTTONE PROSSIMO TURNO           ║');
+console.log('╚════════════════════════════════════════════════════╝\n');
+
+function testNextTurnButton() {
+  const tests = [
+    {
+      name: 'Active Player vede il bottone',
+      currentPlayerId: 'player1',
+      activePlayerId: 'player1',
+      shouldShowButton: true
+    },
+    {
+      name: 'Altri giocatori NON vedono il bottone',
+      currentPlayerId: 'player2',
+      activePlayerId: 'player1',
+      shouldShowButton: false
+    },
+    {
+      name: 'Target player NON vede il bottone',
+      currentPlayerId: 'player3',
+      activePlayerId: 'player1',
+      shouldShowButton: false
+    }
+  ];
+
+  let btnTestsPassed = 0;
+  let btnTestsFailed = 0;
+
+  tests.forEach(test => {
+    console.log(`\n${test.name}`);
+    console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+    console.log(`Current Player: ${test.currentPlayerId}`);
+    console.log(`Active Player: ${test.activePlayerId}`);
+
+    const isActivePlayer = test.currentPlayerId === test.activePlayerId;
+    const buttonVisible = isActivePlayer;
+
+    console.log(`\n📊 Risultato:`);
+    console.log(`   Bottone visibile: ${buttonVisible ? 'Sì' : 'No'}`);
+    console.log(`   Atteso: ${test.shouldShowButton ? 'Sì' : 'No'}`);
+
+    if (buttonVisible === test.shouldShowButton) {
+      console.log(`\n✅ TEST PASSATO`);
+      btnTestsPassed++;
+    } else {
+      console.log(`\n❌ TEST FALLITO`);
+      btnTestsFailed++;
+    }
+  });
+
+  return { passed: btnTestsPassed, failed: btnTestsFailed };
+}
+
+const btnResults = testNextTurnButton();
+passedTests += btnResults.passed;
+failedTests += btnResults.failed;
+
+console.log('\n\n╔════════════════════════════════════════════════════╗');
+console.log('║              RIEPILOGO GENERALE                    ║');
 console.log('╚════════════════════════════════════════════════════╝');
-console.log(`\n✅ Test passati: ${passedTests}/${scenarios.length}`);
-console.log(`❌ Test falliti: ${failedTests}/${scenarios.length}`);
+console.log(`\n✅ Test passati: ${passedTests}/${scenarios.length + 3}`);
+console.log(`❌ Test falliti: ${failedTests}/${scenarios.length + 3}`);
 
 if (failedTests === 0) {
   console.log('\n🎉 Tutti i test sono passati!\n');

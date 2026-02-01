@@ -868,6 +868,26 @@ function updateGameScreen(players, currentTurn) {
       targetPlayer.name,
       dilemma.text
     );
+
+    // Show "Next Turn" button only to the active player
+    const nextTurnBtn = document.getElementById('next-turn-btn');
+    const resultContent = document.getElementById('result-content');
+
+    if (currentPlayerId === currentTurn.activePlayerId) {
+      // Active player: show button
+      if (nextTurnBtn) nextTurnBtn.style.display = 'block';
+    } else {
+      // Other players: hide button and show waiting message
+      if (nextTurnBtn) nextTurnBtn.style.display = 'none';
+      if (resultContent) {
+        const waitingMsg = document.createElement('p');
+        waitingMsg.style.marginTop = '2rem';
+        waitingMsg.style.opacity = '0.8';
+        waitingMsg.style.fontStyle = 'italic';
+        waitingMsg.textContent = `In attesa che ${activePlayer.name} passi al turno successivo...`;
+        resultContent.appendChild(waitingMsg);
+      }
+    }
   } else if (gameState.canGuess) {
     // Show active player view
     UI.showActivePlayerView();
@@ -1037,6 +1057,25 @@ function showVoteResultView(currentTurn, players) {
   resultHTML += `</div>`;
 
   if (voteResultContent) voteResultContent.innerHTML = resultHTML;
+
+  // Show "Next Turn" button only to the active player
+  const nextTurnAfterVoteBtn = document.getElementById('next-turn-after-vote-btn');
+
+  if (currentPlayerId === currentTurn.activePlayerId) {
+    // Active player: show button
+    if (nextTurnAfterVoteBtn) nextTurnAfterVoteBtn.style.display = 'block';
+  } else {
+    // Other players: hide button and show waiting message
+    if (nextTurnAfterVoteBtn) nextTurnAfterVoteBtn.style.display = 'none';
+    if (voteResultContent) {
+      const waitingMsg = document.createElement('p');
+      waitingMsg.style.marginTop = '2rem';
+      waitingMsg.style.opacity = '0.8';
+      waitingMsg.style.fontStyle = 'italic';
+      waitingMsg.textContent = `In attesa che ${activePlayer.name} passi al turno successivo...`;
+      voteResultContent.appendChild(waitingMsg);
+    }
+  }
 
   // Show view
   if (voteResultView) voteResultView.style.display = 'block';

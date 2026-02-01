@@ -12,8 +12,13 @@ I giocatori devono indovinare come i loro amici risponderebbero a dilemmi morali
    - Prevede come risponderà (Sì/No/Dipende)
 4. **Risposta**: Il giocatore target risponde al dilemma
 5. **Punteggio**: Se la previsione è corretta, il giocatore attivo guadagna 1 punto
-6. **Gestione Carte**: In qualsiasi momento (anche quando non è il tuo turno), puoi scartare una carta e pescarne una nuova
-7. **Vittoria**: Il primo giocatore a raggiungere il punteggio scelto vince!
+6. **Modalità Dubito** (opzionale, 4+ giocatori):
+   - Dopo ogni risposta, chi ha fatto la domanda può "Accettare" o "Dubitare"
+   - Se dubita: gli altri votano se la risposta è sincera (😇) o falsa (😈)
+   - Se vince "Mente" (o pareggio): chi ha fatto la domanda guadagna 1 punto
+7. **Gestione Carte**: In qualsiasi momento (anche quando non è il tuo turno), puoi scartare una carta e pescarne una nuova
+8. **Prossimo Turno**: Solo chi ha fatto la domanda può far procedere al turno successivo
+9. **Vittoria**: Il primo giocatore a raggiungere il punteggio scelto vince!
 
 ## 🚀 Setup e Installazione
 
@@ -141,7 +146,9 @@ bias/
 - ✅ **No Build**: Nessun processo di build, solo vanilla JavaScript
 - ✅ **1200+ Dilemmi**: Dilemmi morali vari e provocatori, ottimizzati per risposte Sì/No/Dipende
 - ✅ **Punteggio Personalizzabile**: Scegli da 1 a 10 punti per vincere
+- ✅ **Modalità Dubito**: Votazione opzionale per mettere in dubbio le risposte (4+ giocatori)
 - ✅ **Scarto Carte Flessibile**: Scarta carte in qualsiasi momento, non solo durante il tuo turno
+- ✅ **Controllo Turni**: Solo chi ha fatto la domanda può passare al turno successivo
 - ✅ **PWA Ready**: Installabile come app su dispositivi mobili
 - ✅ **Temi Multipli**: 7 temi di colore disponibili
 - ✅ **Offline-Ready**: Salvataggio sessione in localStorage
@@ -208,11 +215,15 @@ Esempio di regole più sicure:
 
 ## 🎮 Modalità di Gioco
 
-- **Minimo giocatori**: 2
+- **Minimo giocatori**: 2 (4 per modalità Dubito)
 - **Massimo giocatori**: Nessun limite (consigliato 4-8)
-- **Punti per vincere**: Da 1 a 10 (scelto dall'host al momento della creazione)
+- **Punti per vincere**: Da 1 a 10 (scelto dall'host)
 - **Carte per giocatore**: 6 (sempre, grazie al sistema di pesca automatica)
 - **Scarto carte**: Sempre disponibile, anche quando non è il tuo turno
+- **Modalità Dubito**: Opzionale, attivabile in lobby con 4+ giocatori
+  - Votazione dopo ogni risposta
+  - Pareggio: vince "Mente"
+- **Controllo turni**: Solo il questioner passa al turno successivo
 
 ## 🚧 Miglioramenti Futuri
 

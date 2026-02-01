@@ -6,7 +6,7 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 
 ## 📋 Stato Attuale del Progetto
 
-### ✅ Completato (v1.4)
+### ✅ Completato (v1.5)
 - [x] Struttura base HTML/CSS/JS (vanilla, no build)
 - [x] Firebase Realtime Database integrato
 - [x] Sistema lobby con codice stanza (6 caratteri maiuscoli)
@@ -27,9 +27,18 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 - [x] Audio system (suoni vittoria/sconfitta, TTS)
 - [x] Stanze aperte/chiuse (join durante partita)
 - [x] Menu floating con regole e temi
+- [x] **Modalità Dubito** (4+ giocatori)
+- [x] **Sistema votazione** (😇 Sincero / 😈 Mente)
+- [x] **Pareggio vince Mente**
+- [x] **Bottone "Prossimo Turno" solo per questioner**
+- [x] **Toggle Dubito in impostazioni lobby**
 
 ### 🐛 Problemi Noti
 Nessun problema critico noto.
+
+### ✅ Bug Risolti (v1.5)
+- [x] Loop infinito durante conteggio voti (flag `isProcessingVotes`)
+- [x] Messaggio errore ripetuto in console durante votazione
 
 ### 🎯 TODO Prossimi
 - [ ] Timer per turno (opzionale)
@@ -99,7 +108,17 @@ Nessun problema critico noto.
       dilemmaId: 42
       guess: "si"|"no"|"dipende"
       answer: "si"|"no"|"dipende"
-      status: "guessing"|"waiting_answer"|"showing_result"
+      status: "guessing"|"waiting_answer"|"showing_result"|"waiting_accept_or_doubt"|"voting_truth"|"showing_vote_result"
+      dubitoChoice: "accept"|"doubt"|null    // Solo in Dubito mode
+      votes: {                                // Solo in Dubito mode
+        playerId1: "truth"|"lie",
+        playerId2: "truth"|"lie"
+      }
+      votingResult: {                        // Solo in Dubito mode
+        lieVotes: number,
+        truthVotes: number,
+        pointAwarded: boolean
+      }
     /turnHistory: [...]
 ```
 
@@ -113,15 +132,24 @@ Nessun problema critico noto.
 
 ### Flusso Base
 1. **Home**: Scelta "Crea Stanza" o "Unisciti"
-   - **NUOVO**: Host sceglie punteggio per vincere (slider 1-10, default 5)
-2. **Lobby**: Giocatori si segnano "Pronto", host avvia
+   - Host sceglie punteggio per vincere (slider 1-10, default 5)
+2. **Lobby**: Giocatori si segnano "Pronto"
    - Punteggio obiettivo visibile: "🎯 Punteggio per vincere: X"
+   - **Host può attivare "Modalità Dubito"** (se 4+ giocatori)
 3. **Gioco**: Turni ciclici
    - Active player: sceglie carta, target, risposta prevista
    - Target player: risponde al dilemma
-   - Confronto: se match → +1 punto
-   - **IMPORTANTE**: Active player pesca nuova carta (torna a 6)
-   - **NUOVO**: Tutti i giocatori vedono le proprie carte e possono scartarle
+   - **SE DUBITO ATTIVO**:
+     - Active player vede "Accetto" o "Dubito"
+     - Se Accetto: confronto normale (match → +1 punto)
+     - Se Dubito: votazione (altri votano 😇 Sincero / 😈 Mente)
+       - Mente vince (o pareggio) → Active player +1 punto
+       - Sincero vince → Nessun punto
+   - **SE DUBITO NON ATTIVO**: Confronto normale
+   - Active player pesca nuova carta (torna a 6)
+   - Tutti i giocatori possono scartare carte in qualsiasi momento
+   - **Solo Active player vede bottone "Prossimo Turno"**
+   - Altri vedono: "In attesa che [Nome] passi al turno successivo..."
 4. **Fine**: Primo a raggiungere il punteggio scelto vince
 
 ### Distribuzione Carte
@@ -351,5 +379,5 @@ console.log('Dilemmas loaded:', CardManager.getAllDilemmas().length);
 ---
 
 **Ultimo aggiornamento**: 2026-02-01
-**Versione**: 1.4
-**Status**: ✅ Produzione-Ready, 🚀 Nuove Feature Attive
+**Versione**: 1.5
+**Status**: ✅ Produzione-Ready, 🎮 Modalità Dubito Attiva, 🧪 Test OK (12/12)
