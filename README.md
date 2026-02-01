@@ -4,7 +4,7 @@ I giocatori devono indovinare come i loro amici risponderebbero a dilemmi morali
 
 ## 🎯 Come si Gioca
 
-1. **Crea o Unisciti a una Stanza**: Il primo giocatore crea una stanza e condivide il codice a 6 caratteri con gli amici
+1. **Crea o Unisciti a una Stanza**: Il primo giocatore crea una stanza, sceglie il punteggio per vincere (1-10) e condivide il codice a 6 caratteri con gli amici
 2. **Lobby**: Tutti i giocatori si segnano come "Pronto" e l'host avvia la partita
 3. **Turni**: A turno, ogni giocatore:
    - Sceglie una delle sue carte dilemma
@@ -12,7 +12,8 @@ I giocatori devono indovinare come i loro amici risponderebbero a dilemmi morali
    - Prevede come risponderà (Sì/No/Dipende)
 4. **Risposta**: Il giocatore target risponde al dilemma
 5. **Punteggio**: Se la previsione è corretta, il giocatore attivo guadagna 1 punto
-6. **Vittoria**: Il primo giocatore a raggiungere 10 punti vince!
+6. **Gestione Carte**: In qualsiasi momento (anche quando non è il tuo turno), puoi scartare una carta e pescarne una nuova
+7. **Vittoria**: Il primo giocatore a raggiungere il punteggio scelto vince!
 
 ## 🚀 Setup e Installazione
 
@@ -138,9 +139,13 @@ bias/
 - ✅ **Mobile-First**: Completamente responsive e ottimizzato per mobile
 - ✅ **Real-time**: Sincronizzazione istantanea tra tutti i giocatori
 - ✅ **No Build**: Nessun processo di build, solo vanilla JavaScript
-- ✅ **100 Dilemmi**: Dilemmi morali vari e provocatori
+- ✅ **1200+ Dilemmi**: Dilemmi morali vari e provocatori, ottimizzati per risposte Sì/No/Dipende
+- ✅ **Punteggio Personalizzabile**: Scegli da 1 a 10 punti per vincere
+- ✅ **Scarto Carte Flessibile**: Scarta carte in qualsiasi momento, non solo durante il tuo turno
+- ✅ **PWA Ready**: Installabile come app su dispositivi mobili
+- ✅ **Temi Multipli**: 7 temi di colore disponibili
 - ✅ **Offline-Ready**: Salvataggio sessione in localStorage
-- ✅ **Dark Theme**: Design moderno con tema scuro
+- ✅ **Dark Theme**: Design moderno con tema scuro di default
 
 ## 🛠️ Tecnologie Utilizzate
 
@@ -205,20 +210,24 @@ Esempio di regole più sicure:
 
 - **Minimo giocatori**: 2
 - **Massimo giocatori**: Nessun limite (consigliato 4-8)
-- **Punti per vincere**: 10 (configurabile in `config.js`)
-- **Carte per giocatore**: 6
+- **Punti per vincere**: Da 1 a 10 (scelto dall'host al momento della creazione)
+- **Carte per giocatore**: 6 (sempre, grazie al sistema di pesca automatica)
+- **Scarto carte**: Sempre disponibile, anche quando non è il tuo turno
 
 ## 🚧 Miglioramenti Futuri
 
 - [ ] Animazioni tra i turni
-- [ ] Effetti sonori
+- [x] ~~Effetti sonori~~ ✅ (v1.2)
 - [ ] Timer per le risposte
 - [ ] Chat in-game
 - [ ] Statistiche giocatore
-- [ ] Dilemmi personalizzati
-- [ ] PWA (Progressive Web App)
+- [ ] Dilemmi personalizzati dall'utente
+- [x] ~~PWA (Progressive Web App)~~ ✅ (v1.2)
 - [ ] Modalità spettatore
 - [ ] Storia partite
+- [x] ~~Sistema temi~~ ✅ (v1.2)
+- [x] ~~Scarto carte~~ ✅ (v1.3)
+- [x] ~~Punteggio personalizzabile~~ ✅ (v1.4)
 
 ## 📄 Licenza
 

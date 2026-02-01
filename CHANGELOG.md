@@ -1,5 +1,59 @@
 # Changelog Bias
 
+## v1.4 - 2026-02-01
+
+### ✨ Nuove Feature
+- **Punteggio Personalizzabile**: L'host può scegliere il punteggio per vincere
+  - Slider da 1 a 10 punti nel form di creazione stanza
+  - Valore di default: 5 punti (prima era fisso a 10)
+  - Punteggio obiettivo visibile in lobby e durante il gioco
+  - Ogni stanza può avere un punteggio diverso
+
+- **Scarto Carte Sempre Disponibile**: Miglioramento sistema scarto
+  - Ora puoi scartare carte **anche quando non è il tuo turno**
+  - Le tue carte sono sempre visibili nella schermata di attesa
+  - Possibilità di gestire strategicamente la mano durante tutta la partita
+  - Indicazione chiara: "Puoi scartare una carta anche mentre aspetti"
+
+### 📝 Contenuti
+- **Dilemmi Ottimizzati**: Revisione completa delle domande
+  - 48 domande trasformate da scelta binaria a formato sì/no/dipende
+  - Esempi:
+    - ~~"Faresti A o faresti B?"~~ → "Faresti A?"
+    - ~~"Lo considereresti amore o controllo?"~~ → "Lo considereresti controllo?"
+  - Tutte le domande ora compatibili con risposte Sì/No/Dipende
+  - Migliore esperienza di gioco e meno ambiguità
+
+### 🎨 UI/UX
+- **Slider Punteggio**: Design semplice e pulito
+  - Slider nativo del browser (no personalizzazioni eccessive)
+  - Valore visualizzato in tempo reale accanto alla label
+  - Indicatori min/max sotto lo slider (1 e 10)
+  - Validazione: punteggio deve essere tra 1 e 10
+
+- **Modale Carte Rimossa**: Semplificazione interfaccia
+  - Rimosso il pulsante "🃏 Vedi le tue carte"
+  - Le carte sono sempre visibili quando pertinente
+  - Meno click, esperienza più fluida
+
+- **Carte nella Waiting View**: Nuova sezione
+  - Visualizzazione delle proprie carte anche in attesa
+  - Bottone scarto (✕) sempre disponibile
+  - Messaggio informativo: "Puoi scartare una carta anche mentre aspetti"
+
+### 🔧 Tecnico
+- Firebase: `maxPoints` ora dinamico per ogni stanza (non più costante)
+- Game Logic: `checkWinCondition` usa `maxPoints` dalla config della stanza
+- Validazione lato client per punteggio (range 1-10)
+- Event listener su slider per aggiornamento valore in tempo reale
+- Funzione `renderWaitingPlayerCards` per mostrare carte in waiting view
+
+### 🐛 Bug Fix
+- Allineamento slider migliorato (ora usa design nativo del browser)
+- Default values aggiornati da 10 a 5 in tutti i file
+
+---
+
 ## v1.3 - 2026-01-21
 
 ### ✨ Nuove Feature

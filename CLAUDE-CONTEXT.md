@@ -6,34 +6,38 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 
 ## 📋 Stato Attuale del Progetto
 
-### ✅ Completato
+### ✅ Completato (v1.4)
 - [x] Struttura base HTML/CSS/JS (vanilla, no build)
 - [x] Firebase Realtime Database integrato
 - [x] Sistema lobby con codice stanza (6 caratteri maiuscoli)
 - [x] Distribuzione 6 carte per giocatore
 - [x] Sistema turni ciclici
-- [x] Punteggio e vittoria (10 punti)
+- [x] **Punteggio personalizzabile** (1-10 punti, scelto dall'host)
 - [x] UI mobile-first responsive
-- [x] Logo e favicon
+- [x] Logo e favicon + PWA
 - [x] Riconnessione automatica (localStorage)
 - [x] Bottone uscita durante partita
 - [x] Codice stanza sempre visibile in-game
 - [x] Bottoni risposta con bordi colorati (verde/rosso/arancione)
 - [x] Carta selezionata con glow verde
 - [x] Pesca carta nuova dopo averla giocata (torna a 6 carte)
-- [x] Sezione risposta nascosta finché non si seleziona target
+- [x] **Scarto carte sempre disponibile** (anche quando non è il tuo turno)
+- [x] **1200+ dilemmi ottimizzati** (formato sì/no/dipende)
+- [x] Sistema temi (7 temi disponibili)
+- [x] Audio system (suoni vittoria/sconfitta, TTS)
+- [x] Stanze aperte/chiuse (join durante partita)
+- [x] Menu floating con regole e temi
 
 ### 🐛 Problemi Noti
-1. **Carte non ripescate su PC (localhost)**: Funziona su telefono ma non su localhost in incognito
-   - Possibile race condition o problema cache
-   - Log aggiunti per debug
-2. **Possibile issue Firebase listeners**: Da verificare
+Nessun problema critico noto.
 
 ### 🎯 TODO Prossimi
-- [ ] Fix carte non ripescate su PC
-- [ ] Testare con 3+ giocatori
-- [ ] Aggiungere suoni (opzionale)
 - [ ] Timer per turno (opzionale)
+- [ ] Statistiche giocatore
+- [ ] Chat in-game
+- [ ] Dilemmi personalizzati dall'utente
+- [ ] Modalità spettatore
+- [ ] Storia partite
 - [ ] Migliorare regole Firebase per produzione
 
 ---
@@ -77,8 +81,9 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 /rooms/
   /{roomId}/              // 6 caratteri maiuscoli
     /config/
-      maxPoints: 10
+      maxPoints: 1-10      // ⚠️ NUOVO: Personalizzabile dall'host (default: 5)
       status: "lobby"|"playing"|"ended"
+      isOpen: true|false   // Permetti join durante partita
     /players/
       /{playerId}/
         name: "string"
@@ -87,6 +92,7 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
         isReady: false
         isHost: true/false
     /usedDilemmas: [1, 5, ...]
+    /discardedCards: [3, 7, ...]  // Carte scartate dai giocatori
     /currentTurn/
       activePlayerId: "string"
       targetPlayerId: "string"
@@ -107,13 +113,16 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 
 ### Flusso Base
 1. **Home**: Scelta "Crea Stanza" o "Unisciti"
+   - **NUOVO**: Host sceglie punteggio per vincere (slider 1-10, default 5)
 2. **Lobby**: Giocatori si segnano "Pronto", host avvia
+   - Punteggio obiettivo visibile: "🎯 Punteggio per vincere: X"
 3. **Gioco**: Turni ciclici
    - Active player: sceglie carta, target, risposta prevista
    - Target player: risponde al dilemma
    - Confronto: se match → +1 punto
    - **IMPORTANTE**: Active player pesca nuova carta (torna a 6)
-4. **Fine**: Primo a 10 punti vince
+   - **NUOVO**: Tutti i giocatori vedono le proprie carte e possono scartarle
+4. **Fine**: Primo a raggiungere il punteggio scelto vince
 
 ### Distribuzione Carte
 - Inizio: 6 carte random uniche per giocatore
@@ -121,6 +130,11 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
   - Rimuove carta giocata
   - **Pesca nuova carta random** (non ancora usata)
   - Torna sempre a 6 carte
+- **NUOVO - Scarto Carte**:
+  - Disponibile in **qualsiasi momento** (anche quando non è il tuo turno)
+  - Bottone ✕ su ogni carta
+  - Pesca automatica dopo lo scarto
+  - Le carte sono sempre visibili nella waiting view
 - Se finite carte disponibili: continua con quelle che ha
 
 ---
@@ -336,6 +350,6 @@ console.log('Dilemmas loaded:', CardManager.getAllDilemmas().length);
 
 ---
 
-**Ultimo aggiornamento**: 2026-01-20
-**Versione**: 1.0
-**Status**: ✅ MVP Completo, 🐛 Debug in corso (carte PC)
+**Ultimo aggiornamento**: 2026-02-01
+**Versione**: 1.4
+**Status**: ✅ Produzione-Ready, 🚀 Nuove Feature Attive
