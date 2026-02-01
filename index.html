@@ -54,6 +54,16 @@
                     <label for="create-player-name">Il tuo nome</label>
                     <input type="text" id="create-player-name" placeholder="Inserisci il tuo nome" maxlength="20">
                 </div>
+                <div class="form-group">
+                    <label for="max-points-input">
+                        Punteggio per vincere: <strong id="max-points-value">5</strong>
+                    </label>
+                    <input type="range" id="max-points-input" min="1" max="10" value="5" class="slider">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.8rem; opacity: 0.6; margin-top: 0.25rem;">
+                        <span>1</span>
+                        <span>10</span>
+                    </div>
+                </div>
                 <button id="create-room-btn" class="btn btn-primary">Crea Stanza</button>
                 <button id="back-from-create-btn" class="btn btn-secondary">Indietro</button>
             </div>
@@ -86,6 +96,9 @@
                     <span id="lobby-room-code"></span>
                     <button id="copy-code-btn" class="btn-icon" title="Copia codice">📋</button>
                 </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                    🎯 Punteggio per vincere: <strong id="lobby-max-points">10</strong>
+                </p>
             </div>
 
             <div class="players-section">
@@ -128,6 +141,9 @@
             </div>
 
             <!-- Scoreboard -->
+            <div style="text-align: center; margin-bottom: 0.5rem; font-size: 0.9rem; opacity: 0.8;">
+                🎯 Obiettivo: <strong id="game-max-points">10</strong> punti
+            </div>
             <div id="scoreboard" class="scoreboard"></div>
 
             <!-- Turn Info -->

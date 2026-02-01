@@ -260,6 +260,15 @@ function setupEventListeners() {
   // Home screen - Action buttons
   const createRoomBtn = document.getElementById('create-room-btn');
   const joinRoomBtn = document.getElementById('join-room-btn');
+  const maxPointsInput = document.getElementById('max-points-input');
+  const maxPointsValue = document.getElementById('max-points-value');
+
+  // Update max points value display when slider changes
+  if (maxPointsInput && maxPointsValue) {
+    maxPointsInput.addEventListener('input', (e) => {
+      maxPointsValue.textContent = e.target.value;
+    });
+  }
 
   if (createRoomBtn) {
     createRoomBtn.addEventListener('click', handleCreateRoom);
@@ -495,15 +504,22 @@ async function handleCreateRoom() {
   try {
     const playerNameInput = document.getElementById('create-player-name');
     const playerName = playerNameInput.value.trim();
+    const maxPointsInput = document.getElementById('max-points-input');
+    const maxPoints = parseInt(maxPointsInput.value) || 5;
 
     if (!RoomManager.validatePlayerName(playerName)) {
       UI.showToast('Inserisci un nome valido (1-20 caratteri)', 'error');
       return;
     }
 
+    if (maxPoints < 1 || maxPoints > 10) {
+      UI.showToast('Il punteggio deve essere tra 1 e 10', 'error');
+      return;
+    }
+
     UI.showLoading('Creazione stanza...');
 
-    const { roomId, playerId } = await RoomManager.createNewRoom(playerName);
+    const { roomId, playerId } = await RoomManager.createNewRoom(playerName, maxPoints);
 
     currentRoomId = roomId;
     currentPlayerId = playerId;
@@ -641,6 +657,12 @@ function updateLobbyScreen(players) {
   // Render player list
   UI.renderPlayerList(players, currentPlayerId);
 
+  // Update max points display
+  const maxPointsElement = document.getElementById('lobby-max-points');
+  if (maxPointsElement && currentRoomData?.config?.maxPoints) {
+    maxPointsElement.textContent = currentRoomData.config.maxPoints;
+  }
+
   // Update ready button state
   const readyBtn = document.getElementById('ready-btn');
   const currentPlayer = players[currentPlayerId];
@@ -699,6 +721,12 @@ function updateGameScreen(players, currentTurn) {
   const gameRoomCodeElement = document.getElementById('game-room-code');
   if (gameRoomCodeElement && currentRoomId) {
     gameRoomCodeElement.textContent = currentRoomId;
+  }
+
+  // Update max points display
+  const gameMaxPointsElement = document.getElementById('game-max-points');
+  if (gameMaxPointsElement && currentRoomData?.config?.maxPoints) {
+    gameMaxPointsElement.textContent = currentRoomData.config.maxPoints;
   }
 
   // Render scoreboard
@@ -778,7 +806,8 @@ function updateEndScreen(players) {
   UI.showScreen('end');
 
   // Find winner
-  const winner = GameLogic.checkWinCondition(players);
+  const maxPoints = currentRoomData?.config?.maxPoints || 5;
+  const winner = GameLogic.checkWinCondition(players, maxPoints);
 
   // Show winner
   UI.showWinner(winner);

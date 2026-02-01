@@ -1501,3 +1501,8 @@ body[data-theme="darcula"] {
 .btn-discard-card:active {
     transform: scale(1.05) rotate(90deg);
 }
+
+/* === Range Slider === */
+.slider {
+    width: 100%;
+}

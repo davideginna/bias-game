@@ -34,13 +34,13 @@ export function getDatabase() {
 /**
  * Create a new room
  */
-export async function createRoom(roomId, playerName, playerId) {
+export async function createRoom(roomId, playerName, playerId, maxPoints = 5) {
   try {
     const roomRef = database.ref(`rooms/${roomId}`);
 
     await roomRef.set({
       config: {
-        maxPoints: 10,
+        maxPoints: maxPoints,
         status: 'lobby',
         isOpen: false,
         createdAt: firebase.database.ServerValue.TIMESTAMP
@@ -60,7 +60,7 @@ export async function createRoom(roomId, playerName, playerId) {
       turnHistory: []
     });
 
-    console.log(`Room ${roomId} created successfully`);
+    console.log(`Room ${roomId} created successfully with maxPoints: ${maxPoints}`);
     return true;
   } catch (error) {
     console.error('Error creating room:', error);

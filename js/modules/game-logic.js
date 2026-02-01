@@ -155,9 +155,10 @@ export async function proceedToNextTurn(roomId, currentActivePlayerId) {
     // Get updated room data to check scores
     const roomData = await FirebaseManager.getRoomData(roomId);
     const updatedPlayers = roomData.players;
+    const maxPoints = roomData.config?.maxPoints || MAX_POINTS;
 
     // Check win condition
-    const winner = checkWinCondition(updatedPlayers);
+    const winner = checkWinCondition(updatedPlayers, maxPoints);
 
     if (winner) {
       // End game
@@ -189,9 +190,9 @@ export async function proceedToNextTurn(roomId, currentActivePlayerId) {
 /**
  * Check if any player has reached the winning score
  */
-export function checkWinCondition(players) {
+export function checkWinCondition(players, maxPoints = MAX_POINTS) {
   for (const [id, player] of Object.entries(players)) {
-    if (player.score >= MAX_POINTS) {
+    if (player.score >= maxPoints) {
       return { id, ...player };
     }
   }
