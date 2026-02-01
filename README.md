@@ -5,10 +5,13 @@ I giocatori devono indovinare come i loro amici risponderebbero a dilemmi morali
 ## 🎯 Come si Gioca
 
 1. **Crea o Unisciti a una Stanza**: Il primo giocatore crea una stanza, sceglie il punteggio per vincere (1-10) e condivide il codice a 6 caratteri con gli amici
-2. **Lobby**: Tutti i giocatori si segnano come "Pronto" e l'host avvia la partita
+2. **Lobby**: Tutti i giocatori si segnano come "Pronto"
+   - L'host può scegliere una delle **2 modalità di gioco** (vedi sotto)
+   - L'host può **riordinare i giocatori** per riflettere l'ordine al tavolo (in modalità Sequenziale)
+   - L'host può attivare la **Modalità Dubito** (4+ giocatori)
 3. **Turni**: A turno, ogni giocatore:
    - Sceglie una delle sue carte dilemma
-   - Seleziona un giocatore target
+   - Seleziona un giocatore target (dipende dalla modalità)
    - Prevede come risponderà (Sì/No/Dipende)
 4. **Risposta**: Il giocatore target risponde al dilemma
 5. **Punteggio**: Se la previsione è corretta, il giocatore attivo guadagna 1 punto
@@ -19,6 +22,19 @@ I giocatori devono indovinare come i loro amici risponderebbero a dilemmi morali
 7. **Gestione Carte**: In qualsiasi momento (anche quando non è il tuo turno), puoi scartare una carta e pescarne una nuova
 8. **Prossimo Turno**: Solo chi ha fatto la domanda può far procedere al turno successivo
 9. **Vittoria**: Il primo giocatore a raggiungere il punteggio scelto vince!
+
+### 🎲 Modalità di Gioco
+
+**Scelta Libera** (default):
+- Puoi scegliere a chi fare ogni domanda
+- Massima libertà strategica
+- Ideale per gruppi che si conoscono bene
+
+**Sequenziale**:
+- Le domande vanno automaticamente al giocatore successivo nell'ordine
+- **Nessuna scelta del destinatario** - il target è mostrato automaticamente
+- Il turno segue l'ordine dei giocatori (configurabile dall'host con frecce ↑↓)
+- Perfetto per giocare seguendo l'ordine fisico al tavolo
 
 ## 🚀 Setup e Installazione
 
@@ -146,6 +162,8 @@ bias/
 - ✅ **No Build**: Nessun processo di build, solo vanilla JavaScript
 - ✅ **1200+ Dilemmi**: Dilemmi morali vari e provocatori, ottimizzati per risposte Sì/No/Dipende
 - ✅ **Punteggio Personalizzabile**: Scegli da 1 a 10 punti per vincere
+- ✅ **2 Modalità di Gioco**: Scelta Libera e Sequenziale
+- ✅ **Riordino Giocatori**: L'host può riordinare i giocatori per riflettere l'ordine al tavolo (modalità Sequenziale)
 - ✅ **Modalità Dubito**: Votazione opzionale per mettere in dubbio le risposte (4+ giocatori)
 - ✅ **Scarto Carte Flessibile**: Scarta carte in qualsiasi momento, non solo durante il tuo turno
 - ✅ **Controllo Turni**: Solo chi ha fatto la domanda può passare al turno successivo
@@ -213,13 +231,17 @@ Esempio di regole più sicure:
 }
 ```
 
-## 🎮 Modalità di Gioco
+## 🎮 Configurazione Gioco
 
 - **Minimo giocatori**: 2 (4 per modalità Dubito)
 - **Massimo giocatori**: Nessun limite (consigliato 4-8)
 - **Punti per vincere**: Da 1 a 10 (scelto dall'host)
 - **Carte per giocatore**: 6 (sempre, grazie al sistema di pesca automatica)
 - **Scarto carte**: Sempre disponibile, anche quando non è il tuo turno
+- **Modalità di Gioco**:
+  - **Scelta Libera** (default): Scegli liberamente a chi fare domande
+  - **Sequenziale**: Domande automatiche al giocatore successivo nell'ordine
+- **Ordine Giocatori**: L'host può riordinare i giocatori con frecce ↑↓ (modalità Sequenziale)
 - **Modalità Dubito**: Opzionale, attivabile in lobby con 4+ giocatori
   - Votazione dopo ogni risposta
   - Pareggio: vince "Mente"
@@ -239,6 +261,8 @@ Esempio di regole più sicure:
 - [x] ~~Sistema temi~~ ✅ (v1.2)
 - [x] ~~Scarto carte~~ ✅ (v1.3)
 - [x] ~~Punteggio personalizzabile~~ ✅ (v1.4)
+- [x] ~~Modalità di gioco multiple~~ ✅ (v1.6)
+- [x] ~~Riordino giocatori~~ ✅ (v1.6)
 
 ## 📄 Licenza
 

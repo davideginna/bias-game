@@ -6,13 +6,15 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 
 ## 📋 Stato Attuale del Progetto
 
-### ✅ Completato (v1.5)
+### ✅ Completato (v1.6)
 - [x] Struttura base HTML/CSS/JS (vanilla, no build)
 - [x] Firebase Realtime Database integrato
 - [x] Sistema lobby con codice stanza (6 caratteri maiuscoli)
 - [x] Distribuzione 6 carte per giocatore
 - [x] Sistema turni ciclici
 - [x] **Punteggio personalizzabile** (1-10 punti, scelto dall'host)
+- [x] **2 Modalità di Gioco** (Scelta Libera, Sequenziale)
+- [x] **Riordino Giocatori** (frecce ↑↓ per host in lobby, per modalità Sequenziale)
 - [x] UI mobile-first responsive
 - [x] Logo e favicon + PWA
 - [x] Riconnessione automatica (localStorage)
@@ -36,9 +38,9 @@ Questo file contiene tutto il contesto necessario per lavorare rapidamente sul p
 ### 🐛 Problemi Noti
 Nessun problema critico noto.
 
-### ✅ Bug Risolti (v1.5)
-- [x] Loop infinito durante conteggio voti (flag `isProcessingVotes`)
-- [x] Messaggio errore ripetuto in console durante votazione
+### ✅ Bug Risolti (v1.6)
+- [x] Loop infinito durante conteggio voti (flag `isProcessingVotes`) - v1.5
+- [x] Messaggio errore ripetuto in console durante votazione - v1.5
 
 ### 🎯 TODO Prossimi
 - [ ] Timer per turno (opzionale)
@@ -90,9 +92,12 @@ Nessun problema critico noto.
 /rooms/
   /{roomId}/              // 6 caratteri maiuscoli
     /config/
-      maxPoints: 1-10      // ⚠️ NUOVO: Personalizzabile dall'host (default: 5)
+      maxPoints: 1-10      // Personalizzabile dall'host (default: 5)
       status: "lobby"|"playing"|"ended"
       isOpen: true|false   // Permetti join durante partita
+      isDubitoMode: true|false  // Modalità Dubito (4+ giocatori)
+      gameMode: "choice"|"sequential"  // ⚠️ NUOVO v1.6
+      playerOrder: ["player1", "player2", ...]  // ⚠️ NUOVO v1.6
     /players/
       /{playerId}/
         name: "string"
@@ -135,9 +140,15 @@ Nessun problema critico noto.
    - Host sceglie punteggio per vincere (slider 1-10, default 5)
 2. **Lobby**: Giocatori si segnano "Pronto"
    - Punteggio obiettivo visibile: "🎯 Punteggio per vincere: X"
+   - **Host sceglie modalità di gioco**:
+     - **Scelta Libera** (default): Scegli liberamente a chi fare domande
+     - **Sequenziale**: Domande automatiche al giocatore successivo nell'ordine
+   - **Host può riordinare i giocatori** (frecce ↑↓) per modalità Sequenziale
    - **Host può attivare "Modalità Dubito"** (se 4+ giocatori)
 3. **Gioco**: Turni ciclici
-   - Active player: sceglie carta, target, risposta prevista
+   - Active player: sceglie carta, target (dipende da modalità), risposta prevista
+     - **Scelta Libera**: Selezione manuale del target
+     - **Sequenziale**: Target auto-selezionato e mostrato (prossimo nell'ordine)
    - Target player: risponde al dilemma
    - **SE DUBITO ATTIVO**:
      - Active player vede "Accetto" o "Dubito"
@@ -379,5 +390,5 @@ console.log('Dilemmas loaded:', CardManager.getAllDilemmas().length);
 ---
 
 **Ultimo aggiornamento**: 2026-02-01
-**Versione**: 1.5
-**Status**: ✅ Produzione-Ready, 🎮 Modalità Dubito Attiva, 🧪 Test OK (12/12)
+**Versione**: 1.6
+**Status**: ✅ Produzione-Ready, 🎮 2 Modalità di Gioco, 🔄 Riordino Giocatori, 🎭 Modalità Dubito, 🧪 Test OK (15/15)

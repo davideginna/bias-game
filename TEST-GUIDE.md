@@ -173,3 +173,179 @@
 3. Pareggio → Mente vince
 4. NO loop infinito
 5. Toggle si abilita/disabilita correttamente
+
+---
+
+# 🎲 Test Modalità di Gioco
+
+## 🧪 Test Automatici
+
+### Esegui Test Suite
+```bash
+node test-game-modes.js
+```
+
+**Output Atteso**:
+- ✅ Test passati: 3/3
+- Test modalità sequenziale (3 test)
+
+---
+
+## 🎮 Test Modalità Scelta Libera
+
+### Setup
+1. Crea stanza con 3 giocatori
+2. In lobby: modalità **Scelta Libera** (default)
+3. Inizia partita
+
+### Checklist
+- [ ] Durante turno: selezione target **visibile**
+- [ ] Dropdown mostra **tutti gli altri giocatori**
+- [ ] Puoi scegliere **qualsiasi giocatore** come target
+- [ ] Dopo risposta: turno passa a giocatore **non prevedibile**
+- [ ] Non c'è ordine fisso nei turni
+
+---
+
+## ➡️ Test Modalità Sequenziale
+
+### Setup
+1. Crea stanza con 4 giocatori (A, B, C, D)
+2. In lobby: **Riordina giocatori** nell'ordine desiderato (es: A → B → C → D)
+3. Seleziona modalità **Sequenziale**
+4. Inizia partita
+
+### Checklist Base
+- [ ] Selezione target **nascosta** (non compare dropdown)
+- [ ] Player A fa domanda → target automaticamente Player B
+- [ ] Player B fa domanda → target automaticamente Player C
+- [ ] Player C fa domanda → target automaticamente Player D
+- [ ] Player D fa domanda → target automaticamente Player A (wrap around)
+- [ ] Ordine si ripete ciclicamente
+
+### Test Riordino Pre-Game
+1. In lobby: sposta Player B in cima (freccia ↑)
+2. Ordine diventa: B → A → C → D
+3. Inizia partita
+4. Verifica:
+   - [ ] Player B fa domanda → Player A
+   - [ ] Player A fa domanda → Player C
+   - [ ] Player C fa domanda → Player D
+   - [ ] Player D fa domanda → Player B
+
+### Test con Giocatore che Esce
+1. Durante partita, Player C esce
+2. Ordine diventa: A → B → D
+3. Verifica:
+   - [ ] Player B fa domanda → Player D (salta C)
+   - [ ] Player D fa domanda → Player A
+
+---
+
+## 🔀 Test Cambio Modalità in Lobby
+
+### Test Cambio Prima di Iniziare
+1. Crea stanza, modalità **Scelta Libera**
+2. Cambia in **Sequenziale**
+3. Cambia di nuovo in **Scelta Libera**
+4. Verifica:
+   - [ ] Nessun errore in console
+   - [ ] Radio button selezionato corretto
+   - [ ] Firebase aggiornato correttamente
+
+### Test Ordine Giocatori
+1. Modalità **Scelta Libera**: sezione ordine **nascosta**
+2. Modalità **Sequenziale**: sezione ordine **visibile**
+3. Verifica:
+   - [ ] Frecce ↑↓ funzionano solo per host
+   - [ ] Altri giocatori vedono ordine ma **senza frecce**
+
+---
+
+## 🎯 Test Combinati
+
+### Test: Sequenziale + Dubito
+1. 4 giocatori, modalità Sequenziale, Dubito ON
+2. Player A fa domanda (target auto: B)
+3. Player B risponde
+4. Player A clicca "Dubito"
+5. Votazione: C e D votano
+6. Verifica:
+   - [ ] Tutto funziona come Dubito normale
+   - [ ] Target era automatico (B)
+   - [ ] Turno passa a B dopo votazione
+
+### Test: Scelta Libera + Scarto Carte
+1. Modalità Scelta Libera
+2. Durante turno di altri: scarta una carta
+3. Verifica:
+   - [ ] Scarto funziona normalmente
+   - [ ] Pesca nuova carta
+   - [ ] Selezione target non influenzata
+
+---
+
+## 📊 Scenari Completi
+
+### Scenario A: Partita Sequenziale 3 Giocatori
+**Setup**: A, B, C in ordine
+
+| Turno | Active | Target | Risultato |
+|-------|--------|--------|-----------|
+| 1     | A      | B      | Corretto (+1 A) |
+| 2     | B      | C      | Sbagliato |
+| 3     | C      | A      | Corretto (+1 C) |
+| 4     | A      | B      | Sbagliato |
+| 5     | B      | C      | Corretto (+1 B) |
+
+**Verifica**: Ordine A→B→C→A rispettato perfettamente
+
+---
+
+## ⚡ Quick Test (3 minuti)
+
+**Setup**: 3 tab, stesso PC
+
+1. **Test Sequenziale** (1.5 min):
+   - Riordina giocatori, seleziona Sequenziale
+   - Fai 3 turni, verifica target automatici e messaggio
+   - Verifica ordine rispettato
+
+2. **Test Cambio Modalità** (0.5 min):
+   - Torna in lobby, cambia modalità 2 volte
+   - Verifica UI si adatta (ordine appare/scompare)
+
+3. **Test Riordino** (1 min):
+   - Sposta giocatori su/giù
+   - Verifica ordine salvato
+   - Inizia partita sequenziale, verifica ordine applicato
+
+---
+
+## ✅ Checklist Completa Modalità di Gioco
+
+### Lobby
+- [ ] Radio buttons modalità visibili (2 opzioni)
+- [ ] Descrizione modalità chiara
+- [ ] Sezione ordine giocatori appare solo per Sequenziale
+- [ ] Frecce ↑↓ funzionano solo per host
+- [ ] Altri giocatori vedono ordine senza frecce
+- [ ] Cambio modalità aggiorna UI istantaneamente
+
+### Sequenziale
+- [ ] Selezione target nascosta
+- [ ] Messaggio mostra "Stai facendo la domanda a: [Nome]"
+- [ ] Target calcolato correttamente (next in order)
+- [ ] Wrap around funziona (ultimo → primo)
+- [ ] Ordine personalizzato rispettato
+
+### Scelta Libera
+- [ ] Selezione target mostra tutti
+- [ ] Nessuna restrizione su chi chiedere
+- [ ] Turni non seguono ordine fisso
+
+### Generale
+- [ ] Nessun errore console
+- [ ] Firebase sincronizzato correttamente
+- [ ] Test automatici passano (3/3)
+- [ ] Documentazione aggiornata

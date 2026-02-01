@@ -44,6 +44,8 @@ export async function createRoom(roomId, playerName, playerId, maxPoints = 5, is
         status: 'lobby',
         isOpen: false,
         isDubitoMode: isDubitoMode,
+        gameMode: 'choice',  // Default: modalità scelta
+        playerOrder: [playerId],  // Ordine iniziale: solo l'host
         createdAt: firebase.database.ServerValue.TIMESTAMP
       },
       players: {
@@ -100,6 +102,9 @@ export async function joinRoom(roomId, playerName, playerId) {
       isReady: false,
       isHost: false
     });
+
+    // Add player to order
+    await addPlayerToOrder(roomId, playerId);
 
     console.log(`Player ${playerId} joined room ${roomId}`);
     return true;
@@ -364,6 +369,9 @@ export async function leaveRoom(roomId, playerId) {
   try {
     await database.ref(`rooms/${roomId}/players/${playerId}`).remove();
 
+    // Remove player from order
+    await removePlayerFromOrder(roomId, playerId);
+
     // Check if room is empty, delete it
     const snapshot = await database.ref(`rooms/${roomId}/players`).once('value');
     if (!snapshot.exists() || Object.keys(snapshot.val()).length === 0) {
@@ -461,6 +469,72 @@ export async function submitVote(roomId, playerId, voteType) {
     return true;
   } catch (error) {
     console.error('Error submitting vote:', error);
+    throw error;
+  }
+}
+
+/**
+ * Update game mode
+ */
+export async function updateGameMode(roomId, gameMode) {
+  try {
+    await database.ref(`rooms/${roomId}/config/gameMode`).set(gameMode);
+    return true;
+  } catch (error) {
+    console.error('Error updating game mode:', error);
+    throw error;
+  }
+}
+
+/**
+ * Update player order
+ */
+export async function updatePlayerOrder(roomId, playerOrder) {
+  try {
+    await database.ref(`rooms/${roomId}/config/playerOrder`).set(playerOrder);
+    return true;
+  } catch (error) {
+    console.error('Error updating player order:', error);
+    throw error;
+  }
+}
+
+/**
+ * Add player to order when joining
+ */
+export async function addPlayerToOrder(roomId, playerId) {
+  try {
+    const orderRef = database.ref(`rooms/${roomId}/config/playerOrder`);
+    const snapshot = await orderRef.once('value');
+    const currentOrder = snapshot.val() || [];
+
+    if (!currentOrder.includes(playerId)) {
+      currentOrder.push(playerId);
+      await orderRef.set(currentOrder);
+    }
+
+    return true;
+  } catch (error) {
+    console.error('Error adding player to order:', error);
+    throw error;
+  }
+}
+
+/**
+ * Remove player from order when leaving
+ */
+export async function removePlayerFromOrder(roomId, playerId) {
+  try {
+    const orderRef = database.ref(`rooms/${roomId}/config/playerOrder`);
+    const snapshot = await orderRef.once('value');
+    const currentOrder = snapshot.val() || [];
+
+    const newOrder = currentOrder.filter(id => id !== playerId);
+    await orderRef.set(newOrder);
+
+    return true;
+  } catch (error) {
+    console.error('Error removing player from order:', error);
     throw error;
   }
 }

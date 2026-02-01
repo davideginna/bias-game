@@ -165,6 +165,8 @@ export async function proceedToNextTurn(roomId, currentActivePlayerId) {
     const roomData = await FirebaseManager.getRoomData(roomId);
     const updatedPlayers = roomData.players;
     const maxPoints = roomData.config?.maxPoints || MAX_POINTS;
+    const gameMode = roomData.config?.gameMode || 'choice';
+    const playerOrder = roomData.config?.playerOrder || [];
 
     // Check win condition
     const winner = checkWinCondition(updatedPlayers, maxPoints);
@@ -177,17 +179,27 @@ export async function proceedToNextTurn(roomId, currentActivePlayerId) {
     }
 
     // Get next active player
-    const nextPlayer = RoomManager.getNextActivePlayer(updatedPlayers, currentActivePlayerId);
+    let nextPlayerId;
 
-    if (!nextPlayer) {
-      // No players with cards left, end game
-      await FirebaseManager.updateGameStatus(roomId, GAME_STATUS.ENDED);
-      console.log('Game ended! No more cards available');
-      return { gameEnded: true, winner: null };
+    if (gameMode === 'sequential') {
+      // Use player order for sequential
+      const currentIndex = playerOrder.indexOf(currentActivePlayerId);
+      const nextIndex = (currentIndex + 1) % playerOrder.length;
+      nextPlayerId = playerOrder[nextIndex];
+    } else {
+      // Choice mode: use default logic
+      const nextPlayer = RoomManager.getNextActivePlayer(updatedPlayers, currentActivePlayerId);
+      if (!nextPlayer) {
+        // No players with cards left, end game
+        await FirebaseManager.updateGameStatus(roomId, GAME_STATUS.ENDED);
+        console.log('Game ended! No more cards available');
+        return { gameEnded: true, winner: null };
+      }
+      nextPlayerId = nextPlayer;
     }
 
     // Start next turn
-    await startNewTurn(roomId, nextPlayer);
+    await startNewTurn(roomId, nextPlayerId);
 
     return { gameEnded: false };
   } catch (error) {
@@ -429,4 +441,16 @@ export async function processVotingResults(roomId, currentTurn, players, votes, 
     console.error('Error processing voting results:', error);
     throw error;
   }
+}
+
+/**
+ * Get next target player for sequential mode
+ */
+export function getNextTargetSequential(activePlayerId, playerOrder) {
+  const currentIndex = playerOrder.indexOf(activePlayerId);
+  if (currentIndex === -1) return null;
+
+  // Next player in order (wrap around if at end)
+  const nextIndex = (currentIndex + 1) % playerOrder.length;
+  return playerOrder[nextIndex];
 }

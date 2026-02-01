@@ -205,12 +205,23 @@ export function renderPlayerCards(cardIds, onCardClick, onCardDiscard) {
 /**
  * Render target player selector
  */
-export function renderTargetSelector(players, activePlayerId) {
+export function renderTargetSelector(players, activePlayerId, gameMode = 'choice', playerOrder = []) {
   const select = document.getElementById('target-player-select');
+  const formGroup = select?.parentElement;
   if (!select) return;
+
+  // Sequential mode: hide selector, target is automatic
+  if (gameMode === 'sequential') {
+    if (formGroup) formGroup.style.display = 'none';
+    return null; // Caller will set target automatically
+  }
+
+  // Show selector for choice mode
+  if (formGroup) formGroup.style.display = 'block';
 
   select.innerHTML = '<option value="">Seleziona un giocatore...</option>';
 
+  // Choice mode: show all other players
   const targets = RoomManager.getAvailableTargets(players, activePlayerId);
 
   targets.forEach(target => {
@@ -219,6 +230,8 @@ export function renderTargetSelector(players, activePlayerId) {
     option.textContent = target.name;
     select.appendChild(option);
   });
+
+  return targets.length > 0 ? targets : null;
 }
 
 /**

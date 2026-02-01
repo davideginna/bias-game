@@ -1,5 +1,69 @@
 # Changelog Bias
 
+## v1.6 - 2026-02-01
+
+### ✨ Nuove Feature - Modalità di Gioco
+
+- **2 Modalità di Gioco**: Nuove opzioni per variare l'esperienza di gioco
+  - **Scelta Libera** (default): Scegli liberamente a chi fare ogni domanda
+  - **Sequenziale**: Le domande vanno automaticamente al giocatore successivo nell'ordine
+    - Nessuna selezione manuale del destinatario
+    - Target mostrato automaticamente con messaggio chiaro
+    - Segue l'ordine configurato dall'host
+    - Ideale per seguire l'ordine fisico al tavolo
+
+- **Riordino Giocatori**: L'host può riorganizzare l'ordine dei giocatori
+  - Frecce ↑↓ per spostare i giocatori su/giù
+  - Visibile solo all'host in lobby
+  - Utile per riflettere l'ordine fisico al tavolo
+  - L'ordine viene mantenuto per tutta la partita
+  - Utilizzato nella modalità Sequenziale
+
+### 🎮 UX Migliorata
+
+- **Selezione Modalità in Lobby**: Radio buttons chiari per scegliere la modalità
+  - Descrizione breve di ogni modalità
+  - Cambiabile fino all'avvio della partita
+  - Salvata nella configurazione della stanza
+
+- **UI Adattiva per Modalità**:
+  - **Sequenziale**: Selezione target nascosta + messaggio "Stai facendo la domanda a: [Nome]"
+  - **Scelta Libera**: Tutti i giocatori disponibili come target
+
+### 🔧 Tecnico
+
+- **Firebase Structure**:
+  - `config/gameMode`: "choice" | "sequential"
+  - `config/playerOrder`: array di player IDs ordinati
+
+- **Game Logic Functions**:
+  - `getNextTargetSequential()`: Calcola target automatico in modalità sequenziale
+
+- **Player Order Management**:
+  - `addPlayerToOrder()`: Aggiunge giocatore all'ordine al join
+  - `removePlayerFromOrder()`: Rimuove giocatore all'uscita
+  - `updatePlayerOrder()`: Aggiorna ordine personalizzato dall'host
+
+### 🧪 Testing
+
+- **Test Suite Automatica**: `test-game-modes.js`
+  - 3 test modalità sequenziale (next target, wrap around)
+  - **Tutti 3 test passati** ✅
+
+- **Test Manuale**:
+  - Verifica cambio modalità in lobby
+  - Test riordino giocatori
+  - Test flusso sequenziale completo
+
+### 📝 Documentazione
+
+- README.md aggiornato con sezione modalità di gioco
+- CHANGELOG.md con v1.6
+- CLAUDE-CONTEXT.md con nuove strutture
+- TEST-GUIDE.md aggiornata
+
+---
+
 ## v1.5 - 2026-02-01
 
 ### ✨ Nuove Feature - Modalità Dubito

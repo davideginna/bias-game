@@ -311,6 +311,12 @@ function setupEventListeners() {
     dubitoModeToggle.addEventListener('change', handleDubitoModeToggle);
   }
 
+  // Game mode radio buttons
+  const gameModeRadios = document.querySelectorAll('input[name="game-mode"]');
+  gameModeRadios.forEach(radio => {
+    radio.addEventListener('change', handleGameModeChange);
+  });
+
   // Game screen - Answer buttons for target player
   const targetAnswerButtons = document.querySelectorAll('#target-player-view .btn-answer');
   targetAnswerButtons.forEach(btn => {
@@ -761,6 +767,25 @@ function updateLobbyScreen(players) {
           }
         }
       }
+
+      // Update game mode radio buttons
+      const gameMode = currentRoomData?.config?.gameMode || 'choice';
+      const gameModeRadios = document.querySelectorAll('input[name="game-mode"]');
+      gameModeRadios.forEach(radio => {
+        radio.checked = radio.value === gameMode;
+      });
+
+      // Show/update player order section
+      const playerOrderSection = document.getElementById('player-order-section');
+      if (playerOrderSection) {
+        // Show only for sequential mode
+        if (gameMode === 'sequential') {
+          playerOrderSection.style.display = 'block';
+          renderPlayerOrderList(players, currentRoomData.config.playerOrder || []);
+        } else {
+          playerOrderSection.style.display = 'none';
+        }
+      }
     } else {
       roomSettings.style.display = 'none';
     }
@@ -778,6 +803,55 @@ function updateLobbyScreen(players) {
       startGameBtn.style.display = 'none';
     }
   }
+}
+
+/**
+ * Render player order list with reorder controls
+ */
+function renderPlayerOrderList(players, playerOrder) {
+  const listContainer = document.getElementById('player-order-list');
+  if (!listContainer) return;
+
+  listContainer.innerHTML = '';
+
+  playerOrder.forEach((playerId, index) => {
+    const player = players[playerId];
+    if (!player) return;
+
+    const item = document.createElement('div');
+    item.className = 'player-order-item';
+
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'player-order-name';
+    nameSpan.textContent = `${index + 1}. ${player.name}`;
+    if (player.isHost) {
+      nameSpan.textContent += ' 👑';
+    }
+
+    const controls = document.createElement('div');
+    controls.className = 'player-order-controls';
+
+    const upBtn = document.createElement('button');
+    upBtn.className = 'btn-order';
+    upBtn.innerHTML = '▲';
+    upBtn.title = 'Sposta su';
+    upBtn.disabled = index === 0;
+    upBtn.onclick = () => handleMovePlayerUp(playerId);
+
+    const downBtn = document.createElement('button');
+    downBtn.className = 'btn-order';
+    downBtn.innerHTML = '▼';
+    downBtn.title = 'Sposta giù';
+    downBtn.disabled = index === playerOrder.length - 1;
+    downBtn.onclick = () => handleMovePlayerDown(playerId);
+
+    controls.appendChild(upBtn);
+    controls.appendChild(downBtn);
+
+    item.appendChild(nameSpan);
+    item.appendChild(controls);
+    listContainer.appendChild(item);
+  });
 }
 
 /**
@@ -1164,20 +1238,52 @@ function handleCardSelect(dilemma) {
     turnForm.style.display = 'block';
   }
 
-  // Populate target selector
-  UI.renderTargetSelector(currentRoomData.players, currentPlayerId);
+  // Get game mode and related data
+  const gameMode = currentRoomData?.config?.gameMode || 'choice';
+  const playerOrder = currentRoomData?.config?.playerOrder || [];
 
-  // Hide guess section initially
-  const guessSection = document.getElementById('guess-section');
-  if (guessSection) {
-    guessSection.style.display = 'none';
+  // Populate target selector (or hide it for sequential mode)
+  UI.renderTargetSelector(currentRoomData.players, currentPlayerId, gameMode, playerOrder);
+
+  // For sequential mode, auto-select target
+  if (gameMode === 'sequential') {
+    selectedTarget = GameLogic.getNextTargetSequential(currentPlayerId, playerOrder);
+
+    // Show sequential target info
+    const sequentialInfo = document.getElementById('sequential-target-info');
+    const sequentialTargetName = document.getElementById('sequential-target-name');
+    if (sequentialInfo && sequentialTargetName && selectedTarget) {
+      const targetPlayer = currentRoomData.players[selectedTarget];
+      if (targetPlayer) {
+        sequentialTargetName.textContent = targetPlayer.name;
+        sequentialInfo.style.display = 'block';
+      }
+    }
+
+    // Show guess section immediately for sequential mode
+    const guessSection = document.getElementById('guess-section');
+    if (guessSection) {
+      guessSection.style.display = 'block';
+    }
+  } else {
+    // Hide sequential info for other modes
+    const sequentialInfo = document.getElementById('sequential-target-info');
+    if (sequentialInfo) {
+      sequentialInfo.style.display = 'none';
+    }
+
+    // Hide guess section initially for choice/roundrobin modes
+    const guessSection = document.getElementById('guess-section');
+    if (guessSection) {
+      guessSection.style.display = 'none';
+    }
+    selectedTarget = null;
   }
 
   // Setup answer button listeners
   setupAnswerButtonListeners('active-player-view');
 
-  // Reset selections
-  selectedTarget = null;
+  // Reset guess selection
   selectedGuess = null;
   updateSubmitButtonState();
 }
@@ -1591,6 +1697,66 @@ async function handleDubitoModeToggle(event) {
   } catch (error) {
     console.error('Error updating dubito mode:', error);
     UI.showToast('Errore durante l\'aggiornamento', 'error');
+  }
+}
+
+/**
+ * Handle game mode change
+ */
+async function handleGameModeChange(event) {
+  try {
+    const gameMode = event.target.value;
+    await FirebaseManager.updateGameMode(currentRoomId, gameMode);
+
+    const modeNames = {
+      choice: 'Scelta Libera',
+      sequential: 'Sequenziale'
+    };
+
+    UI.showToast(`Modalità: ${modeNames[gameMode]}`, 'success');
+  } catch (error) {
+    console.error('Error updating game mode:', error);
+    UI.showToast('Errore durante l\'aggiornamento', 'error');
+  }
+}
+
+/**
+ * Handle player order move up
+ */
+async function handleMovePlayerUp(playerId) {
+  try {
+    const playerOrder = currentRoomData?.config?.playerOrder || [];
+    const index = playerOrder.indexOf(playerId);
+
+    if (index > 0) {
+      const newOrder = [...playerOrder];
+      [newOrder[index - 1], newOrder[index]] = [newOrder[index], newOrder[index - 1]];
+
+      await FirebaseManager.updatePlayerOrder(currentRoomId, newOrder);
+    }
+  } catch (error) {
+    console.error('Error moving player up:', error);
+    UI.showToast('Errore durante lo spostamento', 'error');
+  }
+}
+
+/**
+ * Handle player order move down
+ */
+async function handleMovePlayerDown(playerId) {
+  try {
+    const playerOrder = currentRoomData?.config?.playerOrder || [];
+    const index = playerOrder.indexOf(playerId);
+
+    if (index < playerOrder.length - 1 && index !== -1) {
+      const newOrder = [...playerOrder];
+      [newOrder[index], newOrder[index + 1]] = [newOrder[index + 1], newOrder[index]];
+
+      await FirebaseManager.updatePlayerOrder(currentRoomId, newOrder);
+    }
+  } catch (error) {
+    console.error('Error moving player down:', error);
+    UI.showToast('Errore durante lo spostamento', 'error');
   }
 }
 
