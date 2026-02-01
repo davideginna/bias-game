@@ -19,6 +19,7 @@ let selectedDilemma = null;
 let selectedTarget = null;
 let selectedGuess = null;
 let deferredInstallPrompt = null; // Store install prompt event
+let isProcessingVotes = false; // Flag to prevent duplicate vote processing
 
 /**
  * Initialize application
@@ -305,6 +306,11 @@ function setupEventListeners() {
     roomOpenToggle.addEventListener('change', handleRoomOpenToggle);
   }
 
+  const dubitoModeToggle = document.getElementById('dubito-mode-toggle');
+  if (dubitoModeToggle) {
+    dubitoModeToggle.addEventListener('change', handleDubitoModeToggle);
+  }
+
   // Game screen - Answer buttons for target player
   const targetAnswerButtons = document.querySelectorAll('#target-player-view .btn-answer');
   targetAnswerButtons.forEach(btn => {
@@ -333,6 +339,33 @@ function setupEventListeners() {
   const nextTurnBtn = document.getElementById('next-turn-btn');
   if (nextTurnBtn) {
     nextTurnBtn.addEventListener('click', handleNextTurn);
+  }
+
+  // Game screen - Dubito mode buttons
+  const acceptAnswerBtn = document.getElementById('accept-answer-btn');
+  const doubtAnswerBtn = document.getElementById('doubt-answer-btn');
+  const voteTruthBtn = document.getElementById('vote-truth-btn');
+  const voteLieBtn = document.getElementById('vote-lie-btn');
+  const nextTurnAfterVoteBtn = document.getElementById('next-turn-after-vote-btn');
+
+  if (acceptAnswerBtn) {
+    acceptAnswerBtn.addEventListener('click', handleAcceptAnswer);
+  }
+
+  if (doubtAnswerBtn) {
+    doubtAnswerBtn.addEventListener('click', handleDoubtAnswer);
+  }
+
+  if (voteTruthBtn) {
+    voteTruthBtn.addEventListener('click', () => handleVote('truth'));
+  }
+
+  if (voteLieBtn) {
+    voteLieBtn.addEventListener('click', () => handleVote('lie'));
+  }
+
+  if (nextTurnAfterVoteBtn) {
+    nextTurnAfterVoteBtn.addEventListener('click', handleNextTurnAfterVote);
   }
 
   // Game screen - Exit button
@@ -519,7 +552,8 @@ async function handleCreateRoom() {
 
     UI.showLoading('Creazione stanza...');
 
-    const { roomId, playerId } = await RoomManager.createNewRoom(playerName, maxPoints);
+    // Dubito mode starts as false, can be enabled in lobby if 5+ players
+    const { roomId, playerId } = await RoomManager.createNewRoom(playerName, maxPoints, false);
 
     currentRoomId = roomId;
     currentPlayerId = playerId;
@@ -637,6 +671,12 @@ function handleRoomUpdate(roomData) {
 
   const { config, players, currentTurn } = roomData;
 
+  // Reset vote processing flag if we're no longer in voting state
+  if (currentTurn && currentTurn.status !== TURN_STATUS.VOTING_TRUTH && isProcessingVotes) {
+    console.log('Resetting vote processing flag');
+    isProcessingVotes = false;
+  }
+
   // Check current screen and game status
   if (config.status === GAME_STATUS.LOBBY) {
     updateLobbyScreen(players);
@@ -663,6 +703,16 @@ function updateLobbyScreen(players) {
     maxPointsElement.textContent = currentRoomData.config.maxPoints;
   }
 
+  // Show Dubito mode indicator if active
+  const dubitoIndicator = document.getElementById('dubito-mode-indicator');
+  if (dubitoIndicator) {
+    if (currentRoomData?.config?.isDubitoMode) {
+      dubitoIndicator.style.display = 'block';
+    } else {
+      dubitoIndicator.style.display = 'none';
+    }
+  }
+
   // Update ready button state
   const readyBtn = document.getElementById('ready-btn');
   const currentPlayer = players[currentPlayerId];
@@ -686,10 +736,30 @@ function updateLobbyScreen(players) {
   if (roomSettings) {
     if (isHost) {
       roomSettings.style.display = 'block';
-      // Update toggle state
+
+      // Update room open toggle state
       const roomOpenToggle = document.getElementById('room-open-toggle');
       if (roomOpenToggle && currentRoomData) {
         roomOpenToggle.checked = currentRoomData.config.isOpen === true;
+      }
+
+      // Update dubito mode toggle state and enable/disable based on player count
+      const dubitoModeToggle = document.getElementById('dubito-mode-toggle');
+      if (dubitoModeToggle && currentRoomData) {
+        const playerCount = RoomManager.getPlayerCount(players);
+
+        // Enable only if more than 3 players (at least 4)
+        if (playerCount > 3) {
+          dubitoModeToggle.disabled = false;
+          dubitoModeToggle.checked = currentRoomData.config.isDubitoMode === true;
+        } else {
+          dubitoModeToggle.disabled = true;
+          dubitoModeToggle.checked = false;
+          // If it was enabled but players dropped below 4, disable it
+          if (currentRoomData.config.isDubitoMode === true) {
+            FirebaseManager.updateDubitoMode(currentRoomId, false);
+          }
+        }
       }
     } else {
       roomSettings.style.display = 'none';
@@ -746,7 +816,37 @@ function updateGameScreen(players, currentTurn) {
   // Determine which view to show
   const gameState = GameLogic.getGameStateForPlayer(currentPlayerId, currentRoomData);
 
-  if (currentTurn.status === TURN_STATUS.SHOWING_RESULT) {
+  // Handle Dubito mode states
+  if (currentTurn.status === TURN_STATUS.WAITING_ACCEPT_OR_DOUBT) {
+    // Show accept/doubt view only to questioner
+    if (currentPlayerId === currentTurn.activePlayerId) {
+      showAcceptOrDoubtView(currentTurn, players);
+    } else {
+      // Others wait
+      const activePlayer = players[currentTurn.activePlayerId];
+      UI.showWaitingView(`${activePlayer.name} sta decidendo...`, false);
+      renderWaitingPlayerCards(gameState.myCards);
+    }
+    return;
+  } else if (currentTurn.status === TURN_STATUS.VOTING_TRUTH) {
+    // Show voting view to all except questioner and responder
+    if (currentPlayerId !== currentTurn.activePlayerId && currentPlayerId !== currentTurn.targetPlayerId) {
+      showVotingView(currentTurn, players);
+    } else {
+      // Questioner and responder wait
+      UI.showWaitingView('Votazione in corso...', false);
+      if (currentPlayerId !== currentTurn.activePlayerId) {
+        renderWaitingPlayerCards(gameState.myCards);
+      }
+    }
+    // Check if all votes are in
+    checkAndProcessVotes(currentTurn, players);
+    return;
+  } else if (currentTurn.status === TURN_STATUS.SHOWING_VOTE_RESULT) {
+    // Show vote result
+    showVoteResultView(currentTurn, players);
+    return;
+  } else if (currentTurn.status === TURN_STATUS.SHOWING_RESULT) {
     // Show result
     const activePlayer = players[currentTurn.activePlayerId];
     const targetPlayer = players[currentTurn.targetPlayerId];
@@ -796,6 +896,193 @@ function updateGameScreen(players, currentTurn) {
     UI.showWaitingView(message, false);
     // Render player cards with discard option even while waiting
     renderWaitingPlayerCards(gameState.myCards);
+  }
+}
+
+/**
+ * Show accept or doubt view (Dubito mode)
+ */
+function showAcceptOrDoubtView(currentTurn, players) {
+  const acceptDoubtView = document.getElementById('accept-doubt-view');
+  const dilemmaText = document.getElementById('doubt-dilemma-text');
+  const targetNameEl = document.getElementById('doubt-target-name');
+  const answerText = document.getElementById('doubt-answer-text');
+
+  // Hide all other views
+  UI.hideAllGameViews();
+
+  // Get data
+  const dilemma = CardManager.getDilemmaById(currentTurn.dilemmaId);
+  const targetPlayer = players[currentTurn.targetPlayerId];
+
+  // Populate view
+  if (dilemmaText) dilemmaText.textContent = dilemma.text;
+  if (targetNameEl) targetNameEl.textContent = targetPlayer.name;
+  if (answerText) answerText.textContent = GameLogic.getAnswerText(currentTurn.answer);
+
+  // Show view
+  if (acceptDoubtView) acceptDoubtView.style.display = 'block';
+}
+
+/**
+ * Show voting view (Dubito mode)
+ */
+function showVotingView(currentTurn, players) {
+  const votingView = document.getElementById('voting-view');
+  const dilemmaText = document.getElementById('vote-dilemma-text');
+  const targetNameEl = document.getElementById('vote-target-name');
+  const answerText = document.getElementById('vote-answer-text');
+  const voteStatus = document.getElementById('vote-status');
+  const voteTruthBtn = document.getElementById('vote-truth-btn');
+  const voteLieBtn = document.getElementById('vote-lie-btn');
+
+  // Hide all other views
+  UI.hideAllGameViews();
+
+  // Get data
+  const dilemma = CardManager.getDilemmaById(currentTurn.dilemmaId);
+  const targetPlayer = players[currentTurn.targetPlayerId];
+
+  // Populate view
+  if (dilemmaText) dilemmaText.textContent = dilemma.text;
+  if (targetNameEl) targetNameEl.textContent = targetPlayer.name;
+  if (answerText) answerText.textContent = GameLogic.getAnswerText(currentTurn.answer);
+
+  // Check if current player has already voted
+  const votes = currentTurn.votes || {};
+  const hasVoted = votes[currentPlayerId] !== undefined;
+
+  if (hasVoted) {
+    // Disable buttons and show which was selected
+    if (voteTruthBtn) {
+      voteTruthBtn.disabled = true;
+      if (votes[currentPlayerId] === 'truth') {
+        voteTruthBtn.classList.add('selected');
+      }
+    }
+    if (voteLieBtn) {
+      voteLieBtn.disabled = true;
+      if (votes[currentPlayerId] === 'lie') {
+        voteLieBtn.classList.add('selected');
+      }
+    }
+    if (voteStatus) voteStatus.textContent = 'Hai già votato. In attesa degli altri...';
+  } else {
+    // Enable buttons
+    if (voteTruthBtn) {
+      voteTruthBtn.disabled = false;
+      voteTruthBtn.classList.remove('selected');
+    }
+    if (voteLieBtn) {
+      voteLieBtn.disabled = false;
+      voteLieBtn.classList.remove('selected');
+    }
+    if (voteStatus) voteStatus.textContent = '';
+  }
+
+  // Show view
+  if (votingView) votingView.style.display = 'block';
+}
+
+/**
+ * Show vote result view (Dubito mode)
+ */
+function showVoteResultView(currentTurn, players) {
+  const voteResultView = document.getElementById('vote-result-view');
+  const voteResultContent = document.getElementById('vote-result-content');
+
+  // Hide all other views
+  UI.hideAllGameViews();
+
+  // Get voting results
+  const votingResult = currentTurn.votingResult || { lieVotes: 0, truthVotes: 0, pointAwarded: false };
+  const activePlayer = players[currentTurn.activePlayerId];
+  const targetPlayer = players[currentTurn.targetPlayerId];
+
+  // Build result HTML
+  let resultHTML = `
+    <div style="padding: 1.5rem; background: var(--surface-color); border-radius: 12px; margin-bottom: 1.5rem;">
+      <h4 style="margin-bottom: 1rem;">Risultati Votazione</h4>
+      <div style="display: flex; justify-content: space-around; margin-bottom: 1.5rem;">
+        <div style="text-align: center;">
+          <div style="font-size: 3rem;">😇</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--success-color);">${votingResult.truthVotes}</div>
+          <div style="opacity: 0.8;">Sincero</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 3rem;">😈</div>
+          <div style="font-size: 1.5rem; font-weight: 700; color: var(--danger-color);">${votingResult.lieVotes}</div>
+          <div style="opacity: 0.8;">Mente</div>
+        </div>
+      </div>
+  `;
+
+  if (votingResult.pointAwarded) {
+    resultHTML += `
+      <div style="padding: 1rem; background: var(--success-color); color: white; border-radius: 8px; text-align: center;">
+        <strong>${activePlayer.name}</strong> guadagna 1 punto!<br>
+        La maggioranza pensa che ${targetPlayer.name} stesse mentendo o c'è stato un pareggio.
+      </div>
+    `;
+    AudioManager.playSuccessSound();
+  } else {
+    resultHTML += `
+      <div style="padding: 1rem; background: var(--surface-light); border-radius: 8px; text-align: center; opacity: 0.9;">
+        Nessun punto assegnato.<br>
+        La maggioranza pensa che ${targetPlayer.name} fosse sincero.
+      </div>
+    `;
+  }
+
+  resultHTML += `</div>`;
+
+  if (voteResultContent) voteResultContent.innerHTML = resultHTML;
+
+  // Show view
+  if (voteResultView) voteResultView.style.display = 'block';
+}
+
+/**
+ * Check if all votes are in and process results (Dubito mode)
+ */
+async function checkAndProcessVotes(currentTurn, players) {
+  // Skip if already processing or if not in voting state
+  if (isProcessingVotes || currentTurn.status !== TURN_STATUS.VOTING_TRUTH) {
+    return;
+  }
+
+  const votes = currentTurn.votes || {};
+  const voteCount = Object.keys(votes).length;
+
+  // Calculate how many players should vote (all except questioner and responder)
+  const totalPlayers = Object.keys(players).length;
+  const expectedVotes = totalPlayers - 2; // Exclude questioner and responder
+
+  console.log(`Votes: ${voteCount}/${expectedVotes}`);
+
+  // If all votes are in
+  if (voteCount === expectedVotes) {
+    isProcessingVotes = true; // Set flag to prevent duplicate processing
+
+    try {
+      console.log('All votes received, processing results...');
+
+      await GameLogic.processVotingResults(
+        currentRoomId,
+        currentTurn,
+        players,
+        votes,
+        currentRoomData.usedDilemmas || []
+      );
+
+      console.log('Voting results processed successfully');
+    } catch (error) {
+      console.error('Error processing votes:', error);
+      UI.showToast('Errore durante il conteggio voti', 'error');
+    } finally {
+      // Reset flag after processing (success or error)
+      isProcessingVotes = false;
+    }
   }
 }
 
@@ -1060,12 +1347,15 @@ async function handleTargetAnswer(event) {
   try {
     UI.showLoading('Invio risposta...');
 
+    const isDubitoMode = currentRoomData?.config?.isDubitoMode || false;
+
     await GameLogic.submitAnswer(
       currentRoomId,
       answer,
       currentRoomData.currentTurn,
       currentRoomData.players,
-      currentRoomData.usedDilemmas || []
+      currentRoomData.usedDilemmas || [],
+      isDubitoMode
     );
 
     UI.hideLoading();
@@ -1118,6 +1408,107 @@ async function handleNextTurn() {
 }
 
 /**
+ * Handle accept answer (Dubito mode)
+ */
+async function handleAcceptAnswer() {
+  try {
+    UI.showLoading('Accettazione risposta...');
+
+    // Process the acceptance (award points if correct, remove card, etc.)
+    await GameLogic.handleAcceptDecision(
+      currentRoomId,
+      currentRoomData.currentTurn,
+      currentRoomData.players,
+      currentRoomData.usedDilemmas || []
+    );
+
+    // Set choice and update status to showing_result
+    await FirebaseManager.setDubitoChoice(currentRoomId, 'accept');
+
+    UI.hideLoading();
+  } catch (error) {
+    console.error('Error accepting answer:', error);
+    UI.hideLoading();
+    UI.showToast('Errore durante l\'accettazione', 'error');
+  }
+}
+
+/**
+ * Handle doubt answer (Dubito mode)
+ */
+async function handleDoubtAnswer() {
+  try {
+    UI.showLoading('Richiesta votazione...');
+
+    await FirebaseManager.setDubitoChoice(currentRoomId, 'doubt');
+
+    UI.hideLoading();
+  } catch (error) {
+    console.error('Error doubting answer:', error);
+    UI.hideLoading();
+    UI.showToast('Errore durante la richiesta', 'error');
+  }
+}
+
+/**
+ * Handle vote (Dubito mode)
+ */
+async function handleVote(voteType) {
+  try {
+    UI.showLoading('Invio voto...');
+
+    await FirebaseManager.submitVote(currentRoomId, currentPlayerId, voteType);
+
+    // Disable buttons after voting
+    const voteTruthBtn = document.getElementById('vote-truth-btn');
+    const voteLieBtn = document.getElementById('vote-lie-btn');
+
+    if (voteTruthBtn) voteTruthBtn.disabled = true;
+    if (voteLieBtn) voteLieBtn.disabled = true;
+
+    // Highlight selected vote
+    if (voteType === 'truth') {
+      voteTruthBtn?.classList.add('selected');
+      voteLieBtn?.classList.remove('selected');
+    } else {
+      voteLieBtn?.classList.add('selected');
+      voteTruthBtn?.classList.remove('selected');
+    }
+
+    UI.hideLoading();
+    UI.showToast('Voto registrato!', 'success');
+  } catch (error) {
+    console.error('Error submitting vote:', error);
+    UI.hideLoading();
+    UI.showToast('Errore durante il voto', 'error');
+  }
+}
+
+/**
+ * Handle next turn after vote (Dubito mode)
+ */
+async function handleNextTurnAfterVote() {
+  try {
+    UI.showLoading('Prossimo turno...');
+
+    const result = await GameLogic.proceedToNextTurn(
+      currentRoomId,
+      currentRoomData.currentTurn.activePlayerId
+    );
+
+    UI.hideLoading();
+
+    if (result.gameEnded) {
+      console.log('Game has ended');
+    }
+  } catch (error) {
+    console.error('Error proceeding to next turn:', error);
+    UI.hideLoading();
+    UI.showToast('Errore durante il cambio turno', 'error');
+  }
+}
+
+/**
  * Handle ready button
  */
 async function handleReady() {
@@ -1149,10 +1540,35 @@ async function handleRoomOpenToggle(event) {
 }
 
 /**
+ * Handle dubito mode toggle
+ */
+async function handleDubitoModeToggle(event) {
+  try {
+    const isDubitoMode = event.target.checked;
+    await FirebaseManager.updateDubitoMode(currentRoomId, isDubitoMode);
+
+    const statusText = isDubitoMode ? 'attiva' : 'disattivata';
+    UI.showToast(`Modalità Dubito ${statusText}`, 'success');
+  } catch (error) {
+    console.error('Error updating dubito mode:', error);
+    UI.showToast('Errore durante l\'aggiornamento', 'error');
+  }
+}
+
+/**
  * Handle start game
  */
 async function handleStartGame() {
   try {
+    // Validate Dubito mode requirements
+    const isDubitoMode = currentRoomData?.config?.isDubitoMode || false;
+    const playerCount = Object.keys(currentRoomData.players).length;
+
+    if (isDubitoMode && playerCount < 4) {
+      UI.showToast('Servono almeno 4 giocatori per la modalità Dubito', 'error');
+      return;
+    }
+
     UI.showLoading('Avvio partita...');
 
     await GameLogic.startGame(currentRoomId, currentRoomData.players);

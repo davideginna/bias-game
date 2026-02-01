@@ -46,6 +46,9 @@ export const TURN_STATUS = {
   GUESSING: "guessing",
   WAITING_ANSWER: "waiting_answer",
   SHOWING_RESULT: "showing_result",
+  WAITING_ACCEPT_OR_DOUBT: "waiting_accept_or_doubt",
+  VOTING_TRUTH: "voting_truth",
+  SHOWING_VOTE_RESULT: "showing_vote_result",
 };
 
 // Min players to start game

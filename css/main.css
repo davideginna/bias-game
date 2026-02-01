@@ -644,6 +644,52 @@ select:focus {
     box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
 }
 
+/* === Vote Buttons (Dubito Mode) === */
+.btn-vote {
+    background: var(--surface-color);
+    border: 3px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-primary);
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-vote:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-vote[data-vote="truth"]:hover {
+    border-color: var(--success-color);
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+}
+
+.btn-vote[data-vote="lie"]:hover {
+    border-color: var(--danger-color);
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.4);
+}
+
+.btn-vote.selected {
+    transform: scale(1.05);
+}
+
+.btn-vote[data-vote="truth"].selected {
+    background: var(--success-color);
+    border-color: var(--success-color);
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.6);
+}
+
+.btn-vote[data-vote="lie"].selected {
+    background: var(--danger-color);
+    border-color: var(--danger-color);
+    box-shadow: 0 0 30px rgba(239, 68, 68, 0.6);
+}
+
 /* === Turn Form === */
 .selected-dilemma {
     background: var(--surface-color);

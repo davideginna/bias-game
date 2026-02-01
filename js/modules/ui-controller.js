@@ -308,7 +308,10 @@ export function hideAllGameViews() {
     'active-player-view',
     'target-player-view',
     'waiting-view',
-    'result-view'
+    'result-view',
+    'accept-doubt-view',
+    'voting-view',
+    'vote-result-view'
   ];
 
   views.forEach(viewId => {

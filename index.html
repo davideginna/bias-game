@@ -99,6 +99,9 @@
                 <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
                     🎯 Punteggio per vincere: <strong id="lobby-max-points">10</strong>
                 </p>
+                <p id="dubito-mode-indicator" style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8; display: none;">
+                    ⚠️ Modalità <strong>"Dubito"</strong> attiva
+                </p>
             </div>
 
             <div class="players-section">
@@ -115,6 +118,16 @@
                     </label>
                     <label class="toggle-switch">
                         <input type="checkbox" id="room-open-toggle">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <label class="toggle-label">
+                        <span>Modalità "Dubito"</span>
+                        <p class="setting-description">Dopo ogni risposta, puoi accettarla o dubitare. Se dubiti, gli altri votano se è sincera o falsa. <strong>Richiede almeno 4 giocatori.</strong></p>
+                    </label>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="dubito-mode-toggle" disabled>
                         <span class="toggle-slider"></span>
                     </label>
                 </div>
@@ -226,6 +239,69 @@
                 <div id="result-content"></div>
                 <button id="next-turn-btn" class="btn btn-primary">Prossimo Turno</button>
             </div>
+
+            <!-- Accept or Doubt View (Dubito Mode) -->
+            <div id="accept-doubt-view" class="game-view" style="display: none;">
+                <h3>La risposta è stata data</h3>
+
+                <div class="dilemma-card large">
+                    <p id="doubt-dilemma-text"></p>
+                </div>
+
+                <div style="margin: 2rem 0; padding: 1.5rem; background: var(--surface-color); border-radius: 12px;">
+                    <p style="margin-bottom: 0.5rem;"><strong id="doubt-target-name"></strong> ha risposto:</p>
+                    <p style="font-size: 1.5rem; color: var(--primary-color); font-weight: 700;" id="doubt-answer-text"></p>
+                </div>
+
+                <p style="margin-bottom: 2rem; opacity: 0.9;">Accetti la risposta o vuoi dubitare?</p>
+
+                <div style="display: flex; gap: 1rem; flex-direction: column;">
+                    <button id="accept-answer-btn" class="btn btn-success" style="font-size: 1.2rem; padding: 1.5rem;">
+                        ✓ Accetto
+                    </button>
+                    <button id="doubt-answer-btn" class="btn btn-warning" style="font-size: 1.2rem; padding: 1.5rem;">
+                        ⚠️ Dubito
+                    </button>
+                </div>
+            </div>
+
+            <!-- Voting View (Dubito Mode) -->
+            <div id="voting-view" class="game-view" style="display: none;">
+                <h3>Votazione in Corso</h3>
+
+                <div class="dilemma-card large">
+                    <p id="vote-dilemma-text"></p>
+                </div>
+
+                <div style="margin: 2rem 0; padding: 1.5rem; background: var(--surface-color); border-radius: 12px;">
+                    <p style="margin-bottom: 0.5rem;"><strong id="vote-target-name"></strong> ha risposto:</p>
+                    <p style="font-size: 1.5rem; color: var(--primary-color); font-weight: 700;" id="vote-answer-text"></p>
+                </div>
+
+                <p style="margin-bottom: 1.5rem; opacity: 0.9;">Secondo te, la risposta è sincera o falsa?</p>
+
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <button id="vote-truth-btn" class="btn-vote" data-vote="truth">
+                        <span style="font-size: 4rem; display: block; margin-bottom: 0.5rem;">😇</span>
+                        <span style="font-size: 1.2rem; font-weight: 700;">Sincero</span>
+                    </button>
+                    <button id="vote-lie-btn" class="btn-vote" data-vote="lie">
+                        <span style="font-size: 4rem; display: block; margin-bottom: 0.5rem;">😈</span>
+                        <span style="font-size: 1.2rem; font-weight: 700;">Mente</span>
+                    </button>
+                </div>
+
+                <p id="vote-status" style="margin-top: 2rem; opacity: 0.7; font-size: 0.9rem;"></p>
+            </div>
+
+            <!-- Vote Result View (Dubito Mode) -->
+            <div id="vote-result-view" class="game-view" style="display: none;">
+                <h3>Risultato Votazione</h3>
+
+                <div id="vote-result-content" style="margin: 2rem 0;"></div>
+
+                <button id="next-turn-after-vote-btn" class="btn btn-primary">Prossimo Turno</button>
+            </div>
         </div>
     </div>
 
@@ -256,11 +332,12 @@
             <div class="modal-body">
                 <div class="rules-content">
                     <h4>🎯 Obiettivo</h4>
-                    <p>Raggiungi per primo <strong>10 punti</strong> indovinando come risponderebbero i tuoi amici ai dilemmi morali!</p>
+                    <p>Raggiungi per primo il <strong>punteggio scelto dall'host</strong> (da 1 a 10 punti) indovinando come risponderebbero i tuoi amici ai dilemmi morali!</p>
 
                     <h4>🎮 Come si gioca</h4>
                     <ol>
                         <li><strong>Crea o unisciti</strong> a una stanza con i tuoi amici</li>
+                        <li>L'host sceglie il punteggio per vincere (1-10)</li>
                         <li>Ogni giocatore riceve <strong>6 carte</strong> con dilemmi morali</li>
                         <li>A turno, scegli:
                             <ul>
@@ -272,16 +349,33 @@
                         <li>Il giocatore scelto legge il dilemma e risponde</li>
                         <li>Se indovini la risposta: <strong>+1 punto</strong>!</li>
                         <li>Dopo aver giocato una carta, ne peschi automaticamente una nuova</li>
+                        <li>Puoi scartare una carta in qualsiasi momento, anche quando non è il tuo turno</li>
+                    </ol>
+
+                    <h4>⚠️ Modalità "Dubito" (opzionale, 4+ giocatori)</h4>
+                    <p>L'host può attivare questa modalità dalla lobby se ci sono <strong>almeno 4 giocatori</strong>:</p>
+                    <ol>
+                        <li>Dopo che il giocatore target risponde, chi ha posto la domanda può <strong>Accettare</strong> o <strong>Dubitare</strong></li>
+                        <li>Se <strong>Accetta</strong>: il gioco procede normalmente (punto se la previsione era corretta)</li>
+                        <li>Se <strong>Dubita</strong>: tutti gli altri giocatori (esclusi chi ha chiesto e chi ha risposto) votano se la risposta è:
+                            <ul>
+                                <li>😇 <strong>Sincera</strong></li>
+                                <li>😈 <strong>Falsa</strong></li>
+                            </ul>
+                        </li>
+                        <li>Se vince "Mente" (o c'è <strong>pareggio</strong>): chi ha posto la domanda guadagna <strong>+1 punto</strong></li>
+                        <li>Se vince "Sincero": nessun punto viene assegnato</li>
                     </ol>
 
                     <h4>🏆 Vittoria</h4>
-                    <p>Il primo giocatore che raggiunge 10 punti vince la partita!</p>
+                    <p>Il primo giocatore che raggiunge il punteggio obiettivo vince la partita!</p>
 
                     <h4>💡 Suggerimenti</h4>
                     <ul>
                         <li>Scegli con cura quale amico far rispondere a ciascun dilemma</li>
                         <li>Più conosci i tuoi amici, più punti farai!</li>
-                        <li>Mentre aspetti il tuo turno, puoi visualizzare le tue carte</li>
+                        <li>In modalità Dubito, dubita solo quando pensi davvero che il giocatore stia mentendo!</li>
+                        <li>Ricorda: in caso di pareggio nella votazione, vince "Mente"</li>
                     </ul>
                 </div>
             </div>

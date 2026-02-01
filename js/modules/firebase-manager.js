@@ -34,7 +34,7 @@ export function getDatabase() {
 /**
  * Create a new room
  */
-export async function createRoom(roomId, playerName, playerId, maxPoints = 5) {
+export async function createRoom(roomId, playerName, playerId, maxPoints = 5, isDubitoMode = false) {
   try {
     const roomRef = database.ref(`rooms/${roomId}`);
 
@@ -43,6 +43,7 @@ export async function createRoom(roomId, playerName, playerId, maxPoints = 5) {
         maxPoints: maxPoints,
         status: 'lobby',
         isOpen: false,
+        isDubitoMode: isDubitoMode,
         createdAt: firebase.database.ServerValue.TIMESTAMP
       },
       players: {
@@ -164,6 +165,19 @@ export async function updateRoomOpenStatus(roomId, isOpen) {
     return true;
   } catch (error) {
     console.error('Error updating room open status:', error);
+    throw error;
+  }
+}
+
+/**
+ * Update dubito mode status
+ */
+export async function updateDubitoMode(roomId, isDubitoMode) {
+  try {
+    await database.ref(`rooms/${roomId}/config/isDubitoMode`).set(isDubitoMode);
+    return true;
+  } catch (error) {
+    console.error('Error updating dubito mode:', error);
     throw error;
   }
 }
@@ -411,6 +425,42 @@ export async function getCardsInHands(roomId) {
     return cardsInHands;
   } catch (error) {
     console.error('Error getting cards in hands:', error);
+    throw error;
+  }
+}
+
+/**
+ * Set dubito choice (accept or doubt) - Dubito mode
+ */
+export async function setDubitoChoice(roomId, choice) {
+  try {
+    await database.ref(`rooms/${roomId}/currentTurn/dubitoChoice`).set(choice);
+
+    if (choice === 'accept') {
+      // If accepted, proceed to showing result
+      await database.ref(`rooms/${roomId}/currentTurn/status`).set('showing_result');
+    } else if (choice === 'doubt') {
+      // If doubted, start voting
+      await database.ref(`rooms/${roomId}/currentTurn/status`).set('voting_truth');
+      await database.ref(`rooms/${roomId}/currentTurn/votes`).set({});
+    }
+
+    return true;
+  } catch (error) {
+    console.error('Error setting dubito choice:', error);
+    throw error;
+  }
+}
+
+/**
+ * Submit vote for truth or lie - Dubito mode
+ */
+export async function submitVote(roomId, playerId, voteType) {
+  try {
+    await database.ref(`rooms/${roomId}/currentTurn/votes/${playerId}`).set(voteType);
+    return true;
+  } catch (error) {
+    console.error('Error submitting vote:', error);
     throw error;
   }
 }

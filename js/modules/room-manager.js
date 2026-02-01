@@ -51,7 +51,7 @@ export function validatePlayerName(name) {
 /**
  * Create a new room
  */
-export async function createNewRoom(playerName, maxPoints = 5) {
+export async function createNewRoom(playerName, maxPoints = 5, isDubitoMode = false) {
   try {
     // Validate player name
     if (!validatePlayerName(playerName)) {
@@ -72,7 +72,7 @@ export async function createNewRoom(playerName, maxPoints = 5) {
     const playerId = generatePlayerId();
 
     // Create room in Firebase
-    await FirebaseManager.createRoom(roomId, playerName.trim(), playerId, maxPoints);
+    await FirebaseManager.createRoom(roomId, playerName.trim(), playerId, maxPoints, isDubitoMode);
 
     // Save player info in localStorage
     savePlayerInfo(playerId, playerName.trim(), roomId);

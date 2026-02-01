@@ -90,47 +90,56 @@ export async function submitGuess(roomId, dilemmaId, targetPlayerId, guess) {
 /**
  * Submit answer (target player responds)
  */
-export async function submitAnswer(roomId, answer, currentTurn, players, usedDilemmas) {
+export async function submitAnswer(roomId, answer, currentTurn, players, usedDilemmas, isDubitoMode = false) {
   try {
+    // Determine next status based on Dubito mode
+    const nextStatus = isDubitoMode
+      ? TURN_STATUS.WAITING_ACCEPT_OR_DOUBT
+      : TURN_STATUS.SHOWING_RESULT;
+
     // Update turn with answer
     await FirebaseManager.updateTurn(roomId, {
       answer,
-      status: TURN_STATUS.SHOWING_RESULT
+      status: nextStatus
     });
 
     // Check if guess matches answer
     const isCorrect = checkMatch(currentTurn.guess, answer);
 
-    // If correct, update score
-    if (isCorrect) {
-      const activePlayer = players[currentTurn.activePlayerId];
-      const newScore = activePlayer.score + 1;
-      await FirebaseManager.updatePlayerScore(roomId, currentTurn.activePlayerId, newScore);
+    // If NOT in Dubito mode, handle scoring and card management immediately
+    if (!isDubitoMode) {
+      // If correct, update score
+      if (isCorrect) {
+        const activePlayer = players[currentTurn.activePlayerId];
+        const newScore = activePlayer.score + 1;
+        await FirebaseManager.updatePlayerScore(roomId, currentTurn.activePlayerId, newScore);
+      }
+
+      // Remove card from active player's hand
+      await FirebaseManager.removeCardFromHand(roomId, currentTurn.activePlayerId, currentTurn.dilemmaId);
+
+      // Add dilemma to used list (include the one just played)
+      await FirebaseManager.addUsedDilemma(roomId, currentTurn.dilemmaId);
+      const updatedUsedDilemmas = [...(usedDilemmas || []), currentTurn.dilemmaId];
+
+      // Draw a new card for the active player (if available)
+      const newCard = CardManager.getRandomDilemma(updatedUsedDilemmas);
+      if (newCard) {
+        await FirebaseManager.addCardToHand(roomId, currentTurn.activePlayerId, newCard.id);
+        console.log(`Player ${currentTurn.activePlayerId} drew new card: ${newCard.id}`);
+      } else {
+        console.log('No more cards available to draw');
+      }
+
+      // Add turn to history
+      await FirebaseManager.addTurnToHistory(roomId, {
+        ...currentTurn,
+        answer,
+        isCorrect,
+        timestamp: Date.now()
+      });
     }
-
-    // Remove card from active player's hand
-    await FirebaseManager.removeCardFromHand(roomId, currentTurn.activePlayerId, currentTurn.dilemmaId);
-
-    // Add dilemma to used list (include the one just played)
-    await FirebaseManager.addUsedDilemma(roomId, currentTurn.dilemmaId);
-    const updatedUsedDilemmas = [...(usedDilemmas || []), currentTurn.dilemmaId];
-
-    // Draw a new card for the active player (if available)
-    const newCard = CardManager.getRandomDilemma(updatedUsedDilemmas);
-    if (newCard) {
-      await FirebaseManager.addCardToHand(roomId, currentTurn.activePlayerId, newCard.id);
-      console.log(`Player ${currentTurn.activePlayerId} drew new card: ${newCard.id}`);
-    } else {
-      console.log('No more cards available to draw');
-    }
-
-    // Add turn to history
-    await FirebaseManager.addTurnToHistory(roomId, {
-      ...currentTurn,
-      answer,
-      isCorrect,
-      timestamp: Date.now()
-    });
+    // If in Dubito mode, scoring and card management will happen after accept/doubt decision
 
     console.log('Answer submitted, result:', isCorrect);
     return { isCorrect };
@@ -317,6 +326,107 @@ export async function discardCard(roomId, playerId, dilemmaId) {
     }
   } catch (error) {
     console.error('Error discarding card:', error);
+    throw error;
+  }
+}
+
+/**
+ * Handle accept decision in Dubito mode
+ */
+export async function handleAcceptDecision(roomId, currentTurn, players, usedDilemmas) {
+  try {
+    const isCorrect = checkMatch(currentTurn.guess, currentTurn.answer);
+
+    // If correct, update score
+    if (isCorrect) {
+      const activePlayer = players[currentTurn.activePlayerId];
+      const newScore = activePlayer.score + 1;
+      await FirebaseManager.updatePlayerScore(roomId, currentTurn.activePlayerId, newScore);
+    }
+
+    // Remove card from active player's hand
+    await FirebaseManager.removeCardFromHand(roomId, currentTurn.activePlayerId, currentTurn.dilemmaId);
+
+    // Add dilemma to used list
+    await FirebaseManager.addUsedDilemma(roomId, currentTurn.dilemmaId);
+    const updatedUsedDilemmas = [...(usedDilemmas || []), currentTurn.dilemmaId];
+
+    // Draw a new card for the active player
+    const newCard = CardManager.getRandomDilemma(updatedUsedDilemmas);
+    if (newCard) {
+      await FirebaseManager.addCardToHand(roomId, currentTurn.activePlayerId, newCard.id);
+    }
+
+    // Add turn to history
+    await FirebaseManager.addTurnToHistory(roomId, {
+      ...currentTurn,
+      isCorrect,
+      dubitoResult: 'accepted',
+      timestamp: Date.now()
+    });
+
+    return { isCorrect };
+  } catch (error) {
+    console.error('Error handling accept decision:', error);
+    throw error;
+  }
+}
+
+/**
+ * Process voting results in Dubito mode
+ */
+export async function processVotingResults(roomId, currentTurn, players, votes, usedDilemmas) {
+  try {
+    // Count votes
+    const voteValues = Object.values(votes);
+    const lieVotes = voteValues.filter(v => v === 'lie').length;
+    const truthVotes = voteValues.filter(v => v === 'truth').length;
+
+    // In case of tie, "lie" wins
+    const votedLie = lieVotes >= truthVotes;
+
+    // If majority voted "lie" (or tie), questioner gets a point
+    if (votedLie) {
+      const activePlayer = players[currentTurn.activePlayerId];
+      const newScore = activePlayer.score + 1;
+      await FirebaseManager.updatePlayerScore(roomId, currentTurn.activePlayerId, newScore);
+    }
+
+    // Remove card from active player's hand
+    await FirebaseManager.removeCardFromHand(roomId, currentTurn.activePlayerId, currentTurn.dilemmaId);
+
+    // Add dilemma to used list
+    await FirebaseManager.addUsedDilemma(roomId, currentTurn.dilemmaId);
+    const updatedUsedDilemmas = [...(usedDilemmas || []), currentTurn.dilemmaId];
+
+    // Draw a new card for the active player
+    const newCard = CardManager.getRandomDilemma(updatedUsedDilemmas);
+    if (newCard) {
+      await FirebaseManager.addCardToHand(roomId, currentTurn.activePlayerId, newCard.id);
+    }
+
+    // Update turn status to show vote result
+    await FirebaseManager.updateTurn(roomId, {
+      status: TURN_STATUS.SHOWING_VOTE_RESULT,
+      votingResult: {
+        lieVotes,
+        truthVotes,
+        pointAwarded: votedLie
+      }
+    });
+
+    // Add turn to history
+    await FirebaseManager.addTurnToHistory(roomId, {
+      ...currentTurn,
+      dubitoResult: votedLie ? 'lie_won' : 'truth_won',
+      lieVotes,
+      truthVotes,
+      timestamp: Date.now()
+    });
+
+    return { lieVotes, truthVotes, pointAwarded: votedLie };
+  } catch (error) {
+    console.error('Error processing voting results:', error);
     throw error;
   }
 }
