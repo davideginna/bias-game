@@ -474,28 +474,3 @@ export function clearSelectedAnswer() {
   buttons.forEach(btn => btn.classList.remove('selected'));
 }
 
-/**
- * Show cards modal
- */
-export function showCardsModal(dilemmas) {
-  const modal = document.getElementById('cards-modal');
-  const cardsListContainer = document.getElementById('modal-cards-list');
-
-  if (!modal || !cardsListContainer) {
-    return;
-  }
-
-  // Clear previous content
-  cardsListContainer.innerHTML = '';
-
-  // Render each card
-  dilemmas.forEach((dilemma, index) => {
-    const card = document.createElement('div');
-    card.className = 'dilemma-card';
-    card.innerHTML = `<p><strong>Carta ${index + 1}:</strong> ${dilemma.text}</p>`;
-    cardsListContainer.appendChild(card);
-  });
-
-  // Show modal
-  modal.style.display = 'flex';
-}

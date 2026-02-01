@@ -362,27 +362,6 @@ function setupEventListeners() {
     });
   }
 
-  const viewCardsBtn = document.getElementById('view-cards-btn');
-  const closeCardsModal = document.getElementById('close-cards-modal');
-  const cardsModal = document.getElementById('cards-modal');
-
-  if (viewCardsBtn) {
-    viewCardsBtn.addEventListener('click', handleViewCards);
-  }
-
-  if (closeCardsModal) {
-    closeCardsModal.addEventListener('click', () => {
-      cardsModal.style.display = 'none';
-    });
-  }
-
-  if (cardsModal) {
-    cardsModal.addEventListener('click', (e) => {
-      if (e.target === cardsModal) {
-        cardsModal.style.display = 'none';
-      }
-    });
-  }
 
   // Floating menu handlers
   const floatingMenu = document.getElementById('floating-menu');
@@ -781,10 +760,14 @@ function updateGameScreen(players, currentTurn) {
     } else if (currentTurn.status === TURN_STATUS.WAITING_ANSWER && targetPlayer) {
       message = `${targetPlayer.name} sta rispondendo...`;
       UI.showWaitingView(message, true, currentTurn.dilemmaId);
+      // Render player cards with discard option even while waiting
+      renderWaitingPlayerCards(gameState.myCards);
       return;
     }
 
     UI.showWaitingView(message, false);
+    // Render player cards with discard option even while waiting
+    renderWaitingPlayerCards(gameState.myCards);
   }
 }
 
@@ -842,6 +825,50 @@ function handleCardSelect(dilemma) {
   selectedTarget = null;
   selectedGuess = null;
   updateSubmitButtonState();
+}
+
+/**
+ * Render player cards in waiting view
+ */
+function renderWaitingPlayerCards(cardIds) {
+  const cardsContainer = document.getElementById('waiting-player-cards');
+  if (!cardsContainer) {
+    console.error('waiting-player-cards container not found!');
+    return;
+  }
+
+  cardsContainer.innerHTML = '';
+
+  if (!cardIds || cardIds.length === 0) {
+    cardsContainer.innerHTML = '<p>Non hai più carte disponibili.</p>';
+    return;
+  }
+
+  const dilemmas = CardManager.getDilemmasByIds(cardIds);
+
+  dilemmas.forEach(dilemma => {
+    const card = document.createElement('div');
+    card.className = 'dilemma-card';
+    card.dataset.dilemmaId = dilemma.id;
+
+    const text = document.createElement('p');
+    text.textContent = dilemma.text;
+    card.appendChild(text);
+
+    // Add discard button
+    const discardBtn = document.createElement('button');
+    discardBtn.className = 'btn-discard-card';
+    discardBtn.innerHTML = '✕';
+    discardBtn.title = 'Scarta questa carta';
+
+    discardBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      handleCardDiscard(dilemma);
+    });
+
+    card.appendChild(discardBtn);
+    cardsContainer.appendChild(card);
+  });
 }
 
 /**
@@ -1273,26 +1300,6 @@ function handleRoomDeleted() {
   UI.resetFormInputs();
 }
 
-/**
- * Handle view cards
- */
-function handleViewCards() {
-  if (!currentRoomData || !currentPlayerId) {
-    return;
-  }
-
-  const player = currentRoomData.players[currentPlayerId];
-  if (!player || !player.cards) {
-    UI.showToast('Nessuna carta disponibile', 'warning');
-    return;
-  }
-
-  // Get dilemma details for player's cards
-  const dilemmas = player.cards.map(cardId => CardManager.getDilemmaById(cardId)).filter(d => d);
-
-  // Show modal
-  UI.showCardsModal(dilemmas);
-}
 
 // Initialize app when DOM is ready
 if (document.readyState === 'loading') {

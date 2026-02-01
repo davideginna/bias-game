@@ -194,9 +194,15 @@
                     <p id="current-dilemma-text"></p>
                 </div>
 
+                <!-- Player cards in waiting view -->
+                <div style="margin-top: 2rem;">
+                    <h4>Le tue carte</h4>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">Puoi scartare una carta anche mentre aspetti</p>
+                    <div id="waiting-player-cards" class="cards-grid"></div>
+                </div>
+
                 <p id="waiting-info"></p>
 
-                <button id="view-cards-btn" class="btn btn-secondary">🃏 Vedi le tue carte</button>
             </div>
 
             <!-- Result View -->
@@ -223,18 +229,6 @@
         </div>
     </div>
 
-    <!-- Cards Modal -->
-    <div id="cards-modal" class="modal" style="display: none;">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3>🃏 Le tue carte</h3>
-                <button class="modal-close" id="close-cards-modal">✕</button>
-            </div>
-            <div class="modal-body">
-                <div id="modal-cards-list" class="modal-cards-grid"></div>
-            </div>
-        </div>
-    </div>
 
     <!-- Rules Modal -->
     <div id="rules-modal" class="modal" style="display: none;">
