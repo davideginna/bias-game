@@ -1,0 +1,47 @@
+[
+  {
+    "id": "environment-1",
+    "text": "Uccideresti un animale in via di estinzione per salvare 10 persone?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-2",
+    "text": "Pagheresti un extra per un prodotto 'sostenibile', anche se non sei sicuro che lo sia davvero?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-3",
+    "text": "Se potessi, vieteresti i jet privati per ridurre l'inquinamento?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-4",
+    "text": "Saresti a favore di limiti di velocità più bassi in autostrada per ridurre le emissioni?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-5",
+    "text": "Smetteresti di mangiare pesce per combattere la pesca intensiva e l'inquinamento degli oceani?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-6",
+    "text": "Mangeresti insetti come fonte di proteine sostenibile?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-7",
+    "text": "Se potessi salvare un solo tipo di animale dall'estinzione, sceglieresti di salvare un mammifero piuttosto che un insetto?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-8",
+    "text": "Per garantire un futuro sostenibile, è giusto limitare le libertà individuali di oggi (es. viaggi, consumi)?",
+    "category": "environment"
+  },
+  {
+    "id": "environment-9",
+    "text": "È giusto usare la geoingegneria per combattere il cambiamento climatico, anche se i rischi a lungo termine sono sconosciuti?",
+    "category": "environment"
+  }
+]

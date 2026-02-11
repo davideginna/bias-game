@@ -1,0 +1,126 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-11T16:45:00.000Z",
+  "categories": [
+    {
+      "id": "default",
+      "name": "Dilemmi Generali",
+      "icon": "📝",
+      "description": "Dilemmi morali generali su onestà, lealtà, sacrificio e vita quotidiana",
+      "count": 689,
+      "examples": [
+        "Un amico ti chiede di mentire per proteggerlo da una conseguenza seria. Lo faresti?",
+        "Ruberesti cibo se la tua famiglia morisse di fame?",
+        "Mentiresti su un curriculum per ottenere il lavoro dei tuoi sogni?"
+      ]
+    },
+    {
+      "id": "sex",
+      "name": "Sessualità",
+      "icon": "💋",
+      "description": "Contenuti sessuali e intimi",
+      "count": 92,
+      "examples": [
+        "Fingeresti di non aver letto un messaggio imbarazzante?",
+        "Se potessi scegliere il sesso di tuo figlio, lo faresti?",
+        "Se potessi, renderesti tutte le spiagge del mondo nudiste?"
+      ]
+    },
+    {
+      "id": "serie-tv",
+      "name": "Serie TV",
+      "icon": "📺",
+      "description": "Dilemmi nei panni di personaggi di serie TV",
+      "count": 91,
+      "examples": [
+        "Sei Rachel Green (Friends), lasceresti il tuo lavoro a Parigi per Ross?",
+        "Sei Joey Tribbiani (Friends), condivideresti il tuo cibo, anche se sei affamato?",
+        "Sei Monica Geller (Friends), lasceresti il tuo appartamento super organizzato per un posto meno perfetto?"
+      ]
+    },
+    {
+      "id": "film",
+      "name": "Film",
+      "icon": "🎬",
+      "description": "Dilemmi nei panni di personaggi cinematografici",
+      "count": 59,
+      "examples": [
+        "Sei Harry Potter (Harry Potter), avresti scelto di andare a Serpeverde per scoprire i segreti di Voldemort?",
+        "Sei Hermione Granger (Harry Potter), lasceresti i tuoi amici in pericolo per studiare e metterti in salvo?",
+        "Sei Ron Weasley (Harry Potter), affronteresti i tuoi ragni giganti per salvare i tuoi amici?"
+      ]
+    },
+    {
+      "id": "cartoon",
+      "name": "Anime & Cartoon",
+      "icon": "🎭",
+      "description": "Dilemmi nei panni di personaggi di anime, manga e cartoni animati",
+      "count": 40,
+      "examples": [
+        "Sei Naruto Uzumaki (Naruto). Kurama ti offre tutto il suo potere ma in cambio dovrai abbandonare Konoha per sempre. Accetti?",
+        "Sei Luffy (One Piece). Puoi trovare il One Piece subito ma uno dei tuoi nakama morirà. Continui la ricerca?",
+        "Sei Light Yagami (Death Note). Ryuk ti offre un secondo Death Note ma dimezzerà la tua aspettativa di vita. Lo accetti?"
+      ]
+    },
+    {
+      "id": "politics",
+      "name": "Politica",
+      "icon": "🏛️",
+      "description": "Etica politica e governativa",
+      "count": 30,
+      "examples": [
+        "Faresti un favore illegale a un politico in cambio di un grosso beneficio personale?",
+        "Leggeresti il diario segreto del tuo partner?",
+        "Se potessi leggere nel pensiero, useresti questo potere per guadagno personale?"
+      ]
+    },
+    {
+      "id": "money",
+      "name": "Denaro",
+      "icon": "💰",
+      "description": "Etica finanziaria ed economica",
+      "count": 161,
+      "examples": [
+        "Trovi 100€ per strada senza nessuno intorno. Li tieni?",
+        "Scopri che il tuo capo evade le tasse. Lo denunceresti?",
+        "Tradiresti il tuo partner per 10 mila euro garantiti e senza che lui/lei lo sappia mai?"
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Tecnologia",
+      "icon": "💻",
+      "description": "Social media, IA, privacy digitale",
+      "count": 101,
+      "examples": [
+        "Fingeresti di essere credente per ottenere un vantaggio sociale?",
+        "Fingeresti di apprezzare i genitori del tuo partner anche se non li sopporti?",
+        "Sei rimasto in buoni rapporti con il/la tuo/a ex. Lo/La inviteresti al tuo matrimonio per non creare imbarazzo?"
+      ]
+    },
+    {
+      "id": "religion",
+      "name": "Religione",
+      "icon": "⛪",
+      "description": "Fede e spiritualità",
+      "count": 18,
+      "examples": [
+        "In un incendio dove puoi salvare solo una vita, salveresti il tuo animale domestico anche se ci fosse uno sconosciuto in pericolo?",
+        "Se potessi, elimineresti la religione dal mondo per porre fine ai conflitti religiosi?",
+        "Pensi che sia giusto che un genitore legga i messaggi privati del proprio figlio adolescente?"
+      ]
+    },
+    {
+      "id": "environment",
+      "name": "Ambiente",
+      "icon": "🌍",
+      "description": "Clima e sostenibilità",
+      "count": 9,
+      "examples": [
+        "Uccideresti un animale in via di estinzione per salvare 10 persone?",
+        "Pagheresti un extra per un prodotto 'sostenibile', anche se non sei sicuro che lo sia davvero?",
+        "Se potessi, vieteresti i jet privati per ridurre l'inquinamento?"
+      ]
+    }
+  ]
+}

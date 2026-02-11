@@ -1,0 +1,507 @@
+[
+  {
+    "id": "technology-1",
+    "text": "Fingeresti di essere credente per ottenere un vantaggio sociale?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-2",
+    "text": "Fingeresti di apprezzare i genitori del tuo partner anche se non li sopporti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-3",
+    "text": "Sei rimasto in buoni rapporti con il/la tuo/a ex. Lo/La inviteresti al tuo matrimonio per non creare imbarazzo?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-4",
+    "text": "Venderesti dati personali dei clienti per profitto?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-5",
+    "text": "Mentiresti sui tuoi titoli di studio in un contesto sociale?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-6",
+    "text": "Fingeresti di stare male per evitare un evento sociale noioso?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-7",
+    "text": "Sceglieresti di far nascere tuo figlio in un mondo sovrappopolato e inquinato?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-8",
+    "text": "Rinunceresti a internet per sempre per risolvere il problema del cambiamento climatico?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-9",
+    "text": "Pensi che l'appropriazione culturale sia sempre sbagliata?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-10",
+    "text": "Correggeresti un errore di grammatica di uno sconosciuto su internet?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-11",
+    "text": "Se scoprissi che il tuo idolo è una persona orribile, smetteresti di apprezzare la sua arte?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-12",
+    "text": "Useresti un'app per sapere cosa pensano veramente gli altri di te, anche le cose negative?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-13",
+    "text": "Pensi che sia giusto usare filtri e fotoritocco pesante sui social media?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-14",
+    "text": "È giusto che i social media censurino contenuti considerati 'disinformazione'?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-15",
+    "text": "Rinunceresti al tuo smartphone per un anno in cambio di una vacanza da sogno?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-16",
+    "text": "Pensi che sia giusto che gli influencer guadagnino cifre enormi promuovendo prodotti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-17",
+    "text": "Ritieni che la privacy sia più importante della comodità?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-18",
+    "text": "Se potessi, implementeresti un sistema di 'credito sociale' come in alcuni paesi?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-19",
+    "text": "Pensi che sia giusto che i genitori usino i propri figli per creare contenuti sui social media?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-20",
+    "text": "Pensi che sia giusto che gli algoritmi decidano quali notizie vediamo online?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-21",
+    "text": "È giusto che i servizi di streaming aumentino i prezzi e limitino la condivisione degli account?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-22",
+    "text": "È giusto che un'app di dating usi un algoritmo per mostrarti solo persone 'compatibili'?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-23",
+    "text": "Pensi che sia giusto che un'azienda possa licenziare un dipendente per un post controverso sui social media?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-24",
+    "text": "È giusto che le piattaforme di social media decidano quali account sospendere o bannare?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-25",
+    "text": "È giusto che un'azienda possa vendere un prodotto che crea dipendenza (es. social media, videogiochi)?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-26",
+    "text": "Smetteresti di seguire un influencer che promuove standard di bellezza irrealistici, anche se ti piacciono i suoi contenuti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-27",
+    "text": "Pensi che sia giusto commentare il corpo di una persona famosa sui social media?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-28",
+    "text": "Installeresti un'app di controllo parentale sul telefono di tuo figlio adolescente per monitorare le sue attività?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-29",
+    "text": "Se tuo figlio avesse un brutto voto a scuola, lo metteresti in punizione togliendogli lo smartphone?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-30",
+    "text": "Saresti amico/a su Facebook o Instagram dei tuoi figli?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-31",
+    "text": "Se tuo figlio adolescente volesse abbandonare la scuola per seguire un sogno (es. musicista), lo appoggeresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-32",
+    "text": "Se tuo figlio non fosse bravo negli sport, lo spingeresti comunque a praticarne uno per socializzare?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-33",
+    "text": "Pensi sia giusto dare uno smartphone a un bambino prima dei 12 anni?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-34",
+    "text": "Se tuo figlio fosse vittima di cyberbullismo, contatteresti prima la polizia piuttosto che la scuola?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-35",
+    "text": "Saresti a favore dell'aborto obbligatorio in un ipotetico scenario di sovrappopolazione estrema?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-36",
+    "text": "Pensi che sia giusto vestire gli animali con cappottini e scarpette?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-37",
+    "text": "Se il tuo partito politico approvasse una legge che va contro i tuoi principi etici, continueresti a sostenerlo?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-38",
+    "text": "Saresti a favore dell'introduzione del voto online per aumentare l'affluenza?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-39",
+    "text": "Se il tuo partner ti chiedesse la password dei tuoi social media come prova di fiducia, gliela daresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-40",
+    "text": "Cancelleresti tutte le foto con il tuo ex dai social media?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-41",
+    "text": "Se a un primo appuntamento scoprissi che l'altra persona ha mentito su qualcosa di importante (es. età, lavoro), daresti una seconda possibilità?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-42",
+    "text": "Se i tuoi genitori non approvassero la persona che frequenti, continueresti a vederla di nascosto?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-43",
+    "text": "Se scoprissi un glitch di TikTok che fa diventare virale qualsiasi video, lo useresti per diventare famoso?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-44",
+    "text": "Pubblicheresti una foto di una vacanza di lusso su Instagram, anche se sai che potrebbe far sentire invidiosi i tuoi amici in difficoltà economiche?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-45",
+    "text": "Faresti una 'challenge' di TikTok pericolosa per ottenere like e visibilità?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-46",
+    "text": "Creeresti un finto profilo Instagram per spiare le storie di chi ti ha bloccato?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-47",
+    "text": "Smetteresti di usare TikTok se sapessi che i tuoi dati vengono usati da un governo straniero?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-48",
+    "text": "Parteciperesti a un trend di TikTok che prende in giro una categoria di persone, anche se lo trovi divertente?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-49",
+    "text": "Pagheresti per un corso che promette di farti diventare un influencer di successo su Instagram?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-50",
+    "text": "Se il tuo partner ti chiedesse di non pubblicare foto in costume da bagno su Instagram, accetteresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-51",
+    "text": "Se scoprissi che un influencer che segui ritocca pesantemente tutte le sue foto, smetteresti di seguirlo?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-52",
+    "text": "Se il tuo capo ti chiedesse di 'spiare' i profili social dei candidati prima di un colloquio, lo faresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-53",
+    "text": "Lasceresti una recensione negativa a un ristorante solo perché il piatto non era 'instagrammabile'?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-54",
+    "text": "Se un brand ti offrisse prodotti gratis in cambio di storie su Instagram, accetteresti anche se il prodotto non ti piace?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-55",
+    "text": "Giudichi le persone in base al numero di follower che hanno su Instagram?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-56",
+    "text": "Se un amico ti chiedesse di promuovere il suo piccolo business su TikTok, ma i suoi prodotti non ti piacciono, lo faresti per amicizia?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-57",
+    "text": "Pensi che l'algoritmo di TikTok influenzi negativamente la salute mentale dei giovani?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-58",
+    "text": "Se vedessi un commento di body shaming sotto la foto di un amico su Instagram, interverresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-59",
+    "text": "Faresti un video su TikTok in cui 'smascheri' un comportamento scorretto di un tuo ex?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-60",
+    "text": "Pensi che sia giusto che TikTok renda virali canzoni senza che gli artisti originali ricevano un giusto compenso?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-61",
+    "text": "Se scoprissi il profilo TikTok segreto di un tuo professore, lo condivideresti con la classe?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-62",
+    "text": "Daresti il tuo supporto a un influencer di Instagram coinvolto in uno scandalo, se credessi nella sua innocenza?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-63",
+    "text": "Pensi che i filtri di bellezza di Instagram e TikTok siano dannosi per l'autostima?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-64",
+    "text": "Useresti la geolocalizzazione di Instagram per controllare dove si trova il tuo partner?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-65",
+    "text": "Se il tuo partner volesse che il vostro rapporto fosse 'Instagram official' ma tu preferisci la privacy, come ti comporteresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-66",
+    "text": "Acquisteresti un prodotto solo perché lo hai visto in un video virale su TikTok?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-67",
+    "text": "Faresti un video 'pov' (point of view) su TikTok che mette in cattiva luce una persona che conosci?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-68",
+    "text": "Saresti a favore di una verifica dell'età più stringente per l'accesso a social come TikTok e Instagram?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-69",
+    "text": "Pensi che sia giusto che le aziende usino gli influencer di TikTok per fare marketing ai bambini?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-70",
+    "text": "Se un amico ti taggasse in una foto su Instagram in cui non ti piaci, gli chiederesti di rimuoverla?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-71",
+    "text": "Parteciperesti a un flash mob organizzato tramite TikTok?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-72",
+    "text": "Se il tuo ristorante preferito ti offrisse uno sconto del 50% per una storia su Instagram, lo faresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-73",
+    "text": "Pensi che i 'balletti' di TikTok siano una forma d'arte?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-74",
+    "text": "Stalkerare il profilo Instagram della nuova fiamma del tuo ex è accettabile?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-75",
+    "text": "Creeresti un 'finsta' (un account Instagram segreto per amici stretti) per postare contenuti che non pubblicheresti sul tuo profilo principale?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-76",
+    "text": "Se vedessi un politico fare un video 'giovanile' su TikTok, lo voteresti più volentieri?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-77",
+    "text": "È giusto usare la funzione 'duetto' di TikTok per prendere in giro il video di un'altra persona?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-78",
+    "text": "Se un tuo amico ti escludesse dalle sue 'Storie per amici stretti' su Instagram, ti sentiresti offeso?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-79",
+    "text": "Pensi che la fama su TikTok sia effimera e senza valore reale?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-80",
+    "text": "Pensi che ci sia uno stigma sociale diverso per le donne 'cougar' rispetto agli uomini più anziani che escono con donne giovani?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-81",
+    "text": "Pensi che la rappresentazione delle MILF nei media sia dannosa?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-82",
+    "text": "Se il tuo partner volesse filmare i vostri rapporti sessuali, acconsentiresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-83",
+    "text": "Se vedessi il partner di un tuo amico su un'app di incontri, faresti uno screenshot per inviarglielo?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-84",
+    "text": "Se il tuo partner volesse invitare a cena un suo/sua ex con cui è rimasto in ottimi rapporti, saresti d'accordo?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-85",
+    "text": "Se il tuo partner ti confessasse di essere bisessuale dopo anni di relazione, la cosa cambierebbe il vostro rapporto?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-86",
+    "text": "È giusto usare app per 'valutare' le performance sessuali dei propri partner?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-87",
+    "text": "Se il tuo partner ti chiedesse di eliminare dai social tutti i tuoi ex, lo faresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-88",
+    "text": "Se un tuo amico ti chiedesse di votare per lui a un concorso online creando profili falsi, lo aiuteresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-89",
+    "text": "Se il tuo partner ti confessasse un tradimento avvenuto 10 anni prima, quando eravate appena insieme, lo perdoneresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-90",
+    "text": "Se scoprissi che il tuo partner guarda le storie Instagram della sua ex tutti i giorni, glielo faresti notare?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-91",
+    "text": "Se una tua amica ti dicesse che vuole lasciare il marito e i figli per scappare con il suo amante, cercheresti di farla ragionare?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-92",
+    "text": "Se scoprissi che il tuo partner ha una dipendenza da shopping online e sta accumulando debiti, come lo aiuteresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-93",
+    "text": "Se il tuo partner ti chiedesse di avere un rapporto sessuale mentre sei bendato/a e legato/a, ti fideresti?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-94",
+    "text": "Per garantire la pace nel mondo, saresti disposto a rinunciare a tutta la tua privacy e a essere monitorato 24/7?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-95",
+    "text": "Se un'intelligenza artificiale superiore garantisse un governo giusto e la pace, le cederesti il controllo totale?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-96",
+    "text": "Se potessi, renderesti tutta l'umanità sterile per risolvere il problema della sovrappopolazione, condannandola all'estinzione?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-97",
+    "text": "Se potessi, faresti in modo che tutti abbiano la stessa identica apparenza fisica per eliminare il razzismo e il body shaming?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-98",
+    "text": "Saresti a favore di un sistema di 'credito sociale' globale per incoraggiare comportamenti virtuosi?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-99",
+    "text": "È giusto che un'IA decida chi riceve un organo per un trapianto in base a un calcolo di 'utilità sociale'?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-100",
+    "text": "Sei Villanelle (Killing Eve), scapperesti con Eve e lasceresti la tua vita da assassina?",
+    "category": "technology"
+  },
+  {
+    "id": "technology-101",
+    "text": "Sei Blair Waldorf (Gossip Girl), rinunceresti al tuo status sociale per l'amore di Chuck?",
+    "category": "technology"
+  }
+]

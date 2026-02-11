@@ -490,3 +490,141 @@ export function clearSelectedAnswer() {
   buttons.forEach(btn => btn.classList.remove('selected'));
 }
 
+/**
+ * Render category selection UI for host in create room form
+ * @param {Object} metadata - Category metadata from loadCategoryMetadata()
+ * @param {Array} selectedCategories - Array of selected category IDs
+ */
+export function renderCategorySelection(metadata, selectedCategories = ['default']) {
+  const categoryList = document.getElementById('category-list');
+  if (!categoryList || !metadata) return;
+
+  categoryList.innerHTML = '';
+
+  metadata.categories.forEach(category => {
+    const isSelected = selectedCategories.includes(category.id);
+
+    const categoryItem = document.createElement('div');
+    categoryItem.className = `category-item ${isSelected ? 'selected' : ''}`;
+    categoryItem.dataset.categoryId = category.id;
+    categoryItem.dataset.selected = isSelected ? 'true' : 'false';
+
+    categoryItem.innerHTML = `
+      <input type="checkbox" class="category-checkbox" value="${category.id}" ${isSelected ? 'checked' : ''} style="display: none;">
+      <div class="category-header">
+        <span class="category-icon">${category.icon}</span>
+        <div class="category-title">
+          <span class="category-name">${category.name}</span>
+          <span class="category-count">(${category.count})</span>
+        </div>
+      </div>
+      <p class="category-description">${category.description}</p>
+      <button type="button" class="category-examples-toggle" data-category-id="${category.id}">
+        Vedi esempi
+      </button>
+      <ul class="category-examples-list" id="examples-${category.id}" style="display: none;">
+        ${category.examples.map(ex => `<li>${ex}</li>`).join('')}
+      </ul>
+    `;
+
+    // Event listener per click sull'intero item (toggle selezione)
+    categoryItem.addEventListener('click', (e) => {
+      // Non toggle se il click è sul bottone esempi
+      if (e.target.classList.contains('category-examples-toggle')) {
+        return;
+      }
+
+      const checkbox = categoryItem.querySelector('.category-checkbox');
+      const isCurrentlySelected = categoryItem.dataset.selected === 'true';
+
+      // Toggle stato
+      if (isCurrentlySelected) {
+        categoryItem.classList.remove('selected');
+        categoryItem.dataset.selected = 'false';
+        checkbox.checked = false;
+      } else {
+        categoryItem.classList.add('selected');
+        categoryItem.dataset.selected = 'true';
+        checkbox.checked = true;
+      }
+
+      updateCategorySummary(metadata);
+    });
+
+    // Event listener per toggle esempi
+    const toggleBtn = categoryItem.querySelector('.category-examples-toggle');
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation(); // Non triggerare il click sul parent
+      const examplesList = categoryItem.querySelector('.category-examples-list');
+      const isVisible = examplesList.style.display !== 'none';
+      examplesList.style.display = isVisible ? 'none' : 'block';
+      toggleBtn.textContent = isVisible ? 'Vedi esempi' : 'Nascondi esempi';
+    });
+
+    categoryList.appendChild(categoryItem);
+  });
+
+  // Aggiorna il riepilogo iniziale
+  updateCategorySummary(metadata);
+}
+
+/**
+ * Update category summary (count and total dilemmas)
+ * @param {Object} metadata - Category metadata
+ */
+export function updateCategorySummary(metadata) {
+  const categoryCountEl = document.getElementById('category-count');
+  const totalDilemmasCountEl = document.getElementById('total-dilemmas-count');
+
+  if (!categoryCountEl || !totalDilemmasCountEl || !metadata) return;
+
+  const checkboxes = document.querySelectorAll('.category-checkbox:checked');
+  const selectedCategoryIds = Array.from(checkboxes).map(cb => cb.value);
+
+  // Conta categorie selezionate
+  categoryCountEl.textContent = selectedCategoryIds.length;
+
+  // Calcola totale dilemmi
+  const totalDilemmas = metadata.categories
+    .filter(cat => selectedCategoryIds.includes(cat.id))
+    .reduce((sum, cat) => sum + cat.count, 0);
+
+  totalDilemmasCountEl.textContent = totalDilemmas;
+}
+
+/**
+ * Render category badges in lobby (for all players)
+ * @param {Object} metadata - Category metadata
+ * @param {Array} selectedCategories - Array of selected category IDs
+ */
+export function renderCategoryBadges(metadata, selectedCategories = []) {
+  const container = document.getElementById('lobby-categories-display');
+  const badgesList = document.getElementById('lobby-categories-list');
+
+  if (!container || !badgesList || !metadata) return;
+
+  // Se nessuna categoria selezionata, nascondi il container
+  if (selectedCategories.length === 0) {
+    container.style.display = 'none';
+    return;
+  }
+
+  container.style.display = 'block';
+  badgesList.innerHTML = '';
+
+  // Filtra e renderizza solo le categorie selezionate
+  const selectedCategoryObjects = metadata.categories.filter(cat =>
+    selectedCategories.includes(cat.id)
+  );
+
+  selectedCategoryObjects.forEach(category => {
+    const badge = document.createElement('div');
+    badge.className = 'category-badge';
+    badge.innerHTML = `
+      <span class="category-badge-icon">${category.icon}</span>
+      <span class="category-badge-name">${category.name}</span>
+      <span class="category-badge-count">(${category.count})</span>
+    `;
+    badgesList.appendChild(badge);
+  });
+}

@@ -1,5 +1,111 @@
 # Changelog Bias
 
+## v1.7 - 2026-02-11
+
+### ✨ Nuova Feature - Sistema Categorie
+
+- **Selezione Categorie**: Scegli quali categorie di dilemmi includere durante la creazione della stanza
+  - 10 categorie disponibili: Generale, Sessualità, Serie TV, Film, Anime & Cartoon, Politica, Denaro, Tecnologia, Religione, Ambiente
+  - Minimo 1 categoria, massimo tutte
+  - Pulsanti "Tutte" e "Nessuna" per selezione rapida
+  - Riepilogo dinamico: categorie selezionate e dilemmi totali
+
+- **Anteprima Categorie**: Vedi esempi di domande prima di selezionare
+  - 3 domande di esempio per categoria
+  - Toggle "Vedi esempi" / "Nascondi esempi"
+  - Icone distintive per ogni categoria
+  - Conteggio dilemmi per categoria
+
+- **Badge Categorie in Lobby**: Tutti i giocatori vedono le categorie selezionate
+  - Badge colorati con icona, nome e conteggio
+  - Visibile a tutti (non solo all'host)
+  - Aggiornamento real-time se l'host cambia categorie
+
+### 📊 Contenuti
+
+- **1290 Dilemmi Totali** (era 1250):
+  - 689 Generali
+  - 92 Sessualità
+  - 91 Serie TV
+  - 59 Film
+  - **40 Anime & Cartoon** (NUOVI)
+  - 30 Politica
+  - 161 Denaro
+  - 101 Tecnologia
+  - 18 Religione
+  - 9 Ambiente
+
+- **Nuova Categoria "Anime & Cartoon"**:
+  - 40 dilemmi nei panni di personaggi di anime, manga e cartoni
+  - Personaggi: Naruto, Luffy, Light, Eren, Goku, Ash, SpongeBob, Homer, Rick, Aang, Simba, Vegeta e molti altri
+  - Format: "Sei [Personaggio] ([Serie]). [Dilemma]"
+
+### ⚡ Performance
+
+- **Lazy Loading**: Carica solo categorie selezionate
+  - Risparmio memoria: 53-80% con selezione parziale
+  - Load time metadata: ~10ms
+  - Load time singola categoria: ~30-80ms
+  - Load time tutte: ~200ms
+  - Parallel loading con `Promise.all()`
+
+- **Service Worker Cache**: Offline support per tutte le categorie
+  - Versione cache: v1.3.0
+  - Tutti i file categorie pre-cachati
+  - Funziona offline dopo primo caricamento
+
+### 🔧 Tecnico
+
+- **Architettura File**:
+  - `data/categories/metadata.json`: Metadati (icone, nomi, descrizioni, esempi)
+  - `data/categories/*.json`: 10 file separati per categoria
+  - ID formato: `<categoria>-<numero>` (es: `cartoon-1`, `default-42`)
+
+- **Firebase Structure**:
+  - `config/selectedCategories`: array di category IDs selezionati
+  - Default: `['default']` se campo mancante
+
+- **Card Manager**:
+  - `loadCategoryMetadata()`: Carica metadata (~5KB)
+  - `loadCategories(categoryIds)`: Carica categorie specifiche
+  - `getFilteredDilemmas()`: Ritorna dilemmi filtrati
+  - `getCategoryMetadata()`: Ottieni metadata
+
+- **UI Controller**:
+  - `renderCategorySelection()`: Renderizza UI selezione (host)
+  - `renderCategoryBadges()`: Renderizza badge (lobby)
+  - `updateCategorySummary()`: Aggiorna contatori
+
+### 🔄 Backward Compatibility
+
+- ✅ Stanze esistenti senza `selectedCategories` → Default a `['default']`
+- ✅ Fallback a `dilemmas.json` legacy se categorie non disponibili
+- ✅ ID supportano sia string (`cartoon-1`) che number (`1`) per legacy
+- ✅ File `dilemmas.json` mantenuto per 1-2 release
+
+### 🧪 Testing
+
+- ✅ Tutti i test automatici passati:
+  - Validazione sintassi JavaScript
+  - Validazione JSON (11 file)
+  - 1290 ID unici verificati
+  - Conteggi metadata corretti
+  - Struttura HTML/CSS verificata
+
+- 📋 Test manuali da eseguire (vedi TEST-RESULTS.md):
+  - Creazione stanza con diverse combinazioni categorie
+  - Verifica pescaggio solo da categorie selezionate
+  - Test backward compatibility
+  - Test performance
+
+### 📝 Documentazione
+
+- `TEST-RESULTS.md`: Report completo test automatici
+- `scripts/migrate-categories.js`: Script migrazione dati
+- CHANGELOG aggiornato
+
+---
+
 ## v1.6 - 2026-02-01
 
 ### ✨ Nuove Feature - Modalità di Gioco

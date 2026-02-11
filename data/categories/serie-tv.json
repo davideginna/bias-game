@@ -1,0 +1,457 @@
+[
+  {
+    "id": "serie-tv-1",
+    "text": "Sei Rachel Green (Friends), lasceresti il tuo lavoro a Parigi per Ross?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-2",
+    "text": "Sei Joey Tribbiani (Friends), condivideresti il tuo cibo, anche se sei affamato?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-3",
+    "text": "Sei Monica Geller (Friends), lasceresti il tuo appartamento super organizzato per un posto meno perfetto?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-4",
+    "text": "Sei Chandler Bing (Friends), rinunceresti a fare battute sarcastiche per un giorno intero?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-5",
+    "text": "Sei Phoebe Buffay (Friends), rinunceresti a credere nelle tue teorie strambe per conformarti?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-6",
+    "text": "Sei Ross Geller (Friends), ti sposeresti una terza volta con la stessa persona?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-7",
+    "text": "Sei Gunther (Friends), ti dichiareresti a Rachel sapendo di non essere ricambiato?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-8",
+    "text": "Sei Janice (Friends), cambieresti la tua risata iconica per piacere di più agli amici di Chandler?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-9",
+    "text": "Sei Richard Burke (Friends), rinunceresti alla possibilità di avere figli per stare con Monica?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-10",
+    "text": "Sei Mike Hannigan (Friends), fingeresti di essere un'altra persona per fare colpo su Phoebe?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-11",
+    "text": "Sei Tag Jones (Friends), usciresti con Rachel sapendo che è ancora innamorata di Ross?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-12",
+    "text": "Sei Carol Willick (Friends), torneresti con Ross per il bene di Ben?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-13",
+    "text": "Sei Susan Bunch (Friends), cercheresti di essere amica di Ross, nonostante la tensione con Carol?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-14",
+    "text": "Sei Frank Buffay Jr. (Friends), saresti padre surrogato per tua sorella Phoebe?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-15",
+    "text": "Sei Estelle Leonard (Friends), daresti un consiglio onesto a Joey, anche se significa fargli perdere un lavoro?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-16",
+    "text": "Sei Emma Geller-Green (Friends, adulta), guarderesti il video messaggio di compleanno dei tuoi genitori?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-17",
+    "text": "Sei Jack Geller (Friends), saresti meno competitivo con Monica per non metterla in imbarazzo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-18",
+    "text": "Sei Judy Geller (Friends), tratteresti Ross e Monica in modo più equo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-19",
+    "text": "Sei Barry Farber (Friends), ti risposeresti con Mindy dopo averla tradita con Rachel?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-20",
+    "text": "Sei Michael Scott (The Office), mentiresti ai tuoi dipendenti per essere il loro amico?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-21",
+    "text": "Sei Dwight Schrute (The Office), rinunceresti a essere il braccio destro di Michael per una promozione?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-22",
+    "text": "Sei Jim Halpert (The Office), rinunceresti a fare scherzi a Dwight per la tranquillità dell'ufficio?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-23",
+    "text": "Sei Pam Beesly (The Office), lasceresti la tua passione per l'arte per un lavoro stabile?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-24",
+    "text": "Sei Andy Bernard (The Office), ti arrabbieresti se qualcuno ti chiamasse 'Nard Dog'?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-25",
+    "text": "Sei Angela Martin (The Office), ti fideresti di Oscar Martinez per prenderti cura dei tuoi gatti?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-26",
+    "text": "Sei Kevin Malone (The Office), preferiresti un chili perfetto invece di un buon conto bancario?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-27",
+    "text": "Sei Oscar Martinez (The Office), riveleresti pubblicamente la relazione di Angela con Dwight?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-28",
+    "text": "Sei Stanley Hudson (The Office), andresti a lavoro un giorno extra per il bonus?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-29",
+    "text": "Sei Phyllis Lapin-Vance (The Office), useresti il tuo matrimonio per ottenere vantaggi sul lavoro?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-30",
+    "text": "Sei Meredith Palmer (The Office), saresti più discreta riguardo alla tua vita privata in ufficio?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-31",
+    "text": "Sei Creed Bratton (The Office), ammetteresti un crimine commesso in passato per liberarti la coscienza?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-32",
+    "text": "Sei Kelly Kapoor (The Office), lasceresti Ryan Howard per qualcuno che ti tratta meglio?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-33",
+    "text": "Sei Ryan Howard (The Office), daresti la precedenza all'amicizia piuttosto che al successo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-34",
+    "text": "Sei Toby Flenderson (The Office), saresti più assertivo nel tuo ruolo di HR manager?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-35",
+    "text": "Sei Erin Hannon (The Office), saresti più curiosa di conoscere i tuoi genitori biologici?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-36",
+    "text": "Sei Gabe Lewis (The Office), rinunceresti a essere il favorito di Jo Bennett per l'amore di Erin?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-37",
+    "text": "Sei Holly Flax (The Office), lasceresti Michael per un lavoro più stabile e meno folle?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-38",
+    "text": "Sei Robert California (The Office), ti farebbe piacere lavorare in un ufficio 'normale'?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-39",
+    "text": "Sei David Wallace (The Office), venderesti la tua azienda a Sabre per salvarla dalla bancarotta?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-40",
+    "text": "Sei Daenerys Targaryen (Game of Thrones), bruceresti una città intera per ottenere il trono?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-41",
+    "text": "Sei Jon Snow (Game of Thrones), infrangeresti il tuo giuramento per amore?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-42",
+    "text": "Sei Tyrion Lannister (Game of Thrones), ti fideresti ancora di tua sorella Cersei?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-43",
+    "text": "Sei Arya Stark (Game of Thrones), rinunceresti alla tua vendetta per una vita normale?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-44",
+    "text": "Sei Sansa Stark (Game of Thrones), ti fideresti di un uomo dopo tutte le esperienze traumatiche?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-45",
+    "text": "Sei Cersei Lannister (Game of Thrones), sacrificheresti i tuoi figli per il potere?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-46",
+    "text": "Sei Jaime Lannister (Game of Thrones), lasceresti Cersei per un amore più sano?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-47",
+    "text": "Sei Bran Stark (Game of Thrones), useresti il tuo potere di Corvo a Tre Occhi per cambiare il passato?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-48",
+    "text": "Sei Jorah Mormont (Game of Thrones), smetteresti di servire Daenerys se ti rifiutasse di nuovo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-49",
+    "text": "Sei Varys (Game of Thrones), tradiresti un re per il bene del regno?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-50",
+    "text": "Sei Littlefinger (Game of Thrones), ti fideresti di qualcuno più di quanto ti fidi di te stesso?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-51",
+    "text": "Sei Theon Greyjoy (Game of Thrones), saresti più leale alla tua famiglia biologica che a quella che ti ha cresciuto?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-52",
+    "text": "Sei Brienne of Tarth (Game of Thrones), rinunceresti al tuo onore per salvare la vita di Jaime?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-53",
+    "text": "Sei Samwell Tarly (Game of Thrones), smetteresti di leggere per essere un guerriero migliore?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-54",
+    "text": "Sei Melisandre (Game of Thrones), sacrificheresti un innocente per il tuo dio?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-55",
+    "text": "Sei Hound (Game of Thrones), smetteresti di combattere per una vita pacifica?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-56",
+    "text": "Sei Gilly (Game of Thrones), lasceresti Samwell per una vita più sicura?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-57",
+    "text": "Sei Davos Seaworth (Game of Thrones), saresti più fedele a Stannis che a Jon Snow?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-58",
+    "text": "Sei Margaery Tyrell (Game of Thrones), useresti il tuo fascino per ottenere il potere, anche a costo della vita?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-59",
+    "text": "Sei Joffrey Baratheon (Game of Thrones), ti preoccuperesti del benessere dei tuoi sudditi?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-60",
+    "text": "Sei Walter White (Breaking Bad), cucineresti metanfetamina per pagare le tue cure mediche?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-61",
+    "text": "Sei Jesse Pinkman (Breaking Bad), continueresti a lavorare con Walter White dopo tutte le atrocità?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-62",
+    "text": "Sei Saul Goodman (Breaking Bad), useresti la legge per scopi personali e dubbi?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-63",
+    "text": "Sei Eleven (Stranger Things), rinunceresti ai tuoi poteri per una vita normale con i tuoi amici?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-64",
+    "text": "Sei Dustin Henderson (Stranger Things), mentiresti ai tuoi amici per proteggere un segreto?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-65",
+    "text": "Sei Cersei Lannister (Game of Thrones), sacrificheresti i tuoi figli per il potere?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-66",
+    "text": "Sei Ragnar Lothbrok (Vikings), sacrificheresti la tua famiglia per l'esplorazione e la conquista?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-67",
+    "text": "Sei Sherlock Holmes (Sherlock), faresti del male a qualcuno per risolvere un caso?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-68",
+    "text": "Sei Rick Grimes (The Walking Dead), uccideresti un innocente per salvare il tuo gruppo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-69",
+    "text": "Sei Michonne (The Walking Dead), ti fideresti di uno sconosciuto in un mondo post-apocalittico?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-70",
+    "text": "Sei Negan (The Walking Dead), useresti la violenza estrema per mantenere il controllo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-71",
+    "text": "Sei Professor (La Casa di Carta), sacrificheresti uno dei tuoi per il successo del piano?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-72",
+    "text": "Sei Tokyo (La Casa di Carta), disobbediresti agli ordini per impulso?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-73",
+    "text": "Sei Berlin (La Casa di Carta), ti sacrificheresti per il gruppo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-74",
+    "text": "Sei Walter White (Breaking Bad), continueresti a cucinare metanfetamina dopo aver pagato le cure?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-75",
+    "text": "Sei Jesse Pinkman (Breaking Bad), denunceresti Walter White alla polizia?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-76",
+    "text": "Sei Gus Fring (Breaking Bad), sacrificheresti un membro della tua organizzazione per la sicurezza?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-77",
+    "text": "Sei Ragnar Lothbrok (Vikings), cercheresti sempre la gloria anche a costo della tua vita?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-78",
+    "text": "Sei Lagertha (Vikings), ti sacrificheresti per il tuo popolo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-79",
+    "text": "Sei Bjorn Ironside (Vikings), supereresti l'ombra di tuo padre?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-80",
+    "text": "Sei Travis Fimmel (Vikings), ti rifiuteresti di fare scene di nudo?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-81",
+    "text": "Sei Queen Elizabeth II (The Crown), sacrificheresti il tuo matrimonio per la monarchia?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-82",
+    "text": "Sei Prince Philip (The Crown), accetteresti di vivere sempre all'ombra della regina?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-83",
+    "text": "Sei Princess Diana (The Crown), ti conformeresti alle regole reali per la tua famiglia?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-84",
+    "text": "Sei Sherlock Holmes (Sherlock), ti fideresti delle tue emozioni più che della logica?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-85",
+    "text": "Sei Doctor Watson (Sherlock), metteresti a rischio la tua vita per Sherlock?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-86",
+    "text": "Sei Thomas Shelby (Peaky Blinders), sacrificheresti la tua moralità per il potere della tua famiglia?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-87",
+    "text": "Sei Arthur Shelby (Peaky Blinders), smetteresti di combattere per la tua famiglia?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-88",
+    "text": "Sei Ada Thorne (Peaky Blinders), ti ribelleresti alla tua famiglia per le tue convinzioni politiche?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-89",
+    "text": "Sei Alfie Solomons (Peaky Blinders), ti fideresti di Thomas Shelby?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-90",
+    "text": "Sei Eleven (Stranger Things), useresti i tuoi poteri per guadagno personale?",
+    "category": "serie-tv"
+  },
+  {
+    "id": "serie-tv-91",
+    "text": "Sei Steve Harrington (Stranger Things), lasceresti i tuoi amici in pericolo per la tua sicurezza?",
+    "category": "serie-tv"
+  }
+]

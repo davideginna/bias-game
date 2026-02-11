@@ -34,7 +34,7 @@ export function getDatabase() {
 /**
  * Create a new room
  */
-export async function createRoom(roomId, playerName, playerId, maxPoints = 5, isDubitoMode = false) {
+export async function createRoom(roomId, playerName, playerId, maxPoints = 5, isDubitoMode = false, selectedCategories = ['default']) {
   try {
     const roomRef = database.ref(`rooms/${roomId}`);
 
@@ -45,6 +45,7 @@ export async function createRoom(roomId, playerName, playerId, maxPoints = 5, is
         isOpen: false,
         isDubitoMode: isDubitoMode,
         gameMode: 'choice',  // Default: modalità scelta
+        selectedCategories: selectedCategories,  // Categorie selezionate dall'host
         playerOrder: [playerId],  // Ordine iniziale: solo l'host
         createdAt: firebase.database.ServerValue.TIMESTAMP
       },
@@ -63,10 +64,26 @@ export async function createRoom(roomId, playerName, playerId, maxPoints = 5, is
       turnHistory: []
     });
 
-    console.log(`Room ${roomId} created successfully with maxPoints: ${maxPoints}`);
+    console.log(`Room ${roomId} created successfully with maxPoints: ${maxPoints}, categories:`, selectedCategories);
     return true;
   } catch (error) {
     console.error('Error creating room:', error);
+    throw error;
+  }
+}
+
+/**
+ * Update selected categories for a room
+ * Only allowed in lobby mode
+ */
+export async function updateSelectedCategories(roomId, selectedCategories) {
+  try {
+    const categoriesRef = database.ref(`rooms/${roomId}/config/selectedCategories`);
+    await categoriesRef.set(selectedCategories);
+    console.log(`Updated selected categories for room ${roomId}:`, selectedCategories);
+    return true;
+  } catch (error) {
+    console.error('Error updating selected categories:', error);
     throw error;
   }
 }

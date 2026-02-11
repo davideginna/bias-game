@@ -6,22 +6,127 @@
 import { CARDS_PER_PLAYER } from '../config.js';
 
 let dilemmasData = [];
+let categoryMetadata = null;
+let selectedCategories = [];
+let allDilemmas = [];
 
 /**
- * Load dilemmas from JSON file
+ * Load category metadata (icons, names, descriptions, examples)
+ * This is a lightweight file loaded at app startup (~5KB)
+ */
+export async function loadCategoryMetadata() {
+  try {
+    const response = await fetch('./data/categories/metadata.json');
+    if (!response.ok) {
+      throw new Error('Failed to load category metadata');
+    }
+    categoryMetadata = await response.json();
+    console.log(`Loaded metadata for ${categoryMetadata.categories.length} categories`);
+    return categoryMetadata;
+  } catch (error) {
+    console.error('Error loading category metadata:', error);
+    throw error;
+  }
+}
+
+/**
+ * Get category metadata
+ */
+export function getCategoryMetadata() {
+  return categoryMetadata;
+}
+
+/**
+ * Load a single category file
+ */
+async function loadCategoryFile(categoryId) {
+  try {
+    const response = await fetch(`./data/categories/${categoryId}.json`);
+    if (!response.ok) {
+      throw new Error(`Failed to load category: ${categoryId}`);
+    }
+    const categoryDilemmas = await response.json();
+    console.log(`Loaded ${categoryDilemmas.length} dilemmas from category: ${categoryId}`);
+    return categoryDilemmas;
+  } catch (error) {
+    console.error(`Error loading category ${categoryId}:`, error);
+    throw error;
+  }
+}
+
+/**
+ * Load multiple categories in parallel
+ * @param {string[]} categoryIds - Array of category IDs to load
+ */
+export async function loadCategories(categoryIds) {
+  try {
+    console.log('Loading categories:', categoryIds);
+
+    // Load all categories in parallel
+    const loadPromises = categoryIds.map(id => loadCategoryFile(id));
+    const categoryArrays = await Promise.all(loadPromises);
+
+    // Flatten all dilemmas into a single array
+    allDilemmas = categoryArrays.flat();
+    selectedCategories = categoryIds;
+
+    // Update dilemmasData to point to filtered dilemmas
+    dilemmasData = allDilemmas;
+
+    console.log(`Loaded ${allDilemmas.length} total dilemmas from ${categoryIds.length} categories`);
+    return allDilemmas;
+  } catch (error) {
+    console.error('Error loading categories:', error);
+    throw error;
+  }
+}
+
+/**
+ * Get filtered dilemmas based on selected categories
+ */
+export function getFilteredDilemmas() {
+  if (selectedCategories.length === 0) {
+    return allDilemmas;
+  }
+  return allDilemmas.filter(d => selectedCategories.includes(d.category));
+}
+
+/**
+ * Get selected category IDs
+ */
+export function getSelectedCategories() {
+  return selectedCategories;
+}
+
+/**
+ * Load dilemmas from JSON file (legacy support)
+ * For backward compatibility - loads all categories
  */
 export async function loadDilemmas() {
   try {
-    const response = await fetch('./data/dilemmas.json');
-    if (!response.ok) {
-      throw new Error('Failed to load dilemmas');
+    // Try loading from categories first
+    if (!categoryMetadata) {
+      await loadCategoryMetadata();
     }
-    dilemmasData = await response.json();
-    console.log(`Loaded ${dilemmasData.length} dilemmas`);
-    return dilemmasData;
+
+    const allCategoryIds = categoryMetadata.categories.map(c => c.id);
+    return await loadCategories(allCategoryIds);
   } catch (error) {
-    console.error('Error loading dilemmas:', error);
-    throw error;
+    // Fallback to legacy dilemmas.json
+    console.warn('Falling back to legacy dilemmas.json');
+    try {
+      const response = await fetch('./data/dilemmas.json');
+      if (!response.ok) {
+        throw new Error('Failed to load dilemmas');
+      }
+      dilemmasData = await response.json();
+      allDilemmas = dilemmasData;
+      console.log(`Loaded ${dilemmasData.length} dilemmas (legacy)`);
+      return dilemmasData;
+    } catch (legacyError) {
+      console.error('Error loading legacy dilemmas:', legacyError);
+      throw legacyError;
+    }
   }
 }
 
@@ -34,13 +139,15 @@ export function getAllDilemmas() {
 
 /**
  * Get dilemma by ID
+ * Supports both string IDs (category-based) and numeric IDs (legacy)
  */
 export function getDilemmaById(id) {
   if (dilemmasData.length === 0) {
     console.error('Dilemmas not loaded yet!');
     return null;
   }
-  return dilemmasData.find(d => d.id === id);
+  // Support both string and number IDs for backward compatibility
+  return dilemmasData.find(d => d.id === id || d.id === String(id) || d.id === Number(id));
 }
 
 /**

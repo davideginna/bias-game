@@ -64,6 +64,25 @@
                         <span>10</span>
                     </div>
                 </div>
+
+                <!-- Category Selection -->
+                <div id="category-selection" class="category-selection">
+                    <label class="form-label">
+                        Categorie di Gioco
+                        <span class="setting-hint">(Clicca per selezionare)</span>
+                    </label>
+                    <div class="category-actions">
+                        <button type="button" id="select-all-categories-btn" class="btn btn-secondary btn-sm">Tutte</button>
+                        <button type="button" id="deselect-all-categories-btn" class="btn btn-secondary btn-sm">Nessuna</button>
+                    </div>
+                    <div class="category-summary">
+                        <p>Categorie: <strong id="category-count">0</strong> | Dilemmi: <strong id="total-dilemmas-count">0</strong></p>
+                    </div>
+                    <div id="category-list" class="category-list">
+                        <!-- Renderizzato dinamicamente da ui-controller.js -->
+                    </div>
+                </div>
+
                 <button id="create-room-btn" class="btn btn-primary">Crea Stanza</button>
                 <button id="back-from-create-btn" class="btn btn-secondary">Indietro</button>
             </div>
@@ -102,6 +121,14 @@
                 <p id="dubito-mode-indicator" style="margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8; display: none;">
                     ⚠️ Modalità <strong>"Dubito"</strong> attiva
                 </p>
+            </div>
+
+            <!-- Categories Display (for all players in lobby) -->
+            <div id="lobby-categories-display" class="lobby-categories-display" style="display: none;">
+                <h3>Categorie di Gioco</h3>
+                <div id="lobby-categories-list" class="lobby-categories-list">
+                    <!-- Renderizzato dinamicamente da ui-controller.js -->
+                </div>
             </div>
 
             <div class="players-section">

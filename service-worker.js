@@ -3,9 +3,9 @@
  * Enables offline functionality and app installation
  */
 
-const CACHE_NAME = 'bias-v1.2.1';
-const STATIC_CACHE = 'bias-static-v1.2.1';
-const DYNAMIC_CACHE = 'bias-dynamic-v1.2.1';
+const CACHE_NAME = 'bias-v1.3.0';
+const STATIC_CACHE = 'bias-static-v1.3.0';
+const DYNAMIC_CACHE = 'bias-dynamic-v1.3.0';
 
 // Files to cache for offline use
 const STATIC_FILES = [
@@ -21,7 +21,18 @@ const STATIC_FILES = [
   './js/modules/game-logic.js',
   './js/modules/ui-controller.js',
   './js/modules/audio-manager.js',
-  './data/dilemmas.json',
+  './data/dilemmas.json', // Legacy fallback
+  './data/categories/metadata.json',
+  './data/categories/default.json',
+  './data/categories/sex.json',
+  './data/categories/serie-tv.json',
+  './data/categories/film.json',
+  './data/categories/cartoon.json',
+  './data/categories/politics.json',
+  './data/categories/money.json',
+  './data/categories/technology.json',
+  './data/categories/religion.json',
+  './data/categories/environment.json',
   './image/logo.png',
   './image/favicon.ico',
   './image/favicon-32x32.png',

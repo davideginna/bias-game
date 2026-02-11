@@ -1,0 +1,202 @@
+[
+  {
+    "id": "cartoon-1",
+    "text": "Sei Naruto Uzumaki (Naruto). Kurama ti offre tutto il suo potere ma in cambio dovrai abbandonare Konoha per sempre. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-2",
+    "text": "Sei Luffy (One Piece). Puoi trovare il One Piece subito ma uno dei tuoi nakama morirà. Continui la ricerca?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-3",
+    "text": "Sei Light Yagami (Death Note). Ryuk ti offre un secondo Death Note ma dimezzerà la tua aspettativa di vita. Lo accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-4",
+    "text": "Sei Eren Yeager (Attack on Titan). Puoi salvare tua madre ma condannerai Paradis alla distruzione. Cosa scegli?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-5",
+    "text": "Sei Goku (Dragon Ball). Puoi sconfiggere definitivamente tutti i nemici ma non potrai più combattere. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-6",
+    "text": "Sei Edward Elric (Fullmetal Alchemist). Puoi riavere il tuo corpo ma Alphonse perderà tutti i ricordi di voi insieme. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-7",
+    "text": "Sei Tanjiro (Demon Slayer). Puoi trasformare Nezuko in umana subito ma perderai per sempre i tuoi poteri. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-8",
+    "text": "Sei Midoriya (My Hero Academia). All Might ti offre il One For All ma dovrai abbandonare gli studi alla U.A. Lo accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-9",
+    "text": "Sei Lelouch (Code Geass). Puoi salvare Shirley ma dovrai rinunciare al tuo Geass per sempre. Cosa fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-10",
+    "text": "Sei Sasuke (Naruto). Itachi ti rivela tutta la verità prima del massacro e ti chiede di fuggire con lui tradendo Konoha. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-11",
+    "text": "Sei Saitama (One Punch Man). Puoi recuperare i tuoi capelli ma perderai metà della tua forza. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-12",
+    "text": "Sei Ash Ketchum (Pokémon). Puoi diventare campione mondiale subito ma dovrai rilasciare Pikachu. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-13",
+    "text": "Sei SpongeBob. Mr. Krabs ti offre il Krusty Krab in eredità ma dovrai licenziare Squiddi. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-14",
+    "text": "Sei Homer Simpson. Puoi avere un lavoro migliore e ben pagato ma dovrai trasferire la famiglia lontano da Springfield. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-15",
+    "text": "Sei Rick Sanchez (Rick and Morty). Puoi salvare la tua famiglia originale ma dovrai smettere di viaggiare nel multiverso. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-16",
+    "text": "Sei Aang (Avatar). Puoi sconfiggere il Lord del Fuoco subito ma dovrai ucciderlo, violando i tuoi principi. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-17",
+    "text": "Sei Totoro. Un umano vuole distruggere la foresta per costruire case. Usi i tuoi poteri per fermarlo sapendo che causerai danni?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-18",
+    "text": "Sei Simba (Il Re Leone). Scar ti offre un patto: divide il regno con te se non riveli che ha ucciso Mufasa. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-19",
+    "text": "Sei Vegeta (Dragon Ball). Puoi superare Goku per sempre ma dovrai tradire la Terra e tornare con Freezer. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-20",
+    "text": "Sei Shinji Ikari (Evangelion). Puoi evitare di pilotare l'EVA e vivere una vita normale ma l'umanità sarà distrutta. Cosa fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-21",
+    "text": "Sei Sailor Moon. Puoi salvare Mamoru da una morte certa ma dovrai rinunciare per sempre ai tuoi poteri. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-22",
+    "text": "Sei Pikachu. Ash ti chiede di evolverti in Raichu per vincere una battaglia cruciale contro il Team Rocket. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-23",
+    "text": "Sei Zoro (One Piece). Mihawk ti offre di diventare il più grande spadaccino subito ma dovrai lasciare la ciurma. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-24",
+    "text": "Sei Hinata (Naruto). Puoi far innamorare Naruto di te con un jutsu ma non sarà amore vero. Lo usi?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-25",
+    "text": "Sei Kakashi (Naruto). Puoi riportare in vita Obito ma dovrai sacrificare il tuo Sharingan. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-26",
+    "text": "Sei Nezuko (Demon Slayer). Muzan ti offre di diventare umana subito se uccidi Tanjiro. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-27",
+    "text": "Sei L (Death Note). Puoi catturare Kira subito ma dovrai uccidere un innocente per provare la tua teoria. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-28",
+    "text": "Sei Spike Spiegel (Cowboy Bebop). Julia ti chiede di abbandonare la Bebop e fuggire insieme lasciando Jet e Faye. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-29",
+    "text": "Sei Levi Ackerman (Attack on Titan). Puoi salvare Erwin ma condannerai Armin a morte certa. Chi scegli?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-30",
+    "text": "Sei Gon (Hunter x Hunter). Puoi sconfiggere Neferpitou e vendicare Kite ma sacrificherai tutto il tuo Nen. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-31",
+    "text": "Sei Inuyasha. Kikyo ti chiede di usare la Sfera dei Quattro Spiriti per diventare umano e stare con lei, abbandonando Kagome. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-32",
+    "text": "Sei Sakura (Naruto). Puoi diventare forte come Tsunade subito ma Sasuke dimenticherà chi sei. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-33",
+    "text": "Sei Mewtwo (Pokémon). Gli umani che ti hanno creato ti chiedono perdono e ti offrono una famiglia. Ti fidi e accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-34",
+    "text": "Sei Totoro. Una bambina malata ti chiede di usare i tuoi poteri magici per guarirla, ma questo rivelerebbe la tua esistenza al mondo. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-35",
+    "text": "Sei Doraemon. Nobita ti chiede un gadget per far innamorare Shizuka di lui. Glielo dai sapendo che è manipolazione?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-36",
+    "text": "Sei Killua (Hunter x Hunter). La tua famiglia ti offre potere illimitato se abbandoni Gon e torni a essere un assassino. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-37",
+    "text": "Sei Cowboy Bebop. Hai la possibilità di rivedere il tuo passato e cambiarlo, ma cancellerai tutti i ricordi dei tuoi amici attuali. Lo fai?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-38",
+    "text": "Sei Peter Griffin (I Griffin). Puoi diventare ricco e famoso ma Lois e i bambini ti dimenticheranno. Accetti?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-39",
+    "text": "Sei Kenshin Himura (Samurai X). Puoi cancellare tutte le persone che hai ucciso in passato ma non incontrerai mai Kaoru. Cosa scegli?",
+    "category": "cartoon"
+  },
+  {
+    "id": "cartoon-40",
+    "text": "Sei Chihiro (La città incantata). Haku ti offre di restare nel mondo degli spiriti con lui per sempre. Abbandoni i tuoi genitori?",
+    "category": "cartoon"
+  }
+]

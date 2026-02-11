@@ -1,0 +1,152 @@
+[
+  {
+    "id": "politics-1",
+    "text": "Faresti un favore illegale a un politico in cambio di un grosso beneficio personale?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-2",
+    "text": "Leggeresti il diario segreto del tuo partner?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-3",
+    "text": "Se potessi leggere nel pensiero, useresti questo potere per guadagno personale?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-4",
+    "text": "Rinunceresti al diritto di voto per un reddito di cittadinanza garantito a vita?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-5",
+    "text": "Saresti a favore di un test di intelligenza per avere il diritto di voto?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-6",
+    "text": "Saresti a favore di un governo mondiale unico?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-7",
+    "text": "Saresti a favore del suffragio universale per gli animali, se potessero esprimere un voto?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-8",
+    "text": "Se potessi, daresti il diritto di voto ai sedicenni?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-9",
+    "text": "Pensi che sia giusto che un governo possa limitare il numero di figli che una coppia può avere?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-10",
+    "text": "Faresti una battuta macabra a un funerale per alleggerire la tensione?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-11",
+    "text": "Sosterresti una legge che vieta la plastica monouso, anche se renderebbe la vita quotidiana più complicata?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-12",
+    "text": "Parteciperesti a una protesta ambientalista che blocca il traffico, causando disagi ad altre persone?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-13",
+    "text": "Se tuo figlio adolescente ti confessasse di fare uso di droghe leggere, lo denunceresti?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-14",
+    "text": "Se scoprissi il diario segreto di tuo figlio, lo leggeresti per assicurarti che stia bene?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-15",
+    "text": "È moralmente accettabile leggere storie di fantasia su argomenti tabù come l'incesto?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-16",
+    "text": "Voteresti per un politico estremamente competente ma apertamente corrotto?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-17",
+    "text": "Se scoprissi che un politico che ammiri ha tradito la moglie, cambieresti la tua opinione su di lui?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-18",
+    "text": "Se potessi, renderesti il voto obbligatorio?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-19",
+    "text": "Scenderesti in piazza per protestare per una causa in cui credi fermamente, anche rischiando l'arresto?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-20",
+    "text": "Voteresti per un partito estremista se promettesse di risolvere i problemi economici del paese?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-21",
+    "text": "Se un parente stretto si candidasse in un partito che detesti, lo voteresti per lealtà familiare?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-22",
+    "text": "Credi che la democrazia sia la migliore forma di governo possibile?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-23",
+    "text": "Se un professore ti mettesse un voto ingiusto, protesteresti rischiando di inimicartelo?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-24",
+    "text": "Se scoprissi che il tuo partner ha votato per un partito politico che detesti, questo potrebbe incrinare la vostra relazione?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-25",
+    "text": "Per risolvere il cambiamento climatico, saresti a favore di una dittatura ecologica globale?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-26",
+    "text": "Se potessi, daresti a tutti gli esseri umani la capacità di leggere nel pensiero per promuovere l'onestà totale?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-27",
+    "text": "Per la pace mondiale, saresti a favore di un governo gestito da filosofi e scienziati invece che da politici eletti?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-28",
+    "text": "Per la pace nel mondo, saresti disposto a vivere sotto una dittatura benevola?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-29",
+    "text": "Sei Dexter Morgan (Dexter), continueresti a uccidere i criminali che sfuggono alla legge?",
+    "category": "politics"
+  },
+  {
+    "id": "politics-30",
+    "text": "Sei Harry Callahan (Dirty Harry), infrangeresti la legge per ottenere giustizia?",
+    "category": "politics"
+  }
+]

@@ -1,0 +1,807 @@
+[
+  {
+    "id": "money-1",
+    "text": "Trovi 100€ per strada senza nessuno intorno. Li tieni?",
+    "category": "money"
+  },
+  {
+    "id": "money-2",
+    "text": "Scopri che il tuo capo evade le tasse. Lo denunceresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-3",
+    "text": "Tradiresti il tuo partner per 10 mila euro garantiti e senza che lui/lei lo sappia mai?",
+    "category": "money"
+  },
+  {
+    "id": "money-4",
+    "text": "Useresti informazioni confidenziali per fare soldi in borsa?",
+    "category": "money"
+  },
+  {
+    "id": "money-5",
+    "text": "Terresti per te una scoperta scientifica importante se ti rendesse ricco?",
+    "category": "money"
+  },
+  {
+    "id": "money-6",
+    "text": "Cancelleresti i social media per un anno intero in cambio di 50.000€?",
+    "category": "money"
+  },
+  {
+    "id": "money-7",
+    "text": "Accetteresti di non vedere la tua famiglia per 5 anni in cambio di 10 milioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-8",
+    "text": "Lasceresti il tuo partner se diventasse disabile?",
+    "category": "money"
+  },
+  {
+    "id": "money-9",
+    "text": "Taglieresti i rapporti con un amico di vecchia data se diventasse dannoso per te?",
+    "category": "money"
+  },
+  {
+    "id": "money-10",
+    "text": "Prestaresti una grossa somma di denaro a un amico sapendo che potrebbe non restituirtela?",
+    "category": "money"
+  },
+  {
+    "id": "money-11",
+    "text": "Accetteresti un lavoro con stipendio doppio ma che odi fare?",
+    "category": "money"
+  },
+  {
+    "id": "money-12",
+    "text": "Nasconderesti una parte del tuo stipendio al fisco?",
+    "category": "money"
+  },
+  {
+    "id": "money-13",
+    "text": "Lavoreresti 80 ore a settimana per 10 anni per diventare milionario?",
+    "category": "money"
+  },
+  {
+    "id": "money-14",
+    "text": "Terresti segreto un debito importante alla tua famiglia?",
+    "category": "money"
+  },
+  {
+    "id": "money-15",
+    "text": "Abortiresti se scoprissi che il feto ha gravi malformazioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-16",
+    "text": "Cancelleresti il tuo ricordo più felice per 100.000€?",
+    "category": "money"
+  },
+  {
+    "id": "money-17",
+    "text": "Permetteresti al governo di monitorare tutte le tue conversazioni per prevenire il terrorismo?",
+    "category": "money"
+  },
+  {
+    "id": "money-18",
+    "text": "Cancelleresti un debito studentesco enorme barando a un singolo esame?",
+    "category": "money"
+  },
+  {
+    "id": "money-19",
+    "text": "Sei d'accordo sul fatto che gli atleti vengano pagati milioni mentre gli insegnanti no?",
+    "category": "money"
+  },
+  {
+    "id": "money-20",
+    "text": "Sacrificheresti il tuo lavoro per seguire la tua passione, anche con meno soldi?",
+    "category": "money"
+  },
+  {
+    "id": "money-21",
+    "text": "Se trovassi un portafoglio con documenti e soldi, restituiresti tutto?",
+    "category": "money"
+  },
+  {
+    "id": "money-22",
+    "text": "È giusto giudicare le generazioni passate con i metri di giudizio di oggi?",
+    "category": "money"
+  },
+  {
+    "id": "money-23",
+    "text": "Preferiresti essere povero e felice piuttosto che ricco e infelice?",
+    "category": "money"
+  },
+  {
+    "id": "money-24",
+    "text": "Denunceresti il tuo vicino se scoprissi che non paga le tasse?",
+    "category": "money"
+  },
+  {
+    "id": "money-25",
+    "text": "Accetteresti 1.000€ per schiaffeggiare uno sconosciuto (con il suo consenso)?",
+    "category": "money"
+  },
+  {
+    "id": "money-26",
+    "text": "Compreresti un prodotto contraffatto di lusso per apparire più ricco?",
+    "category": "money"
+  },
+  {
+    "id": "money-27",
+    "text": "È giusto che le persone molto ricche paghino una percentuale di tasse più alta?",
+    "category": "money"
+  },
+  {
+    "id": "money-28",
+    "text": "Se vincessi 100 milioni di euro alla lotteria, continueresti a lavorare?",
+    "category": "money"
+  },
+  {
+    "id": "money-29",
+    "text": "Accetteresti di mangiare solo pizza per il resto della tua vita in cambio di 1 milione di euro?",
+    "category": "money"
+  },
+  {
+    "id": "money-30",
+    "text": "Affronteresti la tua più grande paura per 100.000 euro?",
+    "category": "money"
+  },
+  {
+    "id": "money-31",
+    "text": "È giusto che l'intelligenza artificiale possa creare arte e vincere concorsi contro artisti umani?",
+    "category": "money"
+  },
+  {
+    "id": "money-32",
+    "text": "Se trovassi un bug in un bancomat che ti permette di prelevare soldi illimitati, lo sfrutteresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-33",
+    "text": "Preferiresti avere più tempo piuttosto che più soldi?",
+    "category": "money"
+  },
+  {
+    "id": "money-34",
+    "text": "Accetteresti un lavoro che ti paga per non fare nulla, sapendo che i soldi vengono da attività illecite?",
+    "category": "money"
+  },
+  {
+    "id": "money-35",
+    "text": "Saresti disposto a sottoporti a un esperimento medico rischioso per una grossa somma di denaro?",
+    "category": "money"
+  },
+  {
+    "id": "money-36",
+    "text": "Saresti a favore dell'abolizione del contante per tracciare tutte le transazioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-37",
+    "text": "Andresti in vacanza in un paese con un regime dittatoriale e gravi violazioni dei diritti umani?",
+    "category": "money"
+  },
+  {
+    "id": "money-38",
+    "text": "Saresti a favore di una settimana lavorativa di 4 giorni a parità di stipendio?",
+    "category": "money"
+  },
+  {
+    "id": "money-39",
+    "text": "È giusto che un paese ricco accolga rifugiati da paesi poveri o in guerra?",
+    "category": "money"
+  },
+  {
+    "id": "money-40",
+    "text": "Saresti a favore di un reddito di base universale finanziato con tasse più alte per tutti?",
+    "category": "money"
+  },
+  {
+    "id": "money-41",
+    "text": "Saresti a favore di tasse più alte sui cibi spazzatura e le bevande zuccherate?",
+    "category": "money"
+  },
+  {
+    "id": "money-42",
+    "text": "Se potessi, introdurresti una 'tassa sulla solitudine' per incoraggiare le relazioni sociali?",
+    "category": "money"
+  },
+  {
+    "id": "money-43",
+    "text": "Finanzieresti con i tuoi soldi l'aborto di un'amica che non può permetterselo, anche se sei contrario all'aborto?",
+    "category": "money"
+  },
+  {
+    "id": "money-44",
+    "text": "Saresti a favore di un limite temporale massimo per l'aborto, anche in caso di gravi malformazioni del feto scoperte tardivamente?",
+    "category": "money"
+  },
+  {
+    "id": "money-45",
+    "text": "Saresti disposto a pagare una 'tassa sulla carne' per scoraggiarne il consumo e ridurre le emissioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-46",
+    "text": "Diventeresti vegano per un anno in cambio di 10.000€?",
+    "category": "money"
+  },
+  {
+    "id": "money-47",
+    "text": "Se provassi un'attrazione sessuale per un parente acquisito (es. cognato/a), taglieresti ogni rapporto per evitare complicazioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-48",
+    "text": "Se il tuo vicino si lamentasse continuamente dell'abbaiare del tuo cane, saresti disposto a darlo via?",
+    "category": "money"
+  },
+  {
+    "id": "money-49",
+    "text": "Pensi che le donazioni private ai partiti politici dovrebbero essere illegali per evitare conflitti di interesse?",
+    "category": "money"
+  },
+  {
+    "id": "money-50",
+    "text": "Pensi che sia giusto che i politici ricevano uno stipendio molto più alto della media nazionale?",
+    "category": "money"
+  },
+  {
+    "id": "money-51",
+    "text": "Se organizzassi una festa e i tuoi genitori non ci fossero, permetteresti che qualcuno portasse dell'alcol?",
+    "category": "money"
+  },
+  {
+    "id": "money-52",
+    "text": "Acquisteresti follower su Instagram per sembrare più popolare e attrarre collaborazioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-53",
+    "text": "Se un tuo video diventasse virale su TikTok, lasceresti il tuo lavoro per provare a fare l'influencer?",
+    "category": "money"
+  },
+  {
+    "id": "money-54",
+    "text": "Useresti la tua popolarità su TikTok per promuovere un prodotto in cui non credi in cambio di soldi?",
+    "category": "money"
+  },
+  {
+    "id": "money-55",
+    "text": "Faresti un video 'drammatico' su TikTok esagerando un problema personale per ottenere empatia e visualizzazioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-56",
+    "text": "Pensi che sia giusto che i 'creator' di Instagram guadagnino soldi mostrando semplicemente la loro vita quotidiana?",
+    "category": "money"
+  },
+  {
+    "id": "money-57",
+    "text": "Creeresti contenuti su TikTok usando i tuoi figli piccoli per aumentare le visualizzazioni?",
+    "category": "money"
+  },
+  {
+    "id": "money-58",
+    "text": "Elimineresti tutti i tuoi social media per un mese se ti pagassero 1.000€?",
+    "category": "money"
+  },
+  {
+    "id": "money-59",
+    "text": "Se un tuo amico postasse una storia Instagram in cui guida e usa il telefono, glielo faresti notare?",
+    "category": "money"
+  },
+  {
+    "id": "money-60",
+    "text": "Se un tuo video imbarazzante del passato riemergesse e diventasse virale su TikTok, cercheresti di farlo rimuovere?",
+    "category": "money"
+  },
+  {
+    "id": "money-61",
+    "text": "Se il tuo partner non ti postasse mai su Instagram, penseresti che si vergogni di te?",
+    "category": "money"
+  },
+  {
+    "id": "money-62",
+    "text": "Avresti una relazione con una persona molto più grande di te (cougar/MILF/sugar daddy) principalmente per i suoi soldi?",
+    "category": "money"
+  },
+  {
+    "id": "money-63",
+    "text": "È moralmente accettabile pagare per un abbonamento a OnlyFans?",
+    "category": "money"
+  },
+  {
+    "id": "money-64",
+    "text": "Se il tuo partner spendesse una parte significativa del suo stipendio per abbonamenti a OnlyFans, lo considereresti un problema?",
+    "category": "money"
+  },
+  {
+    "id": "money-65",
+    "text": "Se un/a creator di OnlyFans ti contattasse per una collaborazione pagata, accetteresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-66",
+    "text": "Se scoprissi che tuo/a figlio/a spende i suoi soldi su OnlyFans, glielo vieteresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-67",
+    "text": "Se il tuo partner diventasse molto amico/a del tuo ex, ti darebbe fastidio?",
+    "category": "money"
+  },
+  {
+    "id": "money-68",
+    "text": "Se il tuo capo ti invitasse a una 'cena di lavoro' in un luogo chiaramente romantico, andresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-69",
+    "text": "Se un'amica ti chiedesse di prestarle dei soldi per un aborto che il suo partner non sa, lo faresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-70",
+    "text": "Se scoprissi che il tuo partner ha un debito di gioco, lo aiuteresti a pagarlo?",
+    "category": "money"
+  },
+  {
+    "id": "money-71",
+    "text": "Se un collega ti offrisse una tangente per approvare un suo progetto, accetteresti i soldi?",
+    "category": "money"
+  },
+  {
+    "id": "money-72",
+    "text": "Se un tuo amico/a ti confessasse di aver rubato soldi dall'azienda in cui lavorate entrambi, lo denunceresti?",
+    "category": "money"
+  },
+  {
+    "id": "money-73",
+    "text": "Per 10 mila euro, rinunceresti per sempre al tuo cibo preferito?",
+    "category": "money"
+  },
+  {
+    "id": "money-74",
+    "text": "Per 10 mila euro, cambieresti legalmente il tuo nome in 'Panino al Prosciutto'?",
+    "category": "money"
+  },
+  {
+    "id": "money-75",
+    "text": "Per 10 mila euro, vivresti per un anno senza internet e senza smartphone?",
+    "category": "money"
+  },
+  {
+    "id": "money-76",
+    "text": "Per 10 mila euro, ti faresti un tatuaggio imbarazzante sulla fronte?",
+    "category": "money"
+  },
+  {
+    "id": "money-77",
+    "text": "Per 10 mila euro, mangeresti un insetto vivo e disgustoso?",
+    "category": "money"
+  },
+  {
+    "id": "money-78",
+    "text": "Per 10 mila euro, passeresti una notte in una casa infestata e notoriamente spaventosa?",
+    "category": "money"
+  },
+  {
+    "id": "money-79",
+    "text": "Per 10 mila euro, raderesti a zero capelli e sopracciglia?",
+    "category": "money"
+  },
+  {
+    "id": "money-80",
+    "text": "Per 10 mila euro, faresti la proposta di matrimonio alla prima persona che incontri per strada?",
+    "category": "money"
+  },
+  {
+    "id": "money-81",
+    "text": "Per 10 mila euro, non parleresti per un mese intero?",
+    "category": "money"
+  },
+  {
+    "id": "money-82",
+    "text": "Per 10 mila euro, lasceresti il tuo partner attuale senza dargli/le alcuna spiegazione?",
+    "category": "money"
+  },
+  {
+    "id": "money-83",
+    "text": "Per 10 mila euro, faresti un'operazione di chirurgia estetica scelta da un'altra persona?",
+    "category": "money"
+  },
+  {
+    "id": "money-84",
+    "text": "Per 10 mila euro, leccheresti il pavimento di un bagno pubblico?",
+    "category": "money"
+  },
+  {
+    "id": "money-85",
+    "text": "Per 10 mila euro, tradiresti il tuo migliore amico rivelando il suo segreto più grande?",
+    "category": "money"
+  },
+  {
+    "id": "money-86",
+    "text": "Per 10 mila euro, fingeresti un infortunio per ottenere un risarcimento assicurativo?",
+    "category": "money"
+  },
+  {
+    "id": "money-87",
+    "text": "Per 10 mila euro, voteresti per un politico che disprezzi profondamente?",
+    "category": "money"
+  },
+  {
+    "id": "money-88",
+    "text": "Per 10 mila euro, rinunceresti alla tua cittadinanza per diventare cittadino di un paese che non ti piace?",
+    "category": "money"
+  },
+  {
+    "id": "money-89",
+    "text": "Per 10 mila euro, faresti da alibi a uno sconosciuto accusato di un piccolo crimine?",
+    "category": "money"
+  },
+  {
+    "id": "money-90",
+    "text": "Per 10 mila euro, parteciperesti a un 'gangbang' (con tutte le precauzioni)?",
+    "category": "money"
+  },
+  {
+    "id": "money-91",
+    "text": "Per 10 mila euro, ti lasceresti filmare mentre pratichi 'BDSM' estremo?",
+    "category": "money"
+  },
+  {
+    "id": "money-92",
+    "text": "Per 10 mila euro, faresti un 'rimjob' a uno sconosciuto/a?",
+    "category": "money"
+  },
+  {
+    "id": "money-93",
+    "text": "Per 10 mila euro, parteciperesti a una scena di 'fisting'?",
+    "category": "money"
+  },
+  {
+    "id": "money-94",
+    "text": "Per 10 mila euro, ti faresti fare un 'golden shower' in pubblico?",
+    "category": "money"
+  },
+  {
+    "id": "money-95",
+    "text": "Per 10 mila euro, non ti laveresti per un mese?",
+    "category": "money"
+  },
+  {
+    "id": "money-96",
+    "text": "Per 10 mila euro, rinunceresti alla possibilità di avere figli?",
+    "category": "money"
+  },
+  {
+    "id": "money-97",
+    "text": "Per 10 mila euro, premeresti un pulsante che dà una scossa elettrica dolorosa ma non letale a uno sconosciuto?",
+    "category": "money"
+  },
+  {
+    "id": "money-98",
+    "text": "Per 10 mila euro, ruberesti 100 euro dalla cassa di un piccolo negozio a conduzione familiare?",
+    "category": "money"
+  },
+  {
+    "id": "money-99",
+    "text": "Per 10 mila euro, vivresti per 6 mesi nella natura selvaggia senza alcun aiuto esterno?",
+    "category": "money"
+  },
+  {
+    "id": "money-100",
+    "text": "Per 10 mila euro, rinunceresti per sempre all'alcol?",
+    "category": "money"
+  },
+  {
+    "id": "money-101",
+    "text": "Per 10 mila euro, canteresti a squarciagola in un luogo pubblico affollato per 10 minuti?",
+    "category": "money"
+  },
+  {
+    "id": "money-102",
+    "text": "Per 10 mila euro, daresti uno schiaffo a tua madre (con il suo permesso)?",
+    "category": "money"
+  },
+  {
+    "id": "money-103",
+    "text": "Per 10 mila euro, sposeresti uno sconosciuto scelto a caso e ci resteresti sposato per un anno?",
+    "category": "money"
+  },
+  {
+    "id": "money-104",
+    "text": "Per 10 mila euro, permetteresti a qualcuno di hackerare tutti i tuoi account e rendere pubblici i tuoi dati?",
+    "category": "money"
+  },
+  {
+    "id": "money-105",
+    "text": "Per 10 mila euro, parteciperesti a un 'threesome' con due sconosciuti?",
+    "category": "money"
+  },
+  {
+    "id": "money-106",
+    "text": "Per 10 mila euro, ti prostituiresti per una notte?",
+    "category": "money"
+  },
+  {
+    "id": "money-107",
+    "text": "Per 10 mila euro, parteciperesti a una scena di 'double penetration'?",
+    "category": "money"
+  },
+  {
+    "id": "money-108",
+    "text": "Per 10 mila euro, ti esibiresti in uno spettacolo di 'peep show' per una sera?",
+    "category": "money"
+  },
+  {
+    "id": "money-109",
+    "text": "Per 10 mila euro, baceresti con la lingua un tuo parente di primo grado (es. cugino/a)?",
+    "category": "money"
+  },
+  {
+    "id": "money-110",
+    "text": "Per 10 mila euro, avresti un rapporto completo con un animale (zoofilia), senza che l'animale soffra?",
+    "category": "money"
+  },
+  {
+    "id": "money-111",
+    "text": "Per 10 mila euro, interromperesti un funerale urlando una barzelletta?",
+    "category": "money"
+  },
+  {
+    "id": "money-112",
+    "text": "Per 10 mila euro, mangeresti un piatto a base di escrementi (cotti e sterilizzati)?",
+    "category": "money"
+  },
+  {
+    "id": "money-113",
+    "text": "Per 10 mila euro, ti faresti marchiare a fuoco con il logo di un brand?",
+    "category": "money"
+  },
+  {
+    "id": "money-114",
+    "text": "Per 10 mila euro, passeresti una settimana in prigione in una cella con veri criminali?",
+    "category": "money"
+  },
+  {
+    "id": "money-115",
+    "text": "Per 10 mila euro, useresti solo il piede sinistro per un anno intero (se sei destrorso)?",
+    "category": "money"
+  },
+  {
+    "id": "money-116",
+    "text": "Per 10 mila euro, rinunceresti a vedere i tuoi amici per 5 anni?",
+    "category": "money"
+  },
+  {
+    "id": "money-117",
+    "text": "Per 10 mila euro, adotteresti un accento straniero ridicolo per il resto della tua vita?",
+    "category": "money"
+  },
+  {
+    "id": "money-118",
+    "text": "Per 10 mila euro, saboteresti la carriera del tuo più grande rivale?",
+    "category": "money"
+  },
+  {
+    "id": "money-119",
+    "text": "Per 10 mila euro, ammetteresti un crimine che non hai commesso (senza conseguenze legali)?",
+    "category": "money"
+  },
+  {
+    "id": "money-120",
+    "text": "Per 10 mila euro, ti uniresti a una setta religiosa per un anno?",
+    "category": "money"
+  },
+  {
+    "id": "money-121",
+    "text": "Per 10 mila euro, parteciperesti a un video 'bukkake'?",
+    "category": "money"
+  },
+  {
+    "id": "money-122",
+    "text": "Per 10 mila euro, ti lasceresti legare e solleticare per un'ora intera da uno sconosciuto?",
+    "category": "money"
+  },
+  {
+    "id": "money-123",
+    "text": "Per 10 mila euro, venderesti un rene sul mercato nero?",
+    "category": "money"
+  },
+  {
+    "id": "money-124",
+    "text": "Per 10 mila euro, praticheresti 'foot fetishism' sui piedi di uno sconosciuto per un'ora?",
+    "category": "money"
+  },
+  {
+    "id": "money-125",
+    "text": "Per 10 mila euro, faresti 'watersports' (urofilia) con il tuo partner?",
+    "category": "money"
+  },
+  {
+    "id": "money-126",
+    "text": "Per 10 mila euro, parteciperesti a un'orgia?",
+    "category": "money"
+  },
+  {
+    "id": "money-127",
+    "text": "Per 10 mila euro, fingeresti di essere innamorato/a di qualcuno per un anno intero?",
+    "category": "money"
+  },
+  {
+    "id": "money-128",
+    "text": "Per 10 mila euro, distruggeresti l'opera d'arte preferita di un tuo amico?",
+    "category": "money"
+  },
+  {
+    "id": "money-129",
+    "text": "Per 10 mila euro, vivresti per un anno come nel 1800, senza tecnologia moderna?",
+    "category": "money"
+  },
+  {
+    "id": "money-130",
+    "text": "Per 10 mila euro, mangeresti una pizza con l'ananas ogni giorno per un anno?",
+    "category": "money"
+  },
+  {
+    "id": "money-131",
+    "text": "Per 10 mila euro, parleresti in rima per un mese?",
+    "category": "money"
+  },
+  {
+    "id": "money-132",
+    "text": "Per 10 mila euro, faresti credere a un bambino che Babbo Natale non esiste il giorno della vigilia?",
+    "category": "money"
+  },
+  {
+    "id": "money-133",
+    "text": "Per 10 mila euro, non useresti mai più un mezzo di trasporto a motore?",
+    "category": "money"
+  },
+  {
+    "id": "money-134",
+    "text": "Per 10 mila euro, cancelleresti permanentemente il tuo account social preferito?",
+    "category": "money"
+  },
+  {
+    "id": "money-135",
+    "text": "Per 10 mila euro, diventeresti l'assistente personale di una celebrità che odi per un anno?",
+    "category": "money"
+  },
+  {
+    "id": "money-136",
+    "text": "Per 10 mila euro, ti faresti impiantare delle corna finte (ma permanenti)?",
+    "category": "money"
+  },
+  {
+    "id": "money-137",
+    "text": "Per 10 mila euro, parteciperesti a un video ASMR a sfondo erotico?",
+    "category": "money"
+  },
+  {
+    "id": "money-138",
+    "text": "Per 10 mila euro, faresti 'pegging' al tuo partner (o lo riceveresti)?",
+    "category": "money"
+  },
+  {
+    "id": "money-139",
+    "text": "Per 10 mila euro, ti iscriveresti a un sito di 'sugar daddy/baby' e incontreresti almeno 5 persone?",
+    "category": "money"
+  },
+  {
+    "id": "money-140",
+    "text": "Per 10 mila euro, diresti al tuo partner che vuoi una relazione poliamorosa (anche se non è vero)?",
+    "category": "money"
+  },
+  {
+    "id": "money-141",
+    "text": "Per 10 mila euro, faresti un 'facial' da 10 uomini diversi?",
+    "category": "money"
+  },
+  {
+    "id": "money-142",
+    "text": "Per 10 mila euro, ti travestiresti da feticcio (es. furry, pony play) a una festa di famiglia?",
+    "category": "money"
+  },
+  {
+    "id": "money-143",
+    "text": "Per 10 mila euro, rinunceresti per sempre alla musica?",
+    "category": "money"
+  },
+  {
+    "id": "money-144",
+    "text": "Per 10 mila euro, sveleresti il finale di ogni film/serie tv ai tuoi amici per un anno?",
+    "category": "money"
+  },
+  {
+    "id": "money-145",
+    "text": "Per 10 mila euro, lavoreresti come spazzino per 10 anni?",
+    "category": "money"
+  },
+  {
+    "id": "money-146",
+    "text": "Per 10 mila euro, non viaggeresti mai più fuori dalla tua regione?",
+    "category": "money"
+  },
+  {
+    "id": "money-147",
+    "text": "Per 10 mila euro, mangeresti solo cibo per cani per un mese?",
+    "category": "money"
+  },
+  {
+    "id": "money-148",
+    "text": "Per 10 mila euro, difenderesti pubblicamente un'idea che ritieni moralmente sbagliata?",
+    "category": "money"
+  },
+  {
+    "id": "money-149",
+    "text": "Per 10 mila euro, faresti causa ai tuoi genitori per un motivo futile?",
+    "category": "money"
+  },
+  {
+    "id": "money-150",
+    "text": "Per 10 mila euro, ti infiltreresti in un gruppo terroristico per l'FBI?",
+    "category": "money"
+  },
+  {
+    "id": "money-151",
+    "text": "Per 10 mila euro, sposeresti qualcuno che i tuoi genitori hanno scelto per te?",
+    "category": "money"
+  },
+  {
+    "id": "money-152",
+    "text": "Per 10 mila euro, sacrificheresti la vita del tuo animale domestico?",
+    "category": "money"
+  },
+  {
+    "id": "money-153",
+    "text": "Se potessi, distribuiresti equamente tutta la ricchezza del mondo, anche se ciò significherebbe togliere soldi a chi li ha guadagnati onestamente?",
+    "category": "money"
+  },
+  {
+    "id": "money-154",
+    "text": "Se potessi, cancelleresti il concetto di 'denaro'?",
+    "category": "money"
+  },
+  {
+    "id": "money-155",
+    "text": "Per 10 mila euro, ti innamoreresti di una persona che non ti attrae fisicamente, ma che ti ama profondamente?",
+    "category": "money"
+  },
+  {
+    "id": "money-156",
+    "text": "Per 10 mila euro, fingeresti di essere il genitore di un bambino che non conosci, per un anno?",
+    "category": "money"
+  },
+  {
+    "id": "money-157",
+    "text": "Per 10 mila euro, faresti un atto di disobbedienza civile non violenta che ti porterebbe all'arresto per una causa in cui credi?",
+    "category": "money"
+  },
+  {
+    "id": "money-158",
+    "text": "Sei Ted Lasso (Ted Lasso), rinunceresti alla tua positività per vincere a tutti i costi?",
+    "category": "money"
+  },
+  {
+    "id": "money-159",
+    "text": "Sei Mr. Bean (Mr. Bean), eviteresti situazioni imbarazzanti?",
+    "category": "money"
+  },
+  {
+    "id": "money-160",
+    "text": "Sei Norman Bates (Psycho), resisteresti alle tentazioni di tua madre?",
+    "category": "money"
+  },
+  {
+    "id": "money-161",
+    "text": "Sei Marion Crane (Psycho), ruberesti i soldi del tuo capo per amore?",
+    "category": "money"
+  }
+]

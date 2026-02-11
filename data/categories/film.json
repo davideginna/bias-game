@@ -1,0 +1,297 @@
+[
+  {
+    "id": "film-1",
+    "text": "Sei Harry Potter (Harry Potter), avresti scelto di andare a Serpeverde per scoprire i segreti di Voldemort?",
+    "category": "film"
+  },
+  {
+    "id": "film-2",
+    "text": "Sei Hermione Granger (Harry Potter), lasceresti i tuoi amici in pericolo per studiare e metterti in salvo?",
+    "category": "film"
+  },
+  {
+    "id": "film-3",
+    "text": "Sei Ron Weasley (Harry Potter), affronteresti i tuoi ragni giganti per salvare i tuoi amici?",
+    "category": "film"
+  },
+  {
+    "id": "film-4",
+    "text": "Sei Albus Silente (Harry Potter), nasconderesti la verità a Harry per proteggerlo?",
+    "category": "film"
+  },
+  {
+    "id": "film-5",
+    "text": "Sei Severus Piton (Harry Potter), ti sacrificheresti per il figlio della donna che amavi?",
+    "category": "film"
+  },
+  {
+    "id": "film-6",
+    "text": "Sei Lord Voldemort (Harry Potter), rinunceresti all'immortalità per l'amore?",
+    "category": "film"
+  },
+  {
+    "id": "film-7",
+    "text": "Sei Draco Malfoy (Harry Potter), ti ribelleresti alla tua famiglia per fare la cosa giusta?",
+    "category": "film"
+  },
+  {
+    "id": "film-8",
+    "text": "Sei Hagrid (Harry Potter), riveleresti un segreto su una creatura magica per proteggerla?",
+    "category": "film"
+  },
+  {
+    "id": "film-9",
+    "text": "Sei Minerva McGranitt (Harry Potter), faresti un incantesimo non etico per difendere Hogwarts?",
+    "category": "film"
+  },
+  {
+    "id": "film-10",
+    "text": "Sei Dobby (Harry Potter), disobbediresti a un ordine del tuo padrone per salvare Harry?",
+    "category": "film"
+  },
+  {
+    "id": "film-11",
+    "text": "Sei Bellatrix Lestrange (Harry Potter), rinunceresti alla fedeltà a Voldemort per la tua famiglia?",
+    "category": "film"
+  },
+  {
+    "id": "film-12",
+    "text": "Sei Sirius Black (Harry Potter), ti fideresti di Piton per salvare Harry?",
+    "category": "film"
+  },
+  {
+    "id": "film-13",
+    "text": "Sei Remus Lupin (Harry Potter), saresti un buon padre sapendo di essere un lupo mannaro?",
+    "category": "film"
+  },
+  {
+    "id": "film-14",
+    "text": "Sei Neville Paciock (Harry Potter), rinunceresti a combattere per la tua paura?",
+    "category": "film"
+  },
+  {
+    "id": "film-15",
+    "text": "Sei Ginny Weasley (Harry Potter), aspetteresti Harry per anni, senza frequentare altri?",
+    "category": "film"
+  },
+  {
+    "id": "film-16",
+    "text": "Sei Luna Lovegood (Harry Potter), smetteresti di credere nelle creature magiche per essere accettata?",
+    "category": "film"
+  },
+  {
+    "id": "film-17",
+    "text": "Sei Dolores Umbridge (Harry Potter), useresti la magia per scopi pacifici?",
+    "category": "film"
+  },
+  {
+    "id": "film-18",
+    "text": "Sei Dursley (Harry Potter), tratteresti Harry come un figlio tuo?",
+    "category": "film"
+  },
+  {
+    "id": "film-19",
+    "text": "Sei Lucius Malfoy (Harry Potter), rinunceresti al tuo status per il bene di Draco?",
+    "category": "film"
+  },
+  {
+    "id": "film-20",
+    "text": "Sei Nymphadora Tonks (Harry Potter), faresti la scelta di combattere sapendo di lasciare tuo figlio orfano?",
+    "category": "film"
+  },
+  {
+    "id": "film-21",
+    "text": "Sei Luke Skywalker (Star Wars), ti uniresti al Lato Oscuro per salvare i tuoi amici?",
+    "category": "film"
+  },
+  {
+    "id": "film-22",
+    "text": "Sei Han Solo (Star Wars), rinunceresti ai tuoi soldi per aiutare la Ribellione?",
+    "category": "film"
+  },
+  {
+    "id": "film-23",
+    "text": "Sei Leia Organa (Star Wars), ti sacrificheresti per la Ribellione, anche a costo della vita?",
+    "category": "film"
+  },
+  {
+    "id": "film-24",
+    "text": "Sei Darth Vader (Star Wars), rinunceresti al potere per l'amore di tuo figlio?",
+    "category": "film"
+  },
+  {
+    "id": "film-25",
+    "text": "Sei Obi-Wan Kenobi (Star Wars), diresti a Luke la verità su suo padre fin dall'inizio?",
+    "category": "film"
+  },
+  {
+    "id": "film-26",
+    "text": "Sei Yoda (Star Wars), addestreresti Luke sapendo che potrebbe fallire?",
+    "category": "film"
+  },
+  {
+    "id": "film-27",
+    "text": "Sei Chewbacca (Star Wars), lasceresti Han Solo per la tua famiglia Wookiee?",
+    "category": "film"
+  },
+  {
+    "id": "film-28",
+    "text": "Sei Lando Calrissian (Star Wars), tradiresti i tuoi amici per salvare la tua città?",
+    "category": "film"
+  },
+  {
+    "id": "film-29",
+    "text": "Sei Palpatine (Star Wars), rinunceresti al potere supremo per la pace nella Galassia?",
+    "category": "film"
+  },
+  {
+    "id": "film-30",
+    "text": "Sei Boba Fett (Star Wars), ti alleeresti con i Jedi per un giusto compenso?",
+    "category": "film"
+  },
+  {
+    "id": "film-31",
+    "text": "Sei Jabba the Hutt (Star Wars), libereresti Han Solo senza riscatto per un atto di bontà?",
+    "category": "film"
+  },
+  {
+    "id": "film-32",
+    "text": "Sei R2-D2 (Star Wars), riveleresti tutti i tuoi segreti a chiunque te li chieda?",
+    "category": "film"
+  },
+  {
+    "id": "film-33",
+    "text": "Sei C-3PO (Star Wars), saresti più coraggioso per aiutare i tuoi amici?",
+    "category": "film"
+  },
+  {
+    "id": "film-34",
+    "text": "Sei il Gran Moff Tarkin (Star Wars), distruggeresti un pianeta intero per dimostrare il potere dell'Impero?",
+    "category": "film"
+  },
+  {
+    "id": "film-35",
+    "text": "Sei Greedo (Star Wars), spareresti per primo?",
+    "category": "film"
+  },
+  {
+    "id": "film-36",
+    "text": "Sei Wedge Antilles (Star Wars), ti arrenderesti in una battaglia persa?",
+    "category": "film"
+  },
+  {
+    "id": "film-37",
+    "text": "Sei Mon Mothma (Star Wars), sacrificheresti una parte della Ribellione per una vittoria più grande?",
+    "category": "film"
+  },
+  {
+    "id": "film-38",
+    "text": "Sei il Capitano Piett (Star Wars), disobbediresti a Darth Vader per salvare la tua vita?",
+    "category": "film"
+  },
+  {
+    "id": "film-39",
+    "text": "Sei Wicket (Star Wars), ti fideresti degli umani sconosciuti?",
+    "category": "film"
+  },
+  {
+    "id": "film-40",
+    "text": "Sei l'Imperatore (Star Wars), condivideresti il tuo potere con Darth Vader?",
+    "category": "film"
+  },
+  {
+    "id": "film-41",
+    "text": "Sei Neo (Matrix), saresti disposto a prendere la pillola rossa e scoprire la verità?",
+    "category": "film"
+  },
+  {
+    "id": "film-42",
+    "text": "Sei Trinity (Matrix), rinunceresti a Neo per la salvezza di Zion?",
+    "category": "film"
+  },
+  {
+    "id": "film-43",
+    "text": "Sei Morpheus (Matrix), dubiteresti mai della tua fede in Neo?",
+    "category": "film"
+  },
+  {
+    "id": "film-44",
+    "text": "Sei Marty McFly (Ritorno al Futuro), cambieresti il tuo passato per renderlo migliore?",
+    "category": "film"
+  },
+  {
+    "id": "film-45",
+    "text": "Sei Doc Brown (Ritorno al Futuro), useresti la macchina del tempo per scopi personali?",
+    "category": "film"
+  },
+  {
+    "id": "film-46",
+    "text": "Sei Forrest Gump (Forrest Gump), rifiuteresti le opportunità che ti si presentano?",
+    "category": "film"
+  },
+  {
+    "id": "film-47",
+    "text": "Sei Jenny Curran (Forrest Gump), rimarresti con Forrest per una vita tranquilla?",
+    "category": "film"
+  },
+  {
+    "id": "film-48",
+    "text": "Sei Tyler Durden (Fight Club), distruggeresti la civiltà per un nuovo inizio?",
+    "category": "film"
+  },
+  {
+    "id": "film-49",
+    "text": "Sei The Narrator (Fight Club), cercheresti di riprendere il controllo della tua tua vita?",
+    "category": "film"
+  },
+  {
+    "id": "film-50",
+    "text": "Sei Jules Winnfield (Pulp Fiction), smetteresti di essere un sicario per una vita religiosa?",
+    "category": "film"
+  },
+  {
+    "id": "film-51",
+    "text": "Sei Vincent Vega (Pulp Fiction), tradiresti Marsellus Wallace?",
+    "category": "film"
+  },
+  {
+    "id": "film-52",
+    "text": "Sei Jack Dawson (Titanic), lasceresti che Rose muoia per salvarti?",
+    "category": "film"
+  },
+  {
+    "id": "film-53",
+    "text": "Sei Rose DeWitt Bukater (Titanic), rinunceresti alla tua vita agiata per Jack?",
+    "category": "film"
+  },
+  {
+    "id": "film-54",
+    "text": "Sei Michael Corleone (Il Padrino), lasceresti la tua famiglia per una vita onesta?",
+    "category": "film"
+  },
+  {
+    "id": "film-55",
+    "text": "Sei Vito Corleone (Il Padrino), ti fideresti dei tuoi nemici?",
+    "category": "film"
+  },
+  {
+    "id": "film-56",
+    "text": "Sei Frodo Baggins (Il Signore degli Anelli), distruggeresti l'Anello del Potere, anche a costo della tua vita?",
+    "category": "film"
+  },
+  {
+    "id": "film-57",
+    "text": "Sei Gandalf (Il Signore degli Anelli), useresti la tua magia per governare il mondo?",
+    "category": "film"
+  },
+  {
+    "id": "film-58",
+    "text": "Sei Aragorn (Il Signore degli Anelli), rinunceresti al trono per amore?",
+    "category": "film"
+  },
+  {
+    "id": "film-59",
+    "text": "Sei Arwen (Il Signore degli Anelli), rinunceresti alla tua immortalità per amore?",
+    "category": "film"
+  }
+]

@@ -36,8 +36,9 @@ async function init() {
       throw new Error('Failed to initialize Firebase');
     }
 
-    // Load dilemmas
-    await CardManager.loadDilemmas();
+    // Load category metadata (lightweight, ~5KB)
+    // Actual dilemmas will be loaded when room is created/joined
+    await CardManager.loadCategoryMetadata();
 
     // Setup event listeners
     setupEventListeners();
@@ -234,6 +235,13 @@ function setupEventListeners() {
     showCreateFormBtn.addEventListener('click', () => {
       document.getElementById('home-menu').style.display = 'none';
       document.getElementById('create-form').style.display = 'block';
+
+      // Render category selection UI
+      const metadata = CardManager.getCategoryMetadata();
+      if (metadata) {
+        // Default: select only 'default' category
+        UI.renderCategorySelection(metadata, ['default']);
+      }
     });
   }
 
@@ -278,6 +286,28 @@ function setupEventListeners() {
   if (joinRoomBtn) {
     joinRoomBtn.addEventListener('click', handleJoinRoom);
   }
+
+  // Category selection buttons
+  const selectAllCategoriesBtn = document.getElementById('select-all-categories-btn');
+  const deselectAllCategoriesBtn = document.getElementById('deselect-all-categories-btn');
+
+  if (selectAllCategoriesBtn) {
+    selectAllCategoriesBtn.addEventListener('click', handleSelectAllCategories);
+  }
+
+  if (deselectAllCategoriesBtn) {
+    deselectAllCategoriesBtn.addEventListener('click', handleDeselectAllCategories);
+  }
+
+  // Delegated event listener for category checkboxes
+  document.addEventListener('change', (e) => {
+    if (e.target.classList.contains('category-checkbox')) {
+      const metadata = CardManager.getCategoryMetadata();
+      if (metadata) {
+        UI.updateCategorySummary(metadata);
+      }
+    }
+  });
 
   // Lobby screen
   const readyBtn = document.getElementById('ready-btn');
@@ -556,13 +586,23 @@ async function handleCreateRoom() {
       return;
     }
 
+    // Get selected categories
+    const selectedCategories = getSelectedCategories();
+    if (selectedCategories.length === 0) {
+      UI.showToast('Seleziona almeno una categoria', 'error');
+      return;
+    }
+
     UI.showLoading('Creazione stanza...');
 
     // Dubito mode starts as false, can be enabled in lobby if 5+ players
-    const { roomId, playerId } = await RoomManager.createNewRoom(playerName, maxPoints, false);
+    const { roomId, playerId } = await RoomManager.createNewRoom(playerName, maxPoints, false, selectedCategories);
 
     currentRoomId = roomId;
     currentPlayerId = playerId;
+
+    // Load selected categories
+    await CardManager.loadCategories(selectedCategories);
 
     await joinLobby();
 
@@ -666,7 +706,7 @@ async function rejoinRoom() {
 /**
  * Handle room data updates
  */
-function handleRoomUpdate(roomData) {
+async function handleRoomUpdate(roomData) {
   if (!roomData) {
     console.log('Room has been deleted');
     handleRoomDeleted();
@@ -676,6 +716,18 @@ function handleRoomUpdate(roomData) {
   currentRoomData = roomData;
 
   const { config, players, currentTurn } = roomData;
+
+  // Load categories if not already loaded
+  const selectedCategories = config.selectedCategories || ['default'];
+  if (CardManager.getAllDilemmas().length === 0) {
+    console.log('Loading categories:', selectedCategories);
+    try {
+      await CardManager.loadCategories(selectedCategories);
+    } catch (error) {
+      console.error('Error loading categories:', error);
+      UI.showToast('Errore caricamento categorie', 'error');
+    }
+  }
 
   // Reset vote processing flag if we're no longer in voting state
   if (currentTurn && currentTurn.status !== TURN_STATUS.VOTING_TRUTH && isProcessingVotes) {
@@ -789,6 +841,13 @@ function updateLobbyScreen(players) {
     } else {
       roomSettings.style.display = 'none';
     }
+  }
+
+  // Render category badges for all players in lobby
+  const metadata = CardManager.getCategoryMetadata();
+  const selectedCategories = currentRoomData?.config?.selectedCategories || ['default'];
+  if (metadata) {
+    UI.renderCategoryBadges(metadata, selectedCategories);
   }
 
   // Show/hide start button (only for host when all ready)
@@ -1948,6 +2007,53 @@ function handleRoomDeleted() {
   UI.showScreen('home');
   UI.showToast('La stanza è stata chiusa', 'warning');
   UI.resetFormInputs();
+}
+
+/**
+ * Get selected categories from category items
+ * @returns {Array} Array of selected category IDs
+ */
+function getSelectedCategories() {
+  const checkboxes = document.querySelectorAll('.category-checkbox:checked');
+  return Array.from(checkboxes).map(cb => cb.value);
+}
+
+/**
+ * Handle select all categories
+ */
+function handleSelectAllCategories() {
+  const metadata = CardManager.getCategoryMetadata();
+  const items = document.querySelectorAll('.category-item');
+
+  items.forEach(item => {
+    const checkbox = item.querySelector('.category-checkbox');
+    item.classList.add('selected');
+    item.dataset.selected = 'true';
+    if (checkbox) checkbox.checked = true;
+  });
+
+  if (metadata) {
+    UI.updateCategorySummary(metadata);
+  }
+}
+
+/**
+ * Handle deselect all categories
+ */
+function handleDeselectAllCategories() {
+  const metadata = CardManager.getCategoryMetadata();
+  const items = document.querySelectorAll('.category-item');
+
+  items.forEach(item => {
+    const checkbox = item.querySelector('.category-checkbox');
+    item.classList.remove('selected');
+    item.dataset.selected = 'false';
+    if (checkbox) checkbox.checked = false;
+  });
+
+  if (metadata) {
+    UI.updateCategorySummary(metadata);
+  }
 }
 
 
